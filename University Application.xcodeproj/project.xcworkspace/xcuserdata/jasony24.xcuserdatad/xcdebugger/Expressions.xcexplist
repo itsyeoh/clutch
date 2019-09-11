@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AcademicsVC.addCourse(course:):AcademicsVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "courses">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddSemesterVC.addSemester():AddSemesterVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "seasonRow.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AcademicsVC.viewDidLoad():AcademicsVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "courses">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AcademicsVC.tableView(_:numberOfRowsInSection:):AcademicsVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "courses[6]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskVC.viewDidLoad():TaskVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tasksByCourseName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskVC.tableView(_:viewForHeaderInSection:):TaskVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "task[0].getDateToString()">
+            </PersistentString>
+            <PersistentString
+               value = "task">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Class.getDaysToStrings():Class.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.days">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskVC.sectionButtonClicked(sender:):TaskVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tasksByDate[section][row].description">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddClassVC.addClass():AddClassVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AcademicsVC.addSemester(semester:):AcademicsVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AcademicsVC.tableView(_:cellForRowAt:):AcademicsVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "courses">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

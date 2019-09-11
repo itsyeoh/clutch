@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Eureka-Swift.h",
+          'external-contents': "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Eureka.h",
+          'external-contents': "/Users/jasonyeoh/Downloads/Eureka-master/Source/Eureka.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Build/Intermediates/Eureka.build/Debug-iphoneos/Eureka.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

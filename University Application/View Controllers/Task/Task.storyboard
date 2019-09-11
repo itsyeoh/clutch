@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YCm-hB-xe2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TaskVC-->
+        <scene sceneID="UyM-oK-D4A">
+            <objects>
+                <viewController id="YCm-hB-xe2" customClass="TaskVC" customModule="University_Application" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dV3-iL-Vhj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Mv-0l-CZA">
+                                <rect key="frame" x="46" y="64" width="322" height="29"/>
+                                <color key="backgroundColor" name="Primary_2"/>
+                                <segments>
+                                    <segment title="Due Date"/>
+                                    <segment title="Academics"/>
+                                    <segment title="Extracurriculars"/>
+                                </segments>
+                                <color key="tintColor" name="Primary"/>
+                                <connections>
+                                    <action selector="taskControlsChanged" destination="YCm-hB-xe2" eventType="valueChanged" id="5Dh-p6-uJF"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nNC-md-UNI">
+                                <rect key="frame" x="12" y="112" width="390" height="730"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TaskHeaderCell" rowHeight="30" id="hA7-nU-WEG" customClass="TaskHeaderTVC" customModule="University_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="390" height="30"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hA7-nU-WEG" id="m0w-Ac-AAP">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="30"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erP-pz-lsX">
+                                                    <rect key="frame" x="20" y="5" width="350" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <state key="normal" title="CS 111">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Primary"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleButton" destination="erP-pz-lsX" id="x9g-uF-J0U"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TaskCell" rowHeight="63" id="AhY-7q-kNU" customClass="TaskTVC" customModule="University_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="58" width="390" height="63"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AhY-7q-kNU" id="TOh-zF-Ynu">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PHYS 300" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAF-Xs-Nbz">
+                                                    <rect key="frame" x="46" y="14" width="242" height="12"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="10"/>
+                                                    <color key="textColor" name="Secondary"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Magnetism Quiz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkD-oH-ems">
+                                                    <rect key="frame" x="46" y="25" width="242" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                    <color key="textColor" name="Primary"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGw-so-ev5">
+                                                    <rect key="frame" x="20" y="21" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="Checkbox_Empty"/>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="courseNameLabel" destination="PAF-Xs-Nbz" id="PE7-YZ-yQQ"/>
+                                            <outlet property="taskNameLabel" destination="HkD-oH-ems" id="s17-Hx-XX0"/>
+                                            <outlet property="tickButton" destination="RGw-so-ev5" id="PaL-jS-ZDE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YCm-hB-xe2" id="FoG-gS-AHM"/>
+                                    <outlet property="delegate" destination="YCm-hB-xe2" id="L28-Gp-9TL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Mv-0l-CZA" firstAttribute="leading" secondItem="Ky0-VN-GuP" secondAttribute="leading" constant="46" id="6FY-7v-nXX"/>
+                            <constraint firstItem="Ky0-VN-GuP" firstAttribute="bottom" secondItem="nNC-md-UNI" secondAttribute="bottom" constant="20" id="BfX-Rg-jGy"/>
+                            <constraint firstItem="Ky0-VN-GuP" firstAttribute="trailing" secondItem="nNC-md-UNI" secondAttribute="trailing" constant="12" id="FTv-jJ-UKh"/>
+                            <constraint firstItem="0Mv-0l-CZA" firstAttribute="top" secondItem="Ky0-VN-GuP" secondAttribute="top" constant="20" id="Nda-Zc-j17"/>
+                            <constraint firstItem="nNC-md-UNI" firstAttribute="leading" secondItem="Ky0-VN-GuP" secondAttribute="leading" constant="12" id="Wye-Vp-tcR"/>
+                            <constraint firstItem="nNC-md-UNI" firstAttribute="top" secondItem="0Mv-0l-CZA" secondAttribute="bottom" constant="20" id="lr7-xQ-dZp"/>
+                            <constraint firstItem="Ky0-VN-GuP" firstAttribute="trailing" secondItem="0Mv-0l-CZA" secondAttribute="trailing" constant="46" id="rIG-jZ-kxK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ky0-VN-GuP"/>
+                    </view>
+                    <connections>
+                        <outlet property="taskControls" destination="0Mv-0l-CZA" id="80p-h1-Rue"/>
+                        <outlet property="taskTableView" destination="nNC-md-UNI" id="LsM-3I-fce"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ufl-b4-CZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.289855072463769" y="35.491071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Checkbox_Empty" width="30" height="30"/>
+        <namedColor name="Primary">
+            <color red="0.086274509803921567" green="0.062745098039215685" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary_2">
+            <color red="0.7803921568627451" green="0.82352941176470584" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary">
+            <color red="0.50588235294117645" green="0.10196078431372549" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

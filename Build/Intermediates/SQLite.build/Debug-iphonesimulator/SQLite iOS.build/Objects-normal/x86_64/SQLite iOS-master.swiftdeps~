@@ -1,0 +1,23 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "87e6529406cf4e325c9746b522e75155"
+build_time: [1567026995, 43761000]
+inputs:
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Typed/CoreFunctions.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Extensions/RTree.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Core/Blob.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Foundation.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Core/Connection.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Typed/Expression.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Helpers.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Typed/Collation.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Typed/Setter.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Typed/CustomFunctions.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Extensions/FTS4.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Core/Value.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Typed/Operators.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Typed/Schema.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Typed/Query.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Core/Statement.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Typed/AggregateFunctions.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Extensions/FTS5.swift": [1505222812, 0]
+  "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/Extensions/Cipher.swift": [1505222812, 0]
