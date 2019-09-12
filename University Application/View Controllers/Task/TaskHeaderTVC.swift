@@ -9,7 +9,6 @@
 import UIKit
 
 class TaskHeaderTVC: UITableViewCell {
-   
     @IBOutlet weak var titleButton: UIButton!
     
     override func awakeFromNib() {

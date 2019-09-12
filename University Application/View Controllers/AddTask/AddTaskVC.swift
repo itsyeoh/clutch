@@ -22,6 +22,7 @@ class AddTaskVC: FormViewController {
     var taskIndexToEdit: Int?
     var newTask: Task?
     var course: Course?
+    var isChecked = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,11 +103,24 @@ class AddTaskVC: FormViewController {
                         cell.backgroundColor = .white
                 }})
         
+            <<< TimeInlineRow("dueTimeRow") {
+                $0.title = "Due Time"
+                $0.value = Date(timeIntervalSinceNow: 0)
+                $0.add(rule: RuleRequired())
+                $0.validationOptions = .validatesOnChange
+                }.cellUpdate({ (cell, row) in
+                    if !row.isValid {
+                        cell.backgroundColor = Theme.Secondary_2
+                        cell.textLabel?.textColor = Theme.Secondary
+                    } else {
+                        cell.backgroundColor = .white
+                }})
         // Plug in all values for an existing task
         if let index = taskIndexToEdit {
             form.setValues(["tCourseRow": course?.showCourseName(), "nameRow": newTask?.taskName,
                             "descRow": newTask?.description, "aTypeRow": newTask?.taskType,
-                            "dueDateRow": newTask?.taskDate])
+                            "dueDateRow": newTask?.taskDate, "dueTimeRow": newTask?.taskTime])
+            isChecked = newTask!.isChecked
         }
     }//end viewDidLoad()
     
@@ -118,26 +132,29 @@ class AddTaskVC: FormViewController {
             let descRow: TextAreaRow? = form.rowBy(tag: "descRow")
             let aTypeRow: PushRow<String>? = form.rowBy(tag: "aTypeRow")
             let dueDateRow: DateInlineRow? = form.rowBy(tag: "dueDateRow")
+            let dueTimeRow: TimeInlineRow? = form.rowBy(tag: "dueTimeRow")
             
             // Access row data values
             let ccid = courseList.filter {$0.value == (courseRow?.value)!}.map{$0.0}.first!
             let taskName = (nameRow?.value)!
             let taskType = (aTypeRow?.value)!
             let taskDate = (dueDateRow?.value)!
+            let taskTime = (dueTimeRow?.value)!
             let description = descRow?.value ?? ""
             
             if let index = taskIndexToEdit {
                 let aTask = Task(cid: ccid, tid: newTask!.tid, taskName: taskName, taskType: taskType,
-                                 taskDate: taskDate, description: description)
+                                 taskDate: taskDate, taskTime: taskTime, description: description,
+                                 isChecked: self.isChecked)
                 
                 if UniversityDB.instance.updateTask(id: aTask.tid, newTask: aTask) {
                     delegate?.updateTask(index: index, task: aTask)
                 }
             } else {
                 // Insert task to the database
-                if let id = UniversityDB.instance.addTask(ccid: ccid, ctaskName: taskName, ctaskType: taskType, ctaskDate: taskDate, cdescription: description) {
+                if let id = UniversityDB.instance.addTask(ccid: ccid, ctaskName: taskName, ctaskType: taskType, ctaskDate: taskDate, ctaskTime: taskTime, cdescription: description) {
                     let task = Task(cid: ccid, tid: id, taskName: taskName, taskType: taskType,
-                                    taskDate: taskDate, description: description)
+                                    taskDate: taskDate, taskTime: taskTime, isChecked: false)
                     delegate?.addTask(task: task)       // Communicate with delegate VCs
                 }
             }

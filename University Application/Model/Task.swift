@@ -15,7 +15,9 @@ class Task {
     var taskName: String!
     var taskType: String!
     var taskDate: Date!
+    var taskTime: Date!
     var description: String?
+    var isChecked: Bool!
     
     init(cid: Int64, tid: Int64) {
         self.cid = cid
@@ -23,16 +25,21 @@ class Task {
         self.taskName = ""
         self.taskType = ""
         self.taskDate = Date()
+        self.taskTime = Date()
         self.description = ""
+        self.isChecked = false
     }
     
-    init(cid: Int64, tid: Int64, taskName: String, taskType: String, taskDate: Date, description: String? = nil) {
+    init(cid: Int64, tid: Int64, taskName: String, taskType: String, taskDate: Date, taskTime: Date,
+         description: String? = nil, isChecked: Bool) {
         self.cid = cid
         self.tid = tid
         self.taskName = taskName
         self.taskType = taskType
-        self.taskDate = taskDate        
+        self.taskDate = taskDate
+        self.taskTime = taskTime
         self.description = description
+        self.isChecked = isChecked
     }
     
     func getDateToString() -> String {

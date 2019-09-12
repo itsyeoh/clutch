@@ -354,8 +354,9 @@ class UniversityDB {
     private let taskName = Expression<String>("taskName")
     private let taskType = Expression<String>("taskType")
     private let taskDate = Expression<Date>("taskDate")
-//    private let taskTime = Expression<Date>("taskTime")
+    private let taskTime = Expression<Date>("taskTime")
     private let description = Expression<String>("description")
+    private let isChecked = Expression<Bool>("isChecked")
     
     func createTaskTable() {
         do {
@@ -365,18 +366,21 @@ class UniversityDB {
                 table.column(taskName)
                 table.column(taskType)
                 table.column(taskDate)
-//                table.column(taskTime)
+                table.column(taskTime)
                 table.column(description)
+                table.column(isChecked)
             })
         } catch {
             print("Unable to create table")
         }
     }
     
-    func addTask(ccid: Int64, ctaskName: String, ctaskType: String, ctaskDate: Date, cdescription: String) -> Int64? {
+    func addTask(ccid: Int64, ctaskName: String, ctaskType: String, ctaskDate: Date, ctaskTime: Date,
+                 cdescription: String) -> Int64? {
         do {
             let insert = tasks.insert(t_cid <- ccid, taskName <- ctaskName, taskType <- ctaskType,
-                                      taskDate <- ctaskDate, description <- cdescription)
+                                      taskDate <- ctaskDate, taskTime <- ctaskTime,
+                                      description <- cdescription)
             let tid = try db!.run(insert)
             return tid
         } catch {
@@ -395,7 +399,9 @@ class UniversityDB {
                                   taskName: task[taskName],
                                   taskType: task[taskType],
                                   taskDate: task[taskDate],
-                                  description: task[description]))
+                                  taskTime: task[taskTime],
+                                  description: task[description],
+                                  isChecked: task[isChecked]))
             }
         } catch {
             print("Select failed")
@@ -423,7 +429,9 @@ class UniversityDB {
                 taskName <- newTask.taskName,
                 taskType <- newTask.taskType,
                 taskDate <- newTask.taskDate,
-                description <- newTask.description ?? ""])
+                taskTime <- newTask.taskTime,
+                description <- newTask.description ?? "",
+                isChecked <- newTask.isChecked])
             
             if try db!.run(update) > 0 {
                 return true
@@ -454,7 +462,9 @@ class UniversityDB {
                         taskName: task[taskName],
                         taskType: task[taskType],
                         taskDate: task[taskDate],
-                        description: task[description]))
+                        taskTime: task[taskTime],
+                        description: task[description],
+                        isChecked: task[isChecked]))
                 }
                 
                 courseTasks.append(taskLists)
@@ -486,7 +496,9 @@ class UniversityDB {
                         taskName: task[taskName],
                         taskType: task[taskType],
                         taskDate: task[taskDate],
-                        description: task[description]))
+                        taskTime: task[taskTime],
+                        description: task[description],
+                        isChecked: task[isChecked]))
                 }
                 
                 courseTasks.append(taskLists)
@@ -513,7 +525,9 @@ class UniversityDB {
                     taskName: task[taskName],
                     taskType: task[taskType],
                     taskDate: task[taskDate],
-                    description: task[description]))
+                    taskTime: task[taskTime],
+                    description: task[description],
+                    isChecked: task[isChecked]))
             }
         } catch {
             print("Select failed")
