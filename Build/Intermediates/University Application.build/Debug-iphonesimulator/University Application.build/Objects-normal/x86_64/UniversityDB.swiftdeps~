@@ -13,21 +13,17 @@ depends-top-level:
 - !private "??"
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
 - "Class"
 - "ClassType"
 - "Connection"
 - "Course"
 - "Date"
 - "Expression"
-- !private "FloatLiteralType"
 - "Int"
 - "Int64"
-- !private "IntegerLiteralType"
 - !private "NSSearchPathForDirectoriesInDomains"
 - "Semester"
 - "String"
-- "StringLiteralType"
 - "Table"
 - "Task"
 - "UniversityDB"
@@ -246,6 +242,7 @@ depends-member:
 - !private ["22University_Application0A2DBC", "creditHours"]
 - !private ["22University_Application0A2DBC", "days"]
 - !private ["22University_Application0A2DBC", "db"]
+- ["22University_Application0A2DBC", "deinit"]
 - ["22University_Application0A2DBC", "deleteClass"]
 - ["22University_Application0A2DBC", "deleteCourse"]
 - ["22University_Application0A2DBC", "deleteSemester"]

@@ -22,7 +22,7 @@ class TaskVC: UIViewController {
 
         self.navigationItem.title = "TASKS"
         self.navigationItem.leftBarButtonItem =
-            UIBarButtonItem(title: "C", style: .plain, target: self, action: #selector(openCompletedTasks))
+            UIBarButtonItem(image: UIImage(named: "NotDone"), style: .plain, target: self, action: #selector(openCompletedTasks))
         
         self.navigationItem.rightBarButtonItem =
             UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(openAddTask))
@@ -44,18 +44,20 @@ class TaskVC: UIViewController {
     @objc func openAddTask() {
         let storyboard = UIStoryboard(name: "AddTask", bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! AddTaskVC
-        vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func openCompletedTasks() {
         if isCompleted == true {
+            self.navigationItem.leftBarButtonItem?.setBackgroundImage(UIImage(named: "NotDone"), for: .normal, barMetrics: .default)
             isCompleted = false
             tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: false)
             tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: false)
             courses = UniversityDB.instance.getCourses()
             self.taskTableView.reloadData()
         } else {
+            print("DONE")
+            self.navigationItem.leftBarButtonItem?.setBackgroundImage(UIImage(named: "Done"), for: .normal, barMetrics: .default)
             isCompleted = true
             tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: true)
             tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: true)
@@ -142,34 +144,42 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         case 0:
             let task = tasksByDate[indexPath.section][indexPath.row]
             let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
-            cell.delegate = self
-            cell.buttonSelected(index: indexPath, task: task)
+            
+            if cell.tickButton.isSelected {
+                cell.buttonDeselected(task: task)
+            } else {
+                cell.buttonSelected(task: task)
+            }
         case 1:
             let task = tasksByCourseName[indexPath.section][indexPath.row]
             let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
-            cell.delegate = self
-            cell.buttonSelected(index: indexPath, task: task)
+            
+            if cell.tickButton.isSelected {
+                cell.buttonDeselected(task: task)
+            } else {
+                cell.buttonSelected(task: task)
+            }
         default:
             break
         }
     }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        switch taskControls.selectedSegmentIndex {
-        case 0:
-            let task = tasksByDate[indexPath.section][indexPath.row]
-            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
-            cell.delegate = self
-            cell.buttonDeselected(index: indexPath, task: task)
-        case 1:
-            let task = tasksByCourseName[indexPath.section][indexPath.row]
-            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
-            cell.delegate = self
-            cell.buttonDeselected(index: indexPath, task: task)
-        default:
-            break
-        }
-    }
+//
+//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+//        switch taskControls.selectedSegmentIndex {
+//        case 0:
+//            let task = tasksByDate[indexPath.section][indexPath.row]
+//            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
+//            cell.delegate = self
+//            cell.buttonDeselected(index: indexPath, task: task)
+//        case 1:
+//            let task = tasksByCourseName[indexPath.section][indexPath.row]
+//            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
+//            cell.delegate = self
+//            cell.buttonDeselected(index: indexPath, task: task)
+//        default:
+//            break
+//        }
+//    }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
@@ -221,19 +231,19 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-extension TaskVC: AddTaskDelegate, TaskChecklistDelegate {
-    func updateTaskChecklist(index: IndexPath, task: Task) {
-        switch taskControls.selectedSegmentIndex {
-        case 0:
-            self.tasksByDate[index.section][index.row] = task
-        case 1:
-            self.tasksByCourseName[index.section][index.row] = task
-        default:
-            break
-        }
-        
-        self.taskTableView.reloadData()
-    }
+extension TaskVC: AddTaskDelegate {
+//    func updateTaskChecklist(index: IndexPath, task: Task) {
+//        switch taskControls.selectedSegmentIndex {
+//        case 0:
+//            self.tasksByDate[index.section][index.row] = task
+//        case 1:
+//            self.tasksByCourseName[index.section][index.row] = task
+//        default:
+//            break
+//        }
+//        
+//        self.taskTableView.reloadData()
+//    }
     
     func addTask(task: Task) {
         self.navigationController?.popViewController(animated: true)

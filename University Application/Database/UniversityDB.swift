@@ -446,7 +446,7 @@ class UniversityDB {
     func updateTaskByChecking(id: Int64, checkVar: Bool) -> Bool {
         let selectedTask = tasks.filter(id == tid)
         do {
-            let update = selectedTask.update(isChecked <- checkVar)
+            let update = selectedTask.update([isChecked <- checkVar])
             
             if try db!.run(update) > 0 {
                 return true
