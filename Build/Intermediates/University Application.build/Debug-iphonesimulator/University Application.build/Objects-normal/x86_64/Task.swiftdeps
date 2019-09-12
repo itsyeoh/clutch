@@ -15,7 +15,6 @@ depends-top-level:
 - !private "DateFormatter"
 - "Int64"
 - "String"
-- !private "StringLiteralType"
 - "Task"
 - !private "UniversityDB"
 depends-member:

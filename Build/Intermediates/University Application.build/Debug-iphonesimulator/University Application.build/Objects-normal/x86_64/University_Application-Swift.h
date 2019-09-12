@@ -332,6 +332,14 @@ SWIFT_CLASS("_TtC22University_Application8CourseVC")
 @end
 
 
+SWIFT_CLASS("_TtC22University_Application11DashboardVC")
+@interface DashboardVC : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC22University_Application11SemesterTVC")
 @interface SemesterTVC : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified previewSeasonTextLabel;

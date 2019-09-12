@@ -19,7 +19,7 @@
 		515373832321E299003D1D3A /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515373822321E299003D1D3A /* CustomCells.swift */; };
 		5187F69A23138E6B0091AAE9 /* SemesterTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187F69923138E6B0091AAE9 /* SemesterTVC.swift */; };
 		5187F6A223138E7C0091AAE9 /* CourseTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187F6A123138E7C0091AAE9 /* CourseTVC.swift */; };
-		519EB5F5231A12E8008A3142 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5F4231A12E8008A3142 /* Dashboard.storyboard */; };
+		519EB5F5231A12E8008A3142 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5F4231A12E8008A3142 /* Navigation.storyboard */; };
 		51AF6C242313232200CD3068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF6C232313232200CD3068 /* AppDelegate.swift */; };
 		51AF6C2B2313232500CD3068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51AF6C2A2313232500CD3068 /* Assets.xcassets */; };
 		51AF6C2E2313232500CD3068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AF6C2C2313232500CD3068 /* LaunchScreen.storyboard */; };
@@ -44,6 +44,8 @@
 		51F119172329D1B30047ADFE /* TaskTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1190C2329D1B30047ADFE /* TaskTVC.swift */; };
 		51F119182329D1B30047ADFE /* TaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1190D2329D1B30047ADFE /* TaskVC.swift */; };
 		51F119192329D1B30047ADFE /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F1190E2329D1B30047ADFE /* Task.storyboard */; };
+		51F1192D232A01000047ADFE /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F1192C232A01000047ADFE /* Dashboard.storyboard */; };
+		51F11965232A07390047ADFE /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F11964232A07390047ADFE /* DashboardVC.swift */; };
 		51F5CDD823180B7D00C2C60C /* Course.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F5CDD723180B7D00C2C60C /* Course.storyboard */; };
 		51F5CDDA23180B8800C2C60C /* CourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F5CDD923180B8800C2C60C /* CourseVC.swift */; };
 /* End PBXBuildFile section */
@@ -156,7 +158,7 @@
 		515373822321E299003D1D3A /* CustomCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCells.swift; sourceTree = "<group>"; };
 		5187F69923138E6B0091AAE9 /* SemesterTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterTVC.swift; sourceTree = "<group>"; };
 		5187F6A123138E7C0091AAE9 /* CourseTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTVC.swift; sourceTree = "<group>"; };
-		519EB5F4231A12E8008A3142 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		519EB5F4231A12E8008A3142 /* Navigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
 		51AF6C202313232200CD3068 /* University Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "University Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AF6C232313232200CD3068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51AF6C2A2313232500CD3068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +181,8 @@
 		51F1190C2329D1B30047ADFE /* TaskTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTVC.swift; sourceTree = "<group>"; };
 		51F1190D2329D1B30047ADFE /* TaskVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskVC.swift; sourceTree = "<group>"; };
 		51F1190E2329D1B30047ADFE /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
+		51F1192C232A01000047ADFE /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		51F11964232A07390047ADFE /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		51F5CDD723180B7D00C2C60C /* Course.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Course.storyboard; sourceTree = "<group>"; };
 		51F5CDD923180B8800C2C60C /* CourseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -246,7 +250,8 @@
 		519EB5F6231A12F2008A3142 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				519EB5F4231A12E8008A3142 /* Dashboard.storyboard */,
+				51F1192C232A01000047ADFE /* Dashboard.storyboard */,
+				51F11964232A07390047ADFE /* DashboardVC.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				51AF6C212313232200CD3068 /* Products */,
 				51D1B4E62329B49F006AF7ED /* Eureka.xcodeproj */,
 				51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */,
+				51F1195F232A07090047ADFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -307,6 +313,7 @@
 		51AF6C5F23132FBD00CD3068 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				519EB5F4231A12E8008A3142 /* Navigation.storyboard */,
 				519EB5F6231A12F2008A3142 /* Dashboard */,
 				51F1190A2329D1B30047ADFE /* Task */,
 				51E9F7C723158848007ECDA8 /* Academics */,
@@ -374,6 +381,13 @@
 			path = Task;
 			sourceTree = "<group>";
 		};
+		51F1195F232A07090047ADFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		51F5CDD623180B7500C2C60C /* Course */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +410,7 @@
 				51AF6C1D2313232200CD3068 /* Frameworks */,
 				51AF6C1E2313232200CD3068 /* Resources */,
 				51D1B50E2329B504006AF7ED /* Embed Frameworks */,
+				5103D43C232A0AA8004CB033 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -524,8 +539,9 @@
 			files = (
 				51AF6C6123132FDC00CD3068 /* Academics.storyboard in Resources */,
 				51F119192329D1B30047ADFE /* Task.storyboard in Resources */,
-				519EB5F5231A12E8008A3142 /* Dashboard.storyboard in Resources */,
+				519EB5F5231A12E8008A3142 /* Navigation.storyboard in Resources */,
 				515373812321E28F003D1D3A /* WeekDaysCell.xib in Resources */,
+				51F1192D232A01000047ADFE /* Dashboard.storyboard in Resources */,
 				51F5CDD823180B7D00C2C60C /* Course.storyboard in Resources */,
 				515373722321E196003D1D3A /* AddClass.storyboard in Resources */,
 				515373702321E18E003D1D3A /* AddCourse.storyboard in Resources */,
@@ -538,6 +554,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5103D43C232A0AA8004CB033 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51AF6C1C2313232200CD3068 /* Sources */ = {
@@ -559,6 +595,7 @@
 				515373782321E1BD003D1D3A /* AddSemesterVC.swift in Sources */,
 				51F5CDDA23180B8800C2C60C /* CourseVC.swift in Sources */,
 				51AF6C5A231323A500CD3068 /* Course.swift in Sources */,
+				51F11965232A07390047ADFE /* DashboardVC.swift in Sources */,
 				5153737E2321E1DF003D1D3A /* AddTaskVC.swift in Sources */,
 				5187F6A223138E7C0091AAE9 /* CourseTVC.swift in Sources */,
 				51F119172329D1B30047ADFE /* TaskTVC.swift in Sources */,
@@ -720,6 +757,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CP69FRGX9X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "University Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -740,6 +781,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CP69FRGX9X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "University Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
