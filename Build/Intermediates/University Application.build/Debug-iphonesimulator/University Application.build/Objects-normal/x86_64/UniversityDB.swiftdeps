@@ -1,0 +1,396 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "UniversityDB"
+provides-nominal:
+- "22University_Application0A2DBC"
+provides-member:
+- ["22University_Application0A2DBC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "<-"
+- !private "=="
+- !private ">"
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "Class"
+- "ClassType"
+- "Connection"
+- "Course"
+- "Date"
+- "Expression"
+- "Int"
+- "Int64"
+- !private "NSSearchPathForDirectoriesInDomains"
+- "Semester"
+- "String"
+- "Table"
+- "Task"
+- "UniversityDB"
+- !private "print"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "first"]
+- !private ["Sa", "init"]
+- !private ["SK", "append"]
+- !private ["SK", "first"]
+- !private ["SK", "init"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "init"]
+- !private ["22University_Application5ClassC", "cid"]
+- !private ["22University_Application5ClassC", "classType"]
+- !private ["22University_Application5ClassC", "endTime"]
+- !private ["22University_Application5ClassC", "getDaysToStrings"]
+- !private ["22University_Application5ClassC", "init"]
+- !private ["22University_Application5ClassC", "location"]
+- !private ["22University_Application5ClassC", "startTime"]
+- !private ["22University_Application9ClassTypeO", "deinit"]
+- !private ["22University_Application9ClassTypeO", "rawValue"]
+- !private ["Sl", "append"]
+- !private ["Sl", "first"]
+- !private ["Sl", "init"]
+- !private ["SL", "date"]
+- !private ["6SQLite10ConnectionC", "init"]
+- !private ["6SQLite10ConnectionC", "prepare"]
+- !private ["6SQLite10ConnectionC", "run"]
+- !private ["6SQLite10ConnectionC", "scalar"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["22University_Application6CourseC", "courseNum"]
+- !private ["22University_Application6CourseC", "creditHours"]
+- !private ["22University_Application6CourseC", "dept"]
+- !private ["22University_Application6CourseC", "init"]
+- !private ["22University_Application6CourseC", "sid"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "date"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "rawValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "date"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "rawValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "date"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "prepare"]
+- !private ["s23CustomStringConvertibleP", "run"]
+- !private ["s23CustomStringConvertibleP", "scalar"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation4DateV", "date"]
+- !private ["Se", "append"]
+- !private ["Se", "date"]
+- !private ["Se", "first"]
+- !private ["Se", "init"]
+- !private ["Se", "rawValue"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "append"]
+- !private ["SE", "date"]
+- !private ["SE", "first"]
+- !private ["SE", "init"]
+- !private ["SE", "rawValue"]
+- !private ["SQ", "append"]
+- !private ["SQ", "date"]
+- !private ["SQ", "documentDirectory"]
+- !private ["SQ", "first"]
+- !private ["SQ", "init"]
+- !private ["SQ", "rawValue"]
+- !private ["SQ", "userDomainMask"]
+- !private ["6SQLite11ExpressibleP", "asc"]
+- !private ["6SQLite11ExpressibleP", "count"]
+- !private ["6SQLite11ExpressibleP", "create"]
+- !private ["6SQLite11ExpressibleP", "date"]
+- !private ["6SQLite11ExpressibleP", "delete"]
+- !private ["6SQLite11ExpressibleP", "filter"]
+- !private ["6SQLite11ExpressibleP", "group"]
+- ["6SQLite11ExpressibleP", "init"]
+- !private ["6SQLite11ExpressibleP", "insert"]
+- !private ["6SQLite11ExpressibleP", "order"]
+- !private ["6SQLite11ExpressibleP", "select"]
+- !private ["6SQLite11ExpressibleP", "update"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "userDomainMask"]
+- !private ["s23ExpressibleByNilLiteralP", "rawValue"]
+- !private ["6SQLite10ExpressionV", "asc"]
+- !private ["6SQLite10ExpressionV", "date"]
+- ["6SQLite10ExpressionV", "init"]
+- !private ["6SQLite14ExpressionTypeP", "asc"]
+- !private ["6SQLite14ExpressionTypeP", "date"]
+- ["6SQLite14ExpressionTypeP", "init"]
+- !private ["SH", "append"]
+- !private ["SH", "date"]
+- !private ["SH", "documentDirectory"]
+- !private ["SH", "first"]
+- !private ["SH", "init"]
+- !private ["SH", "rawValue"]
+- !private ["SM", "append"]
+- !private ["SM", "first"]
+- !private ["SM", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["s9OptionSetP", "userDomainMask"]
+- !private ["Sq", "rawValue"]
+- !private ["6SQLite9QueryTypeP", "count"]
+- !private ["6SQLite9QueryTypeP", "create"]
+- !private ["6SQLite9QueryTypeP", "delete"]
+- !private ["6SQLite9QueryTypeP", "filter"]
+- !private ["6SQLite9QueryTypeP", "group"]
+- ["6SQLite9QueryTypeP", "init"]
+- !private ["6SQLite9QueryTypeP", "insert"]
+- !private ["6SQLite9QueryTypeP", "order"]
+- !private ["6SQLite9QueryTypeP", "select"]
+- !private ["6SQLite9QueryTypeP", "update"]
+- !private ["Sk", "append"]
+- !private ["Sk", "first"]
+- !private ["Sk", "init"]
+- !private ["Sm", "append"]
+- !private ["Sm", "first"]
+- !private ["Sm", "init"]
+- !private ["SY", "documentDirectory"]
+- !private ["SY", "rawValue"]
+- !private ["SY", "userDomainMask"]
+- !private ["10Foundation20ReferenceConvertibleP", "date"]
+- !private ["6SQLite3RowV", "subscript"]
+- !private ["6SQLite11ScalarQueryV", "group"]
+- !private ["6SQLite11ScalarQueryV", "order"]
+- !private ["6SQLite10SchemaTypeP", "count"]
+- !private ["6SQLite10SchemaTypeP", "create"]
+- !private ["6SQLite10SchemaTypeP", "delete"]
+- !private ["6SQLite10SchemaTypeP", "filter"]
+- !private ["6SQLite10SchemaTypeP", "group"]
+- ["6SQLite10SchemaTypeP", "init"]
+- !private ["6SQLite10SchemaTypeP", "insert"]
+- !private ["6SQLite10SchemaTypeP", "order"]
+- !private ["6SQLite10SchemaTypeP", "select"]
+- !private ["6SQLite10SchemaTypeP", "update"]
+- !private ["So21NSSearchPathDirectoryV", "documentDirectory"]
+- !private ["So22NSSearchPathDomainMaskV", "userDomainMask"]
+- !private ["22University_Application8SemesterC", "endDate"]
+- !private ["22University_Application8SemesterC", "init"]
+- !private ["22University_Application8SemesterC", "season"]
+- !private ["22University_Application8SemesterC", "startDate"]
+- !private ["ST", "append"]
+- !private ["ST", "first"]
+- !private ["ST", "init"]
+- !private ["s10SetAlgebraP", "userDomainMask"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["6SQLite5TableV", "count"]
+- !private ["6SQLite5TableV", "create"]
+- !private ["6SQLite5TableV", "delete"]
+- !private ["6SQLite5TableV", "filter"]
+- !private ["6SQLite5TableV", "group"]
+- ["6SQLite5TableV", "init"]
+- !private ["6SQLite5TableV", "insert"]
+- !private ["6SQLite5TableV", "order"]
+- !private ["6SQLite5TableV", "select"]
+- !private ["6SQLite5TableV", "update"]
+- !private ["6SQLite12TableBuilderC", "column"]
+- !private ["22University_Application4TaskC", "cid"]
+- !private ["22University_Application4TaskC", "description"]
+- !private ["22University_Application4TaskC", "init"]
+- !private ["22University_Application4TaskC", "taskDate"]
+- !private ["22University_Application4TaskC", "taskName"]
+- !private ["22University_Application4TaskC", "taskType"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- ["22University_Application0A2DBC", "Bool"]
+- ["22University_Application0A2DBC", "Class"]
+- ["22University_Application0A2DBC", "ClassType"]
+- ["22University_Application0A2DBC", "Connection"]
+- ["22University_Application0A2DBC", "Course"]
+- ["22University_Application0A2DBC", "Date"]
+- ["22University_Application0A2DBC", "Expression"]
+- ["22University_Application0A2DBC", "Int"]
+- ["22University_Application0A2DBC", "Int64"]
+- !private ["22University_Application0A2DBC", "NSSearchPathForDirectoriesInDomains"]
+- ["22University_Application0A2DBC", "Semester"]
+- ["22University_Application0A2DBC", "String"]
+- ["22University_Application0A2DBC", "Table"]
+- ["22University_Application0A2DBC", "Task"]
+- ["22University_Application0A2DBC", "UniversityDB"]
+- ["22University_Application0A2DBC", "addClass"]
+- ["22University_Application0A2DBC", "addCourse"]
+- ["22University_Application0A2DBC", "addSemester"]
+- ["22University_Application0A2DBC", "addTask"]
+- !private ["22University_Application0A2DBC", "c_cid"]
+- !private ["22University_Application0A2DBC", "c_sid"]
+- !private ["22University_Application0A2DBC", "cid"]
+- !private ["22University_Application0A2DBC", "classType"]
+- !private ["22University_Application0A2DBC", "classes"]
+- !private ["22University_Application0A2DBC", "clid"]
+- !private ["22University_Application0A2DBC", "courseNum"]
+- !private ["22University_Application0A2DBC", "courses"]
+- ["22University_Application0A2DBC", "createClassTable"]
+- ["22University_Application0A2DBC", "createCourseTable"]
+- ["22University_Application0A2DBC", "createSemesterTable"]
+- ["22University_Application0A2DBC", "createTaskTable"]
+- !private ["22University_Application0A2DBC", "creditHours"]
+- !private ["22University_Application0A2DBC", "days"]
+- !private ["22University_Application0A2DBC", "db"]
+- ["22University_Application0A2DBC", "deinit"]
+- ["22University_Application0A2DBC", "deleteClass"]
+- ["22University_Application0A2DBC", "deleteCourse"]
+- ["22University_Application0A2DBC", "deleteSemester"]
+- ["22University_Application0A2DBC", "deleteTask"]
+- !private ["22University_Application0A2DBC", "dept"]
+- !private ["22University_Application0A2DBC", "description"]
+- !private ["22University_Application0A2DBC", "endDate"]
+- !private ["22University_Application0A2DBC", "endTime"]
+- ["22University_Application0A2DBC", "getClasses"]
+- ["22University_Application0A2DBC", "getCourseClasses"]
+- ["22University_Application0A2DBC", "getCourseClassesCount"]
+- ["22University_Application0A2DBC", "getCourseTasks"]
+- ["22University_Application0A2DBC", "getCourseTasksCount"]
+- ["22University_Application0A2DBC", "getCourses"]
+- ["22University_Application0A2DBC", "getSemesterCourses"]
+- ["22University_Application0A2DBC", "getSemesters"]
+- ["22University_Application0A2DBC", "getTasks"]
+- ["22University_Application0A2DBC", "getTasksByCourseName"]
+- ["22University_Application0A2DBC", "getTasksByDate"]
+- ["22University_Application0A2DBC", "init"]
+- ["22University_Application0A2DBC", "instance"]
+- !private ["22University_Application0A2DBC", "location"]
+- !private ["22University_Application0A2DBC", "print"]
+- ["22University_Application0A2DBC", "searchCourse"]
+- !private ["22University_Application0A2DBC", "season"]
+- !private ["22University_Application0A2DBC", "semesters"]
+- !private ["22University_Application0A2DBC", "sid"]
+- !private ["22University_Application0A2DBC", "startDate"]
+- !private ["22University_Application0A2DBC", "startTime"]
+- !private ["22University_Application0A2DBC", "t_cid"]
+- !private ["22University_Application0A2DBC", "taskDate"]
+- !private ["22University_Application0A2DBC", "taskName"]
+- !private ["22University_Application0A2DBC", "taskType"]
+- !private ["22University_Application0A2DBC", "tasks"]
+- !private ["22University_Application0A2DBC", "tid"]
+- ["22University_Application0A2DBC", "updateClass"]
+- ["22University_Application0A2DBC", "updateCourse"]
+- ["22University_Application0A2DBC", "updateSemester"]
+- ["22University_Application0A2DBC", "updateTask"]
+- !private ["6SQLite5ValueP", "date"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "date"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "date"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "rawValue"]
+- !private ["6SQLite13_OptionalTypeP", "rawValue"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "22University_Application5ClassC"
+- !private "22University_Application9ClassTypeO"
+- !private "Sl"
+- !private "SL"
+- !private "6SQLite10ConnectionC"
+- !private "10Foundation15ContiguousBytesP"
+- !private "22University_Application6CourseC"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "10Foundation4DateV"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- !private "SQ"
+- "6SQLite11ExpressibleP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "6SQLite10ExpressionV"
+- "6SQLite14ExpressionTypeP"
+- !private "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "s9OptionSetP"
+- !private "Sq"
+- "6SQLite9QueryTypeP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "6SQLite3RowV"
+- !private "6SQLite11ScalarQueryV"
+- "6SQLite10SchemaTypeP"
+- !private "So21NSSearchPathDirectoryV"
+- !private "So22NSSearchPathDomainMaskV"
+- !private "22University_Application8SemesterC"
+- !private "ST"
+- !private "s10SetAlgebraP"
+- !private "s27StringInterpolationProtocolP"
+- "6SQLite5TableV"
+- !private "6SQLite12TableBuilderC"
+- !private "22University_Application4TaskC"
+- !private "s16TextOutputStreamP"
+- "22University_Application0A2DBC"
+- !private "6SQLite5ValueP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "6SQLite13_OptionalTypeP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Modules/Eureka.swiftmodule/x86_64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Modules/SQLite.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Headers/Eureka.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Headers/SQLiteObjc.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Headers/SQLite.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "84d5761fe05c47e0232d90229847aa1a"

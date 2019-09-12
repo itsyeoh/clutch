@@ -12,7 +12,7 @@ class CourseVC: UIViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var classTableView: UITableView!
-    @IBOutlet weak var assignmentTableView: UITableView!
+    @IBOutlet weak var courseControls: UISegmentedControl!
     
     private var classes = [Class]()
     private var tasks = [Task]()
@@ -30,8 +30,6 @@ class CourseVC: UIViewController {
         
         classTableView.dataSource = self
         classTableView.delegate = self
-        assignmentTableView.dataSource = self
-        assignmentTableView.delegate = self
         
         self.navigationItem.title = courseName! + " (" + semesterName.uppercased() + ")"
         nameLabel.text = courseName
@@ -85,27 +83,37 @@ class CourseVC: UIViewController {
         
         self.present(alert, animated: true)
     }
+    
+    @IBAction func courseControlChanged(_ sender: Any) {
+        classTableView.reloadData()
+    }
 }
 
 extension CourseVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if(tableView == classTableView) { return classes.count }
-        else { return tasks.count }
+        switch courseControls.selectedSegmentIndex {
+        case 0: return classes.count
+        case 1: return tasks.count
+        default: return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if(tableView == classTableView) {
+        switch courseControls.selectedSegmentIndex {
+        case 0:
             let aClass = classes[indexPath.row]
             let cell = classTableView.dequeueReusableCell(withIdentifier: "CourseClassTVC") as! CourseClassTVC
             
             cell.setup(aClass: aClass)
             return cell
-        } else {
+        case 1:
             let task = tasks[indexPath.row]
-            let cell = assignmentTableView.dequeueReusableCell(withIdentifier: "CourseAssignmentTVC") as! CourseAssignmentTVC
+            let cell = classTableView.dequeueReusableCell(withIdentifier: "CourseAssignmentTVC") as! CourseAssignmentTVC
             
             cell.setup(task: task)
             return cell
+        default:
+            return UITableViewCell()
         }
     }
     
@@ -114,47 +122,51 @@ extension CourseVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if(tableView == classTableView) {
+        switch courseControls.selectedSegmentIndex {
+        case 0:
             selectedClass = classes[indexPath.row]
             self.classIndexToEdit = indexPath.row
             self.performSegue(withIdentifier: "toAddClassSegue", sender: nil)
-        } else {
+        case 1:
             selectedTask = tasks[indexPath.row]
             self.taskIndexToEdit = indexPath.row
             self.performSegue(withIdentifier: "toAddTaskSegue", sender: nil)
+        default:
+            break
         }
     }
     
-    // Supports deletion
-//    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-//        let delete = UIContextualAction(style: .destructive, title: "Delete")
-//        { (contextualAction, view, actionPerformed: @escaping (Bool)->()) in
-//
-//            let alert = UIAlertController(title: "Delete Class", message: "Sure ka baks?", preferredStyle: .alert)
-//
-//            alert.addAction((UIAlertAction(title: "Cancel", style: .cancel, handler: { (alertAction) in
-//                actionPerformed(false)
-//            })))
-//
-//            alert.addAction((UIAlertAction(title: "Delete", style: .destructive, handler: { (alertAction) in
-//                // Perform delete
-//                let aClass = self.classes[indexPath.row]
-//
-//                if UniversityDB.instance.deleteClass(id: aClass.clid) {
-//                    self.classes.remove(at: indexPath.row)
-//                    self.classTableView.deleteRows(at: [indexPath], with: .fade)
-//                }
-//
-//                actionPerformed(true)
-//            })))
-//
-//            self.present(alert, animated: true)
-//        }
-//
-//        delete.backgroundColor = Theme.Primary
-//
-//        return UISwipeActionsConfiguration(actions: [delete])
-//    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            switch courseControls.selectedSegmentIndex {
+            case 0:
+                let aClass = self.classes[indexPath.row]
+                
+                if UniversityDB.instance.deleteClass(id: aClass.clid) {
+                    self.classes.remove(at: indexPath.row)
+                    self.classTableView.deleteRows(at: [indexPath], with: .fade)
+                }
+            case 1:
+                let task = self.tasks[indexPath.row]
+                
+                if UniversityDB.instance.deleteTask(id: task.tid) {
+                    self.tasks.remove(at: indexPath.row)
+                    self.classTableView.deleteRows(at: [indexPath], with: .fade)
+                }
+            default:
+                break
+            }
+        }
+    }
+        
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteButton = UITableViewRowAction(style: .default, title: "Delete") { (action, indexPath) in
+            self.classTableView.dataSource?.tableView!(self.classTableView, commit: .delete, forRowAt: indexPath)
+            return
+        }
+        deleteButton.backgroundColor = Theme.Primary
+        return [deleteButton]
+    }
 }
 
 //protocol CourseToClassDelegate {
@@ -178,13 +190,13 @@ extension CourseVC: AddClassDelegate, AddTaskDelegate {
     func addTask(task: Task) {
         self.navigationController?.popViewController(animated: true)
         self.tasks.append(task)
-        self.assignmentTableView.reloadData()
+        self.classTableView.reloadData()
     }
     
     func updateTask(index: Int, task: Task) {
         self.navigationController?.popViewController(animated: true)
         self.tasks[index] = task
-        self.assignmentTableView.reloadData()
+        self.classTableView.reloadData()
         self.taskIndexToEdit = nil
     }
 }

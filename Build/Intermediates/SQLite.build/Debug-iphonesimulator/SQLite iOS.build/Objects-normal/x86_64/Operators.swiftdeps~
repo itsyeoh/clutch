@@ -142,6 +142,14 @@ provides-top-level:
 - "<="
 - "~="
 - "~="
+- "~="
+- "~="
+- "~="
+- "~="
+- "~="
+- "~="
+- "~="
+- "~="
 - "&&"
 - "&&"
 - "&&"
@@ -180,108 +188,120 @@ depends-top-level:
 - ">"
 - ">="
 - ">>"
-- !private "Array"
-- "Binding"
 - "Bool"
-- "CastingPrecedence"
+- "BooleanLiteralType"
 - "ClosedRange"
 - "Comparable"
 - "Equatable"
+- "Expressible"
 - "Expression"
 - "Int64"
 - "Number"
+- !private "Operator"
+- "PartialRangeFrom"
+- "PartialRangeThrough"
+- "PartialRangeUpTo"
+- "Range"
 - "String"
-- !private "StringLiteralType"
-- !private "UnicodeScalarType"
+- "UnicodeScalarType"
 - "Value"
 - "^"
-- !private "infix"
-- !private "wrap"
+- !private "_findStringSwitchCase"
 - "|"
 - "||"
 - "~"
 - "~="
 depends-member:
 - !private ["SK", "infix"]
-- !private ["SK", "init"]
-- !private ["SK", "init"]
 - !private ["SK", "lowerBound"]
 - !private ["SK", "upperBound"]
 - !private ["SK", "wrap"]
 - !private ["6SQLite7BindingP", "infix"]
-- !private ["6SQLite7BindingP", "init"]
-- !private ["6SQLite7BindingP", "init"]
 - !private ["6SQLite7BindingP", "wrap"]
 - !private ["Sb", "deinit"]
 - !private ["s7CVarArgP", "infix"]
-- !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "wrap"]
 - !private ["SN", "lowerBound"]
 - !private ["SN", "upperBound"]
 - !private ["Sl", "infix"]
-- !private ["Sl", "init"]
-- !private ["Sl", "init"]
 - !private ["Sl", "lowerBound"]
 - !private ["Sl", "upperBound"]
 - !private ["Sl", "wrap"]
+- !private ["SL", "datatypeValue"]
 - !private ["SL", "infix"]
-- !private ["SL", "init"]
-- !private ["SL", "init"]
 - !private ["SL", "wrap"]
 - !private ["s28CustomDebugStringConvertibleP", "infix"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "lowerBound"]
 - !private ["s28CustomDebugStringConvertibleP", "upperBound"]
 - !private ["s28CustomDebugStringConvertibleP", "wrap"]
-- !private ["s29CustomPlaygroundQuickLookableP", "infix"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "wrap"]
 - !private ["s17CustomReflectableP", "infix"]
-- !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "lowerBound"]
 - !private ["s17CustomReflectableP", "upperBound"]
 - !private ["s17CustomReflectableP", "wrap"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "infix"]
-- !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "lowerBound"]
 - !private ["s23CustomStringConvertibleP", "upperBound"]
 - !private ["s23CustomStringConvertibleP", "wrap"]
 - !private ["Se", "infix"]
-- !private ["Se", "init"]
-- !private ["Se", "init"]
+- !private ["Se", "lowerBound"]
+- !private ["Se", "upperBound"]
 - !private ["Se", "wrap"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "infix"]
-- !private ["SE", "init"]
-- !private ["SE", "init"]
+- !private ["SE", "lowerBound"]
+- !private ["SE", "upperBound"]
 - !private ["SE", "wrap"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- !private ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "and"]
+- !private ["SQ", "bitwiseAnd"]
+- !private ["SQ", "bitwiseLeft"]
+- !private ["SQ", "bitwiseOr"]
+- !private ["SQ", "bitwiseRight"]
+- !private ["SQ", "bitwiseXor"]
+- !private ["SQ", "concatenate"]
+- !private ["SQ", "datatypeValue"]
+- !private ["SQ", "div"]
+- !private ["SQ", "eq"]
+- !private ["SQ", "gt"]
+- !private ["SQ", "gte"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
 - !private ["SQ", "infix"]
-- !private ["SQ", "init"]
-- !private ["SQ", "init"]
+- ["SQ", "init"]
 - !private ["SQ", "lowerBound"]
+- !private ["SQ", "lt"]
+- !private ["SQ", "lte"]
+- !private ["SQ", "minus"]
+- !private ["SQ", "mod"]
+- !private ["SQ", "mul"]
+- !private ["SQ", "neq"]
+- !private ["SQ", "not"]
+- !private ["SQ", "or"]
+- !private ["SQ", "plus"]
+- ["SQ", "rawValue"]
 - !private ["SQ", "upperBound"]
 - !private ["SQ", "wrap"]
 - !private ["6SQLite11ExpressibleP", "bindings"]
+- !private ["6SQLite11ExpressibleP", "datatypeValue"]
 - !private ["6SQLite11ExpressibleP", "infix"]
-- !private ["6SQLite11ExpressibleP", "init"]
 - !private ["6SQLite11ExpressibleP", "init"]
 - !private ["6SQLite11ExpressibleP", "template"]
 - !private ["6SQLite11ExpressibleP", "wrap"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "infix"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "wrap"]
+- !private ["s32ExpressibleByStringInterpolationP", "infix"]
+- !private ["s32ExpressibleByStringInterpolationP", "wrap"]
 - !private ["s26ExpressibleByStringLiteralP", "infix"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "wrap"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "infix"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "wrap"]
 - !private ["6SQLite10ExpressionV", "bindings"]
 - !private ["6SQLite10ExpressionV", "deinit"]
@@ -290,19 +310,43 @@ depends-member:
 - !private ["6SQLite14ExpressionTypeP", "bindings"]
 - !private ["6SQLite14ExpressionTypeP", "init"]
 - !private ["6SQLite14ExpressionTypeP", "template"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- !private ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "and"]
+- !private ["SH", "bitwiseAnd"]
+- !private ["SH", "bitwiseLeft"]
+- !private ["SH", "bitwiseOr"]
+- !private ["SH", "bitwiseRight"]
+- !private ["SH", "bitwiseXor"]
+- !private ["SH", "concatenate"]
+- !private ["SH", "div"]
+- !private ["SH", "eq"]
+- !private ["SH", "gt"]
+- !private ["SH", "gte"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
 - !private ["SH", "infix"]
-- !private ["SH", "init"]
-- !private ["SH", "init"]
+- ["SH", "init"]
 - !private ["SH", "lowerBound"]
+- !private ["SH", "lt"]
+- !private ["SH", "lte"]
+- !private ["SH", "minus"]
+- !private ["SH", "mod"]
+- !private ["SH", "mul"]
+- !private ["SH", "neq"]
+- !private ["SH", "not"]
+- !private ["SH", "or"]
+- !private ["SH", "plus"]
+- ["SH", "rawValue"]
 - !private ["SH", "upperBound"]
 - !private ["SH", "wrap"]
 - !private ["s25LosslessStringConvertibleP", "infix"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "wrap"]
 - !private ["s10MirrorPathP", "infix"]
-- !private ["s10MirrorPathP", "init"]
-- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "wrap"]
 - !private ["So8NSCodingP", "infix"]
 - !private ["So8NSCodingP", "wrap"]
@@ -323,73 +367,85 @@ depends-member:
 - !private ["So8NSStringC", "infix"]
 - !private ["So8NSStringC", "wrap"]
 - !private ["Sq", "deinit"]
+- !private ["s16PartialRangeFromV", "lowerBound"]
+- !private ["s19PartialRangeThroughV", "upperBound"]
+- !private ["s16PartialRangeUpToV", "upperBound"]
 - !private ["Sk", "lowerBound"]
 - !private ["Sk", "upperBound"]
+- !private ["Sn", "lowerBound"]
+- !private ["Sn", "upperBound"]
 - !private ["SX", "lowerBound"]
 - !private ["SX", "upperBound"]
 - !private ["Sm", "infix"]
-- !private ["Sm", "init"]
-- !private ["Sm", "init"]
 - !private ["Sm", "wrap"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- !private ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- !private ["SY", "and"]
+- !private ["SY", "bitwiseAnd"]
+- !private ["SY", "bitwiseLeft"]
+- !private ["SY", "bitwiseOr"]
+- !private ["SY", "bitwiseRight"]
+- !private ["SY", "bitwiseXor"]
+- !private ["SY", "concatenate"]
+- !private ["SY", "div"]
+- !private ["SY", "eq"]
+- !private ["SY", "gt"]
+- !private ["SY", "gte"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- !private ["SY", "infix"]
+- ["SY", "init"]
+- !private ["SY", "lt"]
+- !private ["SY", "lte"]
+- !private ["SY", "minus"]
+- !private ["SY", "mod"]
+- !private ["SY", "mul"]
+- !private ["SY", "neq"]
+- !private ["SY", "not"]
+- !private ["SY", "or"]
+- !private ["SY", "plus"]
+- ["SY", "rawValue"]
+- !private ["SY", "wrap"]
 - !private ["ST", "infix"]
-- !private ["ST", "init"]
-- !private ["ST", "init"]
 - !private ["ST", "lowerBound"]
 - !private ["ST", "upperBound"]
 - !private ["ST", "wrap"]
 - !private ["SS", "deinit"]
 - !private ["SS", "infix"]
-- !private ["SS", "init"]
-- !private ["SS", "init"]
 - !private ["SS", "wrap"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["Sy", "infix"]
-- !private ["Sy", "init"]
-- !private ["Sy", "init"]
 - !private ["Sy", "wrap"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "infix"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
 - !private ["s16TextOutputStreamP", "wrap"]
 - !private ["s20TextOutputStreamableP", "infix"]
-- !private ["s20TextOutputStreamableP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "wrap"]
+- !private ["6SQLite5ValueP", "datatypeValue"]
 - !private ["6SQLite5ValueP", "infix"]
-- !private ["6SQLite5ValueP", "init"]
-- !private ["6SQLite5ValueP", "init"]
 - !private ["6SQLite5ValueP", "wrap"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "infix"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "wrap"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "infix"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "wrap"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "infix"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "wrap"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "infix"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "wrap"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "infix"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "wrap"]
-- !private ["s33_ExpressibleByStringInterpolationP", "infix"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "wrap"]
+- !private ["s19_HasContiguousBytesP", "infix"]
+- !private ["s19_HasContiguousBytesP", "wrap"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "infix"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "wrap"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "infix"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "wrap"]
 - !private ["s21_ObjectiveCBridgeableP", "infix"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "wrap"]
-- !private ["s16_SwiftStringViewP", "infix"]
-- !private ["s16_SwiftStringViewP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
-- !private ["s16_SwiftStringViewP", "wrap"]
 depends-nominal:
 - !private "SK"
 - !private "6SQLite7BindingP"
@@ -399,19 +455,20 @@ depends-nominal:
 - !private "Sl"
 - !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "Se"
+- !private "s26DefaultStringInterpolationV"
 - !private "SE"
-- !private "SQ"
+- "SQ"
 - !private "6SQLite11ExpressibleP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "6SQLite10ExpressionV"
 - !private "6SQLite14ExpressionTypeP"
-- !private "SH"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"
@@ -424,42 +481,46 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
 - !private "Sq"
+- !private "s16PartialRangeFromV"
+- !private "s19PartialRangeThroughV"
+- !private "s16PartialRangeUpToV"
 - !private "Sk"
+- !private "Sn"
 - !private "SX"
 - !private "Sm"
+- "SY"
 - !private "ST"
 - !private "SS"
+- !private "s27StringInterpolationProtocolP"
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "6SQLite5ValueP"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/SQLite.h"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLiteObjc/include/SQLite-Bridging.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLiteObjc/include/SQLiteObjc.h"
+- "/Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLite/SQLite.h"
 - "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Build/Intermediates/SQLite.build/Debug-iphonesimulator/SQLite iOS.build/unextended-module.modulemap"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/CocoaPods/iphonesimulator/module.modulemap"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f9a262f193cc6ff217ab76580264214e"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "3365a32f89042d4763432db475794d97"

@@ -41,6 +41,17 @@ depends-top-level:
 - "TernaryPrecedence"
 - "Value"
 depends-member:
+- ["s18AdditiveArithmeticP", "Datatype"]
+- !private ["s18AdditiveArithmeticP", "Int"]
+- ["s18AdditiveArithmeticP", "Int64"]
+- ["s18AdditiveArithmeticP", "ValueType"]
+- ["s18AdditiveArithmeticP", "_Default_Datatype"]
+- ["s18AdditiveArithmeticP", "_Default_ValueType"]
+- ["s18AdditiveArithmeticP", "datatypeValue"]
+- ["s18AdditiveArithmeticP", "declaredDatatype"]
+- ["s18AdditiveArithmeticP", "expression"]
+- ["s18AdditiveArithmeticP", "fromDatatypeValue"]
+- !private ["s18AdditiveArithmeticP", "init"]
 - ["SK", "Datatype"]
 - ["SK", "ValueType"]
 - ["SK", "_Default_Datatype"]
@@ -49,8 +60,6 @@ depends-member:
 - ["SK", "declaredDatatype"]
 - ["SK", "expression"]
 - ["SK", "fromDatatypeValue"]
-- ["SK", "init"]
-- ["SK", "init"]
 - ["SB", "Datatype"]
 - ["SB", "ValueType"]
 - ["SB", "_Default_Datatype"]
@@ -77,13 +86,11 @@ depends-member:
 - ["6SQLite7BindingP", ""]
 - ["6SQLite7BindingP", "_Default_Datatype"]
 - ["6SQLite7BindingP", "_Default_ValueType"]
-- !private ["6SQLite7BindingP", "_getBuiltinLogicValue"]
 - ["6SQLite7BindingP", "datatypeValue"]
 - ["6SQLite7BindingP", "declaredDatatype"]
 - ["6SQLite7BindingP", "expression"]
 - ["6SQLite7BindingP", "fromDatatypeValue"]
-- ["6SQLite7BindingP", "init"]
-- ["6SQLite7BindingP", "init"]
+- !private ["6SQLite7BindingP", "init"]
 - ["6SQLite4BlobV", "Blob"]
 - ["6SQLite4BlobV", "Datatype"]
 - ["6SQLite4BlobV", "ValueType"]
@@ -100,7 +107,6 @@ depends-member:
 - ["Sb", "ValueType"]
 - ["Sb", "_Default_Datatype"]
 - ["Sb", "_Default_ValueType"]
-- !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "datatypeValue"]
 - ["Sb", "declaredDatatype"]
 - ["Sb", "deinit"]
@@ -112,13 +118,11 @@ depends-member:
 - ["s7CVarArgP", "ValueType"]
 - ["s7CVarArgP", "_Default_Datatype"]
 - ["s7CVarArgP", "_Default_ValueType"]
-- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - ["s7CVarArgP", "datatypeValue"]
 - ["s7CVarArgP", "declaredDatatype"]
 - ["s7CVarArgP", "expression"]
 - ["s7CVarArgP", "fromDatatypeValue"]
-- ["s7CVarArgP", "init"]
-- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - ["Sl", "Datatype"]
 - ["Sl", "ValueType"]
 - ["Sl", "_Default_Datatype"]
@@ -127,8 +131,6 @@ depends-member:
 - ["Sl", "declaredDatatype"]
 - ["Sl", "expression"]
 - ["Sl", "fromDatatypeValue"]
-- ["Sl", "init"]
-- ["Sl", "init"]
 - ["SL", "Datatype"]
 - !private ["SL", "Int"]
 - ["SL", "Int64"]
@@ -139,8 +141,7 @@ depends-member:
 - ["SL", "declaredDatatype"]
 - ["SL", "expression"]
 - ["SL", "fromDatatypeValue"]
-- ["SL", "init"]
-- ["SL", "init"]
+- !private ["SL", "init"]
 - ["s28CustomDebugStringConvertibleP", "Datatype"]
 - ["s28CustomDebugStringConvertibleP", "ValueType"]
 - ["s28CustomDebugStringConvertibleP", "_Default_Datatype"]
@@ -149,60 +150,39 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "declaredDatatype"]
 - ["s28CustomDebugStringConvertibleP", "expression"]
 - ["s28CustomDebugStringConvertibleP", "fromDatatypeValue"]
-- ["s28CustomDebugStringConvertibleP", "init"]
-- ["s28CustomDebugStringConvertibleP", "init"]
-- ["s29CustomPlaygroundQuickLookableP", "Datatype"]
-- !private ["s29CustomPlaygroundQuickLookableP", "Int"]
-- ["s29CustomPlaygroundQuickLookableP", "Int64"]
-- ["s29CustomPlaygroundQuickLookableP", "ValueType"]
-- ["s29CustomPlaygroundQuickLookableP", "_Default_Datatype"]
-- ["s29CustomPlaygroundQuickLookableP", "_Default_ValueType"]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- ["s29CustomPlaygroundQuickLookableP", "datatypeValue"]
-- ["s29CustomPlaygroundQuickLookableP", "declaredDatatype"]
-- ["s29CustomPlaygroundQuickLookableP", "expression"]
-- ["s29CustomPlaygroundQuickLookableP", "fromDatatypeValue"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s17CustomReflectableP", "Datatype"]
 - !private ["s17CustomReflectableP", "Int"]
 - ["s17CustomReflectableP", "Int64"]
 - ["s17CustomReflectableP", "ValueType"]
 - ["s17CustomReflectableP", "_Default_Datatype"]
 - ["s17CustomReflectableP", "_Default_ValueType"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - ["s17CustomReflectableP", "datatypeValue"]
 - ["s17CustomReflectableP", "declaredDatatype"]
 - ["s17CustomReflectableP", "expression"]
 - ["s17CustomReflectableP", "fromDatatypeValue"]
-- ["s17CustomReflectableP", "init"]
-- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "Datatype"]
 - !private ["s23CustomStringConvertibleP", "Int"]
 - ["s23CustomStringConvertibleP", "Int64"]
 - ["s23CustomStringConvertibleP", "ValueType"]
 - ["s23CustomStringConvertibleP", "_Default_Datatype"]
 - ["s23CustomStringConvertibleP", "_Default_ValueType"]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s23CustomStringConvertibleP", "datatypeValue"]
 - ["s23CustomStringConvertibleP", "declaredDatatype"]
 - ["s23CustomStringConvertibleP", "expression"]
 - ["s23CustomStringConvertibleP", "fromDatatypeValue"]
-- ["s23CustomStringConvertibleP", "init"]
-- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - ["Se", "Datatype"]
 - !private ["Se", "Int"]
 - ["Se", "Int64"]
 - ["Se", "ValueType"]
 - ["Se", "_Default_Datatype"]
 - ["Se", "_Default_ValueType"]
-- !private ["Se", "_getBuiltinLogicValue"]
 - ["Se", "datatypeValue"]
 - ["Se", "declaredDatatype"]
 - ["Se", "expression"]
 - ["Se", "fromDatatypeValue"]
-- ["Se", "init"]
-- ["Se", "init"]
+- !private ["Se", "init"]
 - ["Sd", "Datatype"]
 - ["Sd", "Double"]
 - ["Sd", "ValueType"]
@@ -219,49 +199,41 @@ depends-member:
 - ["SE", "ValueType"]
 - ["SE", "_Default_Datatype"]
 - ["SE", "_Default_ValueType"]
-- !private ["SE", "_getBuiltinLogicValue"]
 - ["SE", "datatypeValue"]
 - ["SE", "declaredDatatype"]
 - ["SE", "expression"]
 - ["SE", "fromDatatypeValue"]
-- ["SE", "init"]
-- ["SE", "init"]
+- !private ["SE", "init"]
 - ["SQ", "Datatype"]
 - !private ["SQ", "Int"]
 - ["SQ", "Int64"]
 - ["SQ", "ValueType"]
 - ["SQ", "_Default_Datatype"]
 - ["SQ", "_Default_ValueType"]
-- !private ["SQ", "_getBuiltinLogicValue"]
 - ["SQ", "datatypeValue"]
 - ["SQ", "declaredDatatype"]
 - ["SQ", "expression"]
 - ["SQ", "fromDatatypeValue"]
-- ["SQ", "init"]
-- ["SQ", "init"]
+- !private ["SQ", "init"]
 - ["6SQLite11ExpressibleP", "Binding"]
 - ["6SQLite11ExpressibleP", "Datatype"]
 - !private ["6SQLite11ExpressibleP", "Int"]
 - ["6SQLite11ExpressibleP", "Int64"]
-- ["6SQLite11ExpressibleP", "Self"]
 - ["6SQLite11ExpressibleP", "String"]
 - ["6SQLite11ExpressibleP", "ValueType"]
 - ["6SQLite11ExpressibleP", ""]
 - ["6SQLite11ExpressibleP", "_Default_Datatype"]
 - ["6SQLite11ExpressibleP", "_Default_ValueType"]
-- !private ["6SQLite11ExpressibleP", "_getBuiltinLogicValue"]
 - ["6SQLite11ExpressibleP", "datatypeValue"]
 - ["6SQLite11ExpressibleP", "declaredDatatype"]
 - ["6SQLite11ExpressibleP", "expression"]
 - ["6SQLite11ExpressibleP", "fromDatatypeValue"]
-- ["6SQLite11ExpressibleP", "init"]
-- ["6SQLite11ExpressibleP", "init"]
+- !private ["6SQLite11ExpressibleP", "init"]
 - ["s27ExpressibleByBooleanLiteralP", "Datatype"]
 - ["s27ExpressibleByBooleanLiteralP", "Int64"]
 - ["s27ExpressibleByBooleanLiteralP", "ValueType"]
 - ["s27ExpressibleByBooleanLiteralP", "_Default_Datatype"]
 - ["s27ExpressibleByBooleanLiteralP", "_Default_ValueType"]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s27ExpressibleByBooleanLiteralP", "datatypeValue"]
 - ["s27ExpressibleByBooleanLiteralP", "declaredDatatype"]
 - ["s27ExpressibleByBooleanLiteralP", "expression"]
@@ -274,8 +246,6 @@ depends-member:
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "declaredDatatype"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "expression"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "fromDatatypeValue"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s25ExpressibleByFloatLiteralP", "Datatype"]
 - ["s25ExpressibleByFloatLiteralP", "ValueType"]
 - ["s25ExpressibleByFloatLiteralP", "_Default_Datatype"]
@@ -295,6 +265,14 @@ depends-member:
 - ["s27ExpressibleByIntegerLiteralP", "expression"]
 - ["s27ExpressibleByIntegerLiteralP", "fromDatatypeValue"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s32ExpressibleByStringInterpolationP", "Datatype"]
+- ["s32ExpressibleByStringInterpolationP", "ValueType"]
+- ["s32ExpressibleByStringInterpolationP", "_Default_Datatype"]
+- ["s32ExpressibleByStringInterpolationP", "_Default_ValueType"]
+- ["s32ExpressibleByStringInterpolationP", "datatypeValue"]
+- ["s32ExpressibleByStringInterpolationP", "declaredDatatype"]
+- ["s32ExpressibleByStringInterpolationP", "expression"]
+- ["s32ExpressibleByStringInterpolationP", "fromDatatypeValue"]
 - ["s26ExpressibleByStringLiteralP", "Datatype"]
 - ["s26ExpressibleByStringLiteralP", "ValueType"]
 - ["s26ExpressibleByStringLiteralP", "_Default_Datatype"]
@@ -303,8 +281,6 @@ depends-member:
 - ["s26ExpressibleByStringLiteralP", "declaredDatatype"]
 - ["s26ExpressibleByStringLiteralP", "expression"]
 - ["s26ExpressibleByStringLiteralP", "fromDatatypeValue"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "Datatype"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "ValueType"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "_Default_Datatype"]
@@ -313,8 +289,6 @@ depends-member:
 - ["s33ExpressibleByUnicodeScalarLiteralP", "declaredDatatype"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "expression"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "fromDatatypeValue"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s17FixedWidthIntegerP", "Datatype"]
 - !private ["s17FixedWidthIntegerP", "Int"]
 - ["s17FixedWidthIntegerP", "Int64"]
@@ -340,13 +314,11 @@ depends-member:
 - ["SH", "ValueType"]
 - ["SH", "_Default_Datatype"]
 - ["SH", "_Default_ValueType"]
-- !private ["SH", "_getBuiltinLogicValue"]
 - ["SH", "datatypeValue"]
 - ["SH", "declaredDatatype"]
 - ["SH", "expression"]
 - ["SH", "fromDatatypeValue"]
-- ["SH", "init"]
-- ["SH", "init"]
+- !private ["SH", "init"]
 - ["Si", "Datatype"]
 - ["Si", "Int"]
 - ["Si", "Int64"]
@@ -376,13 +348,11 @@ depends-member:
 - ["s25LosslessStringConvertibleP", "ValueType"]
 - ["s25LosslessStringConvertibleP", "_Default_Datatype"]
 - ["s25LosslessStringConvertibleP", "_Default_ValueType"]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "datatypeValue"]
 - ["s25LosslessStringConvertibleP", "declaredDatatype"]
 - ["s25LosslessStringConvertibleP", "expression"]
 - ["s25LosslessStringConvertibleP", "fromDatatypeValue"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "Datatype"]
 - !private ["s10MirrorPathP", "Int"]
 - ["s10MirrorPathP", "Int64"]
@@ -393,8 +363,7 @@ depends-member:
 - ["s10MirrorPathP", "declaredDatatype"]
 - ["s10MirrorPathP", "expression"]
 - ["s10MirrorPathP", "fromDatatypeValue"]
-- ["s10MirrorPathP", "init"]
-- ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - ["6SQLite6NumberP", "Datatype"]
 - !private ["6SQLite6NumberP", "Int"]
 - ["6SQLite6NumberP", "Int64"]
@@ -426,8 +395,17 @@ depends-member:
 - ["Sm", "declaredDatatype"]
 - ["Sm", "expression"]
 - ["Sm", "fromDatatypeValue"]
-- ["Sm", "init"]
-- ["Sm", "init"]
+- ["s10SIMDScalarP", "Datatype"]
+- !private ["s10SIMDScalarP", "Int"]
+- ["s10SIMDScalarP", "Int64"]
+- ["s10SIMDScalarP", "ValueType"]
+- ["s10SIMDScalarP", "_Default_Datatype"]
+- ["s10SIMDScalarP", "_Default_ValueType"]
+- ["s10SIMDScalarP", "datatypeValue"]
+- ["s10SIMDScalarP", "declaredDatatype"]
+- ["s10SIMDScalarP", "expression"]
+- ["s10SIMDScalarP", "fromDatatypeValue"]
+- !private ["s10SIMDScalarP", "init"]
 - ["ST", "Datatype"]
 - ["ST", "ValueType"]
 - ["ST", "_Default_Datatype"]
@@ -436,8 +414,6 @@ depends-member:
 - ["ST", "declaredDatatype"]
 - ["ST", "expression"]
 - ["ST", "fromDatatypeValue"]
-- ["ST", "init"]
-- ["ST", "init"]
 - ["SZ", "Datatype"]
 - !private ["SZ", "Int"]
 - ["SZ", "Int64"]
@@ -481,8 +457,6 @@ depends-member:
 - ["SS", "deinit"]
 - ["SS", "expression"]
 - ["SS", "fromDatatypeValue"]
-- ["SS", "init"]
-- ["SS", "init"]
 - ["Sy", "Datatype"]
 - ["Sy", "ValueType"]
 - ["Sy", "_Default_Datatype"]
@@ -491,8 +465,6 @@ depends-member:
 - ["Sy", "declaredDatatype"]
 - ["Sy", "expression"]
 - ["Sy", "fromDatatypeValue"]
-- ["Sy", "init"]
-- ["Sy", "init"]
 - ["s16TextOutputStreamP", "Datatype"]
 - ["s16TextOutputStreamP", "ValueType"]
 - ["s16TextOutputStreamP", "_Default_Datatype"]
@@ -501,8 +473,6 @@ depends-member:
 - ["s16TextOutputStreamP", "declaredDatatype"]
 - ["s16TextOutputStreamP", "expression"]
 - ["s16TextOutputStreamP", "fromDatatypeValue"]
-- ["s16TextOutputStreamP", "init"]
-- ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "Datatype"]
 - ["s20TextOutputStreamableP", "ValueType"]
 - ["s20TextOutputStreamableP", "_Default_Datatype"]
@@ -511,36 +481,20 @@ depends-member:
 - ["s20TextOutputStreamableP", "declaredDatatype"]
 - ["s20TextOutputStreamableP", "expression"]
 - ["s20TextOutputStreamableP", "fromDatatypeValue"]
-- ["s20TextOutputStreamableP", "init"]
-- ["s20TextOutputStreamableP", "init"]
 - ["6SQLite5ValueP", "Binding"]
 - ["6SQLite5ValueP", "Datatype"]
 - !private ["6SQLite5ValueP", "Int"]
 - ["6SQLite5ValueP", "Int64"]
-- ["6SQLite5ValueP", "Self"]
 - ["6SQLite5ValueP", "String"]
 - ["6SQLite5ValueP", "ValueType"]
 - ["6SQLite5ValueP", ""]
 - ["6SQLite5ValueP", "_Default_Datatype"]
 - ["6SQLite5ValueP", "_Default_ValueType"]
-- !private ["6SQLite5ValueP", "_getBuiltinLogicValue"]
 - ["6SQLite5ValueP", "datatypeValue"]
 - ["6SQLite5ValueP", "declaredDatatype"]
 - ["6SQLite5ValueP", "expression"]
 - ["6SQLite5ValueP", "fromDatatypeValue"]
-- ["6SQLite5ValueP", "init"]
-- ["6SQLite5ValueP", "init"]
-- ["s18_BitwiseOperationsP", "Datatype"]
-- !private ["s18_BitwiseOperationsP", "Int"]
-- ["s18_BitwiseOperationsP", "Int64"]
-- ["s18_BitwiseOperationsP", "ValueType"]
-- ["s18_BitwiseOperationsP", "_Default_Datatype"]
-- ["s18_BitwiseOperationsP", "_Default_ValueType"]
-- ["s18_BitwiseOperationsP", "datatypeValue"]
-- ["s18_BitwiseOperationsP", "declaredDatatype"]
-- ["s18_BitwiseOperationsP", "expression"]
-- ["s18_BitwiseOperationsP", "fromDatatypeValue"]
-- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["6SQLite5ValueP", "init"]
 - ["s15_CVarArgAlignedP", "Datatype"]
 - ["s15_CVarArgAlignedP", "ValueType"]
 - ["s15_CVarArgAlignedP", "_Default_Datatype"]
@@ -558,12 +512,22 @@ depends-member:
 - ["s22_CVarArgPassedAsDoubleP", "declaredDatatype"]
 - ["s22_CVarArgPassedAsDoubleP", "expression"]
 - ["s22_CVarArgPassedAsDoubleP", "fromDatatypeValue"]
+- ["s30_CustomPlaygroundQuickLookableP", "Datatype"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "Int"]
+- ["s30_CustomPlaygroundQuickLookableP", "Int64"]
+- ["s30_CustomPlaygroundQuickLookableP", "ValueType"]
+- ["s30_CustomPlaygroundQuickLookableP", "_Default_Datatype"]
+- ["s30_CustomPlaygroundQuickLookableP", "_Default_ValueType"]
+- ["s30_CustomPlaygroundQuickLookableP", "datatypeValue"]
+- ["s30_CustomPlaygroundQuickLookableP", "declaredDatatype"]
+- ["s30_CustomPlaygroundQuickLookableP", "expression"]
+- ["s30_CustomPlaygroundQuickLookableP", "fromDatatypeValue"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - ["s35_ExpressibleByBuiltinBooleanLiteralP", "Datatype"]
 - ["s35_ExpressibleByBuiltinBooleanLiteralP", "Int64"]
 - ["s35_ExpressibleByBuiltinBooleanLiteralP", "ValueType"]
 - ["s35_ExpressibleByBuiltinBooleanLiteralP", "_Default_Datatype"]
 - ["s35_ExpressibleByBuiltinBooleanLiteralP", "_Default_ValueType"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s35_ExpressibleByBuiltinBooleanLiteralP", "datatypeValue"]
 - ["s35_ExpressibleByBuiltinBooleanLiteralP", "declaredDatatype"]
 - ["s35_ExpressibleByBuiltinBooleanLiteralP", "expression"]
@@ -576,8 +540,6 @@ depends-member:
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "declaredDatatype"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "expression"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "fromDatatypeValue"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s33_ExpressibleByBuiltinFloatLiteralP", "Datatype"]
 - ["s33_ExpressibleByBuiltinFloatLiteralP", "ValueType"]
 - ["s33_ExpressibleByBuiltinFloatLiteralP", "_Default_Datatype"]
@@ -605,18 +567,6 @@ depends-member:
 - ["s34_ExpressibleByBuiltinStringLiteralP", "declaredDatatype"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "expression"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "fromDatatypeValue"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "Datatype"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "ValueType"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "_Default_Datatype"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "_Default_ValueType"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "datatypeValue"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "declaredDatatype"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "expression"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "fromDatatypeValue"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "Datatype"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "ValueType"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "_Default_Datatype"]
@@ -625,18 +575,14 @@ depends-member:
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "declaredDatatype"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "expression"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "fromDatatypeValue"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "Datatype"]
-- ["s33_ExpressibleByStringInterpolationP", "ValueType"]
-- ["s33_ExpressibleByStringInterpolationP", "_Default_Datatype"]
-- ["s33_ExpressibleByStringInterpolationP", "_Default_ValueType"]
-- ["s33_ExpressibleByStringInterpolationP", "datatypeValue"]
-- ["s33_ExpressibleByStringInterpolationP", "declaredDatatype"]
-- ["s33_ExpressibleByStringInterpolationP", "expression"]
-- ["s33_ExpressibleByStringInterpolationP", "fromDatatypeValue"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s19_HasContiguousBytesP", "Datatype"]
+- ["s19_HasContiguousBytesP", "ValueType"]
+- ["s19_HasContiguousBytesP", "_Default_Datatype"]
+- ["s19_HasContiguousBytesP", "_Default_ValueType"]
+- ["s19_HasContiguousBytesP", "datatypeValue"]
+- ["s19_HasContiguousBytesP", "declaredDatatype"]
+- ["s19_HasContiguousBytesP", "expression"]
+- ["s19_HasContiguousBytesP", "fromDatatypeValue"]
 - ["s35_HasCustomAnyHashableRepresentationP", "Datatype"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "Int"]
 - ["s35_HasCustomAnyHashableRepresentationP", "Int64"]
@@ -654,24 +600,13 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "ValueType"]
 - ["s21_ObjectiveCBridgeableP", "_Default_Datatype"]
 - ["s21_ObjectiveCBridgeableP", "_Default_ValueType"]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - ["s21_ObjectiveCBridgeableP", "datatypeValue"]
 - ["s21_ObjectiveCBridgeableP", "declaredDatatype"]
 - ["s21_ObjectiveCBridgeableP", "expression"]
 - ["s21_ObjectiveCBridgeableP", "fromDatatypeValue"]
-- ["s21_ObjectiveCBridgeableP", "init"]
-- ["s21_ObjectiveCBridgeableP", "init"]
-- ["s16_SwiftStringViewP", "Datatype"]
-- ["s16_SwiftStringViewP", "ValueType"]
-- ["s16_SwiftStringViewP", "_Default_Datatype"]
-- ["s16_SwiftStringViewP", "_Default_ValueType"]
-- ["s16_SwiftStringViewP", "datatypeValue"]
-- ["s16_SwiftStringViewP", "declaredDatatype"]
-- ["s16_SwiftStringViewP", "expression"]
-- ["s16_SwiftStringViewP", "fromDatatypeValue"]
-- ["s16_SwiftStringViewP", "init"]
-- ["s16_SwiftStringViewP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
+- "s18AdditiveArithmeticP"
 - "SK"
 - "SB"
 - "Sz"
@@ -682,7 +617,6 @@ depends-nominal:
 - "Sl"
 - "SL"
 - "s28CustomDebugStringConvertibleP"
-- "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "Se"
@@ -694,6 +628,7 @@ depends-nominal:
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s25ExpressibleByFloatLiteralP"
 - "s27ExpressibleByIntegerLiteralP"
+- "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - "s17FixedWidthIntegerP"
@@ -706,6 +641,7 @@ depends-nominal:
 - "6SQLite6NumberP"
 - "Sj"
 - "Sm"
+- "s10SIMDScalarP"
 - "ST"
 - "SZ"
 - "s13SignedNumericP"
@@ -715,38 +651,35 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "6SQLite5ValueP"
-- "s18_BitwiseOperationsP"
 - "s15_CVarArgAlignedP"
 - "s22_CVarArgPassedAsDoubleP"
+- "s30_CustomPlaygroundQuickLookableP"
 - "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s33_ExpressibleByBuiltinFloatLiteralP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
-- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- "s33_ExpressibleByStringInterpolationP"
+- "s19_HasContiguousBytesP"
 - "s35_HasCustomAnyHashableRepresentationP"
 - "s21_ObjectiveCBridgeableP"
-- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/SQLite.h"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLiteObjc/include/SQLite-Bridging.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLiteObjc/include/SQLiteObjc.h"
+- "/Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLite/SQLite.h"
 - "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Build/Intermediates/SQLite.build/Debug-iphonesimulator/SQLite iOS.build/unextended-module.modulemap"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/CocoaPods/iphonesimulator/module.modulemap"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "455016ac00faee55a5fe3eae021bb4e8"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "2859b0573a6a1431a8fdd98d6c94d116"

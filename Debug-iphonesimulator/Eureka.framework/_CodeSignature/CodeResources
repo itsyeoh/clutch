@@ -38,7 +38,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/vDQgCX6rys4Y+67FOM3oRhpNOY=
+		zE9e6wxYDNrwVllpdWXw2UawJko=
 		</data>
 		<key>Modules/Eureka.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/Eureka.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Cz2ey1FaaZ4uQW5Et/OGujAnTio=
+		oYDil8158NLgZeNqkKkUG6XMGco=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -158,11 +158,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Cz2ey1FaaZ4uQW5Et/OGujAnTio=
+			oYDil8158NLgZeNqkKkUG6XMGco=
 			</data>
 			<key>hash2</key>
 			<data>
-			iCYd0wCQ9feajnpSzV083rEUOJ++WfeJWhiZjkI7w+E=
+			Lw2mTG77idTSZVx67EGP+/zZSswa5/dp3R645RnQqDU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
