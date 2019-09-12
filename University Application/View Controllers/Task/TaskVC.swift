@@ -15,25 +15,29 @@ class TaskVC: UIViewController {
     private var tasksByDate = [[Task]]()
     private var tasksByCourseName = [[Task]]()
     private var courses = [Course]()
+    private var isCompleted = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "TASKS"
+        self.navigationItem.leftBarButtonItem =
+            UIBarButtonItem(title: "C", style: .plain, target: self, action: #selector(openCompletedTasks))
+        
         self.navigationItem.rightBarButtonItem =
             UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(openAddTask))
         
         taskTableView.dataSource = self
         taskTableView.delegate = self
         
-        tasksByDate = UniversityDB.instance.getTasksByDate()
-        tasksByCourseName = UniversityDB.instance.getTasksByCourseName()
+        tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: false)
+        tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: false)
         courses = UniversityDB.instance.getCourses()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        tasksByDate = UniversityDB.instance.getTasksByDate()
-        tasksByCourseName = UniversityDB.instance.getTasksByCourseName()
+        tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: false)
+        tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: false)
         courses = UniversityDB.instance.getCourses()
     }
     
@@ -42,6 +46,21 @@ class TaskVC: UIViewController {
         let vc = storyboard.instantiateInitialViewController() as! AddTaskVC
         vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func openCompletedTasks() {
+        if isCompleted == true {
+            isCompleted = false
+            tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: false)
+            tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: false)
+            courses = UniversityDB.instance.getCourses()
+            self.taskTableView.reloadData()
+        } else {
+            isCompleted = true
+            tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: true)
+            tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: true)
+            self.taskTableView.reloadData()
+        }
     }
     
     @IBAction func taskControlsChanged() {
@@ -119,13 +138,37 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
-        cell.buttonSelected()
+        switch taskControls.selectedSegmentIndex {
+        case 0:
+            let task = tasksByDate[indexPath.section][indexPath.row]
+            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
+            cell.delegate = self
+            cell.buttonSelected(index: indexPath, task: task)
+        case 1:
+            let task = tasksByCourseName[indexPath.section][indexPath.row]
+            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
+            cell.delegate = self
+            cell.buttonSelected(index: indexPath, task: task)
+        default:
+            break
+        }
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
-        cell.buttonDeselected()
+        switch taskControls.selectedSegmentIndex {
+        case 0:
+            let task = tasksByDate[indexPath.section][indexPath.row]
+            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
+            cell.delegate = self
+            cell.buttonDeselected(index: indexPath, task: task)
+        case 1:
+            let task = tasksByCourseName[indexPath.section][indexPath.row]
+            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
+            cell.delegate = self
+            cell.buttonDeselected(index: indexPath, task: task)
+        default:
+            break
+        }
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -178,7 +221,20 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-extension TaskVC: AddTaskDelegate {
+extension TaskVC: AddTaskDelegate, TaskChecklistDelegate {
+    func updateTaskChecklist(index: IndexPath, task: Task) {
+        switch taskControls.selectedSegmentIndex {
+        case 0:
+            self.tasksByDate[index.section][index.row] = task
+        case 1:
+            self.tasksByCourseName[index.section][index.row] = task
+        default:
+            break
+        }
+        
+        self.taskTableView.reloadData()
+    }
+    
     func addTask(task: Task) {
         self.navigationController?.popViewController(animated: true)
 //        self.tasksByDate.append(task)

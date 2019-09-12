@@ -443,8 +443,23 @@ class UniversityDB {
         return false
     }
     
+    func updateTaskByChecking(id: Int64, checkVar: Bool) -> Bool {
+        let selectedTask = tasks.filter(id == tid)
+        do {
+            let update = selectedTask.update(isChecked <- checkVar)
+            
+            if try db!.run(update) > 0 {
+                return true
+            }
+        } catch {
+            print("Update failed: \(error)")
+        }
+        
+        return false
+    }
+    
     // Get tasks based on clusters of distinct dates
-    func getTasksByDate() -> [[Task]] {
+    func getTasksByDate(checkVar: Bool) -> [[Task]] {
         var courseTasks = [[Task]]()
         
         do { 
@@ -453,6 +468,7 @@ class UniversityDB {
             
             for dateRow in try db!.prepare(datesTable) {
                 let taskTable = tasks.filter(taskDate.date == dateRow[taskDate].date)
+                                     .filter(isChecked == checkVar)
                 var taskLists = [Task]()
                 
                 for task in try db!.prepare(taskTable) {
@@ -478,7 +494,7 @@ class UniversityDB {
     
     
     // Get tasks based on clusters of distinct course names
-    func getTasksByCourseName() -> [[Task]] {
+    func getTasksByCourseName(checkVar: Bool) -> [[Task]] {
         var courseTasks = [[Task]]()
         
         do {
@@ -486,7 +502,7 @@ class UniversityDB {
             // SELECT Dept, CourseNum FROM tasks
             
             for cnRow in try db!.prepare(courseNamesTable) {
-                let taskTable = tasks.filter(t_cid == cnRow[t_cid])
+                let taskTable = tasks.filter(t_cid == cnRow[t_cid]).filter(isChecked == checkVar)
                 var taskLists = [Task]()
                 
                 for task in try db!.prepare(taskTable) {

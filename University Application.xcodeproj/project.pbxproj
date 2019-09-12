@@ -368,8 +368,8 @@
 			children = (
 				51F1190E2329D1B30047ADFE /* Task.storyboard */,
 				51F1190D2329D1B30047ADFE /* TaskVC.swift */,
-				51F1190B2329D1B30047ADFE /* TaskHeaderTVC.swift */,
 				51F1190C2329D1B30047ADFE /* TaskTVC.swift */,
+				51F1190B2329D1B30047ADFE /* TaskHeaderTVC.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";

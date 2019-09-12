@@ -13,6 +13,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "+"
 - "AssignmentPrecedence"
+- !private "BooleanLiteralType"
 - !private "StringLiteralType"
 - "Task"
 - "TaskTVC"
@@ -20,8 +21,10 @@ depends-top-level:
 - !private "UIImage"
 - "UILabel"
 - "UITableViewCell"
+- !private "UniversityDB"
 depends-member:
 - !private ["So15CALayerDelegateP", "UIImage"]
+- !private ["So15CALayerDelegateP", "UniversityDB"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "awakeFromNib"]
 - !private ["So15CALayerDelegateP", "courseNameLabel"]
@@ -33,6 +36,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "tickButton"]
 - !private ["s7CVarArgP", "UIImage"]
+- !private ["s7CVarArgP", "UniversityDB"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "awakeFromNib"]
 - !private ["s7CVarArgP", "courseNameLabel"]
@@ -45,6 +49,7 @@ depends-member:
 - !private ["s7CVarArgP", "tickButton"]
 - !private ["22University_Application6CourseC", "showCourseName"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- !private ["s28CustomDebugStringConvertibleP", "UniversityDB"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
 - !private ["s28CustomDebugStringConvertibleP", "courseNameLabel"]
@@ -59,6 +64,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "setImage"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
+- !private ["s23CustomStringConvertibleP", "UniversityDB"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "awakeFromNib"]
 - !private ["s23CustomStringConvertibleP", "courseNameLabel"]
@@ -76,6 +82,7 @@ depends-member:
 - !private ["SE", "setImage"]
 - !private ["SE", "text"]
 - !private ["SQ", "UIImage"]
+- !private ["SQ", "UniversityDB"]
 - ["SQ", ""]
 - !private ["SQ", "awakeFromNib"]
 - !private ["SQ", "courseNameLabel"]
@@ -92,6 +99,7 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "setImage"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["SH", "UIImage"]
+- !private ["SH", "UniversityDB"]
 - ["SH", ""]
 - !private ["SH", "awakeFromNib"]
 - !private ["SH", "courseNameLabel"]
@@ -103,6 +111,7 @@ depends-member:
 - !private ["SH", "text"]
 - !private ["SH", "tickButton"]
 - !private ["So8NSCodingP", "UIImage"]
+- !private ["So8NSCodingP", "UniversityDB"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "awakeFromNib"]
 - !private ["So8NSCodingP", "courseNameLabel"]
@@ -119,6 +128,7 @@ depends-member:
 - ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UILabel"]
+- !private ["So8NSObjectC", "UniversityDB"]
 - ["So8NSObjectC", "awakeFromNib"]
 - ["So8NSObjectC", "buttonDeselected"]
 - ["So8NSObjectC", "buttonSelected"]
@@ -133,6 +143,7 @@ depends-member:
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "tickButton"]
 - !private ["So8NSObjectP", "UIImage"]
+- !private ["So8NSObjectP", "UniversityDB"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "awakeFromNib"]
 - !private ["So8NSObjectP", "courseNameLabel"]
@@ -154,10 +165,12 @@ depends-member:
 - !private ["22University_Application4TaskC", "getCourse"]
 - !private ["22University_Application4TaskC", "getWeekDayToString"]
 - !private ["22University_Application4TaskC", "taskName"]
+- !private ["22University_Application4TaskC", "tid"]
 - ["22University_Application7TaskTVCC", "Task"]
 - ["22University_Application7TaskTVCC", "UIButton"]
 - !private ["22University_Application7TaskTVCC", "UIImage"]
 - ["22University_Application7TaskTVCC", "UILabel"]
+- !private ["22University_Application7TaskTVCC", "UniversityDB"]
 - ["22University_Application7TaskTVCC", "awakeFromNib"]
 - ["22University_Application7TaskTVCC", "buttonDeselected"]
 - ["22University_Application7TaskTVCC", "buttonSelected"]
@@ -171,6 +184,7 @@ depends-member:
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isSelected"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setImage"]
 - !private ["So29UIAccessibilityIdentificationP", "UIImage"]
+- !private ["So29UIAccessibilityIdentificationP", "UniversityDB"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
 - !private ["So29UIAccessibilityIdentificationP", "courseNameLabel"]
@@ -182,6 +196,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "tickButton"]
 - !private ["So12UIAppearanceP", "UIImage"]
+- !private ["So12UIAppearanceP", "UniversityDB"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "awakeFromNib"]
 - !private ["So12UIAppearanceP", "courseNameLabel"]
@@ -193,6 +208,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "tickButton"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
+- !private ["So21UIAppearanceContainerP", "UniversityDB"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "awakeFromNib"]
 - !private ["So21UIAppearanceContainerP", "courseNameLabel"]
@@ -209,6 +225,7 @@ depends-member:
 - !private ["So9UIControlC", "isSelected"]
 - !private ["So9UIControlC", "setImage"]
 - !private ["So17UICoordinateSpaceP", "UIImage"]
+- !private ["So17UICoordinateSpaceP", "UniversityDB"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "awakeFromNib"]
 - !private ["So17UICoordinateSpaceP", "courseNameLabel"]
@@ -220,6 +237,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "tickButton"]
 - !private ["So13UIDynamicItemP", "UIImage"]
+- !private ["So13UIDynamicItemP", "UniversityDB"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "awakeFromNib"]
 - !private ["So13UIDynamicItemP", "courseNameLabel"]
@@ -231,6 +249,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "tickButton"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
+- !private ["So18UIFocusEnvironmentP", "UniversityDB"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
 - !private ["So18UIFocusEnvironmentP", "courseNameLabel"]
@@ -242,6 +261,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "tickButton"]
 - !private ["So11UIFocusItemP", "UIImage"]
+- !private ["So11UIFocusItemP", "UniversityDB"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "awakeFromNib"]
 - !private ["So11UIFocusItemP", "courseNameLabel"]
@@ -253,6 +273,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "tickButton"]
 - !private ["So20UIFocusItemContainerP", "UIImage"]
+- !private ["So20UIFocusItemContainerP", "UniversityDB"]
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "awakeFromNib"]
 - !private ["So20UIFocusItemContainerP", "courseNameLabel"]
@@ -264,6 +285,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So20UIFocusItemContainerP", "tickButton"]
 - !private ["So27UIGestureRecognizerDelegateP", "UIImage"]
+- !private ["So27UIGestureRecognizerDelegateP", "UniversityDB"]
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
 - !private ["So27UIGestureRecognizerDelegateP", "courseNameLabel"]
@@ -275,6 +297,7 @@ depends-member:
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So7UILabelC", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "UniversityDB"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
 - !private ["So30UIPasteConfigurationSupportingP", "courseNameLabel"]
@@ -289,6 +312,7 @@ depends-member:
 - ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UILabel"]
+- !private ["So11UIResponderC", "UniversityDB"]
 - ["So11UIResponderC", "awakeFromNib"]
 - ["So11UIResponderC", "buttonDeselected"]
 - ["So11UIResponderC", "buttonSelected"]
@@ -303,6 +327,7 @@ depends-member:
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "tickButton"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- !private ["So30UIResponderStandardEditActionsP", "UniversityDB"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "courseNameLabel"]
@@ -319,6 +344,7 @@ depends-member:
 - ["So15UITableViewCellC", "UIButton"]
 - !private ["So15UITableViewCellC", "UIImage"]
 - ["So15UITableViewCellC", "UILabel"]
+- !private ["So15UITableViewCellC", "UniversityDB"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
 - ["So15UITableViewCellC", "buttonDeselected"]
@@ -331,6 +357,7 @@ depends-member:
 - ["So15UITableViewCellC", "taskNameLabel"]
 - ["So15UITableViewCellC", "tickButton"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
+- !private ["So18UITraitEnvironmentP", "UniversityDB"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
 - !private ["So18UITraitEnvironmentP", "courseNameLabel"]
@@ -342,6 +369,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "tickButton"]
 - !private ["So23UIUserActivityRestoringP", "UIImage"]
+- !private ["So23UIUserActivityRestoringP", "UniversityDB"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "awakeFromNib"]
 - !private ["So23UIUserActivityRestoringP", "courseNameLabel"]
@@ -356,6 +384,7 @@ depends-member:
 - ["So6UIViewC", "UIButton"]
 - !private ["So6UIViewC", "UIImage"]
 - ["So6UIViewC", "UILabel"]
+- !private ["So6UIViewC", "UniversityDB"]
 - ["So6UIViewC", "awakeFromNib"]
 - ["So6UIViewC", "buttonDeselected"]
 - ["So6UIViewC", "buttonSelected"]
@@ -369,8 +398,11 @@ depends-member:
 - ["So6UIViewC", "taskNameLabel"]
 - !private ["So6UIViewC", "text"]
 - ["So6UIViewC", "tickButton"]
+- !private ["22University_Application0A2DBC", "instance"]
+- !private ["22University_Application0A2DBC", "updateTaskByChecking"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UniversityDB"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "courseNameLabel"]
@@ -388,6 +420,7 @@ depends-member:
 - !private ["6SQLite13_OptionalTypeP", "setImage"]
 - !private ["6SQLite13_OptionalTypeP", "text"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "UIImage"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "UniversityDB"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "courseNameLabel"]
@@ -448,6 +481,7 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
+- !private "22University_Application0A2DBC"
 - !private "s26_ExpressibleByImageLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
@@ -488,4 +522,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d3d8427da4a897ed4c02f5e279069306"
+interface-hash: "07c67e8ca28b6286dca625918bf57411"

@@ -287,6 +287,7 @@ depends-member:
 - ["22University_Application0A2DBC", "updateCourse"]
 - ["22University_Application0A2DBC", "updateSemester"]
 - ["22University_Application0A2DBC", "updateTask"]
+- ["22University_Application0A2DBC", "updateTaskByChecking"]
 - !private ["6SQLite5ValueP", "date"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "first"]
@@ -399,4 +400,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c9875fe6bd2b690f3c7407cfc668bc60"
+interface-hash: "6b468fdb997fccca2f1a46d1f9be38ed"

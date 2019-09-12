@@ -22,7 +22,6 @@ depends-top-level:
 - "AddTaskDelegate"
 - !private "AddTaskVC"
 - "AssignmentPrecedence"
-- "BooleanLiteralType"
 - "CGFloat"
 - "CastingPrecedence"
 - "Class"

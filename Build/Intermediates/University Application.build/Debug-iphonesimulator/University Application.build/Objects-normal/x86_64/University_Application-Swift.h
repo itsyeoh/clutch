@@ -372,6 +372,7 @@ SWIFT_CLASS("_TtC22University_Application6TaskVC")
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)openAddTask;
+- (void)openCompletedTasks;
 - (IBAction)taskControlsChanged;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
