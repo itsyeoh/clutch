@@ -20,11 +20,14 @@ depends-top-level:
 - "Course"
 - "Date"
 - "Expression"
+- !private "FloatLiteralType"
 - "Int"
 - "Int64"
+- !private "IntegerLiteralType"
 - !private "NSSearchPathForDirectoriesInDomains"
 - "Semester"
 - "String"
+- "StringLiteralType"
 - "Table"
 - "Task"
 - "UniversityDB"
@@ -202,8 +205,10 @@ depends-member:
 - !private ["22University_Application4TaskC", "cid"]
 - !private ["22University_Application4TaskC", "description"]
 - !private ["22University_Application4TaskC", "init"]
+- !private ["22University_Application4TaskC", "isChecked"]
 - !private ["22University_Application4TaskC", "taskDate"]
 - !private ["22University_Application4TaskC", "taskName"]
+- !private ["22University_Application4TaskC", "taskTime"]
 - !private ["22University_Application4TaskC", "taskType"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
@@ -241,7 +246,6 @@ depends-member:
 - !private ["22University_Application0A2DBC", "creditHours"]
 - !private ["22University_Application0A2DBC", "days"]
 - !private ["22University_Application0A2DBC", "db"]
-- ["22University_Application0A2DBC", "deinit"]
 - ["22University_Application0A2DBC", "deleteClass"]
 - ["22University_Application0A2DBC", "deleteCourse"]
 - ["22University_Application0A2DBC", "deleteSemester"]
@@ -263,6 +267,7 @@ depends-member:
 - ["22University_Application0A2DBC", "getTasksByDate"]
 - ["22University_Application0A2DBC", "init"]
 - ["22University_Application0A2DBC", "instance"]
+- !private ["22University_Application0A2DBC", "isChecked"]
 - !private ["22University_Application0A2DBC", "location"]
 - !private ["22University_Application0A2DBC", "print"]
 - ["22University_Application0A2DBC", "searchCourse"]
@@ -274,6 +279,7 @@ depends-member:
 - !private ["22University_Application0A2DBC", "t_cid"]
 - !private ["22University_Application0A2DBC", "taskDate"]
 - !private ["22University_Application0A2DBC", "taskName"]
+- !private ["22University_Application0A2DBC", "taskTime"]
 - !private ["22University_Application0A2DBC", "taskType"]
 - !private ["22University_Application0A2DBC", "tasks"]
 - !private ["22University_Application0A2DBC", "tid"]
@@ -393,4 +399,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "84d5761fe05c47e0232d90229847aa1a"
+interface-hash: "c9875fe6bd2b690f3c7407cfc668bc60"

@@ -31,6 +31,7 @@ class CourseVC: UIViewController {
         classTableView.dataSource = self
         classTableView.delegate = self
         
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.title = courseName! + " (" + semesterName.uppercased() + ")"
         nameLabel.text = courseName
         

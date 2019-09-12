@@ -31,7 +31,6 @@ class TaskVC: UIViewController {
         courses = UniversityDB.instance.getCourses()
     }
     
-    
     override func viewWillAppear(_ animated: Bool) {
         tasksByDate = UniversityDB.instance.getTasksByDate()
         tasksByCourseName = UniversityDB.instance.getTasksByCourseName()

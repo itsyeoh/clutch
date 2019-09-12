@@ -27,6 +27,7 @@ class AddTaskVC: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.rightBarButtonItem =
             UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(addTask))
         
@@ -152,7 +153,9 @@ class AddTaskVC: FormViewController {
                 }
             } else {
                 // Insert task to the database
-                if let id = UniversityDB.instance.addTask(ccid: ccid, ctaskName: taskName, ctaskType: taskType, ctaskDate: taskDate, ctaskTime: taskTime, cdescription: description) {
+                if let id = UniversityDB.instance.addTask(ccid: ccid, ctaskName: taskName, ctaskType: taskType,
+                                                          ctaskDate: taskDate, ctaskTime: taskTime,
+                                                          cdescription: description) {
                     let task = Task(cid: ccid, tid: id, taskName: taskName, taskType: taskType,
                                     taskDate: taskDate, taskTime: taskTime, isChecked: false)
                     delegate?.addTask(task: task)       // Communicate with delegate VCs

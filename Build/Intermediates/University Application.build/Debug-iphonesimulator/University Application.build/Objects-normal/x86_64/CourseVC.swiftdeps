@@ -30,16 +30,14 @@ depends-top-level:
 - !private "CourseAssignmentTVC"
 - !private "CourseClassTVC"
 - "CourseVC"
-- !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
-- !private "IntegerLiteralType"
 - "String"
-- !private "StringLiteralType"
 - "Task"
 - !private "Theme"
 - !private "UIAlertAction"
 - !private "UIAlertController"
+- !private "UIBarButtonItem"
 - "UILabel"
 - "UISegmentedControl"
 - !private "UIStoryboard"
@@ -60,6 +58,7 @@ depends-member:
 - !private ["22University_Application16AddClassDelegateP", "Theme"]
 - !private ["22University_Application16AddClassDelegateP", "UIAlertAction"]
 - !private ["22University_Application16AddClassDelegateP", "UIAlertController"]
+- !private ["22University_Application16AddClassDelegateP", "UIBarButtonItem"]
 - !private ["22University_Application16AddClassDelegateP", "UIStoryboard"]
 - !private ["22University_Application16AddClassDelegateP", "UITableViewCell"]
 - !private ["22University_Application16AddClassDelegateP", "UITableViewRowAction"]
@@ -116,6 +115,7 @@ depends-member:
 - !private ["22University_Application15AddTaskDelegateP", "Theme"]
 - !private ["22University_Application15AddTaskDelegateP", "UIAlertAction"]
 - !private ["22University_Application15AddTaskDelegateP", "UIAlertController"]
+- !private ["22University_Application15AddTaskDelegateP", "UIBarButtonItem"]
 - !private ["22University_Application15AddTaskDelegateP", "UIStoryboard"]
 - !private ["22University_Application15AddTaskDelegateP", "UITableViewCell"]
 - !private ["22University_Application15AddTaskDelegateP", "UITableViewRowAction"]
@@ -196,6 +196,7 @@ depends-member:
 - !private ["s7CVarArgP", "Theme"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
+- !private ["s7CVarArgP", "UIBarButtonItem"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "UITableViewCell"]
 - !private ["s7CVarArgP", "UITableViewRowAction"]
@@ -205,6 +206,7 @@ depends-member:
 - ["s7CVarArgP", "addClass"]
 - ["s7CVarArgP", "addTask"]
 - !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "backBarButtonItem"]
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "classIndexToEdit"]
 - !private ["s7CVarArgP", "classTableView"]
@@ -305,6 +307,7 @@ depends-member:
 - !private ["22University_Application8CourseVCC", "Theme"]
 - !private ["22University_Application8CourseVCC", "UIAlertAction"]
 - !private ["22University_Application8CourseVCC", "UIAlertController"]
+- !private ["22University_Application8CourseVCC", "UIBarButtonItem"]
 - ["22University_Application8CourseVCC", "UILabel"]
 - ["22University_Application8CourseVCC", "UISegmentedControl"]
 - !private ["22University_Application8CourseVCC", "UIStoryboard"]
@@ -367,6 +370,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Theme"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewCell"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewRowAction"]
@@ -376,6 +380,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "addClass"]
 - ["s28CustomDebugStringConvertibleP", "addTask"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "backBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "cid"]
 - !private ["s28CustomDebugStringConvertibleP", "classIndexToEdit"]
@@ -463,6 +468,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Theme"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
+- !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "UITableViewCell"]
 - !private ["s23CustomStringConvertibleP", "UITableViewRowAction"]
@@ -474,6 +480,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "backBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "classIndexToEdit"]
 - !private ["s23CustomStringConvertibleP", "classTableView"]
@@ -583,6 +590,7 @@ depends-member:
 - !private ["SQ", "Theme"]
 - !private ["SQ", "UIAlertAction"]
 - !private ["SQ", "UIAlertController"]
+- !private ["SQ", "UIBarButtonItem"]
 - !private ["SQ", "UIStoryboard"]
 - !private ["SQ", "UITableViewCell"]
 - !private ["SQ", "UITableViewRowAction"]
@@ -593,6 +601,7 @@ depends-member:
 - ["SQ", "addClass"]
 - ["SQ", "addTask"]
 - !private ["SQ", "append"]
+- !private ["SQ", "backBarButtonItem"]
 - !private ["SQ", "backgroundColor"]
 - !private ["SQ", "cancel"]
 - !private ["SQ", "cid"]
@@ -624,6 +633,7 @@ depends-member:
 - ["SQ", "numberOfSections"]
 - ["SQ", "numberOfSectionsInTableView"]
 - !private ["SQ", "performSegue"]
+- !private ["SQ", "plain"]
 - !private ["SQ", "popViewController"]
 - !private ["SQ", "present"]
 - !private ["SQ", "print"]
@@ -707,6 +717,7 @@ depends-member:
 - !private ["SH", "Theme"]
 - !private ["SH", "UIAlertAction"]
 - !private ["SH", "UIAlertController"]
+- !private ["SH", "UIBarButtonItem"]
 - !private ["SH", "UIStoryboard"]
 - !private ["SH", "UITableViewCell"]
 - !private ["SH", "UITableViewRowAction"]
@@ -717,6 +728,7 @@ depends-member:
 - ["SH", "addClass"]
 - ["SH", "addTask"]
 - !private ["SH", "append"]
+- !private ["SH", "backBarButtonItem"]
 - !private ["SH", "backgroundColor"]
 - !private ["SH", "cancel"]
 - !private ["SH", "cid"]
@@ -748,6 +760,7 @@ depends-member:
 - ["SH", "numberOfSections"]
 - ["SH", "numberOfSectionsInTableView"]
 - !private ["SH", "performSegue"]
+- !private ["SH", "plain"]
 - !private ["SH", "popViewController"]
 - !private ["SH", "present"]
 - !private ["SH", "print"]
@@ -808,6 +821,7 @@ depends-member:
 - !private ["So8NSCodingP", "Theme"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
+- !private ["So8NSCodingP", "UIBarButtonItem"]
 - !private ["So8NSCodingP", "UIStoryboard"]
 - !private ["So8NSCodingP", "UITableViewCell"]
 - !private ["So8NSCodingP", "UITableViewRowAction"]
@@ -816,6 +830,7 @@ depends-member:
 - !private ["So8NSCodingP", "addAction"]
 - ["So8NSCodingP", "addClass"]
 - ["So8NSCodingP", "addTask"]
+- !private ["So8NSCodingP", "backBarButtonItem"]
 - !private ["So8NSCodingP", "classIndexToEdit"]
 - !private ["So8NSCodingP", "classTableView"]
 - !private ["So8NSCodingP", "classes"]
@@ -881,6 +896,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Theme"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
+- !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
 - !private ["So26NSExtensionRequestHandlingP", "UITableViewCell"]
 - !private ["So26NSExtensionRequestHandlingP", "UITableViewRowAction"]
@@ -955,6 +971,7 @@ depends-member:
 - !private ["So8NSObjectC", "Theme"]
 - !private ["So8NSObjectC", "UIAlertAction"]
 - !private ["So8NSObjectC", "UIAlertController"]
+- !private ["So8NSObjectC", "UIBarButtonItem"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UISegmentedControl"]
 - !private ["So8NSObjectC", "UIStoryboard"]
@@ -967,6 +984,7 @@ depends-member:
 - ["So8NSObjectC", "addButtonClicked"]
 - ["So8NSObjectC", "addClass"]
 - ["So8NSObjectC", "addTask"]
+- !private ["So8NSObjectC", "backBarButtonItem"]
 - !private ["So8NSObjectC", "backgroundColor"]
 - ["So8NSObjectC", "classIndexToEdit"]
 - ["So8NSObjectC", "classTableView"]
@@ -1036,6 +1054,7 @@ depends-member:
 - !private ["So8NSObjectP", "Theme"]
 - !private ["So8NSObjectP", "UIAlertAction"]
 - !private ["So8NSObjectP", "UIAlertController"]
+- !private ["So8NSObjectP", "UIBarButtonItem"]
 - !private ["So8NSObjectP", "UIStoryboard"]
 - !private ["So8NSObjectP", "UITableViewCell"]
 - !private ["So8NSObjectP", "UITableViewRowAction"]
@@ -1044,6 +1063,7 @@ depends-member:
 - !private ["So8NSObjectP", "addAction"]
 - ["So8NSObjectP", "addClass"]
 - ["So8NSObjectP", "addTask"]
+- !private ["So8NSObjectP", "backBarButtonItem"]
 - !private ["So8NSObjectP", "backgroundColor"]
 - !private ["So8NSObjectP", "classIndexToEdit"]
 - !private ["So8NSObjectP", "classTableView"]
@@ -1133,6 +1153,7 @@ depends-member:
 - !private ["SY", "default"]
 - !private ["SY", "delete"]
 - !private ["SY", "fade"]
+- !private ["SY", "plain"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["So23UITableViewRowAnimationV", "fade"]
 - !private ["ST", "append"]
@@ -1150,6 +1171,7 @@ depends-member:
 - !private ["So18UIAlertActionStyleV", "cancel"]
 - !private ["So18UIAlertActionStyleV", "default"]
 - !private ["So25UITableViewRowActionStyleV", "default"]
+- !private ["So20UIBarButtonItemStyleV", "plain"]
 - !private ["22University_Application4TaskC", "tid"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
@@ -1185,6 +1207,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Theme"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
+- !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
 - !private ["So21UIAppearanceContainerP", "UIStoryboard"]
 - !private ["So21UIAppearanceContainerP", "UITableViewCell"]
 - !private ["So21UIAppearanceContainerP", "UITableViewRowAction"]
@@ -1248,11 +1271,14 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
+- !private ["So15UIBarButtonItemC", "init"]
+- !private ["So9UIBarItemC", "init"]
 - ["So18UIContentContainerP", "Class"]
 - ["So18UIContentContainerP", "Task"]
 - !private ["So18UIContentContainerP", "Theme"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
+- !private ["So18UIContentContainerP", "UIBarButtonItem"]
 - !private ["So18UIContentContainerP", "UIStoryboard"]
 - !private ["So18UIContentContainerP", "UITableViewCell"]
 - !private ["So18UIContentContainerP", "UITableViewRowAction"]
@@ -1342,6 +1368,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Theme"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
+- !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
 - !private ["So18UIFocusEnvironmentP", "UITableViewCell"]
 - !private ["So18UIFocusEnvironmentP", "UITableViewRowAction"]
@@ -1436,6 +1463,7 @@ depends-member:
 - !private ["So7UILabelC", "text"]
 - !private ["So22UINavigationControllerC", "popViewController"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So16UINavigationItemC", "backBarButtonItem"]
 - !private ["So16UINavigationItemC", "title"]
 - ["So30UIPasteConfigurationSupportingP", "Class"]
 - ["So30UIPasteConfigurationSupportingP", "EditingStyle"]
@@ -1443,6 +1471,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Theme"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableViewCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableViewRowAction"]
@@ -1521,6 +1550,7 @@ depends-member:
 - !private ["So11UIResponderC", "Theme"]
 - !private ["So11UIResponderC", "UIAlertAction"]
 - !private ["So11UIResponderC", "UIAlertController"]
+- !private ["So11UIResponderC", "UIBarButtonItem"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UISegmentedControl"]
 - !private ["So11UIResponderC", "UIStoryboard"]
@@ -1596,6 +1626,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Theme"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableViewCell"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableViewRowAction"]
@@ -1669,6 +1700,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "Theme"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertAction"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertController"]
+- !private ["So20UIScrollViewDelegateP", "UIBarButtonItem"]
 - !private ["So20UIScrollViewDelegateP", "UIStoryboard"]
 - !private ["So20UIScrollViewDelegateP", "UITableViewCell"]
 - !private ["So20UIScrollViewDelegateP", "UITableViewRowAction"]
@@ -1733,6 +1765,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Theme"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
+- !private ["So16UIStateRestoringP", "UIBarButtonItem"]
 - !private ["So16UIStateRestoringP", "UIStoryboard"]
 - !private ["So16UIStateRestoringP", "UITableViewCell"]
 - !private ["So16UIStateRestoringP", "UITableViewRowAction"]
@@ -1806,6 +1839,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "Theme"]
 - !private ["So21UITableViewDataSourceP", "UIAlertAction"]
 - !private ["So21UITableViewDataSourceP", "UIAlertController"]
+- !private ["So21UITableViewDataSourceP", "UIBarButtonItem"]
 - !private ["So21UITableViewDataSourceP", "UIStoryboard"]
 - !private ["So21UITableViewDataSourceP", "UITableViewCell"]
 - !private ["So21UITableViewDataSourceP", "UITableViewRowAction"]
@@ -1861,6 +1895,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "Theme"]
 - !private ["So19UITableViewDelegateP", "UIAlertAction"]
 - !private ["So19UITableViewDelegateP", "UIAlertController"]
+- !private ["So19UITableViewDelegateP", "UIBarButtonItem"]
 - !private ["So19UITableViewDelegateP", "UIStoryboard"]
 - !private ["So19UITableViewDelegateP", "UITableViewCell"]
 - !private ["So19UITableViewDelegateP", "UITableViewRowAction"]
@@ -1919,6 +1954,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Theme"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
+- !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UITraitEnvironmentP", "UIStoryboard"]
 - !private ["So18UITraitEnvironmentP", "UITableViewCell"]
 - !private ["So18UITraitEnvironmentP", "UITableViewRowAction"]
@@ -1988,6 +2024,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Theme"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertAction"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertController"]
+- !private ["So23UIUserActivityRestoringP", "UIBarButtonItem"]
 - !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
 - !private ["So23UIUserActivityRestoringP", "UITableViewCell"]
 - !private ["So23UIUserActivityRestoringP", "UITableViewRowAction"]
@@ -2075,6 +2112,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "Theme"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
 - !private ["So16UIViewControllerC", "UIAlertController"]
+- !private ["So16UIViewControllerC", "UIBarButtonItem"]
 - ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UISegmentedControl"]
 - !private ["So16UIViewControllerC", "UIStoryboard"]
@@ -2176,6 +2214,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Theme"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewRowAction"]
@@ -2184,6 +2223,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "addClass"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "addTask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "classIndexToEdit"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "classTableView"]
@@ -2348,6 +2388,7 @@ depends-nominal:
 - !private "So22UIAlertControllerStyleV"
 - !private "So18UIAlertActionStyleV"
 - !private "So25UITableViewRowActionStyleV"
+- !private "So20UIBarButtonItemStyleV"
 - !private "22University_Application4TaskC"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
@@ -2357,6 +2398,8 @@ depends-nominal:
 - !private "So17UIAlertControllerC"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So15UIBarButtonItemC"
+- !private "So9UIBarItemC"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - !private "So9UIControlC"

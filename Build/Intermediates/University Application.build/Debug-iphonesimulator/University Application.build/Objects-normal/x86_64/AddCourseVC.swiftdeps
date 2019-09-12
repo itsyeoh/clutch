@@ -20,14 +20,17 @@ depends-top-level:
 - "AddCourseVC"
 - "AssignmentPrecedence"
 - "Course"
+- "FloatLiteralType"
 - "FormViewController"
 - "Int64"
 - !private "IntRow"
+- "IntegerLiteralType"
 - !private "PushRow"
 - !private "RuleRequired"
 - !private "Section"
 - "Semester"
 - "String"
+- !private "StringLiteralType"
 - !private "TextRow"
 - !private "UIBarButtonItem"
 - !private "UniversityDB"
@@ -97,6 +100,7 @@ depends-member:
 - !private ["s7CVarArgP", "UniversityDB"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addCourse"]
+- !private ["s7CVarArgP", "backBarButtonItem"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "filter"]
 - !private ["s7CVarArgP", "first"]
@@ -142,6 +146,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UniversityDB"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addCourse"]
+- !private ["s28CustomDebugStringConvertibleP", "backBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "filter"]
 - !private ["s28CustomDebugStringConvertibleP", "first"]
@@ -179,6 +184,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UniversityDB"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addCourse"]
+- !private ["s23CustomStringConvertibleP", "backBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "filter"]
 - !private ["s23CustomStringConvertibleP", "first"]
@@ -241,6 +247,7 @@ depends-member:
 - ["SQ", ""]
 - !private ["SQ", "add"]
 - !private ["SQ", "addCourse"]
+- !private ["SQ", "backBarButtonItem"]
 - !private ["SQ", "cellUpdate"]
 - !private ["SQ", "delegate"]
 - !private ["SQ", "filter"]
@@ -384,6 +391,7 @@ depends-member:
 - !private ["SH", "UniversityDB"]
 - ["SH", ""]
 - !private ["SH", "addCourse"]
+- !private ["SH", "backBarButtonItem"]
 - !private ["SH", "delegate"]
 - !private ["SH", "filter"]
 - !private ["SH", "first"]
@@ -448,6 +456,7 @@ depends-member:
 - !private ["So8NSCodingP", "UniversityDB"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addCourse"]
+- !private ["So8NSCodingP", "backBarButtonItem"]
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "form"]
 - !private ["So8NSCodingP", "init"]
@@ -497,6 +506,7 @@ depends-member:
 - !private ["So8NSObjectC", "UIBarButtonItem"]
 - !private ["So8NSObjectC", "UniversityDB"]
 - ["So8NSObjectC", "addCourse"]
+- !private ["So8NSObjectC", "backBarButtonItem"]
 - ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "form"]
 - ["So8NSObjectC", "init"]
@@ -522,6 +532,7 @@ depends-member:
 - !private ["So8NSObjectP", "UniversityDB"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addCourse"]
+- !private ["So8NSObjectP", "backBarButtonItem"]
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "form"]
 - !private ["So8NSObjectP", "init"]
@@ -752,6 +763,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "textLabel"]
 - !private ["So27UIGestureRecognizerDelegateP", "textLabel"]
 - !private ["So7UILabelC", "textColor"]
+- !private ["So16UINavigationItemC", "backBarButtonItem"]
 - !private ["So16UINavigationItemC", "rightBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "Course"]
 - ["So30UIPasteConfigurationSupportingP", "Int64"]
@@ -1022,6 +1034,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UniversityDB"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addCourse"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "form"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]

@@ -17,6 +17,9 @@ class AcademicsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationItem.title = "ACADEMICS"
+        
         semesterTableView.dataSource = self
         semesterTableView.delegate = self
 

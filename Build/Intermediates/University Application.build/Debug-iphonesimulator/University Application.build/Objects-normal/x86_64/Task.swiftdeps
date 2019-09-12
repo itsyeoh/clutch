@@ -8,11 +8,14 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
 - "Course"
 - "Date"
 - !private "DateFormatter"
 - "Int64"
 - "String"
+- !private "StringLiteralType"
 - "Task"
 - !private "UniversityDB"
 depends-member:
@@ -89,6 +92,7 @@ depends-member:
 - !private ["ST", "uppercased"]
 - !private ["SS", "uppercased"]
 - !private ["Sy", "uppercased"]
+- ["22University_Application4TaskC", "Bool"]
 - ["22University_Application4TaskC", "Course"]
 - ["22University_Application4TaskC", "Date"]
 - !private ["22University_Application4TaskC", "DateFormatter"]
@@ -102,8 +106,10 @@ depends-member:
 - ["22University_Application4TaskC", "getWeekDateToString"]
 - ["22University_Application4TaskC", "getWeekDayToString"]
 - ["22University_Application4TaskC", "init"]
+- ["22University_Application4TaskC", "isChecked"]
 - ["22University_Application4TaskC", "taskDate"]
 - ["22University_Application4TaskC", "taskName"]
+- ["22University_Application4TaskC", "taskTime"]
 - ["22University_Application4TaskC", "taskType"]
 - ["22University_Application4TaskC", "tid"]
 - !private ["s16TextOutputStreamP", "uppercased"]
@@ -211,4 +217,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1a6fe2f1c06f8c0871213e7594289231"
+interface-hash: "cd68e5aed6451ceabd602e2643dbf01a"

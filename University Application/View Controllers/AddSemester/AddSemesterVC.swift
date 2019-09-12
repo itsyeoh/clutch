@@ -19,6 +19,7 @@ class AddSemesterVC: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.rightBarButtonItem =
             UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(addSemester))
         

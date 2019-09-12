@@ -24,7 +24,7 @@ class UniversityDB {
             ).first!
         
         do {
-            db = try Connection("\(path)/LocalUData")
+            db = try Connection("\(path)/LocalUniData_")
         } catch {
             db = nil
             print ("Unable to open database")
@@ -380,7 +380,7 @@ class UniversityDB {
         do {
             let insert = tasks.insert(t_cid <- ccid, taskName <- ctaskName, taskType <- ctaskType,
                                       taskDate <- ctaskDate, taskTime <- ctaskTime,
-                                      description <- cdescription)
+                                      description <- cdescription, isChecked <- false)
             let tid = try db!.run(insert)
             return tid
         } catch {
