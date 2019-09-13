@@ -26,16 +26,13 @@ depends-top-level:
 - !private "ClassType"
 - "Course"
 - !private "Date"
-- "FloatLiteralType"
 - "FormViewController"
 - "Int"
-- "IntegerLiteralType"
 - !private "PushRow"
 - !private "RuleRequired"
 - !private "Section"
 - !private "Set"
 - !private "String"
-- !private "StringLiteralType"
 - !private "TextRow"
 - !private "TimeInlineRow"
 - !private "UIBarButtonItem"
@@ -120,6 +117,7 @@ depends-member:
 - !private ["s7CVarArgP", "WeekDayRow"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addClass"]
+- !private ["s7CVarArgP", "backBarButtonItem"]
 - !private ["s7CVarArgP", "classIndexToEdit"]
 - !private ["s7CVarArgP", "course"]
 - !private ["s7CVarArgP", "delegate"]
@@ -173,6 +171,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "WeekDayRow"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addClass"]
+- !private ["s28CustomDebugStringConvertibleP", "backBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "classIndexToEdit"]
 - !private ["s28CustomDebugStringConvertibleP", "course"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
@@ -205,6 +204,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "WeekDayRow"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addClass"]
+- !private ["s23CustomStringConvertibleP", "backBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "classIndexToEdit"]
 - !private ["s23CustomStringConvertibleP", "course"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
@@ -271,6 +271,7 @@ depends-member:
 - ["SQ", ""]
 - !private ["SQ", "add"]
 - !private ["SQ", "addClass"]
+- !private ["SQ", "backBarButtonItem"]
 - !private ["SQ", "cellUpdate"]
 - !private ["SQ", "classIndexToEdit"]
 - !private ["SQ", "course"]
@@ -430,6 +431,7 @@ depends-member:
 - !private ["SH", "WeekDayRow"]
 - ["SH", ""]
 - !private ["SH", "addClass"]
+- !private ["SH", "backBarButtonItem"]
 - !private ["SH", "classIndexToEdit"]
 - !private ["SH", "course"]
 - !private ["SH", "delegate"]
@@ -489,6 +491,7 @@ depends-member:
 - !private ["So8NSCodingP", "WeekDayRow"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addClass"]
+- !private ["So8NSCodingP", "backBarButtonItem"]
 - !private ["So8NSCodingP", "classIndexToEdit"]
 - !private ["So8NSCodingP", "course"]
 - !private ["So8NSCodingP", "delegate"]
@@ -547,6 +550,7 @@ depends-member:
 - !private ["So8NSObjectC", "UniversityDB"]
 - !private ["So8NSObjectC", "WeekDayRow"]
 - ["So8NSObjectC", "addClass"]
+- !private ["So8NSObjectC", "backBarButtonItem"]
 - ["So8NSObjectC", "classIndexToEdit"]
 - ["So8NSObjectC", "course"]
 - ["So8NSObjectC", "delegate"]
@@ -575,6 +579,7 @@ depends-member:
 - !private ["So8NSObjectP", "WeekDayRow"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addClass"]
+- !private ["So8NSObjectP", "backBarButtonItem"]
 - !private ["So8NSObjectP", "classIndexToEdit"]
 - !private ["So8NSObjectP", "course"]
 - !private ["So8NSObjectP", "delegate"]
@@ -828,6 +833,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "textLabel"]
 - !private ["So27UIGestureRecognizerDelegateP", "textLabel"]
 - !private ["So7UILabelC", "textColor"]
+- !private ["So16UINavigationItemC", "backBarButtonItem"]
 - !private ["So16UINavigationItemC", "rightBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "Array"]
 - !private ["So30UIPasteConfigurationSupportingP", "Class"]
@@ -1133,6 +1139,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "WeekDayRow"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addClass"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "classIndexToEdit"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "course"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
@@ -1318,8 +1325,8 @@ depends-nominal:
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Modules/Eureka.swiftmodule/arm64.swiftmodule"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/Eureka.swiftmodule/arm64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
@@ -1332,13 +1339,20 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Modules/module.modulemap"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarAppearance.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarCell.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendar.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarConstants.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarHeaderView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarWeekdayView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"

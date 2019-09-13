@@ -21,22 +21,19 @@ depends-top-level:
 - !private "AddSemesterVC"
 - "AssignmentPrecedence"
 - "Bool"
-- "BooleanLiteralType"
 - "CGFloat"
 - "CastingPrecedence"
 - "Course"
 - !private "CourseTVC"
 - !private "CourseVC"
-- !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
-- !private "IntegerLiteralType"
 - "Semester"
 - !private "SemesterTVC"
-- !private "StringLiteralType"
 - !private "Theme"
 - !private "UIAlertAction"
 - !private "UIAlertController"
+- !private "UIBarButtonItem"
 - !private "UIContextualAction"
 - !private "UIStoryboard"
 - "UISwipeActionsConfiguration"
@@ -62,6 +59,7 @@ depends-member:
 - !private ["22University_Application11AcademicsVCC", "Theme"]
 - !private ["22University_Application11AcademicsVCC", "UIAlertAction"]
 - !private ["22University_Application11AcademicsVCC", "UIAlertController"]
+- !private ["22University_Application11AcademicsVCC", "UIBarButtonItem"]
 - !private ["22University_Application11AcademicsVCC", "UIContextualAction"]
 - !private ["22University_Application11AcademicsVCC", "UIStoryboard"]
 - ["22University_Application11AcademicsVCC", "UISwipeActionsConfiguration"]
@@ -78,6 +76,7 @@ depends-member:
 - ["22University_Application11AcademicsVCC", "indexPathForPreferredFocusedViewInTableView"]
 - ["22University_Application11AcademicsVCC", "init"]
 - !private ["22University_Application11AcademicsVCC", "navigationController"]
+- !private ["22University_Application11AcademicsVCC", "navigationItem"]
 - ["22University_Application11AcademicsVCC", "numberOfSections"]
 - ["22University_Application11AcademicsVCC", "numberOfSectionsInTableView"]
 - !private ["22University_Application11AcademicsVCC", "present"]
@@ -111,6 +110,7 @@ depends-member:
 - !private ["22University_Application17AddCourseDelegateP", "Theme"]
 - !private ["22University_Application17AddCourseDelegateP", "UIAlertAction"]
 - !private ["22University_Application17AddCourseDelegateP", "UIAlertController"]
+- !private ["22University_Application17AddCourseDelegateP", "UIBarButtonItem"]
 - !private ["22University_Application17AddCourseDelegateP", "UIContextualAction"]
 - !private ["22University_Application17AddCourseDelegateP", "UIStoryboard"]
 - !private ["22University_Application17AddCourseDelegateP", "UISwipeActionsConfiguration"]
@@ -122,6 +122,7 @@ depends-member:
 - ["22University_Application17AddCourseDelegateP", "indexPathForPreferredFocusedView"]
 - ["22University_Application17AddCourseDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["22University_Application17AddCourseDelegateP", "navigationController"]
+- !private ["22University_Application17AddCourseDelegateP", "navigationItem"]
 - ["22University_Application17AddCourseDelegateP", "numberOfSections"]
 - ["22University_Application17AddCourseDelegateP", "numberOfSectionsInTableView"]
 - !private ["22University_Application17AddCourseDelegateP", "present"]
@@ -152,6 +153,7 @@ depends-member:
 - !private ["22University_Application19AddSemesterDelegateP", "Theme"]
 - !private ["22University_Application19AddSemesterDelegateP", "UIAlertAction"]
 - !private ["22University_Application19AddSemesterDelegateP", "UIAlertController"]
+- !private ["22University_Application19AddSemesterDelegateP", "UIBarButtonItem"]
 - !private ["22University_Application19AddSemesterDelegateP", "UIContextualAction"]
 - !private ["22University_Application19AddSemesterDelegateP", "UIStoryboard"]
 - !private ["22University_Application19AddSemesterDelegateP", "UISwipeActionsConfiguration"]
@@ -163,6 +165,7 @@ depends-member:
 - ["22University_Application19AddSemesterDelegateP", "indexPathForPreferredFocusedView"]
 - ["22University_Application19AddSemesterDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["22University_Application19AddSemesterDelegateP", "navigationController"]
+- !private ["22University_Application19AddSemesterDelegateP", "navigationItem"]
 - ["22University_Application19AddSemesterDelegateP", "numberOfSections"]
 - ["22University_Application19AddSemesterDelegateP", "numberOfSectionsInTableView"]
 - !private ["22University_Application19AddSemesterDelegateP", "present"]
@@ -223,6 +226,7 @@ depends-member:
 - !private ["s7CVarArgP", "Theme"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
+- !private ["s7CVarArgP", "UIBarButtonItem"]
 - !private ["s7CVarArgP", "UIContextualAction"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "UISwipeActionsConfiguration"]
@@ -232,6 +236,7 @@ depends-member:
 - ["s7CVarArgP", "addCourse"]
 - ["s7CVarArgP", "addSemester"]
 - !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "backBarButtonItem"]
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "contentView"]
 - !private ["s7CVarArgP", "count"]
@@ -247,6 +252,7 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateInitialViewController"]
 - !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "navigationItem"]
 - ["s7CVarArgP", "numberOfSections"]
 - ["s7CVarArgP", "numberOfSectionsInTableView"]
 - !private ["s7CVarArgP", "popViewController"]
@@ -275,6 +281,7 @@ depends-member:
 - !private ["s7CVarArgP", "setup"]
 - !private ["s7CVarArgP", "subscript"]
 - ["s7CVarArgP", "tableView"]
+- !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
@@ -309,6 +316,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Theme"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "UIContextualAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "UISwipeActionsConfiguration"]
@@ -318,6 +326,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "addCourse"]
 - ["s28CustomDebugStringConvertibleP", "addSemester"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "backBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "contentView"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
@@ -334,6 +343,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateInitialViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSectionsInTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "popViewController"]
@@ -364,6 +374,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "setup"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "tableView"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
@@ -386,6 +397,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Theme"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
+- !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "UIContextualAction"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "UISwipeActionsConfiguration"]
@@ -395,6 +407,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "addCourse"]
 - ["s23CustomStringConvertibleP", "addSemester"]
 - !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "backBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "contentView"]
 - !private ["s23CustomStringConvertibleP", "count"]
@@ -411,6 +424,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "instantiateInitialViewController"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "navigationItem"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
 - ["s23CustomStringConvertibleP", "numberOfSectionsInTableView"]
 - !private ["s23CustomStringConvertibleP", "popViewController"]
@@ -441,6 +455,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "setup"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - ["s23CustomStringConvertibleP", "tableView"]
+- !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
@@ -480,6 +495,7 @@ depends-member:
 - !private ["SQ", "Theme"]
 - !private ["SQ", "UIAlertAction"]
 - !private ["SQ", "UIAlertController"]
+- !private ["SQ", "UIBarButtonItem"]
 - !private ["SQ", "UIContextualAction"]
 - !private ["SQ", "UIStoryboard"]
 - !private ["SQ", "UISwipeActionsConfiguration"]
@@ -491,6 +507,7 @@ depends-member:
 - ["SQ", "addSemester"]
 - !private ["SQ", "alert"]
 - !private ["SQ", "append"]
+- !private ["SQ", "backBarButtonItem"]
 - !private ["SQ", "backgroundColor"]
 - !private ["SQ", "cancel"]
 - !private ["SQ", "contentView"]
@@ -511,8 +528,10 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "instantiateInitialViewController"]
 - !private ["SQ", "navigationController"]
+- !private ["SQ", "navigationItem"]
 - ["SQ", "numberOfSections"]
 - ["SQ", "numberOfSectionsInTableView"]
+- !private ["SQ", "plain"]
 - !private ["SQ", "popViewController"]
 - !private ["SQ", "present"]
 - !private ["SQ", "pushViewController"]
@@ -541,6 +560,7 @@ depends-member:
 - !private ["SQ", "setup"]
 - !private ["SQ", "subscript"]
 - ["SQ", "tableView"]
+- !private ["SQ", "title"]
 - !private ["SQ", "viewDidLoad"]
 - ["SQ", "viewForZooming"]
 - ["SQ", "viewForZoomingInScrollView"]
@@ -569,6 +589,7 @@ depends-member:
 - !private ["SH", "Theme"]
 - !private ["SH", "UIAlertAction"]
 - !private ["SH", "UIAlertController"]
+- !private ["SH", "UIBarButtonItem"]
 - !private ["SH", "UIContextualAction"]
 - !private ["SH", "UIStoryboard"]
 - !private ["SH", "UISwipeActionsConfiguration"]
@@ -580,6 +601,7 @@ depends-member:
 - ["SH", "addSemester"]
 - !private ["SH", "alert"]
 - !private ["SH", "append"]
+- !private ["SH", "backBarButtonItem"]
 - !private ["SH", "backgroundColor"]
 - !private ["SH", "cancel"]
 - !private ["SH", "contentView"]
@@ -600,8 +622,10 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "instantiateInitialViewController"]
 - !private ["SH", "navigationController"]
+- !private ["SH", "navigationItem"]
 - ["SH", "numberOfSections"]
 - ["SH", "numberOfSectionsInTableView"]
+- !private ["SH", "plain"]
 - !private ["SH", "popViewController"]
 - !private ["SH", "present"]
 - !private ["SH", "pushViewController"]
@@ -630,6 +654,7 @@ depends-member:
 - !private ["SH", "setup"]
 - !private ["SH", "subscript"]
 - ["SH", "tableView"]
+- !private ["SH", "title"]
 - !private ["SH", "viewDidLoad"]
 - ["SH", "viewForZooming"]
 - ["SH", "viewForZoomingInScrollView"]
@@ -658,6 +683,7 @@ depends-member:
 - !private ["So8NSCodingP", "Theme"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
+- !private ["So8NSCodingP", "UIBarButtonItem"]
 - !private ["So8NSCodingP", "UIContextualAction"]
 - !private ["So8NSCodingP", "UIStoryboard"]
 - !private ["So8NSCodingP", "UISwipeActionsConfiguration"]
@@ -666,6 +692,7 @@ depends-member:
 - !private ["So8NSCodingP", "addAction"]
 - ["So8NSCodingP", "addCourse"]
 - ["So8NSCodingP", "addSemester"]
+- !private ["So8NSCodingP", "backBarButtonItem"]
 - !private ["So8NSCodingP", "contentView"]
 - !private ["So8NSCodingP", "course"]
 - !private ["So8NSCodingP", "courses"]
@@ -678,6 +705,7 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "navigationItem"]
 - ["So8NSCodingP", "numberOfSections"]
 - ["So8NSCodingP", "numberOfSectionsInTableView"]
 - !private ["So8NSCodingP", "popViewController"]
@@ -704,6 +732,7 @@ depends-member:
 - !private ["So8NSCodingP", "semesters"]
 - !private ["So8NSCodingP", "setup"]
 - ["So8NSCodingP", "tableView"]
+- !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
@@ -714,6 +743,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Theme"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
+- !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
 - !private ["So26NSExtensionRequestHandlingP", "UIContextualAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
 - !private ["So26NSExtensionRequestHandlingP", "UISwipeActionsConfiguration"]
@@ -730,6 +760,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "popViewController"]
@@ -771,6 +802,7 @@ depends-member:
 - !private ["So8NSObjectC", "Theme"]
 - !private ["So8NSObjectC", "UIAlertAction"]
 - !private ["So8NSObjectC", "UIAlertController"]
+- !private ["So8NSObjectC", "UIBarButtonItem"]
 - !private ["So8NSObjectC", "UIContextualAction"]
 - !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UISwipeActionsConfiguration"]
@@ -782,6 +814,7 @@ depends-member:
 - ["So8NSObjectC", "addButtonClicked"]
 - ["So8NSObjectC", "addCourse"]
 - ["So8NSObjectC", "addSemester"]
+- !private ["So8NSObjectC", "backBarButtonItem"]
 - !private ["So8NSObjectC", "backgroundColor"]
 - !private ["So8NSObjectC", "contentView"]
 - !private ["So8NSObjectC", "course"]
@@ -796,6 +829,7 @@ depends-member:
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "instantiateInitialViewController"]
 - !private ["So8NSObjectC", "navigationController"]
+- !private ["So8NSObjectC", "navigationItem"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
 - !private ["So8NSObjectC", "popViewController"]
@@ -822,6 +856,7 @@ depends-member:
 - ["So8NSObjectC", "semesters"]
 - !private ["So8NSObjectC", "setup"]
 - ["So8NSObjectC", "tableView"]
+- !private ["So8NSObjectC", "title"]
 - ["So8NSObjectC", "viewDidAppear"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
@@ -832,6 +867,7 @@ depends-member:
 - !private ["So8NSObjectP", "Theme"]
 - !private ["So8NSObjectP", "UIAlertAction"]
 - !private ["So8NSObjectP", "UIAlertController"]
+- !private ["So8NSObjectP", "UIBarButtonItem"]
 - !private ["So8NSObjectP", "UIContextualAction"]
 - !private ["So8NSObjectP", "UIStoryboard"]
 - !private ["So8NSObjectP", "UISwipeActionsConfiguration"]
@@ -840,6 +876,7 @@ depends-member:
 - !private ["So8NSObjectP", "addAction"]
 - ["So8NSObjectP", "addCourse"]
 - ["So8NSObjectP", "addSemester"]
+- !private ["So8NSObjectP", "backBarButtonItem"]
 - !private ["So8NSObjectP", "backgroundColor"]
 - !private ["So8NSObjectP", "contentView"]
 - !private ["So8NSObjectP", "course"]
@@ -854,6 +891,7 @@ depends-member:
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "instantiateInitialViewController"]
 - !private ["So8NSObjectP", "navigationController"]
+- !private ["So8NSObjectP", "navigationItem"]
 - ["So8NSObjectP", "numberOfSections"]
 - ["So8NSObjectP", "numberOfSectionsInTableView"]
 - !private ["So8NSObjectP", "popViewController"]
@@ -880,6 +918,7 @@ depends-member:
 - !private ["So8NSObjectP", "semesters"]
 - !private ["So8NSObjectP", "setup"]
 - ["So8NSObjectP", "tableView"]
+- !private ["So8NSObjectP", "title"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - ["So8NSObjectP", "viewForZooming"]
 - ["So8NSObjectP", "viewForZoomingInScrollView"]
@@ -910,6 +949,7 @@ depends-member:
 - !private ["SY", "default"]
 - !private ["SY", "destructive"]
 - !private ["SY", "fade"]
+- !private ["SY", "plain"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["10Foundation20ReferenceConvertibleP", "section"]
 - !private ["So23UITableViewRowAnimationV", "fade"]
@@ -935,12 +975,14 @@ depends-member:
 - !private ["So18UIAlertActionStyleV", "default"]
 - !private ["So18UIAlertActionStyleV", "destructive"]
 - !private ["So23UIContextualActionStyleV", "destructive"]
+- !private ["So20UIBarButtonItemStyleV", "plain"]
 - !private ["22University_Application5ThemeC", "Primary"]
 - !private ["So29UIAccessibilityIdentificationP", "contentView"]
 - !private ["So29UIAccessibilityIdentificationP", "dataSource"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "deleteRows"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
 - !private ["So29UIAccessibilityIdentificationP", "setup"]
 - !private ["So13UIAlertActionC", "init"]
@@ -951,6 +993,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "deleteRows"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
+- !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "reloadData"]
 - !private ["So12UIAppearanceP", "setup"]
 - ["So21UIAppearanceContainerP", "Course"]
@@ -959,6 +1002,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Theme"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
+- !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
 - !private ["So21UIAppearanceContainerP", "UIContextualAction"]
 - !private ["So21UIAppearanceContainerP", "UIStoryboard"]
 - !private ["So21UIAppearanceContainerP", "UISwipeActionsConfiguration"]
@@ -979,6 +1023,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "navigationItem"]
 - ["So21UIAppearanceContainerP", "numberOfSections"]
 - ["So21UIAppearanceContainerP", "numberOfSectionsInTableView"]
 - !private ["So21UIAppearanceContainerP", "popViewController"]
@@ -1008,12 +1053,15 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
+- !private ["So15UIBarButtonItemC", "init"]
+- !private ["So9UIBarItemC", "init"]
 - ["So18UIContentContainerP", "Course"]
 - !private ["So18UIContentContainerP", "Int"]
 - ["So18UIContentContainerP", "Semester"]
 - !private ["So18UIContentContainerP", "Theme"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
+- !private ["So18UIContentContainerP", "UIBarButtonItem"]
 - !private ["So18UIContentContainerP", "UIContextualAction"]
 - !private ["So18UIContentContainerP", "UIStoryboard"]
 - !private ["So18UIContentContainerP", "UISwipeActionsConfiguration"]
@@ -1030,6 +1078,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "navigationItem"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInTableView"]
 - !private ["So18UIContentContainerP", "popViewController"]
@@ -1084,6 +1133,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Theme"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
+- !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UIFocusEnvironmentP", "UIContextualAction"]
 - !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
 - !private ["So18UIFocusEnvironmentP", "UISwipeActionsConfiguration"]
@@ -1104,6 +1154,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "navigationItem"]
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInTableView"]
 - !private ["So18UIFocusEnvironmentP", "popViewController"]
@@ -1156,12 +1207,15 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "setup"]
 - !private ["So22UINavigationControllerC", "popViewController"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So16UINavigationItemC", "backBarButtonItem"]
+- !private ["So16UINavigationItemC", "title"]
 - ["So30UIPasteConfigurationSupportingP", "Course"]
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - ["So30UIPasteConfigurationSupportingP", "Semester"]
 - !private ["So30UIPasteConfigurationSupportingP", "Theme"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIContextualAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "UISwipeActionsConfiguration"]
@@ -1182,6 +1236,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "popViewController"]
@@ -1225,6 +1280,7 @@ depends-member:
 - !private ["So11UIResponderC", "Theme"]
 - !private ["So11UIResponderC", "UIAlertAction"]
 - !private ["So11UIResponderC", "UIAlertController"]
+- !private ["So11UIResponderC", "UIBarButtonItem"]
 - !private ["So11UIResponderC", "UIContextualAction"]
 - !private ["So11UIResponderC", "UIStoryboard"]
 - ["So11UIResponderC", "UISwipeActionsConfiguration"]
@@ -1248,6 +1304,7 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "navigationController"]
+- !private ["So11UIResponderC", "navigationItem"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
 - !private ["So11UIResponderC", "popViewController"]
@@ -1284,6 +1341,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Theme"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
 - !private ["So30UIResponderStandardEditActionsP", "UIContextualAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "UISwipeActionsConfiguration"]
@@ -1304,6 +1362,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "popViewController"]
@@ -1344,6 +1403,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "Theme"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertAction"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertController"]
+- !private ["So20UIScrollViewDelegateP", "UIBarButtonItem"]
 - !private ["So20UIScrollViewDelegateP", "UIContextualAction"]
 - !private ["So20UIScrollViewDelegateP", "UIStoryboard"]
 - !private ["So20UIScrollViewDelegateP", "UISwipeActionsConfiguration"]
@@ -1357,6 +1417,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
+- !private ["So20UIScrollViewDelegateP", "navigationItem"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So20UIScrollViewDelegateP", "present"]
@@ -1394,6 +1455,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Theme"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
+- !private ["So16UIStateRestoringP", "UIBarButtonItem"]
 - !private ["So16UIStateRestoringP", "UIContextualAction"]
 - !private ["So16UIStateRestoringP", "UIStoryboard"]
 - !private ["So16UIStateRestoringP", "UISwipeActionsConfiguration"]
@@ -1410,6 +1472,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "navigationItem"]
 - ["So16UIStateRestoringP", "numberOfSections"]
 - ["So16UIStateRestoringP", "numberOfSectionsInTableView"]
 - !private ["So16UIStateRestoringP", "popViewController"]
@@ -1453,6 +1516,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "Theme"]
 - !private ["So21UITableViewDataSourceP", "UIAlertAction"]
 - !private ["So21UITableViewDataSourceP", "UIAlertController"]
+- !private ["So21UITableViewDataSourceP", "UIBarButtonItem"]
 - !private ["So21UITableViewDataSourceP", "UIContextualAction"]
 - !private ["So21UITableViewDataSourceP", "UIStoryboard"]
 - !private ["So21UITableViewDataSourceP", "UISwipeActionsConfiguration"]
@@ -1466,6 +1530,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedView"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So21UITableViewDataSourceP", "navigationController"]
+- !private ["So21UITableViewDataSourceP", "navigationItem"]
 - ["So21UITableViewDataSourceP", "numberOfSections"]
 - ["So21UITableViewDataSourceP", "numberOfSectionsInTableView"]
 - !private ["So21UITableViewDataSourceP", "present"]
@@ -1496,6 +1561,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "Theme"]
 - !private ["So19UITableViewDelegateP", "UIAlertAction"]
 - !private ["So19UITableViewDelegateP", "UIAlertController"]
+- !private ["So19UITableViewDelegateP", "UIBarButtonItem"]
 - !private ["So19UITableViewDelegateP", "UIContextualAction"]
 - !private ["So19UITableViewDelegateP", "UIStoryboard"]
 - !private ["So19UITableViewDelegateP", "UISwipeActionsConfiguration"]
@@ -1509,6 +1575,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So19UITableViewDelegateP", "navigationController"]
+- !private ["So19UITableViewDelegateP", "navigationItem"]
 - ["So19UITableViewDelegateP", "numberOfSections"]
 - ["So19UITableViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So19UITableViewDelegateP", "present"]
@@ -1539,6 +1606,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Theme"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
+- !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UITraitEnvironmentP", "UIContextualAction"]
 - !private ["So18UITraitEnvironmentP", "UIStoryboard"]
 - !private ["So18UITraitEnvironmentP", "UISwipeActionsConfiguration"]
@@ -1559,6 +1627,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "navigationItem"]
 - ["So18UITraitEnvironmentP", "numberOfSections"]
 - ["So18UITraitEnvironmentP", "numberOfSectionsInTableView"]
 - !private ["So18UITraitEnvironmentP", "popViewController"]
@@ -1594,6 +1663,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Theme"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertAction"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertController"]
+- !private ["So23UIUserActivityRestoringP", "UIBarButtonItem"]
 - !private ["So23UIUserActivityRestoringP", "UIContextualAction"]
 - !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
 - !private ["So23UIUserActivityRestoringP", "UISwipeActionsConfiguration"]
@@ -1614,6 +1684,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "navigationController"]
+- !private ["So23UIUserActivityRestoringP", "navigationItem"]
 - ["So23UIUserActivityRestoringP", "numberOfSections"]
 - ["So23UIUserActivityRestoringP", "numberOfSectionsInTableView"]
 - !private ["So23UIUserActivityRestoringP", "popViewController"]
@@ -1664,6 +1735,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "Theme"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
 - !private ["So16UIViewControllerC", "UIAlertController"]
+- !private ["So16UIViewControllerC", "UIBarButtonItem"]
 - !private ["So16UIViewControllerC", "UIContextualAction"]
 - !private ["So16UIViewControllerC", "UIStoryboard"]
 - ["So16UIViewControllerC", "UISwipeActionsConfiguration"]
@@ -1684,6 +1756,7 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "navigationController"]
+- !private ["So16UIViewControllerC", "navigationItem"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
 - !private ["So16UIViewControllerC", "popViewController"]
@@ -1747,6 +1820,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Theme"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIContextualAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UISwipeActionsConfiguration"]
@@ -1755,6 +1829,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "addCourse"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "addSemester"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "course"]
@@ -1769,6 +1844,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateInitialViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "popViewController"]
@@ -1795,6 +1871,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "semesters"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setup"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
@@ -1892,12 +1969,15 @@ depends-nominal:
 - !private "So22UIAlertControllerStyleV"
 - !private "So18UIAlertActionStyleV"
 - !private "So23UIContextualActionStyleV"
+- !private "So20UIBarButtonItemStyleV"
 - !private "22University_Application5ThemeC"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So13UIAlertActionC"
 - !private "So17UIAlertControllerC"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So15UIBarButtonItemC"
+- !private "So9UIBarItemC"
 - "So18UIContentContainerP"
 - !private "So18UIContextualActionC"
 - !private "So17UICoordinateSpaceP"
@@ -1909,6 +1989,7 @@ depends-nominal:
 - !private "So30UIFocusItemScrollableContainerP"
 - !private "So27UIGestureRecognizerDelegateP"
 - !private "So22UINavigationControllerC"
+- !private "So16UINavigationItemC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -1940,8 +2021,8 @@ depends-nominal:
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Modules/Eureka.swiftmodule/arm64.swiftmodule"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/Eureka.swiftmodule/arm64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
@@ -1954,13 +2035,20 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Modules/module.modulemap"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarAppearance.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarCell.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendar.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarConstants.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarHeaderView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarWeekdayView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"

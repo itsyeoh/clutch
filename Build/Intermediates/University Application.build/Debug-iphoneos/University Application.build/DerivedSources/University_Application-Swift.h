@@ -168,6 +168,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import Eureka;
+@import FSCalendar;
 @import Foundation;
 @import UIKit;
 #endif
@@ -269,14 +270,6 @@ SWIFT_CLASS("_TtC22University_Application11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC22University_Application5Arrow")
-@interface Arrow : UIView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)drawRect:(CGRect)rect;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
 @class UILabel;
 
 SWIFT_CLASS("_TtC22University_Application19CourseAssignmentTVC")
@@ -310,70 +303,45 @@ SWIFT_CLASS("_TtC22University_Application9CourseTVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISegmentedControl;
 @class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC22University_Application8CourseVC")
 @interface CourseVC : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified classTableView;
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified assignmentTableView;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified courseControls;
 - (void)viewDidLoad;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (IBAction)addButtonClicked;
+- (IBAction)courseControlChanged:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 
+@class UITableViewRowAction;
 
 @interface CourseVC (SWIFT_EXTENSION(University_Application)) <UITableViewDataSource, UITableViewDelegate>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-@end
-
-@class UIColor;
-
-SWIFT_CLASS("_TtC22University_Application8DropDown")
-@interface DropDown : UITextField
-@property (nonatomic) CGFloat rowHeight;
-@property (nonatomic, strong) UIColor * _Nonnull rowBackgroundColor;
-@property (nonatomic, strong) UIColor * _Nonnull rowTextColor;
-@property (nonatomic, strong) UIColor * _Nonnull selectedRowColor;
-@property (nonatomic) BOOL hideOptionsWhenSelect;
-@property (nonatomic) BOOL isSearchEnable;
-@property (nonatomic, strong) UIColor * _Nonnull borderColor;
-@property (nonatomic) CGFloat listHeight;
-@property (nonatomic) CGFloat borderWidth;
-@property (nonatomic) CGFloat cornerRadius;
-@property (nonatomic) CGFloat arrowSize;
-@property (nonatomic, strong) UIColor * _Nonnull arrowColor;
-@property (nonatomic) BOOL checkMarkEnabled;
-@property (nonatomic) BOOL handleKeyboard;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)touchAction;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSArray<UITableViewRowAction *> * _Nullable)tableView:(UITableView * _Nonnull)tableView editActionsForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
-@interface DropDown (SWIFT_EXTENSION(University_Application)) <UITableViewDelegate>
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+SWIFT_CLASS("_TtC22University_Application11DashboardVC")
+@interface DashboardVC : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-@interface DropDown (SWIFT_EXTENSION(University_Application)) <UITableViewDataSource>
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface DropDown (SWIFT_EXTENSION(University_Application)) <UITextFieldDelegate>
-- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
-- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
-- (BOOL)textFieldShouldBeginEditing:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+@interface DashboardVC (SWIFT_EXTENSION(University_Application)) <FSCalendarDataSource, FSCalendarDelegate>
 @end
 
 
@@ -409,7 +377,6 @@ SWIFT_CLASS("_TtC22University_Application7TaskTVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UISegmentedControl;
 
 SWIFT_CLASS("_TtC22University_Application6TaskVC")
 @interface TaskVC : UIViewController
@@ -418,6 +385,7 @@ SWIFT_CLASS("_TtC22University_Application6TaskVC")
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)openAddTask;
+- (void)openCompletedTasks;
 - (IBAction)taskControlsChanged;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -428,16 +396,14 @@ SWIFT_CLASS("_TtC22University_Application6TaskVC")
 
 @interface TaskVC (SWIFT_EXTENSION(University_Application)) <UITableViewDataSource, UITableViewDelegate>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)tableView:(UITableView * _Nonnull)tableView didDeselectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (UISwipeActionsConfiguration * _Nullable)tableView:(UITableView * _Nonnull)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

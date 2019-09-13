@@ -68,10 +68,10 @@ class Task {
     }
     
     func isSelected() {
-        UniversityDB.instance.updateTaskByChecking(id: self.tid, checkVar: true)
-    }
-    
-    func isDeselected() {
-        UniversityDB.instance.updateTaskByChecking(id: self.tid, checkVar: false)
+        if isChecked != true {
+            UniversityDB.instance.updateTaskByChecking(id: self.tid, checkVar: true)
+        } else {
+            UniversityDB.instance.updateTaskByChecking(id: self.tid, checkVar: false)
+        }
     }
 }

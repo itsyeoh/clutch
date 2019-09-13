@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Headers",
+      'name': "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SQLite-Swift.h",
-          'external-contents': "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Headers/SQLite-Swift.h"
+          'external-contents': "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
         },
         {
           'type': 'file',
@@ -25,12 +25,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Modules",
+      'name': "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/SQLite.build/Debug-iphonesimulator/SQLite iOS.build/module.modulemap"
+          'external-contents': "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/SQLite.build/Debug-iphoneos/SQLite iOS.build/module.modulemap"
         }
       ]
     }

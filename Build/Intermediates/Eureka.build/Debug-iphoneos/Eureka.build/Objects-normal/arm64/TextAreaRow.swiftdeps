@@ -57,7 +57,6 @@ depends-top-level:
 - "CellType"
 - "Direction"
 - "Equatable"
-- !private "FieldRowConformance"
 - "FormatteableRow"
 - "FormatterConformance"
 - !private "FormatterProtocol"
@@ -166,7 +165,6 @@ depends-member:
 - !private ["6Eureka8BaseCellC", "AutoreleasingUnsafeMutablePointer"]
 - ["6Eureka8BaseCellC", "Bool"]
 - ["6Eureka8BaseCellC", "Direction"]
-- !private ["6Eureka8BaseCellC", "FieldRowConformance"]
 - !private ["6Eureka8BaseCellC", "FormatterConformance"]
 - !private ["6Eureka8BaseCellC", "FormatterProtocol"]
 - ["6Eureka8BaseCellC", "NSCoder"]
@@ -527,7 +525,6 @@ depends-member:
 - !private ["6Eureka4CellC", "AutoreleasingUnsafeMutablePointer"]
 - ["6Eureka4CellC", "Bool"]
 - ["6Eureka4CellC", "Direction"]
-- !private ["6Eureka4CellC", "FieldRowConformance"]
 - !private ["6Eureka4CellC", "FormatterConformance"]
 - !private ["6Eureka4CellC", "FormatterProtocol"]
 - ["6Eureka4CellC", "NSCoder"]
@@ -1088,8 +1085,6 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "count"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
-- !private ["6Eureka19FieldRowConformanceP", "formatter"]
-- !private ["6Eureka19FieldRowConformanceP", "useFormatterDuringInput"]
 - !private ["6Eureka12FormDelegateP", "beginEditing"]
 - !private ["6Eureka12FormDelegateP", "endEditing"]
 - !private ["6Eureka12FormDelegateP", "tableView"]
@@ -1447,7 +1442,6 @@ depends-member:
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CellStyle"]
 - ["So8NSObjectC", "Direction"]
-- !private ["So8NSObjectC", "FieldRowConformance"]
 - !private ["So8NSObjectC", "FormatterConformance"]
 - !private ["So8NSObjectC", "FormatterProtocol"]
 - ["So8NSObjectC", "NSCoder"]
@@ -2927,7 +2921,6 @@ depends-member:
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "CellStyle"]
 - ["So11UIResponderC", "Direction"]
-- !private ["So11UIResponderC", "FieldRowConformance"]
 - !private ["So11UIResponderC", "FormatterConformance"]
 - !private ["So11UIResponderC", "FormatterProtocol"]
 - ["So11UIResponderC", "NSCoder"]
@@ -3240,7 +3233,6 @@ depends-member:
 - ["So15UITableViewCellC", "Bool"]
 - ["So15UITableViewCellC", "CellStyle"]
 - ["So15UITableViewCellC", "Direction"]
-- !private ["So15UITableViewCellC", "FieldRowConformance"]
 - !private ["So15UITableViewCellC", "FormatterConformance"]
 - !private ["So15UITableViewCellC", "FormatterProtocol"]
 - ["So15UITableViewCellC", "NSCoder"]
@@ -3693,7 +3685,6 @@ depends-member:
 - ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "CellStyle"]
 - ["So6UIViewC", "Direction"]
-- !private ["So6UIViewC", "FieldRowConformance"]
 - !private ["So6UIViewC", "FormatterConformance"]
 - !private ["So6UIViewC", "FormatterProtocol"]
 - ["So6UIViewC", "NSCoder"]
@@ -3977,7 +3968,6 @@ depends-member:
 - !private ["6Eureka13_TextAreaCellC", "AutoreleasingUnsafeMutablePointer"]
 - ["6Eureka13_TextAreaCellC", "Bool"]
 - ["6Eureka13_TextAreaCellC", "Direction"]
-- !private ["6Eureka13_TextAreaCellC", "FieldRowConformance"]
 - !private ["6Eureka13_TextAreaCellC", "FormatterConformance"]
 - !private ["6Eureka13_TextAreaCellC", "FormatterProtocol"]
 - ["6Eureka13_TextAreaCellC", "NSCoder"]
@@ -4180,7 +4170,6 @@ depends-nominal:
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "6Eureka19FieldRowConformanceP"
 - !private "6Eureka12FormDelegateP"
 - !private "6Eureka18FormViewControllerC"
 - !private "6Eureka26FormViewControllerProtocolP"
@@ -4317,8 +4306,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Eureka-master/Source/Eureka.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Build/Intermediates/Eureka.build/Debug-iphoneos/Eureka.build/unextended-module.modulemap"
+- "/Users/jasonyeoh/Downloads/Eureka-master-2/Source/Eureka.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/Eureka.build/Debug-iphoneos/Eureka.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"

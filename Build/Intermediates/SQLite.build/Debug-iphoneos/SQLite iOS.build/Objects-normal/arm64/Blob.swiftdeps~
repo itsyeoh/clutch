@@ -14,39 +14,30 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Blob"
 - "Bool"
-- !private "BooleanLiteralType"
 - "CustomStringConvertible"
 - "Equatable"
-- "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "String"
-- !private "StringLiteralType"
 - !private "TernaryPrecedence"
 - "UInt8"
-- !private "UnicodeScalarType"
 - !private "UnsafeBufferPointer"
 - "UnsafeRawPointer"
 depends-member:
 - !private ["Sa", "init"]
 - !private ["Sa", "joined"]
 - !private ["Sa", "map"]
-- !private ["s13ArrayProtocolP", "init"]
-- !private ["s13ArrayProtocolP", "joined"]
-- !private ["s13ArrayProtocolP", "map"]
-- !private ["SK", "init"]
 - !private ["SK", "init"]
 - !private ["SK", "joined"]
 - !private ["SK", "map"]
+- ["6SQLite7BindingP", "=="]
 - !private ["6SQLite7BindingP", "String"]
 - !private ["6SQLite7BindingP", "UInt8"]
 - !private ["6SQLite7BindingP", "UnsafeBufferPointer"]
-- !private ["6SQLite7BindingP", "_getBuiltinLogicValue"]
 - !private ["6SQLite7BindingP", "bytes"]
 - ["6SQLite7BindingP", "description"]
 - !private ["6SQLite7BindingP", "init"]
-- !private ["6SQLite7BindingP", "init"]
 - !private ["6SQLite7BindingP", "toHex"]
+- ["6SQLite4BlobV", "=="]
 - ["6SQLite4BlobV", "Int"]
 - ["6SQLite4BlobV", "String"]
 - ["6SQLite4BlobV", "UInt8"]
@@ -57,225 +48,204 @@ depends-member:
 - ["6SQLite4BlobV", "description"]
 - ["6SQLite4BlobV", "init"]
 - ["6SQLite4BlobV", "toHex"]
-- !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
-- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "joined"]
 - !private ["s7CVarArgP", "map"]
-- !private ["Sl", "init"]
 - !private ["Sl", "init"]
 - !private ["Sl", "joined"]
 - !private ["Sl", "map"]
 - !private ["SL", "assumingMemoryBound"]
 - !private ["SL", "init"]
-- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "joined"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
 - !private ["s28CustomDebugStringConvertibleP", "assumingMemoryBound"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "joined"]
 - !private ["s28CustomDebugStringConvertibleP", "map"]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "assumingMemoryBound"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "assumingMemoryBound"]
-- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "joined"]
 - !private ["s17CustomReflectableP", "map"]
+- ["s23CustomStringConvertibleP", "=="]
 - !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UInt8"]
 - !private ["s23CustomStringConvertibleP", "UnsafeBufferPointer"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "bytes"]
 - ["s23CustomStringConvertibleP", "description"]
-- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "joined"]
 - !private ["s23CustomStringConvertibleP", "map"]
 - !private ["s23CustomStringConvertibleP", "toHex"]
-- !private ["Se", "_getBuiltinLogicValue"]
-- !private ["Se", "init"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "joined"]
+- !private ["10Foundation12DataProtocolP", "map"]
 - !private ["Se", "init"]
 - !private ["Se", "joined"]
 - !private ["Se", "map"]
-- !private ["SE", "_getBuiltinLogicValue"]
-- !private ["SE", "init"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "init"]
 - !private ["SE", "joined"]
 - !private ["SE", "map"]
+- ["SQ", "=="]
 - !private ["SQ", "String"]
 - !private ["SQ", "UInt8"]
 - !private ["SQ", "UnsafeBufferPointer"]
 - ["SQ", ""]
-- !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "assumingMemoryBound"]
 - !private ["SQ", "bytes"]
 - ["SQ", "description"]
 - !private ["SQ", "init"]
-- !private ["SQ", "init"]
 - !private ["SQ", "joined"]
 - !private ["SQ", "map"]
 - !private ["SQ", "toHex"]
+- ["6SQLite11ExpressibleP", "=="]
 - !private ["6SQLite11ExpressibleP", "String"]
 - !private ["6SQLite11ExpressibleP", "UInt8"]
 - !private ["6SQLite11ExpressibleP", "UnsafeBufferPointer"]
-- !private ["6SQLite11ExpressibleP", "_getBuiltinLogicValue"]
 - !private ["6SQLite11ExpressibleP", "bytes"]
 - ["6SQLite11ExpressibleP", "description"]
-- !private ["6SQLite11ExpressibleP", "init"]
 - !private ["6SQLite11ExpressibleP", "init"]
 - !private ["6SQLite11ExpressibleP", "toHex"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "joined"]
 - !private ["s25ExpressibleByArrayLiteralP", "map"]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "assumingMemoryBound"]
-- !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "joined"]
 - !private ["SH", "map"]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["SM", "init"]
 - !private ["SM", "joined"]
 - !private ["SM", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "joined"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
 - !private ["Sk", "init"]
 - !private ["Sk", "joined"]
 - !private ["Sk", "map"]
 - !private ["Sm", "init"]
-- !private ["Sm", "init"]
 - !private ["Sm", "joined"]
 - !private ["Sm", "map"]
-- !private ["ST", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "joined"]
 - !private ["ST", "map"]
 - !private ["Sx", "assumingMemoryBound"]
 - !private ["SS", "init"]
-- !private ["SS", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["Sy", "init"]
-- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["SR", "init"]
 - !private ["SV", "assumingMemoryBound"]
+- ["6SQLite5ValueP", "=="]
 - !private ["6SQLite5ValueP", "String"]
 - !private ["6SQLite5ValueP", "UInt8"]
 - !private ["6SQLite5ValueP", "UnsafeBufferPointer"]
-- !private ["6SQLite5ValueP", "_getBuiltinLogicValue"]
 - !private ["6SQLite5ValueP", "bytes"]
 - ["6SQLite5ValueP", "description"]
 - !private ["6SQLite5ValueP", "init"]
-- !private ["6SQLite5ValueP", "init"]
 - !private ["6SQLite5ValueP", "toHex"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "joined"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "assumingMemoryBound"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "joined"]
 - !private ["s24_DestructorSafeContainerP", "map"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "joined"]
+- !private ["s19_HasContiguousBytesP", "map"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "joined"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "joined"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s8_PointerP", "assumingMemoryBound"]
-- !private ["s16_SwiftStringViewP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
-- !private "s13ArrayProtocolP"
 - !private "SK"
 - "6SQLite7BindingP"
 - "6SQLite4BlobV"
-- !private "Sb"
 - !private "s7CVarArgP"
 - !private "Sl"
 - !private "SL"
+- !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
 - !private "Se"
+- !private "s26DefaultStringInterpolationV"
 - !private "SE"
 - "SQ"
 - "6SQLite11ExpressibleP"
 - !private "s25ExpressibleByArrayLiteralP"
-- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - !private "Sk"
 - !private "Sm"
 - !private "ST"
 - !private "Sx"
 - !private "SS"
+- !private "s27StringInterpolationProtocolP"
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "SR"
 - !private "SV"
 - "6SQLite5ValueP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s8_PointerP"
-- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/SQLite.h"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLiteObjc/include/SQLite-Bridging.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLiteObjc/include/SQLiteObjc.h"
+- "/Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLite/SQLite.h"
 - "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Build/Intermediates/SQLite.build/Debug-iphoneos/SQLite iOS.build/unextended-module.modulemap"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/CocoaPods/iphoneos/module.modulemap"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "55d8dcada86bdbcfaebf212984ba3a80"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c1ecb6613d1c863c3531aea282576068"

@@ -31,8 +31,7 @@ class TaskVC: UIViewController {
         taskTableView.delegate = self
         
         refreshData(false)
-        
-        self.taskTableView.setEditing(true, animated: true)
+//        self.taskTableView.setEditing(true, animated: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,21 +57,17 @@ class TaskVC: UIViewController {
     
     func refreshDataView() {
         if isCompleted { refreshData(true) }
-        else { refreshData(false)}
+        else { refreshData(false) }
     }
     
     @objc func openCompletedTasks() {
         if isCompleted == true {
-            print("--------")
-            print("NOT DONE")
-            
             self.navigationItem.title = "TASKS"
             self.navigationItem.leftBarButtonItem?.setBackgroundImage(
                 UIImage(named: "NotDone"), for: .normal, barMetrics: .default)
             isCompleted = false
             refreshData(false)
         } else {
-            print("DONE")
             self.navigationItem.leftBarButtonItem?.setBackgroundImage(
                 UIImage(named: "Done"), for: .normal, barMetrics: .default)
             self.navigationItem.title = "COMPLETED TASKS"
@@ -113,7 +108,7 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
             let task = tasksByDate[indexPath.section][indexPath.row]
             let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTVC
             cell.setup(task: task, isCompleted: isCompleted)
-            
+
             return cell
             
         case 1:
@@ -179,9 +174,13 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         switch taskControls.selectedSegmentIndex {
         case 0:
             let task = tasksByDate[indexPath.section][indexPath.row]
+            let cell = tableView.cellForRow(at: indexPath) as! TaskTVC
+            cell.buttonPressed()
             task.isSelected()
         case 1:
             let task = tasksByCourseName[indexPath.section][indexPath.row]
+            let cell = tableView.cellForRow(at: indexPath) as! TaskTVC
+            cell.buttonPressed()
             task.isSelected()
         default:
              break
@@ -190,26 +189,39 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         refreshDataView()
     }//end didSelectRow
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         switch taskControls.selectedSegmentIndex {
         case 0:
-            let task = tasksByDate[indexPath.section][indexPath.row]
-            task.isDeselected()
+            let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, view, handler) in
+                let task = self.tasksByDate[indexPath.section][indexPath.row]
+                
+                if UniversityDB.instance.deleteTask(id: task.tid) {
+                    self.tasksByDate[indexPath.section].remove(at: indexPath.row)
+                    self.taskTableView.deleteRows(at: [indexPath], with: .fade)
+                }
+                handler(true)
+            }
+            
+            delete.backgroundColor = Theme.Primary
+            return UISwipeActionsConfiguration(actions: [delete])
         case 1:
-            let task = tasksByCourseName[indexPath.section][indexPath.row]
-            task.isDeselected()
+            let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, view, handler) in
+                let task = self.tasksByCourseName[indexPath.section][indexPath.row]
+                
+                if UniversityDB.instance.deleteTask(id: task.tid) {
+                    self.tasksByCourseName[indexPath.section].remove(at: indexPath.row)
+                    self.taskTableView.deleteRows(at: [indexPath], with: .fade)
+                }
+                handler(true)
+            }
+            
+            delete.backgroundColor = Theme.Primary
+            return UISwipeActionsConfiguration(actions: [delete])
         default:
-            break
+            return UISwipeActionsConfiguration(actions: [])
         }
-        
-        refreshDataView()
-    }//end didDeselectRow
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if isCompleted {
-            tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
-        }
-    }
+    }//end trailingSwipe
 }
 
 extension TaskVC: AddTaskDelegate {

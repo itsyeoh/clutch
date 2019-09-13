@@ -7,16 +7,6 @@ provides-nominal:
 provides-member:
 - ["10Foundation4DataV", ""]
 - ["10Foundation4DateV", ""]
-- ["6SQLite9QueryTypeP", ""]
-- ["6SQLite3RowV", ""]
-- ["6SQLite9QueryTypeP", "subscript"]
-- ["6SQLite9QueryTypeP", "subscript"]
-- ["6SQLite9QueryTypeP", "subscript"]
-- ["6SQLite9QueryTypeP", "subscript"]
-- ["6SQLite3RowV", "subscript"]
-- ["6SQLite3RowV", "subscript"]
-- ["6SQLite3RowV", "subscript"]
-- ["6SQLite3RowV", "subscript"]
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
@@ -24,17 +14,10 @@ depends-top-level:
 - "Data"
 - "Date"
 - "DateFormatter"
-- "Expression"
-- "FloatLiteralType"
-- "IntegerLiteralType"
 - "Locale"
-- "QueryType"
-- "Row"
 - "String"
-- "StringLiteralType"
 - "TimeZone"
-- !private "UInt8"
-- !private "UnsafePointer"
+- !private "UnsafeRawBufferPointer"
 - "Value"
 - "dateFormatter"
 depends-member:
@@ -44,18 +27,17 @@ depends-member:
 - ["SK", "ValueType"]
 - ["SK", "_Default_Datatype"]
 - ["SK", "_Default_ValueType"]
+- !private ["SK", "baseAddress"]
 - !private ["SK", "count"]
 - ["SK", "datatypeValue"]
 - ["SK", "declaredDatatype"]
 - ["SK", "expression"]
 - ["SK", "fromDatatypeValue"]
-- ["SK", "init"]
-- ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["SK", "withUnsafeBytes"]
 - !private ["6SQLite7BindingP", "bytes"]
 - !private ["6SQLite7BindingP", "declaredDatatype"]
-- ["6SQLite7BindingP", "init"]
-- ["6SQLite7BindingP", "init"]
+- !private ["6SQLite7BindingP", "init"]
 - !private ["6SQLite4BlobV", "bytes"]
 - !private ["6SQLite4BlobV", "declaredDatatype"]
 - ["6SQLite4BlobV", "deinit"]
@@ -63,7 +45,6 @@ depends-member:
 - !private ["s7CVarArgP", "date"]
 - ["s7CVarArgP", "dateFormat"]
 - !private ["s7CVarArgP", "declaredDatatype"]
-- ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "locale"]
 - !private ["s7CVarArgP", "string"]
@@ -74,13 +55,13 @@ depends-member:
 - ["Sl", "ValueType"]
 - ["Sl", "_Default_Datatype"]
 - ["Sl", "_Default_ValueType"]
+- !private ["Sl", "baseAddress"]
 - !private ["Sl", "count"]
 - ["Sl", "datatypeValue"]
 - ["Sl", "declaredDatatype"]
 - ["Sl", "expression"]
 - ["Sl", "fromDatatypeValue"]
-- ["Sl", "init"]
-- ["Sl", "init"]
+- !private ["Sl", "init"]
 - !private ["Sl", "withUnsafeBytes"]
 - ["SL", "Datatype"]
 - !private ["SL", "String"]
@@ -92,8 +73,20 @@ depends-member:
 - ["SL", "declaredDatatype"]
 - ["SL", "expression"]
 - ["SL", "fromDatatypeValue"]
-- ["SL", "init"]
-- ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "Blob"]
+- !private ["10Foundation15ContiguousBytesP", "Data"]
+- ["10Foundation15ContiguousBytesP", "Datatype"]
+- ["10Foundation15ContiguousBytesP", "ValueType"]
+- ["10Foundation15ContiguousBytesP", "_Default_Datatype"]
+- ["10Foundation15ContiguousBytesP", "_Default_ValueType"]
+- !private ["10Foundation15ContiguousBytesP", "baseAddress"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- ["10Foundation15ContiguousBytesP", "datatypeValue"]
+- ["10Foundation15ContiguousBytesP", "declaredDatatype"]
+- ["10Foundation15ContiguousBytesP", "expression"]
+- ["10Foundation15ContiguousBytesP", "fromDatatypeValue"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "withUnsafeBytes"]
 - !private ["s28CustomDebugStringConvertibleP", "Blob"]
 - !private ["s28CustomDebugStringConvertibleP", "Data"]
 - ["s28CustomDebugStringConvertibleP", "Datatype"]
@@ -101,6 +94,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "ValueType"]
 - ["s28CustomDebugStringConvertibleP", "_Default_Datatype"]
 - ["s28CustomDebugStringConvertibleP", "_Default_ValueType"]
+- !private ["s28CustomDebugStringConvertibleP", "baseAddress"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - ["s28CustomDebugStringConvertibleP", "datatypeValue"]
 - !private ["s28CustomDebugStringConvertibleP", "date"]
@@ -110,23 +104,10 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "expression"]
 - ["s28CustomDebugStringConvertibleP", "fromDatatypeValue"]
 - ["s28CustomDebugStringConvertibleP", "init"]
-- ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "locale"]
 - !private ["s28CustomDebugStringConvertibleP", "string"]
 - ["s28CustomDebugStringConvertibleP", "timeZone"]
 - !private ["s28CustomDebugStringConvertibleP", "withUnsafeBytes"]
-- ["s29CustomPlaygroundQuickLookableP", "Datatype"]
-- !private ["s29CustomPlaygroundQuickLookableP", "String"]
-- ["s29CustomPlaygroundQuickLookableP", "ValueType"]
-- ["s29CustomPlaygroundQuickLookableP", "_Default_Datatype"]
-- ["s29CustomPlaygroundQuickLookableP", "_Default_ValueType"]
-- ["s29CustomPlaygroundQuickLookableP", "datatypeValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "dateFormatter"]
-- ["s29CustomPlaygroundQuickLookableP", "declaredDatatype"]
-- ["s29CustomPlaygroundQuickLookableP", "expression"]
-- ["s29CustomPlaygroundQuickLookableP", "fromDatatypeValue"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "Blob"]
 - !private ["s17CustomReflectableP", "Data"]
 - ["s17CustomReflectableP", "Datatype"]
@@ -140,7 +121,6 @@ depends-member:
 - ["s17CustomReflectableP", "declaredDatatype"]
 - ["s17CustomReflectableP", "expression"]
 - ["s17CustomReflectableP", "fromDatatypeValue"]
-- ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "withUnsafeBytes"]
 - !private ["s23CustomStringConvertibleP", "Blob"]
@@ -160,7 +140,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "expression"]
 - ["s23CustomStringConvertibleP", "fromDatatypeValue"]
 - ["s23CustomStringConvertibleP", "init"]
-- ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "locale"]
 - !private ["s23CustomStringConvertibleP", "string"]
 - ["s23CustomStringConvertibleP", "timeZone"]
@@ -169,8 +148,7 @@ depends-member:
 - ["10Foundation4DataV", "Data"]
 - ["10Foundation4DataV", "Datatype"]
 - ["10Foundation4DataV", "String"]
-- !private ["10Foundation4DataV", "UInt8"]
-- !private ["10Foundation4DataV", "UnsafePointer"]
+- !private ["10Foundation4DataV", "UnsafeRawBufferPointer"]
 - ["10Foundation4DataV", "ValueType"]
 - ["10Foundation4DataV", "_Default_Datatype"]
 - ["10Foundation4DataV", "_Default_ValueType"]
@@ -182,6 +160,20 @@ depends-member:
 - ["10Foundation4DataV", "fromDatatypeValue"]
 - !private ["10Foundation4DataV", "init"]
 - !private ["10Foundation4DataV", "withUnsafeBytes"]
+- !private ["10Foundation12DataProtocolP", "Blob"]
+- !private ["10Foundation12DataProtocolP", "Data"]
+- ["10Foundation12DataProtocolP", "Datatype"]
+- ["10Foundation12DataProtocolP", "ValueType"]
+- ["10Foundation12DataProtocolP", "_Default_Datatype"]
+- ["10Foundation12DataProtocolP", "_Default_ValueType"]
+- !private ["10Foundation12DataProtocolP", "baseAddress"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- ["10Foundation12DataProtocolP", "datatypeValue"]
+- ["10Foundation12DataProtocolP", "declaredDatatype"]
+- ["10Foundation12DataProtocolP", "expression"]
+- ["10Foundation12DataProtocolP", "fromDatatypeValue"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "withUnsafeBytes"]
 - ["10Foundation4DateV", "Datatype"]
 - ["10Foundation4DateV", "Date"]
 - ["10Foundation4DateV", "String"]
@@ -214,7 +206,6 @@ depends-member:
 - ["Se", "expression"]
 - ["Se", "fromDatatypeValue"]
 - ["Se", "init"]
-- ["Se", "init"]
 - !private ["Se", "withUnsafeBytes"]
 - !private ["SE", "Blob"]
 - !private ["SE", "Data"]
@@ -229,7 +220,6 @@ depends-member:
 - ["SE", "declaredDatatype"]
 - ["SE", "expression"]
 - ["SE", "fromDatatypeValue"]
-- ["SE", "init"]
 - ["SE", "init"]
 - !private ["SE", "withUnsafeBytes"]
 - !private ["SQ", "Blob"]
@@ -249,16 +239,13 @@ depends-member:
 - ["SQ", "expression"]
 - ["SQ", "fromDatatypeValue"]
 - ["SQ", "init"]
-- ["SQ", "init"]
 - ["SQ", "locale"]
 - !private ["SQ", "string"]
 - ["SQ", "timeZone"]
 - !private ["SQ", "withUnsafeBytes"]
 - !private ["6SQLite11ExpressibleP", "Blob"]
-- ["6SQLite11ExpressibleP", "Data"]
+- !private ["6SQLite11ExpressibleP", "Data"]
 - ["6SQLite11ExpressibleP", "Datatype"]
-- ["6SQLite11ExpressibleP", "Date"]
-- ["6SQLite11ExpressibleP", "Expression"]
 - !private ["6SQLite11ExpressibleP", "String"]
 - ["6SQLite11ExpressibleP", "ValueType"]
 - ["6SQLite11ExpressibleP", ""]
@@ -271,19 +258,12 @@ depends-member:
 - ["6SQLite11ExpressibleP", "declaredDatatype"]
 - ["6SQLite11ExpressibleP", "expression"]
 - ["6SQLite11ExpressibleP", "fromDatatypeValue"]
-- ["6SQLite11ExpressibleP", "init"]
-- ["6SQLite11ExpressibleP", "init"]
-- !private ["6SQLite11ExpressibleP", "namespace"]
+- !private ["6SQLite11ExpressibleP", "init"]
 - !private ["6SQLite11ExpressibleP", "withUnsafeBytes"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "declaredDatatype"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "declaredDatatype"]
 - !private ["s26ExpressibleByStringLiteralP", "declaredDatatype"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "declaredDatatype"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["So11NSFormatterC", "date"]
 - ["So11NSFormatterC", "dateFormat"]
 - ["So11NSFormatterC", "init"]
@@ -306,18 +286,13 @@ depends-member:
 - ["SH", "expression"]
 - ["SH", "fromDatatypeValue"]
 - ["SH", "init"]
-- ["SH", "init"]
 - ["SH", "locale"]
 - !private ["SH", "string"]
 - ["SH", "timeZone"]
 - !private ["SH", "withUnsafeBytes"]
 - ["10Foundation6LocaleV", "init"]
 - !private ["s25LosslessStringConvertibleP", "declaredDatatype"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "declaredDatatype"]
-- ["s10MirrorPathP", "init"]
-- ["s10MirrorPathP", "init"]
 - !private ["SM", "Blob"]
 - !private ["SM", "Data"]
 - ["SM", "Datatype"]
@@ -331,6 +306,19 @@ depends-member:
 - ["SM", "fromDatatypeValue"]
 - !private ["SM", "init"]
 - !private ["SM", "withUnsafeBytes"]
+- !private ["10Foundation19MutableDataProtocolP", "Blob"]
+- !private ["10Foundation19MutableDataProtocolP", "Data"]
+- ["10Foundation19MutableDataProtocolP", "Datatype"]
+- ["10Foundation19MutableDataProtocolP", "ValueType"]
+- ["10Foundation19MutableDataProtocolP", "_Default_Datatype"]
+- ["10Foundation19MutableDataProtocolP", "_Default_ValueType"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- ["10Foundation19MutableDataProtocolP", "datatypeValue"]
+- ["10Foundation19MutableDataProtocolP", "declaredDatatype"]
+- ["10Foundation19MutableDataProtocolP", "expression"]
+- ["10Foundation19MutableDataProtocolP", "fromDatatypeValue"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "withUnsafeBytes"]
 - !private ["So8NSCodingP", "date"]
 - ["So8NSCodingP", "dateFormat"]
 - ["So8NSCodingP", "init"]
@@ -355,17 +343,13 @@ depends-member:
 - ["So8NSObjectP", "locale"]
 - !private ["So8NSObjectP", "string"]
 - ["So8NSObjectP", "timeZone"]
-- ["6SQLite9QueryTypeP", "Data"]
-- ["6SQLite9QueryTypeP", "Date"]
-- ["6SQLite9QueryTypeP", "Expression"]
-- !private ["6SQLite9QueryTypeP", "namespace"]
-- ["6SQLite9QueryTypeP", "subscript"]
 - !private ["Sk", "Blob"]
 - !private ["Sk", "Data"]
 - ["Sk", "Datatype"]
 - ["Sk", "ValueType"]
 - ["Sk", "_Default_Datatype"]
 - ["Sk", "_Default_ValueType"]
+- !private ["Sk", "baseAddress"]
 - !private ["Sk", "count"]
 - ["Sk", "datatypeValue"]
 - ["Sk", "declaredDatatype"]
@@ -384,8 +368,7 @@ depends-member:
 - ["Sm", "declaredDatatype"]
 - ["Sm", "expression"]
 - ["Sm", "fromDatatypeValue"]
-- ["Sm", "init"]
-- ["Sm", "init"]
+- !private ["Sm", "init"]
 - !private ["Sm", "withUnsafeBytes"]
 - !private ["10Foundation20ReferenceConvertibleP", "Blob"]
 - !private ["10Foundation20ReferenceConvertibleP", "Data"]
@@ -402,39 +385,27 @@ depends-member:
 - ["10Foundation20ReferenceConvertibleP", "fromDatatypeValue"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "withUnsafeBytes"]
-- ["6SQLite3RowV", "Data"]
-- ["6SQLite3RowV", "Date"]
-- ["6SQLite3RowV", "Expression"]
-- !private ["6SQLite3RowV", "get"]
-- ["6SQLite3RowV", "subscript"]
 - !private ["ST", "Blob"]
 - !private ["ST", "Data"]
 - ["ST", "Datatype"]
 - ["ST", "ValueType"]
 - ["ST", "_Default_Datatype"]
 - ["ST", "_Default_ValueType"]
+- !private ["ST", "baseAddress"]
 - !private ["ST", "count"]
 - ["ST", "datatypeValue"]
 - ["ST", "declaredDatatype"]
 - ["ST", "expression"]
 - ["ST", "fromDatatypeValue"]
-- ["ST", "init"]
-- ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["ST", "withUnsafeBytes"]
 - !private ["SS", "declaredDatatype"]
 - ["SS", "deinit"]
-- ["SS", "init"]
-- ["SS", "init"]
 - !private ["Sy", "declaredDatatype"]
-- ["Sy", "init"]
-- ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "declaredDatatype"]
-- ["s16TextOutputStreamP", "init"]
-- ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "declaredDatatype"]
-- ["s20TextOutputStreamableP", "init"]
-- ["s20TextOutputStreamableP", "init"]
 - ["10Foundation8TimeZoneV", "init"]
+- !private ["SW", "baseAddress"]
 - !private ["6SQLite5ValueP", "Blob"]
 - !private ["6SQLite5ValueP", "Data"]
 - ["6SQLite5ValueP", "Datatype"]
@@ -450,24 +421,23 @@ depends-member:
 - ["6SQLite5ValueP", "declaredDatatype"]
 - ["6SQLite5ValueP", "expression"]
 - ["6SQLite5ValueP", "fromDatatypeValue"]
-- ["6SQLite5ValueP", "init"]
-- ["6SQLite5ValueP", "init"]
+- !private ["6SQLite5ValueP", "init"]
 - !private ["6SQLite5ValueP", "withUnsafeBytes"]
+- ["s30_CustomPlaygroundQuickLookableP", "Datatype"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "String"]
+- ["s30_CustomPlaygroundQuickLookableP", "ValueType"]
+- ["s30_CustomPlaygroundQuickLookableP", "_Default_Datatype"]
+- ["s30_CustomPlaygroundQuickLookableP", "_Default_ValueType"]
+- ["s30_CustomPlaygroundQuickLookableP", "datatypeValue"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "dateFormatter"]
+- ["s30_CustomPlaygroundQuickLookableP", "declaredDatatype"]
+- ["s30_CustomPlaygroundQuickLookableP", "expression"]
+- ["s30_CustomPlaygroundQuickLookableP", "fromDatatypeValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "declaredDatatype"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "declaredDatatype"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "declaredDatatype"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "declaredDatatype"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "declaredDatatype"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s19_HasContiguousBytesP", "baseAddress"]
+- !private ["s19_HasContiguousBytesP", "declaredDatatype"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -488,80 +458,76 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "expression"]
 - ["s21_ObjectiveCBridgeableP", "fromDatatypeValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "withUnsafeBytes"]
-- !private ["s16_SwiftStringViewP", "declaredDatatype"]
-- ["s16_SwiftStringViewP", "init"]
-- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "SK"
-- "6SQLite7BindingP"
+- !private "6SQLite7BindingP"
 - "6SQLite4BlobV"
 - "s7CVarArgP"
 - "Sl"
 - "SL"
+- "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
-- "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "10Foundation4DataV"
+- "10Foundation12DataProtocolP"
 - "10Foundation4DateV"
 - "So15NSDateFormatterC"
 - "Se"
 - "SE"
 - "SQ"
 - "6SQLite11ExpressibleP"
-- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- "s26ExpressibleByStringLiteralP"
-- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "So11NSFormatterC"
 - "SH"
 - "10Foundation6LocaleV"
-- "s25LosslessStringConvertibleP"
-- "s10MirrorPathP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - "SM"
+- "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
-- "6SQLite9QueryTypeP"
 - "Sk"
 - "Sm"
 - "10Foundation20ReferenceConvertibleP"
-- "6SQLite3RowV"
 - "ST"
 - "SS"
-- "Sy"
-- "s16TextOutputStreamP"
-- "s20TextOutputStreamableP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - "10Foundation8TimeZoneV"
+- !private "SW"
 - "6SQLite5ValueP"
-- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- "s34_ExpressibleByBuiltinStringLiteralP"
-- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- "s33_ExpressibleByStringInterpolationP"
+- "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLite/SQLite.h"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/Sources/SQLiteObjc/include/SQLite-Bridging.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLiteObjc/include/SQLiteObjc.h"
+- "/Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLite/SQLite.h"
 - "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Build/Intermediates/SQLite.build/Debug-iphoneos/SQLite iOS.build/unextended-module.modulemap"
-- "/Users/jasonyeoh/Downloads/SQLite-master/SQLite.swift-master/CocoaPods/iphoneos/module.modulemap"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Users/jasonyeoh/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "15d49ca7e3146b7ec9b15644f1d387f3"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "b07c5a90bc3c9d85228b8be8df3cc6d4"

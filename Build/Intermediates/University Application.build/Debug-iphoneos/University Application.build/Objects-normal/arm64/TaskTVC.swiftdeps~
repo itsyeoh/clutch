@@ -13,6 +13,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "+"
 - "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
 - !private "StringLiteralType"
 - "Task"
 - "TaskTVC"
@@ -115,13 +117,13 @@ depends-member:
 - !private ["So8NSCodingP", "tickButton"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
+- ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "Task"]
 - ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "awakeFromNib"]
-- ["So8NSObjectC", "buttonDeselected"]
-- ["So8NSObjectC", "buttonSelected"]
+- ["So8NSObjectC", "buttonPressed"]
 - ["So8NSObjectC", "courseNameLabel"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
@@ -154,13 +156,13 @@ depends-member:
 - !private ["22University_Application4TaskC", "getCourse"]
 - !private ["22University_Application4TaskC", "getWeekDayToString"]
 - !private ["22University_Application4TaskC", "taskName"]
+- ["22University_Application7TaskTVCC", "Bool"]
 - ["22University_Application7TaskTVCC", "Task"]
 - ["22University_Application7TaskTVCC", "UIButton"]
 - !private ["22University_Application7TaskTVCC", "UIImage"]
 - ["22University_Application7TaskTVCC", "UILabel"]
 - ["22University_Application7TaskTVCC", "awakeFromNib"]
-- ["22University_Application7TaskTVCC", "buttonDeselected"]
-- ["22University_Application7TaskTVCC", "buttonSelected"]
+- ["22University_Application7TaskTVCC", "buttonPressed"]
 - ["22University_Application7TaskTVCC", "courseNameLabel"]
 - ["22University_Application7TaskTVCC", "deinit"]
 - ["22University_Application7TaskTVCC", "init"]
@@ -285,13 +287,13 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "taskNameLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "tickButton"]
+- ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "Task"]
 - ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "awakeFromNib"]
-- ["So11UIResponderC", "buttonDeselected"]
-- ["So11UIResponderC", "buttonSelected"]
+- ["So11UIResponderC", "buttonPressed"]
 - ["So11UIResponderC", "courseNameLabel"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
@@ -315,14 +317,14 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "tickButton"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "isSelected"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "setImage"]
+- ["So15UITableViewCellC", "Bool"]
 - ["So15UITableViewCellC", "Task"]
 - ["So15UITableViewCellC", "UIButton"]
 - !private ["So15UITableViewCellC", "UIImage"]
 - ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
-- ["So15UITableViewCellC", "buttonDeselected"]
-- ["So15UITableViewCellC", "buttonSelected"]
+- ["So15UITableViewCellC", "buttonPressed"]
 - ["So15UITableViewCellC", "courseNameLabel"]
 - ["So15UITableViewCellC", "init"]
 - !private ["So15UITableViewCellC", "init"]
@@ -352,13 +354,13 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "taskNameLabel"]
 - !private ["So23UIUserActivityRestoringP", "text"]
 - !private ["So23UIUserActivityRestoringP", "tickButton"]
+- ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "Task"]
 - ["So6UIViewC", "UIButton"]
 - !private ["So6UIViewC", "UIImage"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "awakeFromNib"]
-- ["So6UIViewC", "buttonDeselected"]
-- ["So6UIViewC", "buttonSelected"]
+- ["So6UIViewC", "buttonPressed"]
 - ["So6UIViewC", "courseNameLabel"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "init"]
@@ -455,7 +457,8 @@ depends-nominal:
 - "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/Eureka.swiftmodule/arm64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
@@ -468,10 +471,20 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarAppearance.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarCell.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendar.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarConstants.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarHeaderView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarWeekdayView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -484,4 +497,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d3d8427da4a897ed4c02f5e279069306"
+interface-hash: "73838f3fb8f3465772d5347daecce222"

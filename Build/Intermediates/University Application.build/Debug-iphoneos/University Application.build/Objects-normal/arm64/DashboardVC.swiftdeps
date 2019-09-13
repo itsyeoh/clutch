@@ -1,0 +1,494 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DashboardVC"
+provides-nominal:
+- "22University_Application11DashboardVCC"
+provides-member:
+- ["22University_Application11DashboardVCC", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "CGRect"
+- "DashboardVC"
+- "FSCalendar"
+- "FSCalendarDataSource"
+- "FSCalendarDelegate"
+- "UIViewController"
+depends-member:
+- !private ["So15CALayerDelegateP", "addSubview"]
+- !private ["So15CALayerDelegateP", "dataSource"]
+- !private ["So15CALayerDelegateP", "delegate"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So6CGRectV", "init"]
+- !private ["s7CVarArgP", "CGRect"]
+- !private ["s7CVarArgP", "FSCalendar"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "addSubview"]
+- ["s7CVarArgP", "calendar"]
+- ["s7CVarArgP", "calendarCurrentPageDidChange"]
+- !private ["s7CVarArgP", "dataSource"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "maximumDate"]
+- ["s7CVarArgP", "maximumDateForCalendar"]
+- ["s7CVarArgP", "minimumDate"]
+- ["s7CVarArgP", "minimumDateForCalendar"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "CGRect"]
+- !private ["s28CustomDebugStringConvertibleP", "FSCalendar"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addSubview"]
+- ["s28CustomDebugStringConvertibleP", "calendar"]
+- ["s28CustomDebugStringConvertibleP", "calendarCurrentPageDidChange"]
+- !private ["s28CustomDebugStringConvertibleP", "dataSource"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "maximumDate"]
+- ["s28CustomDebugStringConvertibleP", "maximumDateForCalendar"]
+- ["s28CustomDebugStringConvertibleP", "minimumDate"]
+- ["s28CustomDebugStringConvertibleP", "minimumDateForCalendar"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "addSubview"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "CGRect"]
+- !private ["s23CustomStringConvertibleP", "FSCalendar"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addSubview"]
+- ["s23CustomStringConvertibleP", "calendar"]
+- ["s23CustomStringConvertibleP", "calendarCurrentPageDidChange"]
+- !private ["s23CustomStringConvertibleP", "dataSource"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "maximumDate"]
+- ["s23CustomStringConvertibleP", "maximumDateForCalendar"]
+- ["s23CustomStringConvertibleP", "minimumDate"]
+- ["s23CustomStringConvertibleP", "minimumDateForCalendar"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["22University_Application11DashboardVCC", "CGRect"]
+- ["22University_Application11DashboardVCC", "FSCalendar"]
+- ["22University_Application11DashboardVCC", "calendar"]
+- ["22University_Application11DashboardVCC", "calendarCurrentPageDidChange"]
+- ["22University_Application11DashboardVCC", "deinit"]
+- ["22University_Application11DashboardVCC", "init"]
+- ["22University_Application11DashboardVCC", "maximumDate"]
+- ["22University_Application11DashboardVCC", "maximumDateForCalendar"]
+- ["22University_Application11DashboardVCC", "minimumDate"]
+- ["22University_Application11DashboardVCC", "minimumDateForCalendar"]
+- !private ["22University_Application11DashboardVCC", "view"]
+- ["22University_Application11DashboardVCC", "viewDidLoad"]
+- !private ["Se", "addSubview"]
+- !private ["Se", "init"]
+- !private ["SE", "addSubview"]
+- !private ["SE", "init"]
+- !private ["SQ", "CGRect"]
+- !private ["SQ", "FSCalendar"]
+- ["SQ", ""]
+- !private ["SQ", "addSubview"]
+- ["SQ", "calendar"]
+- ["SQ", "calendarCurrentPageDidChange"]
+- !private ["SQ", "dataSource"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- ["SQ", "maximumDate"]
+- ["SQ", "maximumDateForCalendar"]
+- ["SQ", "minimumDate"]
+- ["SQ", "minimumDateForCalendar"]
+- !private ["SQ", "view"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["s23ExpressibleByNilLiteralP", "addSubview"]
+- !private ["So10FSCalendarC", "dataSource"]
+- !private ["So10FSCalendarC", "delegate"]
+- !private ["So10FSCalendarC", "init"]
+- !private ["So20FSCalendarDataSourceP", "CGRect"]
+- !private ["So20FSCalendarDataSourceP", "FSCalendar"]
+- ["So20FSCalendarDataSourceP", ""]
+- ["So20FSCalendarDataSourceP", "calendar"]
+- ["So20FSCalendarDataSourceP", "calendarCurrentPageDidChange"]
+- ["So20FSCalendarDataSourceP", "maximumDate"]
+- ["So20FSCalendarDataSourceP", "maximumDateForCalendar"]
+- ["So20FSCalendarDataSourceP", "minimumDate"]
+- ["So20FSCalendarDataSourceP", "minimumDateForCalendar"]
+- !private ["So20FSCalendarDataSourceP", "view"]
+- !private ["So18FSCalendarDelegateP", "CGRect"]
+- !private ["So18FSCalendarDelegateP", "FSCalendar"]
+- ["So18FSCalendarDelegateP", ""]
+- ["So18FSCalendarDelegateP", "calendar"]
+- ["So18FSCalendarDelegateP", "calendarCurrentPageDidChange"]
+- ["So18FSCalendarDelegateP", "maximumDate"]
+- ["So18FSCalendarDelegateP", "maximumDateForCalendar"]
+- ["So18FSCalendarDelegateP", "minimumDate"]
+- ["So18FSCalendarDelegateP", "minimumDateForCalendar"]
+- !private ["So18FSCalendarDelegateP", "view"]
+- !private ["SH", "CGRect"]
+- !private ["SH", "FSCalendar"]
+- ["SH", ""]
+- !private ["SH", "addSubview"]
+- ["SH", "calendar"]
+- ["SH", "calendarCurrentPageDidChange"]
+- !private ["SH", "dataSource"]
+- !private ["SH", "delegate"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- ["SH", "maximumDate"]
+- ["SH", "maximumDateForCalendar"]
+- ["SH", "minimumDate"]
+- ["SH", "minimumDateForCalendar"]
+- !private ["SH", "view"]
+- !private ["SH", "viewDidLoad"]
+- !private ["So8NSCodingP", "CGRect"]
+- !private ["So8NSCodingP", "FSCalendar"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "addSubview"]
+- ["So8NSCodingP", "calendar"]
+- ["So8NSCodingP", "calendarCurrentPageDidChange"]
+- !private ["So8NSCodingP", "dataSource"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "maximumDate"]
+- ["So8NSCodingP", "maximumDateForCalendar"]
+- ["So8NSCodingP", "minimumDate"]
+- ["So8NSCodingP", "minimumDateForCalendar"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "CGRect"]
+- !private ["So26NSExtensionRequestHandlingP", "FSCalendar"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- ["So26NSExtensionRequestHandlingP", "calendar"]
+- ["So26NSExtensionRequestHandlingP", "calendarCurrentPageDidChange"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- ["So26NSExtensionRequestHandlingP", "maximumDate"]
+- ["So26NSExtensionRequestHandlingP", "maximumDateForCalendar"]
+- ["So26NSExtensionRequestHandlingP", "minimumDate"]
+- ["So26NSExtensionRequestHandlingP", "minimumDateForCalendar"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So8NSObjectC", "CGRect"]
+- ["So8NSObjectC", "FSCalendar"]
+- !private ["So8NSObjectC", "addSubview"]
+- ["So8NSObjectC", "calendar"]
+- ["So8NSObjectC", "calendarCurrentPageDidChange"]
+- !private ["So8NSObjectC", "dataSource"]
+- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "maximumDate"]
+- ["So8NSObjectC", "maximumDateForCalendar"]
+- ["So8NSObjectC", "minimumDate"]
+- ["So8NSObjectC", "minimumDateForCalendar"]
+- !private ["So8NSObjectC", "view"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "CGRect"]
+- !private ["So8NSObjectP", "FSCalendar"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addSubview"]
+- ["So8NSObjectP", "calendar"]
+- ["So8NSObjectP", "calendarCurrentPageDidChange"]
+- !private ["So8NSObjectP", "dataSource"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "maximumDate"]
+- ["So8NSObjectP", "maximumDateForCalendar"]
+- ["So8NSObjectP", "minimumDate"]
+- ["So8NSObjectP", "minimumDateForCalendar"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sq", "addSubview"]
+- !private ["So29UIAccessibilityIdentificationP", "addSubview"]
+- !private ["So29UIAccessibilityIdentificationP", "dataSource"]
+- !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So12UIAppearanceP", "addSubview"]
+- !private ["So12UIAppearanceP", "dataSource"]
+- !private ["So12UIAppearanceP", "delegate"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So21UIAppearanceContainerP", "CGRect"]
+- !private ["So21UIAppearanceContainerP", "FSCalendar"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "addSubview"]
+- ["So21UIAppearanceContainerP", "calendar"]
+- ["So21UIAppearanceContainerP", "calendarCurrentPageDidChange"]
+- !private ["So21UIAppearanceContainerP", "dataSource"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", "maximumDate"]
+- ["So21UIAppearanceContainerP", "maximumDateForCalendar"]
+- ["So21UIAppearanceContainerP", "minimumDate"]
+- ["So21UIAppearanceContainerP", "minimumDateForCalendar"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "CGRect"]
+- !private ["So18UIContentContainerP", "FSCalendar"]
+- ["So18UIContentContainerP", ""]
+- ["So18UIContentContainerP", "calendar"]
+- ["So18UIContentContainerP", "calendarCurrentPageDidChange"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- ["So18UIContentContainerP", "maximumDate"]
+- ["So18UIContentContainerP", "maximumDateForCalendar"]
+- ["So18UIContentContainerP", "minimumDate"]
+- ["So18UIContentContainerP", "minimumDateForCalendar"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So17UICoordinateSpaceP", "addSubview"]
+- !private ["So17UICoordinateSpaceP", "dataSource"]
+- !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So13UIDynamicItemP", "addSubview"]
+- !private ["So13UIDynamicItemP", "dataSource"]
+- !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So18UIFocusEnvironmentP", "CGRect"]
+- !private ["So18UIFocusEnvironmentP", "FSCalendar"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "addSubview"]
+- ["So18UIFocusEnvironmentP", "calendar"]
+- ["So18UIFocusEnvironmentP", "calendarCurrentPageDidChange"]
+- !private ["So18UIFocusEnvironmentP", "dataSource"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", "maximumDate"]
+- ["So18UIFocusEnvironmentP", "maximumDateForCalendar"]
+- ["So18UIFocusEnvironmentP", "minimumDate"]
+- ["So18UIFocusEnvironmentP", "minimumDateForCalendar"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "addSubview"]
+- !private ["So11UIFocusItemP", "dataSource"]
+- !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "dataSource"]
+- !private ["So20UIFocusItemContainerP", "delegate"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
+- !private ["So30UIPasteConfigurationSupportingP", "FSCalendar"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
+- ["So30UIPasteConfigurationSupportingP", "calendar"]
+- ["So30UIPasteConfigurationSupportingP", "calendarCurrentPageDidChange"]
+- !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "maximumDate"]
+- ["So30UIPasteConfigurationSupportingP", "maximumDateForCalendar"]
+- ["So30UIPasteConfigurationSupportingP", "minimumDate"]
+- ["So30UIPasteConfigurationSupportingP", "minimumDateForCalendar"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So11UIResponderC", "CGRect"]
+- ["So11UIResponderC", "FSCalendar"]
+- !private ["So11UIResponderC", "addSubview"]
+- ["So11UIResponderC", "calendar"]
+- ["So11UIResponderC", "calendarCurrentPageDidChange"]
+- !private ["So11UIResponderC", "dataSource"]
+- !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "maximumDate"]
+- ["So11UIResponderC", "maximumDateForCalendar"]
+- ["So11UIResponderC", "minimumDate"]
+- ["So11UIResponderC", "minimumDateForCalendar"]
+- !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "CGRect"]
+- !private ["So30UIResponderStandardEditActionsP", "FSCalendar"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "addSubview"]
+- ["So30UIResponderStandardEditActionsP", "calendar"]
+- ["So30UIResponderStandardEditActionsP", "calendarCurrentPageDidChange"]
+- !private ["So30UIResponderStandardEditActionsP", "dataSource"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", "maximumDate"]
+- ["So30UIResponderStandardEditActionsP", "maximumDateForCalendar"]
+- ["So30UIResponderStandardEditActionsP", "minimumDate"]
+- ["So30UIResponderStandardEditActionsP", "minimumDateForCalendar"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "CGRect"]
+- !private ["So16UIStateRestoringP", "FSCalendar"]
+- ["So16UIStateRestoringP", ""]
+- ["So16UIStateRestoringP", "calendar"]
+- ["So16UIStateRestoringP", "calendarCurrentPageDidChange"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- ["So16UIStateRestoringP", "maximumDate"]
+- ["So16UIStateRestoringP", "maximumDateForCalendar"]
+- ["So16UIStateRestoringP", "minimumDate"]
+- ["So16UIStateRestoringP", "minimumDateForCalendar"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "CGRect"]
+- !private ["So18UITraitEnvironmentP", "FSCalendar"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "addSubview"]
+- ["So18UITraitEnvironmentP", "calendar"]
+- ["So18UITraitEnvironmentP", "calendarCurrentPageDidChange"]
+- !private ["So18UITraitEnvironmentP", "dataSource"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", "maximumDate"]
+- ["So18UITraitEnvironmentP", "maximumDateForCalendar"]
+- ["So18UITraitEnvironmentP", "minimumDate"]
+- ["So18UITraitEnvironmentP", "minimumDateForCalendar"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "CGRect"]
+- !private ["So23UIUserActivityRestoringP", "FSCalendar"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- ["So23UIUserActivityRestoringP", "calendar"]
+- ["So23UIUserActivityRestoringP", "calendarCurrentPageDidChange"]
+- !private ["So23UIUserActivityRestoringP", "dataSource"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- ["So23UIUserActivityRestoringP", "maximumDate"]
+- ["So23UIUserActivityRestoringP", "maximumDateForCalendar"]
+- ["So23UIUserActivityRestoringP", "minimumDate"]
+- ["So23UIUserActivityRestoringP", "minimumDateForCalendar"]
+- !private ["So23UIUserActivityRestoringP", "view"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "addSubview"]
+- !private ["So6UIViewC", "dataSource"]
+- !private ["So6UIViewC", "delegate"]
+- !private ["So6UIViewC", "init"]
+- !private ["So16UIViewControllerC", "CGRect"]
+- ["So16UIViewControllerC", "FSCalendar"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "calendar"]
+- ["So16UIViewControllerC", "calendarCurrentPageDidChange"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "maximumDate"]
+- ["So16UIViewControllerC", "maximumDateForCalendar"]
+- ["So16UIViewControllerC", "minimumDate"]
+- ["So16UIViewControllerC", "minimumDateForCalendar"]
+- !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FSCalendar"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "calendar"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "calendarCurrentPageDidChange"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "maximumDate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "maximumDateForCalendar"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "minimumDate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "minimumDateForCalendar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "addSubview"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["6SQLite13_OptionalTypeP", "addSubview"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "addSubview"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dataSource"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- !private "So6CGRectV"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "22University_Application11DashboardVCC"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "So10FSCalendarC"
+- "So20FSCalendarDataSourceP"
+- "So18FSCalendarDelegateP"
+- "SH"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sq"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "6SQLite13_OptionalTypeP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/Eureka.swiftmodule/arm64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarAppearance.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarCell.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendar.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarConstants.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarHeaderView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarWeekdayView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "17ed20b358350a64abb87712badcb297"

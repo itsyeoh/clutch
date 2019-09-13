@@ -30,22 +30,20 @@ depends-top-level:
 - "CustomStringConvertible"
 - !private "Date"
 - !private "DateInlineRow"
-- "FloatLiteralType"
 - "FormViewController"
 - "Int"
 - "Int64"
-- "IntegerLiteralType"
 - !private "PushRow"
 - "RepeatInterval"
 - !private "RuleRequired"
 - !private "Section"
 - "String"
-- "StringLiteralType"
 - "Task"
 - !private "TernaryPrecedence"
 - !private "TextAreaRow"
 - !private "TextRow"
 - !private "Theme"
+- !private "TimeInlineRow"
 - !private "UIBarButtonItem"
 - !private "UniversityDB"
 - !private "_findStringSwitchCase"
@@ -69,6 +67,7 @@ depends-member:
 - !private ["22University_Application9AddTaskVCC", "TextAreaRow"]
 - !private ["22University_Application9AddTaskVCC", "TextRow"]
 - !private ["22University_Application9AddTaskVCC", "Theme"]
+- !private ["22University_Application9AddTaskVCC", "TimeInlineRow"]
 - !private ["22University_Application9AddTaskVCC", "UIBarButtonItem"]
 - !private ["22University_Application9AddTaskVCC", "UniversityDB"]
 - ["22University_Application9AddTaskVCC", "addTask"]
@@ -79,6 +78,7 @@ depends-member:
 - ["22University_Application9AddTaskVCC", "delegate"]
 - !private ["22University_Application9AddTaskVCC", "form"]
 - ["22University_Application9AddTaskVCC", "init"]
+- ["22University_Application9AddTaskVCC", "isChecked"]
 - !private ["22University_Application9AddTaskVCC", "navigationItem"]
 - ["22University_Application9AddTaskVCC", "newTask"]
 - !private ["22University_Application9AddTaskVCC", "selectedCourse"]
@@ -143,10 +143,12 @@ depends-member:
 - !private ["s7CVarArgP", "TextAreaRow"]
 - !private ["s7CVarArgP", "TextRow"]
 - !private ["s7CVarArgP", "Theme"]
+- !private ["s7CVarArgP", "TimeInlineRow"]
 - !private ["s7CVarArgP", "UIBarButtonItem"]
 - !private ["s7CVarArgP", "UniversityDB"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addTask"]
+- !private ["s7CVarArgP", "backBarButtonItem"]
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "course"]
@@ -158,6 +160,7 @@ depends-member:
 - !private ["s7CVarArgP", "form"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isChecked"]
 - !private ["s7CVarArgP", "map"]
 - !private ["s7CVarArgP", "navigationItem"]
 - !private ["s7CVarArgP", "newTask"]
@@ -217,10 +220,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "TextAreaRow"]
 - !private ["s28CustomDebugStringConvertibleP", "TextRow"]
 - !private ["s28CustomDebugStringConvertibleP", "Theme"]
+- !private ["s28CustomDebugStringConvertibleP", "TimeInlineRow"]
 - !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "UniversityDB"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addTask"]
+- !private ["s28CustomDebugStringConvertibleP", "backBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "course"]
@@ -232,6 +237,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "form"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isChecked"]
 - !private ["s28CustomDebugStringConvertibleP", "map"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
 - !private ["s28CustomDebugStringConvertibleP", "newTask"]
@@ -266,6 +272,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "TextAreaRow"]
 - !private ["s23CustomStringConvertibleP", "TextRow"]
 - !private ["s23CustomStringConvertibleP", "Theme"]
+- !private ["s23CustomStringConvertibleP", "TimeInlineRow"]
 - !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "UniversityDB"]
 - ["s23CustomStringConvertibleP", ""]
@@ -275,6 +282,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "_rawHashValue"]
 - !private ["s23CustomStringConvertibleP", "addTask"]
 - ["s23CustomStringConvertibleP", "allCases"]
+- !private ["s23CustomStringConvertibleP", "backBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "course"]
@@ -289,6 +297,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "hashValue"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isChecked"]
 - !private ["s23CustomStringConvertibleP", "map"]
 - !private ["s23CustomStringConvertibleP", "navigationItem"]
 - !private ["s23CustomStringConvertibleP", "newTask"]
@@ -368,6 +377,7 @@ depends-member:
 - !private ["SQ", "TextAreaRow"]
 - !private ["SQ", "TextRow"]
 - !private ["SQ", "Theme"]
+- !private ["SQ", "TimeInlineRow"]
 - !private ["SQ", "UIBarButtonItem"]
 - !private ["SQ", "UniversityDB"]
 - ["SQ", ""]
@@ -378,6 +388,7 @@ depends-member:
 - !private ["SQ", "add"]
 - !private ["SQ", "addTask"]
 - ["SQ", "allCases"]
+- !private ["SQ", "backBarButtonItem"]
 - !private ["SQ", "backgroundColor"]
 - !private ["SQ", "cellUpdate"]
 - !private ["SQ", "count"]
@@ -393,6 +404,7 @@ depends-member:
 - ["SQ", "hashValue"]
 - ["SQ", "init"]
 - !private ["SQ", "init"]
+- !private ["SQ", "isChecked"]
 - !private ["SQ", "isValid"]
 - !private ["SQ", "map"]
 - !private ["SQ", "navigationItem"]
@@ -455,6 +467,7 @@ depends-member:
 - !private ["6Eureka12FormDelegateP", "TextAreaRow"]
 - !private ["6Eureka12FormDelegateP", "TextRow"]
 - !private ["6Eureka12FormDelegateP", "Theme"]
+- !private ["6Eureka12FormDelegateP", "TimeInlineRow"]
 - !private ["6Eureka12FormDelegateP", "UIBarButtonItem"]
 - !private ["6Eureka12FormDelegateP", "UniversityDB"]
 - ["6Eureka12FormDelegateP", ""]
@@ -466,6 +479,7 @@ depends-member:
 - !private ["6Eureka12FormDelegateP", "form"]
 - !private ["6Eureka12FormDelegateP", "init"]
 - !private ["6Eureka12FormDelegateP", "init"]
+- !private ["6Eureka12FormDelegateP", "isChecked"]
 - !private ["6Eureka12FormDelegateP", "navigationItem"]
 - !private ["6Eureka12FormDelegateP", "newTask"]
 - !private ["6Eureka12FormDelegateP", "taskIndexToEdit"]
@@ -484,6 +498,7 @@ depends-member:
 - !private ["6Eureka18FormViewControllerC", "TextAreaRow"]
 - !private ["6Eureka18FormViewControllerC", "TextRow"]
 - !private ["6Eureka18FormViewControllerC", "Theme"]
+- !private ["6Eureka18FormViewControllerC", "TimeInlineRow"]
 - !private ["6Eureka18FormViewControllerC", "UIBarButtonItem"]
 - !private ["6Eureka18FormViewControllerC", "UniversityDB"]
 - ["6Eureka18FormViewControllerC", ""]
@@ -495,6 +510,7 @@ depends-member:
 - !private ["6Eureka18FormViewControllerC", "form"]
 - ["6Eureka18FormViewControllerC", "init"]
 - !private ["6Eureka18FormViewControllerC", "init"]
+- ["6Eureka18FormViewControllerC", "isChecked"]
 - !private ["6Eureka18FormViewControllerC", "navigationItem"]
 - ["6Eureka18FormViewControllerC", "newTask"]
 - ["6Eureka18FormViewControllerC", "selectedCourse"]
@@ -512,6 +528,7 @@ depends-member:
 - !private ["6Eureka26FormViewControllerProtocolP", "TextAreaRow"]
 - !private ["6Eureka26FormViewControllerProtocolP", "TextRow"]
 - !private ["6Eureka26FormViewControllerProtocolP", "Theme"]
+- !private ["6Eureka26FormViewControllerProtocolP", "TimeInlineRow"]
 - !private ["6Eureka26FormViewControllerProtocolP", "UIBarButtonItem"]
 - !private ["6Eureka26FormViewControllerProtocolP", "UniversityDB"]
 - ["6Eureka26FormViewControllerProtocolP", ""]
@@ -523,6 +540,7 @@ depends-member:
 - !private ["6Eureka26FormViewControllerProtocolP", "form"]
 - !private ["6Eureka26FormViewControllerProtocolP", "init"]
 - !private ["6Eureka26FormViewControllerProtocolP", "init"]
+- !private ["6Eureka26FormViewControllerProtocolP", "isChecked"]
 - !private ["6Eureka26FormViewControllerProtocolP", "navigationItem"]
 - !private ["6Eureka26FormViewControllerProtocolP", "newTask"]
 - !private ["6Eureka26FormViewControllerProtocolP", "taskIndexToEdit"]
@@ -558,6 +576,7 @@ depends-member:
 - !private ["SH", "TextAreaRow"]
 - !private ["SH", "TextRow"]
 - !private ["SH", "Theme"]
+- !private ["SH", "TimeInlineRow"]
 - !private ["SH", "UIBarButtonItem"]
 - !private ["SH", "UniversityDB"]
 - ["SH", ""]
@@ -567,6 +586,7 @@ depends-member:
 - ["SH", "_rawHashValue"]
 - !private ["SH", "addTask"]
 - ["SH", "allCases"]
+- !private ["SH", "backBarButtonItem"]
 - !private ["SH", "backgroundColor"]
 - !private ["SH", "count"]
 - !private ["SH", "course"]
@@ -581,6 +601,7 @@ depends-member:
 - ["SH", "hashValue"]
 - ["SH", "init"]
 - !private ["SH", "init"]
+- !private ["SH", "isChecked"]
 - !private ["SH", "map"]
 - !private ["SH", "navigationItem"]
 - !private ["SH", "newTask"]
@@ -642,10 +663,12 @@ depends-member:
 - !private ["So8NSCodingP", "TextAreaRow"]
 - !private ["So8NSCodingP", "TextRow"]
 - !private ["So8NSCodingP", "Theme"]
+- !private ["So8NSCodingP", "TimeInlineRow"]
 - !private ["So8NSCodingP", "UIBarButtonItem"]
 - !private ["So8NSCodingP", "UniversityDB"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addTask"]
+- !private ["So8NSCodingP", "backBarButtonItem"]
 - !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "course"]
 - !private ["So8NSCodingP", "courseList"]
@@ -654,6 +677,7 @@ depends-member:
 - !private ["So8NSCodingP", "form"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isChecked"]
 - !private ["So8NSCodingP", "navigationItem"]
 - !private ["So8NSCodingP", "newTask"]
 - !private ["So8NSCodingP", "rightBarButtonItem"]
@@ -675,6 +699,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "TextAreaRow"]
 - !private ["So26NSExtensionRequestHandlingP", "TextRow"]
 - !private ["So26NSExtensionRequestHandlingP", "Theme"]
+- !private ["So26NSExtensionRequestHandlingP", "TimeInlineRow"]
 - !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
 - !private ["So26NSExtensionRequestHandlingP", "UniversityDB"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -686,6 +711,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "form"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "isChecked"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
 - !private ["So26NSExtensionRequestHandlingP", "newTask"]
 - !private ["So26NSExtensionRequestHandlingP", "taskIndexToEdit"]
@@ -706,9 +732,11 @@ depends-member:
 - !private ["So8NSObjectC", "TextAreaRow"]
 - !private ["So8NSObjectC", "TextRow"]
 - !private ["So8NSObjectC", "Theme"]
+- !private ["So8NSObjectC", "TimeInlineRow"]
 - !private ["So8NSObjectC", "UIBarButtonItem"]
 - !private ["So8NSObjectC", "UniversityDB"]
 - ["So8NSObjectC", "addTask"]
+- !private ["So8NSObjectC", "backBarButtonItem"]
 - !private ["So8NSObjectC", "backgroundColor"]
 - ["So8NSObjectC", "course"]
 - ["So8NSObjectC", "courseList"]
@@ -717,6 +745,7 @@ depends-member:
 - !private ["So8NSObjectC", "form"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "isChecked"]
 - !private ["So8NSObjectC", "navigationItem"]
 - ["So8NSObjectC", "newTask"]
 - !private ["So8NSObjectC", "rightBarButtonItem"]
@@ -738,10 +767,12 @@ depends-member:
 - !private ["So8NSObjectP", "TextAreaRow"]
 - !private ["So8NSObjectP", "TextRow"]
 - !private ["So8NSObjectP", "Theme"]
+- !private ["So8NSObjectP", "TimeInlineRow"]
 - !private ["So8NSObjectP", "UIBarButtonItem"]
 - !private ["So8NSObjectP", "UniversityDB"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addTask"]
+- !private ["So8NSObjectP", "backBarButtonItem"]
 - !private ["So8NSObjectP", "backgroundColor"]
 - !private ["So8NSObjectP", "course"]
 - !private ["So8NSObjectP", "courseList"]
@@ -750,6 +781,7 @@ depends-member:
 - !private ["So8NSObjectP", "form"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isChecked"]
 - !private ["So8NSObjectP", "navigationItem"]
 - !private ["So8NSObjectP", "newTask"]
 - !private ["So8NSObjectP", "rightBarButtonItem"]
@@ -916,8 +948,10 @@ depends-member:
 - !private ["6Eureka8TaggableP", "value"]
 - !private ["22University_Application4TaskC", "description"]
 - !private ["22University_Application4TaskC", "init"]
+- !private ["22University_Application4TaskC", "isChecked"]
 - !private ["22University_Application4TaskC", "taskDate"]
 - !private ["22University_Application4TaskC", "taskName"]
+- !private ["22University_Application4TaskC", "taskTime"]
 - !private ["22University_Application4TaskC", "taskType"]
 - !private ["22University_Application4TaskC", "tid"]
 - !private ["6Eureka19TextAreaConformanceP", "init"]
@@ -940,6 +974,13 @@ depends-member:
 - !private ["6Eureka7TextRowC", "value"]
 - !private ["22University_Application5ThemeC", "Secondary"]
 - !private ["22University_Application5ThemeC", "Secondary_2"]
+- !private ["6Eureka14TimeInlineRow_C", "add"]
+- !private ["6Eureka14TimeInlineRow_C", "cellUpdate"]
+- !private ["6Eureka14TimeInlineRow_C", "init"]
+- !private ["6Eureka14TimeInlineRow_C", "isValid"]
+- !private ["6Eureka14TimeInlineRow_C", "title"]
+- !private ["6Eureka14TimeInlineRow_C", "validationOptions"]
+- !private ["6Eureka14TimeInlineRow_C", "value"]
 - !private ["6Eureka13TypedCellTypeP", "backgroundColor"]
 - !private ["6Eureka13TypedCellTypeP", "textLabel"]
 - !private ["6Eureka12TypedRowTypeP", "add"]
@@ -971,6 +1012,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "TextAreaRow"]
 - !private ["So21UIAppearanceContainerP", "TextRow"]
 - !private ["So21UIAppearanceContainerP", "Theme"]
+- !private ["So21UIAppearanceContainerP", "TimeInlineRow"]
 - !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
 - !private ["So21UIAppearanceContainerP", "UniversityDB"]
 - ["So21UIAppearanceContainerP", ""]
@@ -983,6 +1025,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "form"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isChecked"]
 - !private ["So21UIAppearanceContainerP", "navigationItem"]
 - !private ["So21UIAppearanceContainerP", "newTask"]
 - !private ["So21UIAppearanceContainerP", "taskIndexToEdit"]
@@ -1004,6 +1047,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "TextAreaRow"]
 - !private ["So18UIContentContainerP", "TextRow"]
 - !private ["So18UIContentContainerP", "Theme"]
+- !private ["So18UIContentContainerP", "TimeInlineRow"]
 - !private ["So18UIContentContainerP", "UIBarButtonItem"]
 - !private ["So18UIContentContainerP", "UniversityDB"]
 - ["So18UIContentContainerP", ""]
@@ -1015,6 +1059,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "form"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "isChecked"]
 - !private ["So18UIContentContainerP", "navigationItem"]
 - !private ["So18UIContentContainerP", "newTask"]
 - !private ["So18UIContentContainerP", "taskIndexToEdit"]
@@ -1038,6 +1083,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "TextAreaRow"]
 - !private ["So18UIFocusEnvironmentP", "TextRow"]
 - !private ["So18UIFocusEnvironmentP", "Theme"]
+- !private ["So18UIFocusEnvironmentP", "TimeInlineRow"]
 - !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UIFocusEnvironmentP", "UniversityDB"]
 - ["So18UIFocusEnvironmentP", ""]
@@ -1050,6 +1096,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "form"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isChecked"]
 - !private ["So18UIFocusEnvironmentP", "navigationItem"]
 - !private ["So18UIFocusEnvironmentP", "newTask"]
 - !private ["So18UIFocusEnvironmentP", "taskIndexToEdit"]
@@ -1065,6 +1112,7 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "backgroundColor"]
 - !private ["So27UIGestureRecognizerDelegateP", "textLabel"]
 - !private ["So7UILabelC", "textColor"]
+- !private ["So16UINavigationItemC", "backBarButtonItem"]
 - !private ["So16UINavigationItemC", "rightBarButtonItem"]
 - ["So30UIPasteConfigurationSupportingP", "Course"]
 - !private ["So30UIPasteConfigurationSupportingP", "Date"]
@@ -1078,6 +1126,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "TextAreaRow"]
 - !private ["So30UIPasteConfigurationSupportingP", "TextRow"]
 - !private ["So30UIPasteConfigurationSupportingP", "Theme"]
+- !private ["So30UIPasteConfigurationSupportingP", "TimeInlineRow"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "UniversityDB"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -1090,6 +1139,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "form"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isChecked"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "newTask"]
 - !private ["So30UIPasteConfigurationSupportingP", "taskIndexToEdit"]
@@ -1110,6 +1160,7 @@ depends-member:
 - !private ["So11UIResponderC", "TextAreaRow"]
 - !private ["So11UIResponderC", "TextRow"]
 - !private ["So11UIResponderC", "Theme"]
+- !private ["So11UIResponderC", "TimeInlineRow"]
 - !private ["So11UIResponderC", "UIBarButtonItem"]
 - !private ["So11UIResponderC", "UniversityDB"]
 - ["So11UIResponderC", "addTask"]
@@ -1121,6 +1172,7 @@ depends-member:
 - !private ["So11UIResponderC", "form"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "isChecked"]
 - !private ["So11UIResponderC", "navigationItem"]
 - ["So11UIResponderC", "newTask"]
 - ["So11UIResponderC", "selectedCourse"]
@@ -1140,6 +1192,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "TextAreaRow"]
 - !private ["So30UIResponderStandardEditActionsP", "TextRow"]
 - !private ["So30UIResponderStandardEditActionsP", "Theme"]
+- !private ["So30UIResponderStandardEditActionsP", "TimeInlineRow"]
 - !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
 - !private ["So30UIResponderStandardEditActionsP", "UniversityDB"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -1152,6 +1205,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "form"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isChecked"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
 - !private ["So30UIResponderStandardEditActionsP", "newTask"]
 - !private ["So30UIResponderStandardEditActionsP", "taskIndexToEdit"]
@@ -1170,6 +1224,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "TextAreaRow"]
 - !private ["So20UIScrollViewDelegateP", "TextRow"]
 - !private ["So20UIScrollViewDelegateP", "Theme"]
+- !private ["So20UIScrollViewDelegateP", "TimeInlineRow"]
 - !private ["So20UIScrollViewDelegateP", "UIBarButtonItem"]
 - !private ["So20UIScrollViewDelegateP", "UniversityDB"]
 - ["So20UIScrollViewDelegateP", ""]
@@ -1181,6 +1236,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "form"]
 - !private ["So20UIScrollViewDelegateP", "init"]
 - !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "isChecked"]
 - !private ["So20UIScrollViewDelegateP", "navigationItem"]
 - !private ["So20UIScrollViewDelegateP", "newTask"]
 - !private ["So20UIScrollViewDelegateP", "taskIndexToEdit"]
@@ -1198,6 +1254,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "TextAreaRow"]
 - !private ["So16UIStateRestoringP", "TextRow"]
 - !private ["So16UIStateRestoringP", "Theme"]
+- !private ["So16UIStateRestoringP", "TimeInlineRow"]
 - !private ["So16UIStateRestoringP", "UIBarButtonItem"]
 - !private ["So16UIStateRestoringP", "UniversityDB"]
 - ["So16UIStateRestoringP", ""]
@@ -1209,6 +1266,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "form"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "isChecked"]
 - !private ["So16UIStateRestoringP", "navigationItem"]
 - !private ["So16UIStateRestoringP", "newTask"]
 - !private ["So16UIStateRestoringP", "taskIndexToEdit"]
@@ -1227,6 +1285,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "TextAreaRow"]
 - !private ["So21UITableViewDataSourceP", "TextRow"]
 - !private ["So21UITableViewDataSourceP", "Theme"]
+- !private ["So21UITableViewDataSourceP", "TimeInlineRow"]
 - !private ["So21UITableViewDataSourceP", "UIBarButtonItem"]
 - !private ["So21UITableViewDataSourceP", "UniversityDB"]
 - ["So21UITableViewDataSourceP", ""]
@@ -1238,6 +1297,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "form"]
 - !private ["So21UITableViewDataSourceP", "init"]
 - !private ["So21UITableViewDataSourceP", "init"]
+- !private ["So21UITableViewDataSourceP", "isChecked"]
 - !private ["So21UITableViewDataSourceP", "navigationItem"]
 - !private ["So21UITableViewDataSourceP", "newTask"]
 - !private ["So21UITableViewDataSourceP", "taskIndexToEdit"]
@@ -1254,6 +1314,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "TextAreaRow"]
 - !private ["So19UITableViewDelegateP", "TextRow"]
 - !private ["So19UITableViewDelegateP", "Theme"]
+- !private ["So19UITableViewDelegateP", "TimeInlineRow"]
 - !private ["So19UITableViewDelegateP", "UIBarButtonItem"]
 - !private ["So19UITableViewDelegateP", "UniversityDB"]
 - ["So19UITableViewDelegateP", ""]
@@ -1265,6 +1326,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "form"]
 - !private ["So19UITableViewDelegateP", "init"]
 - !private ["So19UITableViewDelegateP", "init"]
+- !private ["So19UITableViewDelegateP", "isChecked"]
 - !private ["So19UITableViewDelegateP", "navigationItem"]
 - !private ["So19UITableViewDelegateP", "newTask"]
 - !private ["So19UITableViewDelegateP", "taskIndexToEdit"]
@@ -1282,6 +1344,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "TextAreaRow"]
 - !private ["So18UITraitEnvironmentP", "TextRow"]
 - !private ["So18UITraitEnvironmentP", "Theme"]
+- !private ["So18UITraitEnvironmentP", "TimeInlineRow"]
 - !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UITraitEnvironmentP", "UniversityDB"]
 - ["So18UITraitEnvironmentP", ""]
@@ -1294,6 +1357,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "form"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isChecked"]
 - !private ["So18UITraitEnvironmentP", "navigationItem"]
 - !private ["So18UITraitEnvironmentP", "newTask"]
 - !private ["So18UITraitEnvironmentP", "taskIndexToEdit"]
@@ -1312,6 +1376,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "TextAreaRow"]
 - !private ["So23UIUserActivityRestoringP", "TextRow"]
 - !private ["So23UIUserActivityRestoringP", "Theme"]
+- !private ["So23UIUserActivityRestoringP", "TimeInlineRow"]
 - !private ["So23UIUserActivityRestoringP", "UIBarButtonItem"]
 - !private ["So23UIUserActivityRestoringP", "UniversityDB"]
 - ["So23UIUserActivityRestoringP", ""]
@@ -1324,6 +1389,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "form"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isChecked"]
 - !private ["So23UIUserActivityRestoringP", "navigationItem"]
 - !private ["So23UIUserActivityRestoringP", "newTask"]
 - !private ["So23UIUserActivityRestoringP", "taskIndexToEdit"]
@@ -1347,6 +1413,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "TextAreaRow"]
 - !private ["So16UIViewControllerC", "TextRow"]
 - !private ["So16UIViewControllerC", "Theme"]
+- !private ["So16UIViewControllerC", "TimeInlineRow"]
 - !private ["So16UIViewControllerC", "UIBarButtonItem"]
 - !private ["So16UIViewControllerC", "UniversityDB"]
 - ["So16UIViewControllerC", "addTask"]
@@ -1357,6 +1424,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "form"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "isChecked"]
 - !private ["So16UIViewControllerC", "navigationItem"]
 - ["So16UIViewControllerC", "newTask"]
 - ["So16UIViewControllerC", "selectedCourse"]
@@ -1419,10 +1487,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "TextAreaRow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "TextRow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Theme"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TimeInlineRow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UniversityDB"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "course"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "courseList"]
@@ -1431,6 +1501,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "form"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isChecked"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "newTask"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rightBarButtonItem"]
@@ -1467,6 +1538,13 @@ depends-member:
 - !private ["6Eureka8_TextRowC", "placeholder"]
 - !private ["6Eureka8_TextRowC", "validationOptions"]
 - !private ["6Eureka8_TextRowC", "value"]
+- !private ["6Eureka14_TimeInlineRowC", "add"]
+- !private ["6Eureka14_TimeInlineRowC", "cellUpdate"]
+- !private ["6Eureka14_TimeInlineRowC", "init"]
+- !private ["6Eureka14_TimeInlineRowC", "isValid"]
+- !private ["6Eureka14_TimeInlineRowC", "title"]
+- !private ["6Eureka14_TimeInlineRowC", "validationOptions"]
+- !private ["6Eureka14_TimeInlineRowC", "value"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "textColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "textLabel"]
@@ -1563,6 +1641,7 @@ depends-nominal:
 - !private "6Eureka13TextInputCellP"
 - !private "6Eureka7TextRowC"
 - !private "22University_Application5ThemeC"
+- !private "6Eureka14TimeInlineRow_C"
 - !private "6Eureka13TypedCellTypeP"
 - !private "6Eureka12TypedRowTypeP"
 - !private "So29UIAccessibilityIdentificationP"
@@ -1613,11 +1692,12 @@ depends-nominal:
 - !private "6Eureka8_PushRowC"
 - !private "6Eureka12_TextAreaRowC"
 - !private "6Eureka8_TextRowC"
+- !private "6Eureka14_TimeInlineRowC"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Modules/Eureka.swiftmodule/arm64.swiftmodule"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/Eureka.swiftmodule/arm64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
@@ -1630,13 +1710,20 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Modules/module.modulemap"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarAppearance.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarCell.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendar.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarConstants.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarHeaderView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarWeekdayView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -1649,4 +1736,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "73141c153c558da85214acacea94896c"
+interface-hash: "91b4fad8c99bd56b3b5003b930377f3c"

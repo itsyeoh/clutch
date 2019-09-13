@@ -15,7 +15,7 @@ import UIKit
 class TaskTVC: UITableViewCell {
     @IBOutlet weak var courseNameLabel: UILabel!
     @IBOutlet weak var taskNameLabel: UILabel!
-//    var delegate: TaskChecklistDelegate?
+    @IBOutlet weak var tickButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,6 +34,16 @@ class TaskTVC: UITableViewCell {
         else {
             courseNameLabel.text = "DUE ON " + task.getWeekDayToString()
             taskNameLabel.text = task.taskName
+        }
+    }
+    
+    func buttonPressed() {
+        if tickButton.isSelected {
+            tickButton.setImage(UIImage(named: "Checkbox_Empty"), for: .normal)
+            tickButton.isSelected = false
+        } else {
+            tickButton.setImage(UIImage(named: "Checkbox_Selected"), for: .normal)
+            tickButton.isSelected = true
         }
     }
 }

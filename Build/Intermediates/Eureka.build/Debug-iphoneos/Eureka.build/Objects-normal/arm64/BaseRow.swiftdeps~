@@ -57,6 +57,7 @@ depends-top-level:
 - "ValidationError"
 - "ValidationOptions"
 - "Void"
+- !private "assert"
 - !private "type"
 depends-member:
 - ["Sa", "init"]
@@ -94,6 +95,7 @@ depends-member:
 - ["6Eureka7BaseRowC", "addToDisabledRowObservers"]
 - ["6Eureka7BaseRowC", "addToHiddenRowObservers"]
 - ["6Eureka7BaseRowC", "addToRowObservers"]
+- !private ["6Eureka7BaseRowC", "assert"]
 - ["6Eureka7BaseRowC", "baseCell"]
 - ["6Eureka7BaseRowC", "baseValue"]
 - ["6Eureka7BaseRowC", "callbackCellOnSelection"]
@@ -158,6 +160,7 @@ depends-member:
 - !private ["6Eureka11BaseRowTypeP", "addToDisabledRowObservers"]
 - !private ["6Eureka11BaseRowTypeP", "addToHiddenRowObservers"]
 - !private ["6Eureka11BaseRowTypeP", "addToRowObservers"]
+- !private ["6Eureka11BaseRowTypeP", "assert"]
 - ["6Eureka11BaseRowTypeP", "baseCell"]
 - !private ["6Eureka11BaseRowTypeP", "baseValue"]
 - !private ["6Eureka11BaseRowTypeP", "callbackOnRowValidationChanged"]
@@ -291,6 +294,7 @@ depends-member:
 - !private ["6Eureka11DisableableP", "addToDisabledRowObservers"]
 - !private ["6Eureka11DisableableP", "addToHiddenRowObservers"]
 - !private ["6Eureka11DisableableP", "addToRowObservers"]
+- !private ["6Eureka11DisableableP", "assert"]
 - ["6Eureka11DisableableP", "baseCell"]
 - !private ["6Eureka11DisableableP", "baseValue"]
 - !private ["6Eureka11DisableableP", "callbackOnRowValidationChanged"]
@@ -336,6 +340,7 @@ depends-member:
 - !private ["SQ", "addToDisabledRowObservers"]
 - !private ["SQ", "addToHiddenRowObservers"]
 - !private ["SQ", "addToRowObservers"]
+- !private ["SQ", "assert"]
 - ["SQ", "baseCell"]
 - !private ["SQ", "baseValue"]
 - ["SQ", "bottom"]
@@ -436,6 +441,7 @@ depends-member:
 - !private ["6Eureka7HidableP", "addToDisabledRowObservers"]
 - !private ["6Eureka7HidableP", "addToHiddenRowObservers"]
 - !private ["6Eureka7HidableP", "addToRowObservers"]
+- !private ["6Eureka7HidableP", "assert"]
 - ["6Eureka7HidableP", "baseCell"]
 - !private ["6Eureka7HidableP", "baseValue"]
 - !private ["6Eureka7HidableP", "callbackOnRowValidationChanged"]
@@ -596,6 +602,7 @@ depends-member:
 - !private ["6Eureka8TaggableP", "addToDisabledRowObservers"]
 - !private ["6Eureka8TaggableP", "addToHiddenRowObservers"]
 - !private ["6Eureka8TaggableP", "addToRowObservers"]
+- !private ["6Eureka8TaggableP", "assert"]
 - ["6Eureka8TaggableP", "baseCell"]
 - !private ["6Eureka8TaggableP", "baseValue"]
 - !private ["6Eureka8TaggableP", "callbackOnRowValidationChanged"]

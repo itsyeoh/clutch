@@ -170,10 +170,6 @@ extension CourseVC: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-//protocol CourseToClassDelegate {
-//    func getClass(aClass: Class)
-//}
-
 extension CourseVC: AddClassDelegate, AddTaskDelegate {
     func addClass(aClass: Class) {
         self.navigationController?.popViewController(animated: true)

@@ -52,7 +52,6 @@ depends-member:
 - !private ["22University_Application11AddCourseVCC", "form"]
 - ["22University_Application11AddCourseVCC", "init"]
 - !private ["22University_Application11AddCourseVCC", "navigationItem"]
-- !private ["22University_Application11AddCourseVCC", "selectedSemester"]
 - !private ["22University_Application11AddCourseVCC", "semesterList"]
 - !private ["22University_Application11AddCourseVCC", "semesters"]
 - ["22University_Application11AddCourseVCC", "viewDidLoad"]
@@ -98,6 +97,7 @@ depends-member:
 - !private ["s7CVarArgP", "UniversityDB"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addCourse"]
+- !private ["s7CVarArgP", "backBarButtonItem"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "filter"]
 - !private ["s7CVarArgP", "first"]
@@ -143,6 +143,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UniversityDB"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addCourse"]
+- !private ["s28CustomDebugStringConvertibleP", "backBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "filter"]
 - !private ["s28CustomDebugStringConvertibleP", "first"]
@@ -180,6 +181,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UniversityDB"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addCourse"]
+- !private ["s23CustomStringConvertibleP", "backBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "filter"]
 - !private ["s23CustomStringConvertibleP", "first"]
@@ -242,6 +244,7 @@ depends-member:
 - ["SQ", ""]
 - !private ["SQ", "add"]
 - !private ["SQ", "addCourse"]
+- !private ["SQ", "backBarButtonItem"]
 - !private ["SQ", "cellUpdate"]
 - !private ["SQ", "delegate"]
 - !private ["SQ", "filter"]
@@ -334,7 +337,6 @@ depends-member:
 - ["6Eureka18FormViewControllerC", "init"]
 - !private ["6Eureka18FormViewControllerC", "init"]
 - !private ["6Eureka18FormViewControllerC", "navigationItem"]
-- ["6Eureka18FormViewControllerC", "selectedSemester"]
 - ["6Eureka18FormViewControllerC", "semesterList"]
 - ["6Eureka18FormViewControllerC", "semesters"]
 - ["6Eureka18FormViewControllerC", "viewDidLoad"]
@@ -386,6 +388,7 @@ depends-member:
 - !private ["SH", "UniversityDB"]
 - ["SH", ""]
 - !private ["SH", "addCourse"]
+- !private ["SH", "backBarButtonItem"]
 - !private ["SH", "delegate"]
 - !private ["SH", "filter"]
 - !private ["SH", "first"]
@@ -450,6 +453,7 @@ depends-member:
 - !private ["So8NSCodingP", "UniversityDB"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addCourse"]
+- !private ["So8NSCodingP", "backBarButtonItem"]
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "form"]
 - !private ["So8NSCodingP", "init"]
@@ -499,6 +503,7 @@ depends-member:
 - !private ["So8NSObjectC", "UIBarButtonItem"]
 - !private ["So8NSObjectC", "UniversityDB"]
 - ["So8NSObjectC", "addCourse"]
+- !private ["So8NSObjectC", "backBarButtonItem"]
 - ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "form"]
 - ["So8NSObjectC", "init"]
@@ -506,7 +511,6 @@ depends-member:
 - !private ["So8NSObjectC", "navigationItem"]
 - !private ["So8NSObjectC", "red"]
 - !private ["So8NSObjectC", "rightBarButtonItem"]
-- ["So8NSObjectC", "selectedSemester"]
 - ["So8NSObjectC", "semesterList"]
 - ["So8NSObjectC", "semesters"]
 - !private ["So8NSObjectC", "textColor"]
@@ -525,6 +529,7 @@ depends-member:
 - !private ["So8NSObjectP", "UniversityDB"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addCourse"]
+- !private ["So8NSObjectP", "backBarButtonItem"]
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "form"]
 - !private ["So8NSObjectP", "init"]
@@ -755,6 +760,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "textLabel"]
 - !private ["So27UIGestureRecognizerDelegateP", "textLabel"]
 - !private ["So7UILabelC", "textColor"]
+- !private ["So16UINavigationItemC", "backBarButtonItem"]
 - !private ["So16UINavigationItemC", "rightBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "Course"]
 - ["So30UIPasteConfigurationSupportingP", "Int64"]
@@ -797,7 +803,6 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "navigationItem"]
-- ["So11UIResponderC", "selectedSemester"]
 - ["So11UIResponderC", "semesterList"]
 - ["So11UIResponderC", "semesters"]
 - !private ["So11UIResponderC", "textColor"]
@@ -979,7 +984,6 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "navigationItem"]
-- ["So16UIViewControllerC", "selectedSemester"]
 - ["So16UIViewControllerC", "semesterList"]
 - ["So16UIViewControllerC", "semesters"]
 - ["So16UIViewControllerC", "viewDidLoad"]
@@ -1027,6 +1031,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UniversityDB"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addCourse"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "form"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -1193,8 +1198,8 @@ depends-nominal:
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Modules/Eureka.swiftmodule/arm64.swiftmodule"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/Eureka.swiftmodule/arm64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
@@ -1207,13 +1212,20 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/Eureka.framework/Modules/module.modulemap"
-- "/Users/jasonyeoh/Desktop/Side Projects/iPhone Dev/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarAppearance.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarCell.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendar.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarConstants.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarHeaderView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarWeekdayView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -1226,4 +1238,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6d62aa33720d820577df3f019c47965b"
+interface-hash: "76a441ff90fb69a3d4edea662de4db90"

@@ -1,11 +1,11 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "180ceabf02f744893d30e902c0efd723"
-build_time: [1568400247, 270999000]
+build_time: [1568400603, 174393000]
 inputs:
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Course/CourseClassTVC.swift": [1567895608, 87919831]
   "/Users/jasonyeoh/Desktop/University Application/University Application/Model/Class.swift": [1567896405, 292022347]
   "/Users/jasonyeoh/Desktop/University Application/University Application/Model/Task.swift": [1568397146, 821855098]
-  "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Task/TaskVC.swift": [1568400245, 488851396]
+  "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Task/TaskVC.swift": [1568400603, 66427154]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/AddClass/AddClassVC.swift": [1568253688, 68190627]
   "/Users/jasonyeoh/Desktop/University Application/University Application/Database/UniversityDB.swift": [1568260910, 224921854]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Course/CourseAssignmentTVC.swift": [1567194083, 856060743]
@@ -15,7 +15,7 @@ inputs:
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Academics/AcademicsVC.swift": [1568253683, 250617696]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Academics/SemesterTVC.swift": [1567039589, 893218517]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/AddSemester/AddSemesterVC.swift": [1568253688, 43292820]
-  "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Course/CourseVC.swift": [1568253688, 100297046]
+  "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Course/CourseVC.swift": [1568400462, 528933435]
   "/Users/jasonyeoh/Desktop/University Application/University Application/Model/Course.swift": [1567891551, 455680132]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Dashboard/DashboardVC.swift": [1568298739, 104942505]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/AddTask/AddTaskVC.swift": [1568254785, 456600427]

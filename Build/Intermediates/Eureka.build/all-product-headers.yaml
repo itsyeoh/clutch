@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Headers",
+      'name': "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Eureka-Swift.h",
-          'external-contents': "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Headers/Eureka-Swift.h"
+          'external-contents': "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
         },
         {
           'type': 'file',
@@ -20,12 +20,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Modules",
+      'name': "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/Eureka.build/Debug-iphonesimulator/Eureka.build/module.modulemap"
+          'external-contents': "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/Eureka.build/Debug-iphoneos/Eureka.build/module.modulemap"
         }
       ]
     }
