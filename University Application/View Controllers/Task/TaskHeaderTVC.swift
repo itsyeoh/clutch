@@ -22,4 +22,9 @@ class TaskHeaderTVC: UITableViewCell {
     func setupByCourseName(course: Course) {
         titleButton.setTitle(course.showCourseName(), for: .normal)
     }
+    
+    func setupEmpty() {
+        self.contentView.backgroundColor = .clear
+        titleButton.setTitle("", for: .normal)
+    }
 }

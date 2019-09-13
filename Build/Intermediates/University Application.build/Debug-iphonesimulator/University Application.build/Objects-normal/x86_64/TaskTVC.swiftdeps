@@ -9,13 +9,13 @@ provides-dynamic-lookup:
 - "awakeFromNib"
 - "courseNameLabel"
 - "taskNameLabel"
-- "tickButton"
 depends-top-level:
 - !private "+"
 - "AssignmentPrecedence"
+- "Bool"
+- !private "StringLiteralType"
 - "Task"
 - "TaskTVC"
-- "UIButton"
 - "UILabel"
 - "UITableViewCell"
 depends-member:
@@ -73,8 +73,8 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "taskNameLabel"]
 - !private ["So8NSCodingP", "text"]
+- ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "Task"]
-- ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "awakeFromNib"]
 - ["So8NSObjectC", "courseNameLabel"]
@@ -84,7 +84,6 @@ depends-member:
 - ["So8NSObjectC", "setupByCourseName"]
 - ["So8NSObjectC", "taskNameLabel"]
 - !private ["So8NSObjectC", "text"]
-- ["So8NSObjectC", "tickButton"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "awakeFromNib"]
 - !private ["So8NSObjectP", "courseNameLabel"]
@@ -96,8 +95,8 @@ depends-member:
 - !private ["22University_Application4TaskC", "getCourse"]
 - !private ["22University_Application4TaskC", "getWeekDayToString"]
 - !private ["22University_Application4TaskC", "taskName"]
+- ["22University_Application7TaskTVCC", "Bool"]
 - ["22University_Application7TaskTVCC", "Task"]
-- ["22University_Application7TaskTVCC", "UIButton"]
 - ["22University_Application7TaskTVCC", "UILabel"]
 - ["22University_Application7TaskTVCC", "awakeFromNib"]
 - ["22University_Application7TaskTVCC", "courseNameLabel"]
@@ -106,7 +105,6 @@ depends-member:
 - ["22University_Application7TaskTVCC", "setup"]
 - ["22University_Application7TaskTVCC", "setupByCourseName"]
 - ["22University_Application7TaskTVCC", "taskNameLabel"]
-- ["22University_Application7TaskTVCC", "tickButton"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
 - !private ["So29UIAccessibilityIdentificationP", "courseNameLabel"]
@@ -178,8 +176,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "taskNameLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
+- ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "Task"]
-- ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "awakeFromNib"]
 - ["So11UIResponderC", "courseNameLabel"]
@@ -189,7 +187,6 @@ depends-member:
 - ["So11UIResponderC", "setupByCourseName"]
 - ["So11UIResponderC", "taskNameLabel"]
 - !private ["So11UIResponderC", "text"]
-- ["So11UIResponderC", "tickButton"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "courseNameLabel"]
@@ -197,8 +194,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "taskNameLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
+- ["So15UITableViewCellC", "Bool"]
 - ["So15UITableViewCellC", "Task"]
-- ["So15UITableViewCellC", "UIButton"]
 - ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
@@ -208,7 +205,6 @@ depends-member:
 - ["So15UITableViewCellC", "setup"]
 - ["So15UITableViewCellC", "setupByCourseName"]
 - ["So15UITableViewCellC", "taskNameLabel"]
-- ["So15UITableViewCellC", "tickButton"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
 - !private ["So18UITraitEnvironmentP", "courseNameLabel"]
@@ -223,8 +219,8 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "taskNameLabel"]
 - !private ["So23UIUserActivityRestoringP", "text"]
+- ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "Task"]
-- ["So6UIViewC", "UIButton"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "awakeFromNib"]
 - ["So6UIViewC", "courseNameLabel"]
@@ -234,7 +230,6 @@ depends-member:
 - ["So6UIViewC", "setupByCourseName"]
 - ["So6UIViewC", "taskNameLabel"]
 - !private ["So6UIViewC", "text"]
-- ["So6UIViewC", "tickButton"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "courseNameLabel"]
@@ -333,4 +328,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "eddb8ab5cfc1f4f1b1af67ce42f93a6e"
+interface-hash: "bbc3815e580aefbf764f6d1feea9a435"

@@ -30,9 +30,7 @@ class TaskVC: UIViewController {
         taskTableView.dataSource = self
         taskTableView.delegate = self
         
-        tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: false)
-        tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: false)
-        courses = UniversityDB.instance.getCourses()
+        refreshData(false)
         
         self.taskTableView.setEditing(true, animated: true)
     }
@@ -50,25 +48,36 @@ class TaskVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    
+    func refreshData(_ isSelected: Bool) {
+        tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: isSelected)
+        tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: isSelected)
+        courses = UniversityDB.instance.getCourses()
+        self.taskTableView.reloadData()
+    }
+    
+    func refreshDataView() {
+        if isCompleted { refreshData(true) }
+        else { refreshData(false)}
+    }
+    
     @objc func openCompletedTasks() {
         if isCompleted == true {
             print("--------")
             print("NOT DONE")
+            
             self.navigationItem.title = "TASKS"
-            self.navigationItem.leftBarButtonItem?.setBackgroundImage(UIImage(named: "NotDone"), for: .normal, barMetrics: .default)
+            self.navigationItem.leftBarButtonItem?.setBackgroundImage(
+                UIImage(named: "NotDone"), for: .normal, barMetrics: .default)
             isCompleted = false
-            tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: false)
-            tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: false)
-            courses = UniversityDB.instance.getCourses()
-            self.taskTableView.reloadData()
+            refreshData(false)
         } else {
             print("DONE")
-            self.navigationItem.leftBarButtonItem?.setBackgroundImage(UIImage(named: "Done"), for: .normal, barMetrics: .default)
+            self.navigationItem.leftBarButtonItem?.setBackgroundImage(
+                UIImage(named: "Done"), for: .normal, barMetrics: .default)
             self.navigationItem.title = "COMPLETED TASKS"
             isCompleted = true
-            tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: true)
-            tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: true)
-            self.taskTableView.reloadData()
+            refreshData(true)
         }
     }
     
@@ -103,14 +112,14 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         case 0:
             let task = tasksByDate[indexPath.section][indexPath.row]
             let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTVC
-            cell.setup(task: task)
+            cell.setup(task: task, isCompleted: isCompleted)
             
             return cell
             
         case 1:
             let task = tasksByCourseName[indexPath.section][indexPath.row]
             let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTVC
-            cell.setupByCourseName(task: task)
+            cell.setupByCourseName(task: task, isCompleted: isCompleted)
 
             return cell
             
@@ -127,10 +136,11 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
             
             if task.count > 0 {
                 cell.setup(task: task[0])
+                return cell.contentView
+            } else {
+                return nil
             }
             
-            return cell.contentView
-        
         case 1:
             let task = tasksByCourseName[section]
             let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskHeaderCell") as! TaskHeaderTVC
@@ -138,14 +148,32 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
             if task.count > 0 {
                 let course = courses.first(where: {$0.cid == task[0].cid})
                 cell.setupByCourseName(course: course!)
+                return cell.contentView
+            } else {
+                return nil
             }
             
-            return cell.contentView
-        
         default:
             return UIView()
         }
     }//end viewForHeader
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        switch taskControls.selectedSegmentIndex {
+        case 0:
+            let tasks = tasksByDate[section]
+            if tasks.count == 0 { return 0.0 }
+            else { return 30.0 }
+            
+        case 1:
+            let tasks = tasksByCourseName[section]
+            if tasks.count == 0 { return 0.0 }
+            else { return 30.0 }
+            
+        default:
+            return 30.0
+        }
+    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch taskControls.selectedSegmentIndex {
@@ -158,6 +186,8 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         default:
              break
         }
+        
+        refreshDataView()
     }//end didSelectRow
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
@@ -171,6 +201,8 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         default:
             break
         }
+        
+        refreshDataView()
     }//end didDeselectRow
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
