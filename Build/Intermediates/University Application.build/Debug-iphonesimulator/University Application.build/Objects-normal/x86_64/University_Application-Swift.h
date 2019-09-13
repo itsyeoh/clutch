@@ -168,7 +168,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import Eureka;
-@import FSCalendar;
 @import Foundation;
 @import UIKit;
 #endif
@@ -341,10 +340,6 @@ SWIFT_CLASS("_TtC22University_Application11DashboardVC")
 @end
 
 
-@interface DashboardVC (SWIFT_EXTENSION(University_Application)) <FSCalendarDataSource, FSCalendarDelegate>
-@end
-
-
 SWIFT_CLASS("_TtC22University_Application11SemesterTVC")
 @interface SemesterTVC : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified previewSeasonTextLabel;
@@ -371,6 +366,7 @@ SWIFT_CLASS("_TtC22University_Application7TaskTVC")
 @interface TaskTVC : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified courseNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified taskNameLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified tickButton;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -401,11 +397,7 @@ SWIFT_CLASS("_TtC22University_Application6TaskVC")
 - (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)tableView:(UITableView * _Nonnull)tableView didDeselectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (NSArray<UITableViewRowAction *> * _Nullable)tableView:(UITableView * _Nonnull)tableView editActionsForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UISwipeActionsConfiguration * _Nullable)tableView:(UITableView * _Nonnull)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #if __has_attribute(external_source_symbol)

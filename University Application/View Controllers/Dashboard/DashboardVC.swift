@@ -10,20 +10,17 @@ import UIKit
 import FSCalendar
 
 class DashboardVC: UIViewController {
-
-    fileprivate weak var calendar: FSCalendar!
-    
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var dashboardTableView: UITableView!
+    @IBOutlet weak var calendar: FSCalendar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // In loadView or viewDidLoad
-        let calendar = FSCalendar(frame: CGRect(x: 0, y: 0, width: 320, height: 300))
+//        dashboardTableView.dataSource = self
+//        dashboardTableView.delegate = self
         calendar.dataSource = self
         calendar.delegate = self
-        view.addSubview(calendar)
-        self.calendar = calendar    // In loadView(Recommended) or viewDidLoad
-        // Do any additional setup after loading the view.
     }
 }
 

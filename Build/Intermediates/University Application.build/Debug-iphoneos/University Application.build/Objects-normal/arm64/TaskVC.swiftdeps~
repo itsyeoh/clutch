@@ -23,15 +23,11 @@ depends-top-level:
 - !private "AddTaskVC"
 - "AssignmentPrecedence"
 - "Bool"
-- "BooleanLiteralType"
 - "CGFloat"
 - "CastingPrecedence"
 - "Course"
-- !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
-- !private "IntegerLiteralType"
-- !private "StringLiteralType"
 - "Task"
 - !private "TaskHeaderTVC"
 - !private "TaskTVC"
@@ -126,7 +122,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "reloadData"]
-- !private ["So15CALayerDelegateP", "selectRow"]
 - !private ["So15CALayerDelegateP", "selectedSegmentIndex"]
 - !private ["So15CALayerDelegateP", "setup"]
 - !private ["So15CALayerDelegateP", "setupByCourseName"]
@@ -189,7 +184,6 @@ depends-member:
 - ["s7CVarArgP", "scrollViewWillEndDragging"]
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
-- !private ["s7CVarArgP", "selectRow"]
 - !private ["s7CVarArgP", "selectedSegmentIndex"]
 - !private ["s7CVarArgP", "setBackgroundImage"]
 - !private ["s7CVarArgP", "setup"]
@@ -284,7 +278,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "section"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
-- !private ["s28CustomDebugStringConvertibleP", "selectRow"]
 - !private ["s28CustomDebugStringConvertibleP", "selectedSegmentIndex"]
 - !private ["s28CustomDebugStringConvertibleP", "setBackgroundImage"]
 - !private ["s28CustomDebugStringConvertibleP", "setup"]
@@ -374,7 +367,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "section"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
-- !private ["s23CustomStringConvertibleP", "selectRow"]
 - !private ["s23CustomStringConvertibleP", "selectedSegmentIndex"]
 - !private ["s23CustomStringConvertibleP", "setBackgroundImage"]
 - !private ["s23CustomStringConvertibleP", "setup"]
@@ -457,7 +449,6 @@ depends-member:
 - !private ["SQ", "leftBarButtonItem"]
 - !private ["SQ", "navigationController"]
 - !private ["SQ", "navigationItem"]
-- !private ["SQ", "none"]
 - !private ["SQ", "normal"]
 - ["SQ", "numberOfSections"]
 - ["SQ", "numberOfSectionsInTableView"]
@@ -488,7 +479,6 @@ depends-member:
 - !private ["SQ", "section"]
 - ["SQ", "sectionIndexTitles"]
 - ["SQ", "sectionIndexTitlesForTableView"]
-- !private ["SQ", "selectRow"]
 - !private ["SQ", "selectedSegmentIndex"]
 - !private ["SQ", "setBackgroundImage"]
 - !private ["SQ", "setup"]
@@ -557,7 +547,6 @@ depends-member:
 - !private ["SH", "leftBarButtonItem"]
 - !private ["SH", "navigationController"]
 - !private ["SH", "navigationItem"]
-- !private ["SH", "none"]
 - ["SH", "numberOfSections"]
 - ["SH", "numberOfSectionsInTableView"]
 - !private ["SH", "openAddTask"]
@@ -587,7 +576,6 @@ depends-member:
 - !private ["SH", "section"]
 - ["SH", "sectionIndexTitles"]
 - ["SH", "sectionIndexTitlesForTableView"]
-- !private ["SH", "selectRow"]
 - !private ["SH", "selectedSegmentIndex"]
 - !private ["SH", "setBackgroundImage"]
 - !private ["SH", "setup"]
@@ -671,7 +659,6 @@ depends-member:
 - ["So8NSCodingP", "scrollViewWillEndDragging"]
 - ["So8NSCodingP", "sectionIndexTitles"]
 - ["So8NSCodingP", "sectionIndexTitlesForTableView"]
-- !private ["So8NSCodingP", "selectRow"]
 - !private ["So8NSCodingP", "selectedSegmentIndex"]
 - !private ["So8NSCodingP", "setBackgroundImage"]
 - !private ["So8NSCodingP", "setup"]
@@ -806,7 +793,6 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
-- !private ["So8NSObjectC", "selectRow"]
 - !private ["So8NSObjectC", "selectedSegmentIndex"]
 - !private ["So8NSObjectC", "setBackgroundImage"]
 - !private ["So8NSObjectC", "setup"]
@@ -879,7 +865,6 @@ depends-member:
 - ["So8NSObjectP", "scrollViewWillEndDragging"]
 - ["So8NSObjectP", "sectionIndexTitles"]
 - ["So8NSObjectP", "sectionIndexTitlesForTableView"]
-- !private ["So8NSObjectP", "selectRow"]
 - !private ["So8NSObjectP", "selectedSegmentIndex"]
 - !private ["So8NSObjectP", "setBackgroundImage"]
 - !private ["So8NSObjectP", "setup"]
@@ -917,13 +902,11 @@ depends-member:
 - !private ["SY", "default"]
 - !private ["SY", "destructive"]
 - !private ["SY", "fade"]
-- !private ["SY", "none"]
 - !private ["SY", "normal"]
 - !private ["SY", "plain"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["10Foundation20ReferenceConvertibleP", "section"]
 - !private ["So23UITableViewRowAnimationV", "fade"]
-- !private ["So25UITableViewScrollPositionV", "none"]
 - !private ["ST", "count"]
 - !private ["ST", "first"]
 - ["ST", "init"]
@@ -936,6 +919,7 @@ depends-member:
 - !private ["So23UIContextualActionStyleV", "destructive"]
 - !private ["So20UIBarButtonItemStyleV", "plain"]
 - !private ["22University_Application4TaskC", "cid"]
+- !private ["22University_Application4TaskC", "isSelected"]
 - !private ["22University_Application4TaskC", "tid"]
 - !private ["22University_Application13TaskHeaderTVCC", "contentView"]
 - !private ["22University_Application13TaskHeaderTVCC", "setup"]
@@ -1014,7 +998,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
-- !private ["So29UIAccessibilityIdentificationP", "selectRow"]
 - !private ["So29UIAccessibilityIdentificationP", "selectedSegmentIndex"]
 - !private ["So29UIAccessibilityIdentificationP", "setBackgroundImage"]
 - !private ["So29UIAccessibilityIdentificationP", "setup"]
@@ -1028,7 +1011,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "reloadData"]
-- !private ["So12UIAppearanceP", "selectRow"]
 - !private ["So12UIAppearanceP", "selectedSegmentIndex"]
 - !private ["So12UIAppearanceP", "setBackgroundImage"]
 - !private ["So12UIAppearanceP", "setup"]
@@ -1085,7 +1067,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "scrollViewWillEndDragging"]
 - ["So21UIAppearanceContainerP", "sectionIndexTitles"]
 - ["So21UIAppearanceContainerP", "sectionIndexTitlesForTableView"]
-- !private ["So21UIAppearanceContainerP", "selectRow"]
 - !private ["So21UIAppearanceContainerP", "selectedSegmentIndex"]
 - !private ["So21UIAppearanceContainerP", "setup"]
 - !private ["So21UIAppearanceContainerP", "setupByCourseName"]
@@ -1169,7 +1150,6 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "reloadData"]
-- !private ["So17UICoordinateSpaceP", "selectRow"]
 - !private ["So17UICoordinateSpaceP", "selectedSegmentIndex"]
 - !private ["So17UICoordinateSpaceP", "setup"]
 - !private ["So17UICoordinateSpaceP", "setupByCourseName"]
@@ -1179,7 +1159,6 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "deleteRows"]
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
-- !private ["So23UIDataSourceTranslatingP", "selectRow"]
 - !private ["So13UIDynamicItemP", "buttonPressed"]
 - !private ["So13UIDynamicItemP", "cellForRow"]
 - !private ["So13UIDynamicItemP", "contentView"]
@@ -1189,7 +1168,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "reloadData"]
-- !private ["So13UIDynamicItemP", "selectRow"]
 - !private ["So13UIDynamicItemP", "selectedSegmentIndex"]
 - !private ["So13UIDynamicItemP", "setup"]
 - !private ["So13UIDynamicItemP", "setupByCourseName"]
@@ -1245,7 +1223,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "scrollViewWillEndDragging"]
 - ["So18UIFocusEnvironmentP", "sectionIndexTitles"]
 - ["So18UIFocusEnvironmentP", "sectionIndexTitlesForTableView"]
-- !private ["So18UIFocusEnvironmentP", "selectRow"]
 - !private ["So18UIFocusEnvironmentP", "selectedSegmentIndex"]
 - !private ["So18UIFocusEnvironmentP", "setup"]
 - !private ["So18UIFocusEnvironmentP", "setupByCourseName"]
@@ -1267,7 +1244,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "reloadData"]
-- !private ["So11UIFocusItemP", "selectRow"]
 - !private ["So11UIFocusItemP", "selectedSegmentIndex"]
 - !private ["So11UIFocusItemP", "setup"]
 - !private ["So11UIFocusItemP", "setupByCourseName"]
@@ -1280,7 +1256,6 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "reloadData"]
-- !private ["So20UIFocusItemContainerP", "selectRow"]
 - !private ["So20UIFocusItemContainerP", "selectedSegmentIndex"]
 - !private ["So20UIFocusItemContainerP", "setup"]
 - !private ["So20UIFocusItemContainerP", "setupByCourseName"]
@@ -1290,7 +1265,6 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "deleteRows"]
 - !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
-- !private ["So30UIFocusItemScrollableContainerP", "selectRow"]
 - !private ["So27UIGestureRecognizerDelegateP", "buttonPressed"]
 - !private ["So27UIGestureRecognizerDelegateP", "contentView"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
@@ -1355,7 +1329,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillEndDragging"]
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitles"]
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitlesForTableView"]
-- !private ["So30UIPasteConfigurationSupportingP", "selectRow"]
 - !private ["So30UIPasteConfigurationSupportingP", "selectedSegmentIndex"]
 - !private ["So30UIPasteConfigurationSupportingP", "setup"]
 - !private ["So30UIPasteConfigurationSupportingP", "setupByCourseName"]
@@ -1428,7 +1401,6 @@ depends-member:
 - ["So11UIResponderC", "scrollViewWillEndDragging"]
 - ["So11UIResponderC", "sectionIndexTitles"]
 - ["So11UIResponderC", "sectionIndexTitlesForTableView"]
-- !private ["So11UIResponderC", "selectRow"]
 - !private ["So11UIResponderC", "selectedSegmentIndex"]
 - !private ["So11UIResponderC", "setup"]
 - !private ["So11UIResponderC", "setupByCourseName"]
@@ -1495,7 +1467,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillEndDragging"]
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitles"]
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitlesForTableView"]
-- !private ["So30UIResponderStandardEditActionsP", "selectRow"]
 - !private ["So30UIResponderStandardEditActionsP", "selectedSegmentIndex"]
 - !private ["So30UIResponderStandardEditActionsP", "setup"]
 - !private ["So30UIResponderStandardEditActionsP", "setupByCourseName"]
@@ -1514,7 +1485,6 @@ depends-member:
 - !private ["So12UIScrollViewC", "deleteRows"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "reloadData"]
-- !private ["So12UIScrollViewC", "selectRow"]
 - ["So20UIScrollViewDelegateP", "Course"]
 - ["So20UIScrollViewDelegateP", "Task"]
 - !private ["So20UIScrollViewDelegateP", "Theme"]
@@ -1572,7 +1542,6 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
-- !private ["So35UISpringLoadedInteractionSupportingP", "selectRow"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "selectedSegmentIndex"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "setBackgroundImage"]
 - ["So16UIStateRestoringP", "Course"]
@@ -1638,7 +1607,6 @@ depends-member:
 - !private ["So11UITableViewC", "deleteRows"]
 - !private ["So11UITableViewC", "dequeueReusableCell"]
 - !private ["So11UITableViewC", "reloadData"]
-- !private ["So11UITableViewC", "selectRow"]
 - !private ["So15UITableViewCellC", "buttonPressed"]
 - !private ["So15UITableViewCellC", "contentView"]
 - !private ["So15UITableViewCellC", "init"]
@@ -1794,7 +1762,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "scrollViewWillEndDragging"]
 - ["So18UITraitEnvironmentP", "sectionIndexTitles"]
 - ["So18UITraitEnvironmentP", "sectionIndexTitlesForTableView"]
-- !private ["So18UITraitEnvironmentP", "selectRow"]
 - !private ["So18UITraitEnvironmentP", "selectedSegmentIndex"]
 - !private ["So18UITraitEnvironmentP", "setup"]
 - !private ["So18UITraitEnvironmentP", "setupByCourseName"]
@@ -1859,7 +1826,6 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "scrollViewWillEndDragging"]
 - ["So23UIUserActivityRestoringP", "sectionIndexTitles"]
 - ["So23UIUserActivityRestoringP", "sectionIndexTitlesForTableView"]
-- !private ["So23UIUserActivityRestoringP", "selectRow"]
 - !private ["So23UIUserActivityRestoringP", "selectedSegmentIndex"]
 - !private ["So23UIUserActivityRestoringP", "setup"]
 - !private ["So23UIUserActivityRestoringP", "setupByCourseName"]
@@ -1881,7 +1847,6 @@ depends-member:
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "reloadData"]
-- !private ["So6UIViewC", "selectRow"]
 - !private ["So6UIViewC", "selectedSegmentIndex"]
 - !private ["So6UIViewC", "setup"]
 - !private ["So6UIViewC", "setupByCourseName"]
@@ -2032,7 +1997,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitlesForTableView"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "selectRow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedSegmentIndex"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setBackgroundImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setup"]
@@ -2075,7 +2039,6 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "reloadData"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "selectRow"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "selectedSegmentIndex"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setup"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setupByCourseName"]
@@ -2123,7 +2086,6 @@ depends-nominal:
 - !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "So23UITableViewRowAnimationV"
-- !private "So25UITableViewScrollPositionV"
 - "ST"
 - !private "s10SetAlgebraP"
 - !private "So14UIControlStateV"
@@ -2201,18 +2163,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLiteObjc.h"
-- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarAppearance.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite.h"
-- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarCell.h"
-- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendar.h"
-- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarConstants.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Headers/Eureka-Swift.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Headers/SQLite-Swift.h"
-- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarHeaderView.h"
-- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarWeekdayView.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/Eureka.framework/Modules/module.modulemap"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphoneos/SQLite.framework/Modules/module.modulemap"
-- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -2225,4 +2180,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8543a4c087ba84f907ea2b7f8691a287"
+interface-hash: "1baa19b64c51f0d926e8e03993a73f8f"

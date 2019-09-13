@@ -1,0 +1,523 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ClassType"
+- "Day"
+- "Class"
+- "=="
+- "<"
+provides-nominal:
+- "22University_Application9ClassTypeO"
+- "22University_Application3DayO"
+- "22University_Application5ClassC"
+provides-member:
+- ["22University_Application9ClassTypeO", ""]
+- ["22University_Application3DayO", ""]
+- ["22University_Application5ClassC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+="
+- "<"
+- "<="
+- "=="
+- ">"
+- ">="
+- "AssignmentPrecedence"
+- "Bool"
+- "Class"
+- "ClassType"
+- "Comparable"
+- "Date"
+- !private "DateFormatter"
+- "Day"
+- "Int"
+- "Int64"
+- "String"
+- "StringLiteralType"
+- "UnicodeScalarType"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- !private ["Sa", "append"]
+- ["Sa", "init"]
+- !private ["Sa", "sorted"]
+- !private ["SK", "append"]
+- ["SK", "init"]
+- !private ["SK", "prefix"]
+- !private ["SK", "sorted"]
+- !private ["SK", "uppercased"]
+- !private ["6SQLite7BindingP", "init"]
+- !private ["6SQLite7BindingP", "prefix"]
+- !private ["6SQLite7BindingP", "uppercased"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "dateFormat"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "prefix"]
+- !private ["s7CVarArgP", "sorted"]
+- !private ["s7CVarArgP", "string"]
+- !private ["s7CVarArgP", "uppercased"]
+- ["22University_Application5ClassC", "ClassType"]
+- ["22University_Application5ClassC", "Date"]
+- !private ["22University_Application5ClassC", "DateFormatter"]
+- ["22University_Application5ClassC", "Day"]
+- ["22University_Application5ClassC", "Int64"]
+- ["22University_Application5ClassC", "String"]
+- ["22University_Application5ClassC", "cid"]
+- ["22University_Application5ClassC", "classType"]
+- ["22University_Application5ClassC", "clid"]
+- ["22University_Application5ClassC", "days"]
+- ["22University_Application5ClassC", "deinit"]
+- ["22University_Application5ClassC", "endTime"]
+- ["22University_Application5ClassC", "getClassTimeAndDay"]
+- ["22University_Application5ClassC", "getClassTypePrefix"]
+- ["22University_Application5ClassC", "getDaysToStrings"]
+- ["22University_Application5ClassC", "getTimeToString"]
+- ["22University_Application5ClassC", "init"]
+- ["22University_Application5ClassC", "location"]
+- ["22University_Application5ClassC", "startTime"]
+- ["22University_Application9ClassTypeO", "=="]
+- ["22University_Application9ClassTypeO", "Discussion"]
+- ["22University_Application9ClassTypeO", "Laboratory"]
+- ["22University_Application9ClassTypeO", "Lecture"]
+- ["22University_Application9ClassTypeO", "RawValue"]
+- ["22University_Application9ClassTypeO", "_Default_RawValue"]
+- !private ["22University_Application9ClassTypeO", "_findStringSwitchCase"]
+- ["22University_Application9ClassTypeO", "_rawHashValue"]
+- ["22University_Application9ClassTypeO", "deinit"]
+- ["22University_Application9ClassTypeO", "hash"]
+- ["22University_Application9ClassTypeO", "hashValue"]
+- ["22University_Application9ClassTypeO", "init"]
+- ["22University_Application9ClassTypeO", "rawValue"]
+- !private ["Sl", "append"]
+- ["Sl", "init"]
+- !private ["Sl", "prefix"]
+- !private ["Sl", "sorted"]
+- !private ["Sl", "uppercased"]
+- ["SL", "<"]
+- ["SL", "<="]
+- ["SL", "=="]
+- ["SL", ">"]
+- ["SL", ">="]
+- ["SL", "Friday"]
+- ["SL", "Monday"]
+- ["SL", "RawValue"]
+- ["SL", "Saturday"]
+- ["SL", "Sunday"]
+- ["SL", "Thursday"]
+- ["SL", "Tuesday"]
+- ["SL", "Wednesday"]
+- ["SL", ""]
+- ["SL", "_Default_RawValue"]
+- !private ["SL", "_findStringSwitchCase"]
+- ["SL", "_rawHashValue"]
+- ["SL", "hash"]
+- ["SL", "hashValue"]
+- ["SL", "init"]
+- !private ["SL", "prefix"]
+- ["SL", "rawValue"]
+- !private ["SL", "sortOrder"]
+- !private ["SL", "uppercased"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "Lecture"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "prefix"]
+- !private ["s28CustomDebugStringConvertibleP", "rawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "string"]
+- !private ["s28CustomDebugStringConvertibleP", "uppercased"]
+- !private ["s17CustomReflectableP", "Lecture"]
+- !private ["s17CustomReflectableP", "append"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "prefix"]
+- !private ["s17CustomReflectableP", "rawValue"]
+- !private ["s17CustomReflectableP", "sorted"]
+- !private ["s17CustomReflectableP", "uppercased"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "dateFormat"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "prefix"]
+- !private ["s23CustomStringConvertibleP", "sorted"]
+- !private ["s23CustomStringConvertibleP", "string"]
+- !private ["s23CustomStringConvertibleP", "uppercased"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "sorted"]
+- !private ["10Foundation4DateV", "init"]
+- !private ["So15NSDateFormatterC", "dateFormat"]
+- !private ["So15NSDateFormatterC", "init"]
+- !private ["So15NSDateFormatterC", "string"]
+- ["22University_Application3DayO", "<"]
+- ["22University_Application3DayO", "<="]
+- ["22University_Application3DayO", "=="]
+- ["22University_Application3DayO", ">"]
+- ["22University_Application3DayO", ">="]
+- ["22University_Application3DayO", "Bool"]
+- ["22University_Application3DayO", "Day"]
+- ["22University_Application3DayO", "Friday"]
+- ["22University_Application3DayO", "Int"]
+- ["22University_Application3DayO", "Monday"]
+- ["22University_Application3DayO", "RawValue"]
+- ["22University_Application3DayO", "Saturday"]
+- ["22University_Application3DayO", "Sunday"]
+- ["22University_Application3DayO", "Thursday"]
+- ["22University_Application3DayO", "Tuesday"]
+- ["22University_Application3DayO", "Wednesday"]
+- ["22University_Application3DayO", "_Default_RawValue"]
+- !private ["22University_Application3DayO", "_findStringSwitchCase"]
+- ["22University_Application3DayO", "_rawHashValue"]
+- ["22University_Application3DayO", "deinit"]
+- ["22University_Application3DayO", "hash"]
+- ["22University_Application3DayO", "hashValue"]
+- ["22University_Application3DayO", "init"]
+- ["22University_Application3DayO", "rawValue"]
+- !private ["22University_Application3DayO", "sortOrder"]
+- !private ["Se", "Lecture"]
+- !private ["Se", "append"]
+- ["Se", "init"]
+- !private ["Se", "prefix"]
+- !private ["Se", "rawValue"]
+- !private ["Se", "sorted"]
+- !private ["Se", "uppercased"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "Lecture"]
+- !private ["SE", "append"]
+- ["SE", "init"]
+- !private ["SE", "prefix"]
+- !private ["SE", "rawValue"]
+- !private ["SE", "sorted"]
+- !private ["SE", "uppercased"]
+- ["SQ", "<"]
+- ["SQ", "<="]
+- ["SQ", "=="]
+- ["SQ", ">"]
+- ["SQ", ">="]
+- ["SQ", "Friday"]
+- !private ["SQ", "Lecture"]
+- ["SQ", "Monday"]
+- ["SQ", "RawValue"]
+- ["SQ", "Saturday"]
+- ["SQ", "Sunday"]
+- ["SQ", "Thursday"]
+- ["SQ", "Tuesday"]
+- ["SQ", "Wednesday"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "append"]
+- !private ["SQ", "dateFormat"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- !private ["SQ", "prefix"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "sortOrder"]
+- !private ["SQ", "sorted"]
+- !private ["SQ", "string"]
+- !private ["SQ", "uppercased"]
+- !private ["6SQLite11ExpressibleP", "init"]
+- !private ["6SQLite11ExpressibleP", "prefix"]
+- !private ["6SQLite11ExpressibleP", "uppercased"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "sorted"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "prefix"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "uppercased"]
+- !private ["s23ExpressibleByNilLiteralP", "Lecture"]
+- !private ["s23ExpressibleByNilLiteralP", "rawValue"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "prefix"]
+- !private ["s32ExpressibleByStringInterpolationP", "uppercased"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "prefix"]
+- !private ["s26ExpressibleByStringLiteralP", "uppercased"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "prefix"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "uppercased"]
+- !private ["So11NSFormatterC", "dateFormat"]
+- !private ["So11NSFormatterC", "init"]
+- !private ["So11NSFormatterC", "string"]
+- ["SH", "<"]
+- ["SH", "<="]
+- ["SH", "=="]
+- ["SH", ">"]
+- ["SH", ">="]
+- ["SH", "Friday"]
+- !private ["SH", "Lecture"]
+- ["SH", "Monday"]
+- ["SH", "RawValue"]
+- ["SH", "Saturday"]
+- ["SH", "Sunday"]
+- ["SH", "Thursday"]
+- ["SH", "Tuesday"]
+- ["SH", "Wednesday"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "append"]
+- !private ["SH", "dateFormat"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- !private ["SH", "prefix"]
+- ["SH", "rawValue"]
+- !private ["SH", "sortOrder"]
+- !private ["SH", "sorted"]
+- !private ["SH", "string"]
+- !private ["SH", "uppercased"]
+- !private ["6Eureka18InputTypeInitiableP", "init"]
+- !private ["6Eureka18InputTypeInitiableP", "prefix"]
+- !private ["6Eureka18InputTypeInitiableP", "uppercased"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "prefix"]
+- !private ["s25LosslessStringConvertibleP", "uppercased"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "prefix"]
+- !private ["s10MirrorPathP", "uppercased"]
+- !private ["SM", "append"]
+- ["SM", "init"]
+- !private ["SM", "sorted"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "sorted"]
+- !private ["So8NSCodingP", "dateFormat"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "prefix"]
+- !private ["So8NSCodingP", "string"]
+- !private ["So8NSCodingP", "uppercased"]
+- !private ["So9NSCopyingP", "dateFormat"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "prefix"]
+- !private ["So9NSCopyingP", "string"]
+- !private ["So9NSCopyingP", "uppercased"]
+- !private ["So21NSItemProviderReadingP", "prefix"]
+- !private ["So21NSItemProviderReadingP", "uppercased"]
+- !private ["So21NSItemProviderWritingP", "prefix"]
+- !private ["So21NSItemProviderWritingP", "uppercased"]
+- !private ["So16NSMutableCopyingP", "prefix"]
+- !private ["So16NSMutableCopyingP", "uppercased"]
+- !private ["So8NSObjectC", "dateFormat"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "prefix"]
+- !private ["So8NSObjectC", "string"]
+- !private ["So8NSObjectC", "uppercased"]
+- !private ["So8NSObjectP", "dateFormat"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "prefix"]
+- !private ["So8NSObjectP", "string"]
+- !private ["So8NSObjectP", "uppercased"]
+- !private ["So14NSSecureCodingP", "prefix"]
+- !private ["So14NSSecureCodingP", "uppercased"]
+- !private ["So8NSStringC", "prefix"]
+- !private ["So8NSStringC", "uppercased"]
+- !private ["Sq", "Lecture"]
+- !private ["Sq", "rawValue"]
+- !private ["Sk", "append"]
+- ["Sk", "init"]
+- !private ["Sk", "sorted"]
+- !private ["Sm", "append"]
+- ["Sm", "init"]
+- !private ["Sm", "prefix"]
+- !private ["Sm", "sorted"]
+- !private ["Sm", "uppercased"]
+- ["SY", "<"]
+- ["SY", "<="]
+- ["SY", "=="]
+- ["SY", ">"]
+- ["SY", ">="]
+- ["SY", "Friday"]
+- !private ["SY", "Lecture"]
+- ["SY", "Monday"]
+- ["SY", "RawValue"]
+- ["SY", "Saturday"]
+- ["SY", "Sunday"]
+- ["SY", "Thursday"]
+- ["SY", "Tuesday"]
+- ["SY", "Wednesday"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "rawValue"]
+- !private ["SY", "sortOrder"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["ST", "append"]
+- ["ST", "init"]
+- !private ["ST", "prefix"]
+- !private ["ST", "sorted"]
+- !private ["ST", "uppercased"]
+- !private ["SS", "init"]
+- !private ["SS", "prefix"]
+- !private ["SS", "uppercased"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "init"]
+- !private ["Sy", "prefix"]
+- !private ["Sy", "uppercased"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "prefix"]
+- !private ["s16TextOutputStreamP", "uppercased"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "prefix"]
+- !private ["s20TextOutputStreamableP", "uppercased"]
+- !private ["6SQLite5ValueP", "init"]
+- !private ["6SQLite5ValueP", "prefix"]
+- !private ["6SQLite5ValueP", "uppercased"]
+- !private ["s14_ArrayProtocolP", "append"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "sorted"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "prefix"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "uppercased"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "sorted"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "prefix"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "uppercased"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "prefix"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "uppercased"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "prefix"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "uppercased"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "prefix"]
+- !private ["s19_HasContiguousBytesP", "sorted"]
+- !private ["s19_HasContiguousBytesP", "uppercased"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "prefix"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "sorted"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "uppercased"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prefix"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uppercased"]
+- !private ["s21_ObjectiveCBridgeableP", "Lecture"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "prefix"]
+- !private ["s21_ObjectiveCBridgeableP", "rawValue"]
+- !private ["s21_ObjectiveCBridgeableP", "sorted"]
+- !private ["s21_ObjectiveCBridgeableP", "uppercased"]
+- !private ["6SQLite13_OptionalTypeP", "Lecture"]
+- !private ["6SQLite13_OptionalTypeP", "rawValue"]
+depends-nominal:
+- "Sa"
+- "SK"
+- !private "6SQLite7BindingP"
+- "s7CVarArgP"
+- "22University_Application5ClassC"
+- "22University_Application9ClassTypeO"
+- "Sl"
+- "SL"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
+- !private "10Foundation4DateV"
+- !private "So15NSDateFormatterC"
+- "22University_Application3DayO"
+- "Se"
+- !private "s26DefaultStringInterpolationV"
+- "SE"
+- "SQ"
+- !private "6SQLite11ExpressibleP"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So11NSFormatterC"
+- "SH"
+- !private "6Eureka18InputTypeInitiableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "Sq"
+- "Sk"
+- "Sm"
+- "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- "ST"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "6SQLite5ValueP"
+- "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "6SQLite13_OptionalTypeP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Eureka.framework/Modules/Eureka.swiftmodule/x86_64.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SQLite.framework/Modules/SQLite.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SQLite.framework/Headers/SQLiteObjc.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SQLite.framework/Headers/SQLite.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Eureka.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SQLite.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "9b4c3599d781e055c22fe49dd75932cc"
