@@ -8,49 +8,6 @@
 
 import Foundation
 
-enum ClassType: String {
-    case Lecture = "Lecture"
-    case Laboratory = "Laboratory"
-    case Discussion = "Discussion"
-}
-
-enum Day: String, Comparable {
-    case Monday = "M"
-    case Tuesday = "T"
-    case Wednesday = "W"
-    case Thursday = "R"
-    case Friday = "F"
-    case Saturday = "S"
-    case Sunday = "U"
-    
-    private var sortOrder: Int {
-        switch self {
-        case .Monday:
-            return 0
-        case .Tuesday:
-            return 1
-        case .Wednesday:
-            return 2
-        case .Thursday:
-            return 3
-        case .Friday:
-            return 4
-        case .Saturday:
-            return 5
-        case .Sunday:
-            return 6
-        }
-    }
-    
-    static func ==(lhs: Day, rhs: Day) -> Bool {
-        return lhs.sortOrder == rhs.sortOrder
-    }
-    
-    static func <(lhs: Day, rhs: Day) -> Bool {
-        return lhs.sortOrder < rhs.sortOrder
-    }
-}
-
 class Class {
     let clid: Int64!
     var cid: Int64!
@@ -125,5 +82,48 @@ class Class {
         let dayString = getDaysToStrings()
         
         return "\(startTime) - \(endTime) (\(dayString))"
+    }
+}
+
+enum ClassType: String {
+    case Lecture = "Lecture"
+    case Laboratory = "Laboratory"
+    case Discussion = "Discussion"
+}
+
+enum Day: String, Comparable {
+    case Monday = "M"
+    case Tuesday = "T"
+    case Wednesday = "W"
+    case Thursday = "R"
+    case Friday = "F"
+    case Saturday = "S"
+    case Sunday = "U"
+    
+    private var sortOrder: Int {
+        switch self {
+        case .Monday:
+            return 0
+        case .Tuesday:
+            return 1
+        case .Wednesday:
+            return 2
+        case .Thursday:
+            return 3
+        case .Friday:
+            return 4
+        case .Saturday:
+            return 5
+        case .Sunday:
+            return 6
+        }
+    }
+    
+    static func ==(lhs: Day, rhs: Day) -> Bool {
+        return lhs.sortOrder == rhs.sortOrder
+    }
+    
+    static func <(lhs: Day, rhs: Day) -> Bool {
+        return lhs.sortOrder < rhs.sortOrder
     }
 }

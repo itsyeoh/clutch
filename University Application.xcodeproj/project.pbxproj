@@ -35,6 +35,9 @@
 		5159B0E5232C4C2900517164 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0D5232C4C2900517164 /* FSCalendarAppearance.m */; };
 		5159B0E7232C4C4D00517164 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5159B0E6232C4C4D00517164 /* FSCalendar.framework */; };
 		5159B0E8232C4C4D00517164 /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5159B0E6232C4C4D00517164 /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5181A480232C52620068CFF5 /* CourseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181A47F232C52620068CFF5 /* CourseClass.swift */; };
+		5181A489232C5A380068CFF5 /* DashboardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181A488232C5A380068CFF5 /* DashboardTVC.swift */; };
+		5181A48B232C5F850068CFF5 /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181A48A232C5F850068CFF5 /* TableViewHelper.swift */; };
 		5187F69A23138E6B0091AAE9 /* SemesterTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187F69923138E6B0091AAE9 /* SemesterTVC.swift */; };
 		5187F6A223138E7C0091AAE9 /* CourseTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187F6A123138E7C0091AAE9 /* CourseTVC.swift */; };
 		519EB5F5231A12E8008A3142 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5F4231A12E8008A3142 /* Navigation.storyboard */; };
@@ -207,6 +210,9 @@
 		5159B0D4232C4C2900517164 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5159B0D5232C4C2900517164 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
 		5159B0E6232C4C4D00517164 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSCalendar.framework; sourceTree = "<group>"; };
+		5181A47F232C52620068CFF5 /* CourseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseClass.swift; sourceTree = "<group>"; };
+		5181A488232C5A380068CFF5 /* DashboardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTVC.swift; sourceTree = "<group>"; };
+		5181A48A232C5F850068CFF5 /* TableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
 		5187F69923138E6B0091AAE9 /* SemesterTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterTVC.swift; sourceTree = "<group>"; };
 		5187F6A123138E7C0091AAE9 /* CourseTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTVC.swift; sourceTree = "<group>"; };
 		519EB5F4231A12E8008A3142 /* Navigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
@@ -294,6 +300,7 @@
 			children = (
 				515373822321E299003D1D3A /* CustomCells.swift */,
 				515373802321E28F003D1D3A /* WeekDaysCell.xib */,
+				5181A48A232C5F850068CFF5 /* TableViewHelper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -343,6 +350,7 @@
 			children = (
 				51F1192C232A01000047ADFE /* Dashboard.storyboard */,
 				51F11964232A07390047ADFE /* DashboardVC.swift */,
+				5181A488232C5A380068CFF5 /* DashboardTVC.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -391,6 +399,7 @@
 				51AF6C59231323A500CD3068 /* Course.swift */,
 				51AF6C5D2313243E00CD3068 /* Class.swift */,
 				51E7641B23199E7400E199B2 /* Task.swift */,
+				5181A47F232C52620068CFF5 /* CourseClass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -677,9 +686,11 @@
 				5159B0E5232C4C2900517164 /* FSCalendarAppearance.m in Sources */,
 				5159B0DC232C4C2900517164 /* FSCalendarCollectionViewLayout.m in Sources */,
 				51CDA320231833DF00141E85 /* CourseClassTVC.swift in Sources */,
+				5181A48B232C5F850068CFF5 /* TableViewHelper.swift in Sources */,
 				5159B0DA232C4C2900517164 /* FSCalendarStickyHeader.m in Sources */,
 				51AF6C5E2313243E00CD3068 /* Class.swift in Sources */,
 				51E7641C23199E7400E199B2 /* Task.swift in Sources */,
+				5181A489232C5A380068CFF5 /* DashboardTVC.swift in Sources */,
 				51F119182329D1B30047ADFE /* TaskVC.swift in Sources */,
 				5159B0D6232C4C2900517164 /* FSCalendarCollectionView.m in Sources */,
 				5153737C2321E1D3003D1D3A /* AddClassVC.swift in Sources */,
@@ -699,6 +710,7 @@
 				5159B0E2232C4C2900517164 /* FSCalendarHeaderView.m in Sources */,
 				5159B0E3232C4C2900517164 /* FSCalendarTransitionCoordinator.m in Sources */,
 				5159B0DF232C4C2900517164 /* FSCalendarExtensions.m in Sources */,
+				5181A480232C52620068CFF5 /* CourseClass.swift in Sources */,
 				51AF6C5A231323A500CD3068 /* Course.swift in Sources */,
 				51F11965232A07390047ADFE /* DashboardVC.swift in Sources */,
 				5153737E2321E1DF003D1D3A /* AddTaskVC.swift in Sources */,

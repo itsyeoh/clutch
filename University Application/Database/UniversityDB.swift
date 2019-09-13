@@ -24,7 +24,7 @@ class UniversityDB {
             ).first!
         
         do {
-            db = try Connection("\(path)/LocalUniData_")
+            db = try Connection("\(path)/LocalUniData__")
         } catch {
             db = nil
             print ("Unable to open database")
@@ -112,7 +112,7 @@ class UniversityDB {
     
     // COURSES
     private let courses = Table("courses")
-    private let c_sid = Expression<Int64>("sid")
+    private let c_sid = Expression<Int64>("c_sid")
     private let cid = Expression<Int64>("cid")
     private let dept = Expression<String>("dept")
     private let courseNum = Expression<Int>("courseNum")
@@ -217,7 +217,7 @@ class UniversityDB {
     
     // CLASSES
     private let classes = Table("classes")
-    private let c_cid = Expression<Int64>("cid")
+    private let c_cid = Expression<Int64>("c_cid")
     private let clid = Expression<Int64>("clid")
     private let classType = Expression<String>("classType")
     private let startTime = Expression<Date>("startTime")
@@ -349,7 +349,7 @@ class UniversityDB {
     
     // TASK
     private let tasks = Table("tasks")
-    private let t_cid = Expression<Int64>("cid")
+    private let t_cid = Expression<Int64>("t_cid")
     private let tid = Expression<Int64>("tid")
     private let taskName = Expression<String>("taskName")
     private let taskType = Expression<String>("taskType")
@@ -586,6 +586,37 @@ class UniversityDB {
         return selectedCourse
     }
     
-    
+    func getCourseClassesByDate(date: Date, day: String) -> [CourseClass] {
+        var courseClasses = [CourseClass]()
+        
+        do {
+            let query = semesters.select([courses[dept], courses[courseNum],
+                                          courses[creditHours], classes[classType],
+                                          classes[classType], classes[startTime],
+                                          classes[endTime], classes[days],
+                                          classes[location]])
+                                 .join(courses, on: sid == courses[c_sid])
+                                 .join(classes, on: cid == classes[c_cid])
+                                 .filter(startDate <= date && endDate >= date)
+                                 .filter(days.like("%" + day + "%"))
+                                 .order(classes[startTime] .desc)
+            
+            for cClass in try db!.prepare(query) {
+                courseClasses.append( CourseClass(
+                    dept: cClass[dept],
+                    courseNum: cClass[courseNum],
+                    creditHours: cClass[creditHours],
+                    classType: cClass[classType],
+                    startTime: cClass[startTime],
+                    endTime: cClass[endTime],
+                    days: cClass[days],
+                    location: cClass[location]) )
+            }
+        } catch {
+            print("Select failed")
+        }
+        
+        return courseClasses
+    }
     
 }

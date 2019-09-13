@@ -1,13 +1,15 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
-options: "180ceabf02f744893d30e902c0efd723"
-build_time: [1568412162, 626370000]
+options: "62c07d75f45bfdc1bc85148aa7f7e79f"
+build_time: [1568418574, 331302000]
 inputs:
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Course/CourseClassTVC.swift": [1567895608, 87919831]
-  "/Users/jasonyeoh/Desktop/University Application/University Application/Model/Class.swift": [1567896405, 292022347]
+  "/Users/jasonyeoh/Desktop/University Application/University Application/Extensions/TableViewHelper.swift": [1568417956, 951134615]
+  "/Users/jasonyeoh/Desktop/University Application/University Application/Model/Class.swift": [1568416007, 289607863]
   "/Users/jasonyeoh/Desktop/University Application/University Application/Model/Task.swift": [1568404846, 665179496]
+  "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Dashboard/DashboardTVC.swift": [1568417230, 551012149]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Task/TaskVC.swift": [1568404957, 134962769]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/AddClass/AddClassVC.swift": [1568253688, 68190627]
-  "/Users/jasonyeoh/Desktop/University Application/University Application/Database/UniversityDB.swift": [1568260910, 224921854]
+  "/Users/jasonyeoh/Desktop/University Application/University Application/Database/UniversityDB.swift": [1568418023, 465500445]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Course/CourseAssignmentTVC.swift": [1567194083, 856060743]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Task/TaskHeaderTVC.swift": [1568399131, 929170062]
   "/Users/jasonyeoh/Desktop/University Application/University Application/Model/Semester.swift": [1567038644, 137199759]
@@ -16,8 +18,9 @@ inputs:
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Academics/SemesterTVC.swift": [1567039589, 893218517]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/AddSemester/AddSemesterVC.swift": [1568253688, 43292820]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Course/CourseVC.swift": [1568400462, 528933435]
+  "/Users/jasonyeoh/Desktop/University Application/University Application/Model/CourseClass.swift": [1568415105, 923033035]
   "/Users/jasonyeoh/Desktop/University Application/University Application/Model/Course.swift": [1567891551, 455680132]
-  "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Dashboard/DashboardVC.swift": [1568412162, 447192274]
+  "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Dashboard/DashboardVC.swift": [1568418574, 193227755]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/AddTask/AddTaskVC.swift": [1568254785, 456600427]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Academics/CourseTVC.swift": [1567188059, 168998837]
   "/Users/jasonyeoh/Desktop/University Application/University Application/View Controllers/Task/TaskTVC.swift": [1568404732, 615911825]

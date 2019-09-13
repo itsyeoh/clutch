@@ -11,10 +11,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "AddSemesterVC.addSemester():AddSemesterVC.swift">
+         contextName = "AddClassVC.addClass():AddClassVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TaskVC.sectionButtonClicked(sender:):TaskVC.swift">
          <PersistentStrings>
             <PersistentString
-               value = "seasonRow.value">
+               value = "tasksByDate[section][row].description">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -35,10 +38,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "TaskVC.viewDidLoad():TaskVC.swift">
+         contextName = "Class.getDaysToStrings():Class.swift">
          <PersistentStrings>
             <PersistentString
-               value = "tasksByCourseName">
+               value = "self.days">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -54,28 +57,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "Class.getDaysToStrings():Class.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.days">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "TaskVC.sectionButtonClicked(sender:):TaskVC.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "tasksByDate[section][row].description">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "AddClassVC.addClass():AddClassVC.swift">
-      </ContextState>
-      <ContextState
-         contextName = "AcademicsVC.addSemester(semester:):AcademicsVC.swift">
-      </ContextState>
-      <ContextState
          contextName = "AcademicsVC.tableView(_:cellForRowAt:):AcademicsVC.swift">
          <PersistentStrings>
             <PersistentString
@@ -85,6 +66,33 @@
                value = "indexPath.section">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DashboardVC.viewDidLoad():DashboardVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "courseClasses">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskVC.viewDidLoad():TaskVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tasksByCourseName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddSemesterVC.addSemester():AddSemesterVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "seasonRow.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AcademicsVC.addSemester(semester:):AcademicsVC.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

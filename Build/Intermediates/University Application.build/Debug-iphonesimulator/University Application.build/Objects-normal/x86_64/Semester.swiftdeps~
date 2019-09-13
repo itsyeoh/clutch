@@ -20,7 +20,6 @@ depends-top-level:
 - "Season"
 - "Semester"
 - "String"
-- "StringLiteralType"
 - !private "TimeZone"
 - !private "UnicodeScalarType"
 - !private "_findStringSwitchCase"

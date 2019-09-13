@@ -7,25 +7,35 @@ provides-member:
 - ["22University_Application0A2DBC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "&&"
+- !private "+"
 - !private "<-"
+- !private "<="
 - !private "=="
 - !private ">"
+- !private ">="
 - !private "??"
 - "AssignmentPrecedence"
 - "Bool"
+- !private "BooleanLiteralType"
 - "Class"
 - "ClassType"
 - "Connection"
 - "Course"
+- "CourseClass"
 - "Date"
 - "Expression"
+- !private "FloatLiteralType"
 - "Int"
 - "Int64"
+- !private "IntegerLiteralType"
 - !private "NSSearchPathForDirectoriesInDomains"
 - "Semester"
 - "String"
+- "StringLiteralType"
 - "Table"
 - "Task"
+- !private "UnicodeScalarType"
 - "UniversityDB"
 - !private "print"
 depends-member:
@@ -63,6 +73,7 @@ depends-member:
 - !private ["22University_Application6CourseC", "dept"]
 - !private ["22University_Application6CourseC", "init"]
 - !private ["22University_Application6CourseC", "sid"]
+- !private ["22University_Application11CourseClassC", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "date"]
 - !private ["s28CustomDebugStringConvertibleP", "first"]
@@ -110,12 +121,16 @@ depends-member:
 - !private ["6SQLite11ExpressibleP", "create"]
 - !private ["6SQLite11ExpressibleP", "date"]
 - !private ["6SQLite11ExpressibleP", "delete"]
+- !private ["6SQLite11ExpressibleP", "desc"]
 - !private ["6SQLite11ExpressibleP", "filter"]
 - !private ["6SQLite11ExpressibleP", "group"]
 - ["6SQLite11ExpressibleP", "init"]
 - !private ["6SQLite11ExpressibleP", "insert"]
+- !private ["6SQLite11ExpressibleP", "join"]
+- !private ["6SQLite11ExpressibleP", "like"]
 - !private ["6SQLite11ExpressibleP", "order"]
 - !private ["6SQLite11ExpressibleP", "select"]
+- !private ["6SQLite11ExpressibleP", "subscript"]
 - !private ["6SQLite11ExpressibleP", "update"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
@@ -124,10 +139,14 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "rawValue"]
 - !private ["6SQLite10ExpressionV", "asc"]
 - !private ["6SQLite10ExpressionV", "date"]
+- !private ["6SQLite10ExpressionV", "desc"]
 - ["6SQLite10ExpressionV", "init"]
+- !private ["6SQLite10ExpressionV", "like"]
 - !private ["6SQLite14ExpressionTypeP", "asc"]
 - !private ["6SQLite14ExpressionTypeP", "date"]
+- !private ["6SQLite14ExpressionTypeP", "desc"]
 - ["6SQLite14ExpressionTypeP", "init"]
+- !private ["6SQLite14ExpressionTypeP", "like"]
 - !private ["SH", "append"]
 - !private ["SH", "date"]
 - !private ["SH", "documentDirectory"]
@@ -149,8 +168,10 @@ depends-member:
 - !private ["6SQLite9QueryTypeP", "group"]
 - ["6SQLite9QueryTypeP", "init"]
 - !private ["6SQLite9QueryTypeP", "insert"]
+- !private ["6SQLite9QueryTypeP", "join"]
 - !private ["6SQLite9QueryTypeP", "order"]
 - !private ["6SQLite9QueryTypeP", "select"]
+- !private ["6SQLite9QueryTypeP", "subscript"]
 - !private ["6SQLite9QueryTypeP", "update"]
 - !private ["Sk", "append"]
 - !private ["Sk", "first"]
@@ -163,7 +184,9 @@ depends-member:
 - !private ["SY", "userDomainMask"]
 - !private ["10Foundation20ReferenceConvertibleP", "date"]
 - !private ["6SQLite3RowV", "subscript"]
+- !private ["6SQLite11ScalarQueryV", "filter"]
 - !private ["6SQLite11ScalarQueryV", "group"]
+- !private ["6SQLite11ScalarQueryV", "join"]
 - !private ["6SQLite11ScalarQueryV", "order"]
 - !private ["6SQLite10SchemaTypeP", "count"]
 - !private ["6SQLite10SchemaTypeP", "create"]
@@ -172,8 +195,10 @@ depends-member:
 - !private ["6SQLite10SchemaTypeP", "group"]
 - ["6SQLite10SchemaTypeP", "init"]
 - !private ["6SQLite10SchemaTypeP", "insert"]
+- !private ["6SQLite10SchemaTypeP", "join"]
 - !private ["6SQLite10SchemaTypeP", "order"]
 - !private ["6SQLite10SchemaTypeP", "select"]
+- !private ["6SQLite10SchemaTypeP", "subscript"]
 - !private ["6SQLite10SchemaTypeP", "update"]
 - !private ["So21NSSearchPathDirectoryV", "documentDirectory"]
 - !private ["So22NSSearchPathDomainMaskV", "userDomainMask"]
@@ -194,8 +219,10 @@ depends-member:
 - !private ["6SQLite5TableV", "group"]
 - ["6SQLite5TableV", "init"]
 - !private ["6SQLite5TableV", "insert"]
+- !private ["6SQLite5TableV", "join"]
 - !private ["6SQLite5TableV", "order"]
 - !private ["6SQLite5TableV", "select"]
+- !private ["6SQLite5TableV", "subscript"]
 - !private ["6SQLite5TableV", "update"]
 - !private ["6SQLite12TableBuilderC", "column"]
 - !private ["22University_Application4TaskC", "cid"]
@@ -213,6 +240,7 @@ depends-member:
 - ["22University_Application0A2DBC", "ClassType"]
 - ["22University_Application0A2DBC", "Connection"]
 - ["22University_Application0A2DBC", "Course"]
+- ["22University_Application0A2DBC", "CourseClass"]
 - ["22University_Application0A2DBC", "Date"]
 - ["22University_Application0A2DBC", "Expression"]
 - ["22University_Application0A2DBC", "Int"]
@@ -242,7 +270,6 @@ depends-member:
 - !private ["22University_Application0A2DBC", "creditHours"]
 - !private ["22University_Application0A2DBC", "days"]
 - !private ["22University_Application0A2DBC", "db"]
-- ["22University_Application0A2DBC", "deinit"]
 - ["22University_Application0A2DBC", "deleteClass"]
 - ["22University_Application0A2DBC", "deleteCourse"]
 - ["22University_Application0A2DBC", "deleteSemester"]
@@ -253,6 +280,7 @@ depends-member:
 - !private ["22University_Application0A2DBC", "endTime"]
 - ["22University_Application0A2DBC", "getClasses"]
 - ["22University_Application0A2DBC", "getCourseClasses"]
+- ["22University_Application0A2DBC", "getCourseClassesByDate"]
 - ["22University_Application0A2DBC", "getCourseClassesCount"]
 - ["22University_Application0A2DBC", "getCourseTasks"]
 - ["22University_Application0A2DBC", "getCourseTasksCount"]
@@ -316,6 +344,7 @@ depends-nominal:
 - !private "6SQLite10ConnectionC"
 - !private "10Foundation15ContiguousBytesP"
 - !private "22University_Application6CourseC"
+- !private "22University_Application11CourseClassC"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
@@ -380,11 +409,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Headers/Eureka.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Headers/SQLiteObjc.h"
+- "/Users/jasonyeoh/Desktop/University Application/FSCalendar.framework/Headers/FSCalendarAppearance.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Headers/SQLite.h"
+- "/Users/jasonyeoh/Desktop/University Application/FSCalendar.framework/Headers/FSCalendarCell.h"
+- "/Users/jasonyeoh/Desktop/University Application/FSCalendar.framework/Headers/FSCalendar.h"
+- "/Users/jasonyeoh/Desktop/University Application/FSCalendar.framework/Headers/FSCalendarConstants.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Headers/Eureka-Swift.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/FSCalendar.framework/Headers/FSCalendarHeaderView.h"
+- "/Users/jasonyeoh/Desktop/University Application/FSCalendar.framework/Headers/FSCalendarWeekdayView.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Modules/module.modulemap"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/FSCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -397,4 +433,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6b468fdb997fccca2f1a46d1f9be38ed"
+interface-hash: "2b4675d91e010a564f0fdb7a29021c10"
