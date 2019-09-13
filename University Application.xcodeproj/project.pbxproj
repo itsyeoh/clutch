@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510BACF7232A8D6800EAB40E /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510BACEF232A8D6800EAB40E /* FSCalendar.framework */; };
+		510BACF8232A8D6800EAB40E /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 510BACEF232A8D6800EAB40E /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5153736E2321E185003D1D3A /* AddSemester.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5153736D2321E185003D1D3A /* AddSemester.storyboard */; };
 		515373702321E18E003D1D3A /* AddCourse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5153736F2321E18E003D1D3A /* AddCourse.storyboard */; };
 		515373722321E196003D1D3A /* AddClass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515373712321E196003D1D3A /* AddClass.storyboard */; };
@@ -138,6 +140,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				51D1B5102329B508006AF7ED /* SQLite.framework in Embed Frameworks */,
+				510BACF8232A8D6800EAB40E /* FSCalendar.framework in Embed Frameworks */,
 				51D1B50B2329B504006AF7ED /* Eureka.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -146,6 +149,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		510BACEF232A8D6800EAB40E /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = "<group>"; };
 		5153736D2321E185003D1D3A /* AddSemester.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSemester.storyboard; sourceTree = "<group>"; };
 		5153736F2321E18E003D1D3A /* AddCourse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCourse.storyboard; sourceTree = "<group>"; };
 		515373712321E196003D1D3A /* AddClass.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddClass.storyboard; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 				51D1B50A2329B504006AF7ED /* Eureka.framework in Frameworks */,
 				51D1B5092329B500006AF7ED /* Eureka.framework in Frameworks */,
 				51D1B50F2329B508006AF7ED /* SQLite.framework in Frameworks */,
+				510BACF7232A8D6800EAB40E /* FSCalendar.framework in Frameworks */,
 				51D1B5082329B4FB006AF7ED /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +264,7 @@
 		51AF6C172313232200CD3068 = {
 			isa = PBXGroup;
 			children = (
+				510BACEF232A8D6800EAB40E /* FSCalendar.framework */,
 				51AF6C222313232200CD3068 /* University Application */,
 				51AF6C212313232200CD3068 /* Products */,
 				51D1B4E62329B49F006AF7ED /* Eureka.xcodeproj */,

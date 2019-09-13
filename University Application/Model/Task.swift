@@ -66,4 +66,12 @@ class Task {
     func getCourse() -> Course {
         return UniversityDB.instance.searchCourse(id: self.cid)!
     }
+    
+    func isSelected() {
+        UniversityDB.instance.updateTaskByChecking(id: self.tid, checkVar: true)
+    }
+    
+    func isDeselected() {
+        UniversityDB.instance.updateTaskByChecking(id: self.tid, checkVar: false)
+    }
 }

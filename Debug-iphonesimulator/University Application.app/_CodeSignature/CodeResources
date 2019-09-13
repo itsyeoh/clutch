@@ -106,11 +106,11 @@
 		</data>
 		<key>Dashboard.storyboardc/UIViewController-rWN-iS-Pte.nib</key>
 		<data>
-		PCMDjNEUoKxtw7vcI9r5dvAy2yU=
+		dEwBht04gKOxc8EDo8itWYY9Zz8=
 		</data>
 		<key>Dashboard.storyboardc/rWN-iS-Pte-view-Ggs-l3-wPo.nib</key>
 		<data>
-		Bun3xit5F8ylLeNmd1qSfDmkqQY=
+		Nm+zhfXmuSaU674S3u7xY30n0Jk=
 		</data>
 		<key>Frameworks/Eureka.framework/Eureka</key>
 		<data>
@@ -147,6 +147,18 @@
 		<key>Frameworks/Eureka.framework/_CodeSignature/CodeResources</key>
 		<data>
 		M26rvDd0hFY61d+tGRA31tw0bq0=
+		</data>
+		<key>Frameworks/FSCalendar.framework/FSCalendar</key>
+		<data>
+		1kp7/TluEJD181Ui1E0O0HDfZ2c=
+		</data>
+		<key>Frameworks/FSCalendar.framework/Info.plist</key>
+		<data>
+		+O+M88Si8l1rRls8Nr2K68AQ0kw=
+		</data>
+		<key>Frameworks/FSCalendar.framework/_CodeSignature/CodeResources</key>
+		<data>
+		xNnJ+meyseaoFxtj2biZl+axOPM=
 		</data>
 		<key>Frameworks/SQLite.framework/Info.plist</key>
 		<data>
@@ -214,7 +226,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Vt4e/dZCO8WXCiiRHnaj/Gma7Os=
+		V0/7DkHcp54UXnNFHkHdVxAT0Ao=
 		</data>
 		<key>Navigation.storyboardc/Info.plist</key>
 		<data>
@@ -222,7 +234,7 @@
 		</data>
 		<key>Navigation.storyboardc/UITabBarController-ejd-Cl-GAQ.nib</key>
 		<data>
-		Ayx9rtPR1UnUxAEuemt7k2xGF7U=
+		kbedT65OdPH3iE6LSRfEleyDsKs=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -234,11 +246,11 @@
 		</data>
 		<key>Task.storyboardc/UIViewController-YCm-hB-xe2.nib</key>
 		<data>
-		wUiqMJ74I90cNghKRHomF4Fb8hE=
+		/d14ZY2RiYwanmc0LEi6Qf2NBlM=
 		</data>
 		<key>Task.storyboardc/YCm-hB-xe2-view-dV3-iL-Vhj.nib</key>
 		<data>
-		DKBNaTfgrYlVZzOlO6oK6/WvxRc=
+		QuBn3nAAtkrzqjns/LhzdJkbvns=
 		</data>
 		<key>WeekDaysCell.nib</key>
 		<data>
@@ -430,14 +442,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GkZfwqTarzlbIREdnlMLPmHhIOpayTHI8/zJrWlpCI8=
+			5OSv8YEPnB4tFaX/Jf1T7gC9Ng0jpxCXiXh83+Kyqdw=
 			</data>
 		</dict>
 		<key>Dashboard.storyboardc/rWN-iS-Pte-view-Ggs-l3-wPo.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4fzTfffDrMaaE638xsC1vXWBDFNF2O9OM+BnPmkciVM=
+			vOKcgP8QgPt2yxNuGlqYxgWXBl/ZMFbjLlL1cr/f9hY=
 			</data>
 		</dict>
 		<key>Frameworks/Eureka.framework/Eureka</key>
@@ -501,6 +513,27 @@
 			<key>hash2</key>
 			<data>
 			y94CgNQ4+2yzBxQVG62T4mdQJIB4KO6iWkqidYR3FFY=
+			</data>
+		</dict>
+		<key>Frameworks/FSCalendar.framework/FSCalendar</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2IFDbz5J1UyrCocxPpqvOdSVNR2jsYpx4CJMw3e+2lA=
+			</data>
+		</dict>
+		<key>Frameworks/FSCalendar.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qFduwyrhAjQ7s8eD38EW1SwTJQA4fXHVy+JEgKJW5l4=
+			</data>
+		</dict>
+		<key>Frameworks/FSCalendar.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			S9zouAunRobC8elX8Uc16mI0EmTnd0798OMgEBJUt7k=
 			</data>
 		</dict>
 		<key>Frameworks/SQLite.framework/Info.plist</key>
@@ -626,7 +659,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Auhw7pnEZNhl+P+iy67BHViUJZ1Lsq6bvjy5P0aF140=
+			THnDtFuVIwhAzAXUCcpNrh7PvpT7NYEY5BpO3tYv9UA=
 			</data>
 		</dict>
 		<key>Task.storyboardc/Info.plist</key>
@@ -640,14 +673,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D3Oa1I9DBdaG9sTZhlMVC9rVMjshsr4tiYmaABK0wRU=
+			89zd1cskprKqe8agUAr4ddq4zu6CKEmIc4w0kO+g2wY=
 			</data>
 		</dict>
 		<key>Task.storyboardc/YCm-hB-xe2-view-dV3-iL-Vhj.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uK2bhvGJ0V954kOrUkzATyHblit8b/yXa8mKMAmnXeE=
+			DceU5qvODBCI7eN8X5C28q01Gx7OiEo5LGDupdW582s=
 			</data>
 		</dict>
 		<key>WeekDaysCell.nib</key>

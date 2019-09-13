@@ -33,6 +33,8 @@ class TaskVC: UIViewController {
         tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: false)
         tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: false)
         courses = UniversityDB.instance.getCourses()
+        
+        self.taskTableView.setEditing(true, animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -44,11 +46,15 @@ class TaskVC: UIViewController {
     @objc func openAddTask() {
         let storyboard = UIStoryboard(name: "AddTask", bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! AddTaskVC
+        vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func openCompletedTasks() {
         if isCompleted == true {
+            print("--------")
+            print("NOT DONE")
+            self.navigationItem.title = "TASKS"
             self.navigationItem.leftBarButtonItem?.setBackgroundImage(UIImage(named: "NotDone"), for: .normal, barMetrics: .default)
             isCompleted = false
             tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: false)
@@ -58,6 +64,7 @@ class TaskVC: UIViewController {
         } else {
             print("DONE")
             self.navigationItem.leftBarButtonItem?.setBackgroundImage(UIImage(named: "Done"), for: .normal, barMetrics: .default)
+            self.navigationItem.title = "COMPLETED TASKS"
             isCompleted = true
             tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: true)
             tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: true)
@@ -79,25 +86,6 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch taskControls.selectedSegmentIndex {
-        case 0:
-            let task = tasksByDate[indexPath.section][indexPath.row]
-            let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTVC
-            cell.setup(task: task)
-            return cell
-            
-        case 1:
-            let task = tasksByCourseName[indexPath.section][indexPath.row]
-            let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTVC
-            cell.setupByCourseName(task: task)
-            return cell
-            
-        default:
-            return UITableViewCell()
-        }
-    }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 63.0
     }
@@ -107,6 +95,27 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         case 0: return tasksByDate.count
         case 1: return tasksByCourseName.count
         default: return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch taskControls.selectedSegmentIndex {
+        case 0:
+            let task = tasksByDate[indexPath.section][indexPath.row]
+            let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTVC
+            cell.setup(task: task)
+            
+            return cell
+            
+        case 1:
+            let task = tasksByCourseName[indexPath.section][indexPath.row]
+            let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTVC
+            cell.setupByCourseName(task: task)
+
+            return cell
+            
+        default:
+            return UITableViewCell()
         }
     }
     
@@ -133,100 +142,40 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
             
             return cell.contentView
         
-        
         default:
             return UIView()
         }
-    }
+    }//end viewForHeader
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch taskControls.selectedSegmentIndex {
         case 0:
             let task = tasksByDate[indexPath.section][indexPath.row]
-            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
-            
-            if cell.tickButton.isSelected {
-                cell.buttonDeselected(task: task)
-            } else {
-                cell.buttonSelected(task: task)
-            }
+            task.isSelected()
         case 1:
             let task = tasksByCourseName[indexPath.section][indexPath.row]
-            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
-            
-            if cell.tickButton.isSelected {
-                cell.buttonDeselected(task: task)
-            } else {
-                cell.buttonSelected(task: task)
-            }
+            task.isSelected()
+        default:
+             break
+        }
+    }//end didSelectRow
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        switch taskControls.selectedSegmentIndex {
+        case 0:
+            let task = tasksByDate[indexPath.section][indexPath.row]
+            task.isDeselected()
+        case 1:
+            let task = tasksByCourseName[indexPath.section][indexPath.row]
+            task.isDeselected()
         default:
             break
         }
-    }
-//
-//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-//        switch taskControls.selectedSegmentIndex {
-//        case 0:
-//            let task = tasksByDate[indexPath.section][indexPath.row]
-//            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
-//            cell.delegate = self
-//            cell.buttonDeselected(index: indexPath, task: task)
-//        case 1:
-//            let task = tasksByCourseName[indexPath.section][indexPath.row]
-//            let cell = taskTableView.cellForRow(at: indexPath) as! TaskTVC
-//            cell.delegate = self
-//            cell.buttonDeselected(index: indexPath, task: task)
-//        default:
-//            break
-//        }
-//    }
+    }//end didDeselectRow
     
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        
-        switch taskControls.selectedSegmentIndex {
-        case 0:
-            let delete = UIContextualAction(style: .destructive, title: "Delete")
-            { (contextualAction, view, actionPerformed: @escaping (Bool)->()) in
-                
-                let task = self.tasksByDate[indexPath.section][indexPath.row]
-                
-                if UniversityDB.instance.deleteTask(id: task.tid) {
-                    self.tasksByDate[indexPath.section].remove(at: indexPath.row)
-                    self.taskTableView.deleteRows(at: [indexPath], with: .fade)
-                    
-                    if(self.taskTableView.numberOfRows(inSection: indexPath.section) == 0) {
-                        self.tasksByDate.remove(at: indexPath.section)
-                        self.taskTableView.deleteSections(IndexSet(arrayLiteral: indexPath.section), with: .fade)
-                    }
-                }
-                actionPerformed(true)
-            }
-            
-            delete.backgroundColor = Theme.Primary
-            return UISwipeActionsConfiguration(actions: [delete])
-            
-        case 1:
-            let delete = UIContextualAction(style: .destructive, title: "Delete")
-            { (contextualAction, view, actionPerformed: @escaping (Bool)->()) in
-                
-                let task = self.tasksByCourseName[indexPath.section][indexPath.row]
-                
-                if UniversityDB.instance.deleteTask(id: task.tid) {
-                    self.tasksByCourseName[indexPath.section].remove(at: indexPath.row)
-                    self.taskTableView.deleteRows(at: [indexPath], with: .fade)
-                    
-                    if(self.taskTableView.numberOfRows(inSection: indexPath.section) == 0) {
-                        self.tasksByCourseName.remove(at: indexPath.section)
-                        self.taskTableView.deleteSections(IndexSet(arrayLiteral: indexPath.section), with: .fade)
-                    }
-                }
-            }
-            
-            delete.backgroundColor = Theme.Primary
-            return UISwipeActionsConfiguration(actions: [delete])
-            
-        default:
-            return UISwipeActionsConfiguration()
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if isCompleted {
+            tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
         }
     }
 }

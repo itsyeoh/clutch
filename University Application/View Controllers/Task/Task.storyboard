@@ -65,30 +65,24 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PHYS 300" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAF-Xs-Nbz">
-                                                    <rect key="frame" x="46" y="14" width="242" height="12"/>
+                                                    <rect key="frame" x="20" y="13" width="325" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="10"/>
                                                     <color key="textColor" name="Secondary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Magnetism Quiz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkD-oH-ems">
-                                                    <rect key="frame" x="46" y="25" width="242" height="24"/>
+                                                    <rect key="frame" x="20" y="25" width="325" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                     <color key="textColor" name="Primary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGw-so-ev5">
-                                                    <rect key="frame" x="20" y="21" width="20" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="Checkbox_Empty"/>
-                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="courseNameLabel" destination="PAF-Xs-Nbz" id="PE7-YZ-yQQ"/>
                                             <outlet property="taskNameLabel" destination="HkD-oH-ems" id="s17-Hx-XX0"/>
-                                            <outlet property="tickButton" destination="RGw-so-ev5" id="PaL-jS-ZDE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -121,7 +115,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Checkbox_Empty" width="30" height="30"/>
         <namedColor name="Primary">
             <color red="0.086274509803921567" green="0.062745098039215685" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

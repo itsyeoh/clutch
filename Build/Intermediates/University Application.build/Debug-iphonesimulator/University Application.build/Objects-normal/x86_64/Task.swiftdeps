@@ -15,6 +15,7 @@ depends-top-level:
 - !private "DateFormatter"
 - "Int64"
 - "String"
+- !private "StringLiteralType"
 - "Task"
 - !private "UniversityDB"
 depends-member:
@@ -106,6 +107,8 @@ depends-member:
 - ["22University_Application4TaskC", "getWeekDayToString"]
 - ["22University_Application4TaskC", "init"]
 - ["22University_Application4TaskC", "isChecked"]
+- ["22University_Application4TaskC", "isDeselected"]
+- ["22University_Application4TaskC", "isSelected"]
 - ["22University_Application4TaskC", "taskDate"]
 - ["22University_Application4TaskC", "taskName"]
 - ["22University_Application4TaskC", "taskTime"]
@@ -115,6 +118,7 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "uppercased"]
 - !private ["22University_Application0A2DBC", "instance"]
 - !private ["22University_Application0A2DBC", "searchCourse"]
+- !private ["22University_Application0A2DBC", "updateTaskByChecking"]
 - !private ["6SQLite5ValueP", "init"]
 - !private ["6SQLite5ValueP", "uppercased"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
@@ -199,11 +203,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Headers/Eureka.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Headers/SQLiteObjc.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarAppearance.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Headers/SQLite.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarCell.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendar.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarConstants.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Headers/Eureka-Swift.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarHeaderView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Headers/FSCalendarWeekdayView.h"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Modules/module.modulemap"
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Carthage/Build/iOS/FSCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -216,4 +227,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "cd68e5aed6451ceabd602e2643dbf01a"
+interface-hash: "ba79369a68ec1e14f5a4a73d0a52e6e4"
