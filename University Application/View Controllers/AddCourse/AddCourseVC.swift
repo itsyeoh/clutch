@@ -11,13 +11,16 @@ import Eureka
 
 protocol AddCourseDelegate {
     func addCourse(course: Course)
+    func updateCourse(section: Int, row: Int, course: Course)
 }
 
 class AddCourseVC: FormViewController {
     private var semesters = [Semester]()
     private var semesterList = [Int64:String]()
     var delegate: AddCourseDelegate?
-    
+    var courseSectionToEdit: Int?
+    var courseRowToEdit: Int?
+    var newCourse: Course?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +74,20 @@ class AddCourseVC: FormViewController {
                     if !row.isValid {
                         cell.textLabel?.textColor = .red
                 }})
+        
+        
+        if let sec = courseSectionToEdit {
+            if let row = courseRowToEdit {
+                let course = newCourse!
+//                let semesterNames = [String](semesterList.values)
+                
+                
+                form.setValues(["semesterRow": semesterList[course.sid],
+                                "deptRow": course.dept,
+                                "courseNumRow": course.courseNum,
+                                "hourRow": course.creditHours])
+            }
+        }
     }
     
     @objc func addCourse() {

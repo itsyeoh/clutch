@@ -48,7 +48,12 @@ class AddClassVC: FormViewController {
                 }.cellUpdate({ (cell, row) in
                     if !row.isValid {
                         cell.textLabel?.textColor = .red
-                }})
+                    }
+                    
+                    let endTimeRow: TimeInlineRow? = self.form.rowBy(tag: "endTimeRow")
+                    self.form.setValues(["endTimeRow": row.value?.addingTimeInterval(60.0 * 60.0)])
+                    endTimeRow?.updateCell()
+                })
             
             <<< TimeInlineRow("endTimeRow") {
                 $0.title = "End Time"

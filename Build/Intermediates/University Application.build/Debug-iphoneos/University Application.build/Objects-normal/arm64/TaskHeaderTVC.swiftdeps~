@@ -11,6 +11,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "Course"
+- !private "StringLiteralType"
 - "Task"
 - "TaskHeaderTVC"
 - "UIButton"

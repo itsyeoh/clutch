@@ -21,11 +21,12 @@ class TaskVC: UIViewController {
         super.viewDidLoad()
 
         self.navigationItem.title = "TASKS"
-        self.navigationItem.leftBarButtonItem =
-            UIBarButtonItem(image: UIImage(named: "NotDone"), style: .plain, target: self, action: #selector(openCompletedTasks))
-        
-        self.navigationItem.rightBarButtonItem =
-            UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(openAddTask))
+//        self.navigationItem.leftBarButtonItem =
+//            UIBarButtonItem(image: UIImage(named: "NotDone"), style: .plain, target: self, action: #selector(openCompletedTasks))
+        setUpMenuButton("NotDone")
+        setupAddButton()
+//        self.navigationItem.rightBarButtonItem =
+//            UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(openAddTask))
         
         taskTableView.dataSource = self
         taskTableView.delegate = self
@@ -38,6 +39,36 @@ class TaskVC: UIViewController {
         tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: false)
         tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: false)
         courses = UniversityDB.instance.getCourses()
+    }
+    
+    func setupAddButton() {
+        let menuBtn = UIButton(type: .custom)
+        menuBtn.frame = CGRect(x: 0.0, y: 0.0, width: 20, height: 20)
+        menuBtn.setImage(UIImage(named: "Add"), for: .normal)
+        
+        menuBtn.addTarget(self, action: #selector(openAddTask), for: .touchUpInside)
+        
+        let menuBarItem = UIBarButtonItem(customView: menuBtn)
+        let currWidth = menuBarItem.customView?.widthAnchor.constraint(equalToConstant: 25)
+        currWidth?.isActive = true
+        let currHeight = menuBarItem.customView?.heightAnchor.constraint(equalToConstant: 25)
+        currHeight?.isActive = true
+        self.navigationItem.rightBarButtonItem = menuBarItem
+    }
+    
+    func setUpMenuButton(_ name: String){
+        let menuBtn = UIButton(type: .custom)
+        menuBtn.frame = CGRect(x: 0.0, y: 0.0, width: 20, height: 20)
+        menuBtn.setImage(UIImage(named: name), for: .normal)
+        
+        menuBtn.addTarget(self, action: #selector(openCompletedTasks), for: .touchUpInside)
+        
+        let menuBarItem = UIBarButtonItem(customView: menuBtn)
+        let currWidth = menuBarItem.customView?.widthAnchor.constraint(equalToConstant: 25)
+        currWidth?.isActive = true
+        let currHeight = menuBarItem.customView?.heightAnchor.constraint(equalToConstant: 25)
+        currHeight?.isActive = true
+        self.navigationItem.leftBarButtonItem = menuBarItem
     }
     
     @objc func openAddTask() {
@@ -63,13 +94,11 @@ class TaskVC: UIViewController {
     @objc func openCompletedTasks() {
         if isCompleted == true {
             self.navigationItem.title = "TASKS"
-            self.navigationItem.leftBarButtonItem?.setBackgroundImage(
-                UIImage(named: "NotDone"), for: .normal, barMetrics: .default)
+            setUpMenuButton("NotDone")
             isCompleted = false
             refreshData(false)
         } else {
-            self.navigationItem.leftBarButtonItem?.setBackgroundImage(
-                UIImage(named: "Done"), for: .normal, barMetrics: .default)
+            setUpMenuButton("Done")
             self.navigationItem.title = "COMPLETED TASKS"
             isCompleted = true
             refreshData(true)
@@ -175,12 +204,12 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         case 0:
             let task = tasksByDate[indexPath.section][indexPath.row]
             let cell = tableView.cellForRow(at: indexPath) as! TaskTVC
-            cell.buttonPressed()
+//            cell.buttonPressed(false)
             task.isSelected()
         case 1:
             let task = tasksByCourseName[indexPath.section][indexPath.row]
             let cell = tableView.cellForRow(at: indexPath) as! TaskTVC
-            cell.buttonPressed()
+//            cell.buttonPressed(false)
             task.isSelected()
         default:
              break
@@ -189,6 +218,11 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         refreshDataView()
     }//end didSelectRow
     
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        if isCompleted {
+//            tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
+//        }
+//    }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         switch taskControls.selectedSegmentIndex {
@@ -225,23 +259,18 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension TaskVC: AddTaskDelegate {
-//    func updateTaskChecklist(index: IndexPath, task: Task) {
+    func addTask(task: Task) {
+        self.navigationController?.popViewController(animated: true)
+        
 //        switch taskControls.selectedSegmentIndex {
 //        case 0:
-//            self.tasksByDate[index.section][index.row] = task
+//            self.tasksByDate.append(task)
 //        case 1:
-//            self.tasksByCourseName[index.section][index.row] = task
+//            self.tasksByCourseName.append(task)
 //        default:
 //            break
 //        }
-//        
-//        self.taskTableView.reloadData()
-//    }
-    
-    func addTask(task: Task) {
-        self.navigationController?.popViewController(animated: true)
-//        self.tasksByDate.append(task)
-//        self.tasksByCourseName.append(task)
+        
         self.taskTableView.reloadData()
     }
     

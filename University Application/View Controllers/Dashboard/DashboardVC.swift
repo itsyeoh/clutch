@@ -32,6 +32,13 @@ class DashboardVC: UIViewController {
         courseClasses = UniversityDB.instance.getCourseClassesByDate(date: Date(), day: day)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        let weekday = Calendar.current.component(.weekday, from: Date())
+        let day = getWeekdayToString(weekday: weekday)
+        
+        courseClasses = UniversityDB.instance.getCourseClassesByDate(date: Date(), day: day)
+    }
+    
     func getWeekdayToString(weekday: Int) -> String {
         switch weekday {
         case 1:
@@ -79,7 +86,7 @@ extension DashboardVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 75.0
+        return 68.0
     }
     
 }

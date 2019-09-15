@@ -68,7 +68,7 @@ class Task {
     }
     
     func isSelected() {
-        if isChecked != true {
+        if !isChecked {
             UniversityDB.instance.updateTaskByChecking(id: self.tid, checkVar: true)
         } else {
             UniversityDB.instance.updateTaskByChecking(id: self.tid, checkVar: false)

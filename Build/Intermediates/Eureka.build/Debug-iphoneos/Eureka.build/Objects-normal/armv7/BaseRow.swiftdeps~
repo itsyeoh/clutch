@@ -48,6 +48,7 @@ depends-top-level:
 - !private "RowDefaults"
 - "Section"
 - "String"
+- !private "StringLiteralType"
 - "SwipeConfiguration"
 - "TernaryPrecedence"
 - "UIStoryboardSegue"

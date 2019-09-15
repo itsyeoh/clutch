@@ -74,7 +74,6 @@ depends-member:
 - ["22University_Application9AddTaskVCC", "course"]
 - !private ["22University_Application9AddTaskVCC", "courseList"]
 - !private ["22University_Application9AddTaskVCC", "courses"]
-- ["22University_Application9AddTaskVCC", "deinit"]
 - ["22University_Application9AddTaskVCC", "delegate"]
 - !private ["22University_Application9AddTaskVCC", "form"]
 - ["22University_Application9AddTaskVCC", "init"]

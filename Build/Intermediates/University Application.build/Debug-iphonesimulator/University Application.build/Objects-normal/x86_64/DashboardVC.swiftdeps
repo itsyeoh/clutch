@@ -11,9 +11,11 @@ provides-dynamic-lookup:
 - "dayLabel"
 - "tableView"
 - "viewDidLoad"
+- "viewWillAppear"
 depends-top-level:
 - !private "=="
 - "AssignmentPrecedence"
+- "Bool"
 - "CGFloat"
 - !private "Calendar"
 - "CastingPrecedence"
@@ -270,6 +272,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["22University_Application12DashboardTVCC", "setup"]
+- ["22University_Application11DashboardVCC", "Bool"]
 - ["22University_Application11DashboardVCC", "CGFloat"]
 - !private ["22University_Application11DashboardVCC", "Calendar"]
 - ["22University_Application11DashboardVCC", "CourseClass"]
@@ -323,6 +326,7 @@ depends-member:
 - ["22University_Application11DashboardVCC", "viewDidLoad"]
 - ["22University_Application11DashboardVCC", "viewForZooming"]
 - ["22University_Application11DashboardVCC", "viewForZoomingInScrollView"]
+- ["22University_Application11DashboardVCC", "viewWillAppear"]
 - !private ["10Foundation12DataProtocolP", "count"]
 - ["10Foundation12DataProtocolP", "init"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
@@ -693,6 +697,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
+- ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "Calendar"]
 - ["So8NSObjectC", "CourseClass"]
@@ -757,6 +762,7 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
+- ["So8NSObjectC", "viewWillAppear"]
 - !private ["So8NSObjectP", "Calendar"]
 - ["So8NSObjectP", "CourseClass"]
 - ["So8NSObjectP", "Date"]
@@ -1099,6 +1105,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
+- ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "CGFloat"]
 - !private ["So11UIResponderC", "Calendar"]
 - ["So11UIResponderC", "CourseClass"]
@@ -1160,6 +1167,7 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
+- ["So11UIResponderC", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "Calendar"]
 - ["So30UIResponderStandardEditActionsP", "CourseClass"]
 - ["So30UIResponderStandardEditActionsP", "Date"]
@@ -1510,6 +1518,7 @@ depends-member:
 - !private ["So6UIViewC", "setEmptyMessage"]
 - !private ["So6UIViewC", "setup"]
 - !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "CGFloat"]
 - !private ["So16UIViewControllerC", "Calendar"]
 - ["So16UIViewControllerC", "CourseClass"]
@@ -1564,6 +1573,7 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
+- ["So16UIViewControllerC", "viewWillAppear"]
 - !private ["22University_Application0A2DBC", "getCourseClassesByDate"]
 - !private ["22University_Application0A2DBC", "instance"]
 - ["6SQLite5ValueP", "init"]
@@ -1793,4 +1803,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4a83fe26b7ff6439b5412a3867703273"
+interface-hash: "14a6f7a1dabdc525f37751cbf8aaad21"

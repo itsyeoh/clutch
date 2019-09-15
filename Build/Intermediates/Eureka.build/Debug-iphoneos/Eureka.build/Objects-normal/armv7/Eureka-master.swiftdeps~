@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "b99764824efe0c745e312aa7358dc9d8"
-build_time: [1567726066, 408289000]
+build_time: [1567823120, 295601000]
 inputs:
   "/Users/jasonyeoh/Downloads/Eureka-master/Source/Rows/PickerInlineRow.swift": [1566989118, 0]
   "/Users/jasonyeoh/Downloads/Eureka-master/Source/Rows/PopoverSelectorRow.swift": [1566989118, 0]
@@ -62,7 +62,7 @@ inputs:
   "/Users/jasonyeoh/Downloads/Eureka-master/Source/Rows/Common/Protocols.swift": [1566989118, 0]
   "/Users/jasonyeoh/Downloads/Eureka-master/Source/Core/Section.swift": [1566989118, 0]
   "/Users/jasonyeoh/Downloads/Eureka-master/Source/Rows/DateRow.swift": [1566989118, 0]
-  "/Users/jasonyeoh/Downloads/Eureka-master/Source/Core/BaseRow.swift": [1566989118, 0]
+  "/Users/jasonyeoh/Downloads/Eureka-master/Source/Core/BaseRow.swift": [1567734602, 560703053]
   "/Users/jasonyeoh/Downloads/Eureka-master/Source/Rows/TriplePickerInputRow.swift": [1566989118, 0]
   "/Users/jasonyeoh/Downloads/Eureka-master/Source/Core/Row.swift": [1566989118, 0]
   "/Users/jasonyeoh/Downloads/Eureka-master/Source/Rows/Common/GenericMultipleSelectorRow.swift": [1566989118, 0]

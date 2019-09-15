@@ -6,15 +6,19 @@
 	<dict>
 		<key>Academics.storyboardc/Bxv-t3-FIy-view-OT0-Vu-3rU.nib</key>
 		<data>
-		ld8B0MsvD2E87lMCBNZwkBKHbkE=
+		nsKTp4c26TVXlelmeFjVd2emhFE=
 		</data>
 		<key>Academics.storyboardc/Info.plist</key>
 		<data>
-		Bn0Dqg5WFFhrqjsEyiV9IYAX19o=
+		sOuTZjRRdV36yt1A8FFtTbrR1SQ=
 		</data>
 		<key>Academics.storyboardc/UIViewController-Bxv-t3-FIy.nib</key>
 		<data>
-		FBbtWjKfFIJFxWujnVCf2oILRvw=
+		n0isWDUGNzLNl3B680o4takQO74=
+		</data>
+		<key>Academics.storyboardc/UIViewController-QOR-2S-LTc.nib</key>
+		<data>
+		U0ztE584tymkt9PQwTUyC8w+aMc=
 		</data>
 		<key>AddClass.storyboardc/Info.plist</key>
 		<data>
@@ -66,7 +70,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Gn0S5DWukBeiVDp5ZiuyNfNtipU=
+		wVJcSIGA7RsR/vBWv+JipAOFsBk=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -106,15 +110,15 @@
 		</data>
 		<key>Dashboard.storyboardc/UIViewController-rWN-iS-Pte.nib</key>
 		<data>
-		7BZSlHm24Ctw+68WfAQ2L+7zcIg=
+		27kaYCweGLocb7io6eulcki4dRg=
 		</data>
 		<key>Dashboard.storyboardc/rWN-iS-Pte-view-Ggs-l3-wPo.nib</key>
 		<data>
-		3jqZKWIACQoUhH1N5/zsRpT5v48=
+		FWVxAjrwKa+M9MPzkhEWauzrXR0=
 		</data>
 		<key>Frameworks/Eureka.framework/Eureka</key>
 		<data>
-		Uxb8ipdrPbEHFZzPxf59XLLOlFA=
+		CQk+S6u8Upyr8ZBK8nCkgxuqXAE=
 		</data>
 		<key>Frameworks/Eureka.framework/Eureka.bundle/back-chevron@1x.png</key>
 		<data>
@@ -150,15 +154,15 @@
 		</data>
 		<key>Frameworks/FSCalendar.framework/FSCalendar</key>
 		<data>
-		fVLLqvhocndPVuzz27BIltbyFZA=
+		/gnSBSNEi+RhHtW3XPs/f1iZLho=
 		</data>
 		<key>Frameworks/FSCalendar.framework/Info.plist</key>
 		<data>
-		+O+M88Si8l1rRls8Nr2K68AQ0kw=
+		zK4JUpWxTZPF5QMAEn9xwqaqnEE=
 		</data>
 		<key>Frameworks/FSCalendar.framework/_CodeSignature/CodeResources</key>
 		<data>
-		xNnJ+meyseaoFxtj2biZl+axOPM=
+		SmP5vSaFGXKvwHOO/epDlSkZ0Qw=
 		</data>
 		<key>Frameworks/SQLite.framework/Info.plist</key>
 		<data>
@@ -166,7 +170,7 @@
 		</data>
 		<key>Frameworks/SQLite.framework/SQLite</key>
 		<data>
-		wf0PKc/ybXa4VMPUjCkmmCh+efI=
+		O8NU+/Y9BnZO21XVNSxXIcFPnbs=
 		</data>
 		<key>Frameworks/SQLite.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -226,7 +230,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		o0TXLy151+A2Y5bqe1dY5BsMWR8=
+		ytc/HBKQns1e5FiGfp+QFA6vKD8=
 		</data>
 		<key>Navigation.storyboardc/Info.plist</key>
 		<data>
@@ -246,11 +250,11 @@
 		</data>
 		<key>Task.storyboardc/UIViewController-YCm-hB-xe2.nib</key>
 		<data>
-		Rtxlde0JNemcfFMtz1PVzVDwP8s=
+		VF4/TV+h24eJCRbT6WfRJVRgqxw=
 		</data>
 		<key>Task.storyboardc/YCm-hB-xe2-view-dV3-iL-Vhj.nib</key>
 		<data>
-		Nf6AghGALPcXRgC2RV2C/35rK4w=
+		Rht1lQOx5zHn91T6/O7w+RXJLhQ=
 		</data>
 		<key>WeekDaysCell.nib</key>
 		<data>
@@ -271,21 +275,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3J9g1LJRms3f3CJC9KFPkVfXjIdDt/WpENmvX+WKVKo=
+			nwdWbITK/iRiV54y24EJ/bczEMc4nMjbQaMQD4BXw74=
 			</data>
 		</dict>
 		<key>Academics.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XIR0goK0cb8rRjh38TrQ/FqMZssgkI/yOhpyKasAZiQ=
+			Jjxtv9ZjMCbd2Voo+r6okVA5WAUBh3QCHeF3F33pkG8=
 			</data>
 		</dict>
 		<key>Academics.storyboardc/UIViewController-Bxv-t3-FIy.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oQ773XO28nlG711TgX3nzwmEsLcQWncLzN5v/Vo461M=
+			hjHFntyC16k/Qgz/gel9Cuiyyd3ilw4Wq1VP/4Y6LWE=
+			</data>
+		</dict>
+		<key>Academics.storyboardc/UIViewController-QOR-2S-LTc.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			j0PCxdJ+X5rJ1z8AZzh2Evz/iU6mztMZthzeYc5VZMQ=
 			</data>
 		</dict>
 		<key>AddClass.storyboardc/Info.plist</key>
@@ -376,7 +387,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CwFDj/3AWOrN1BFX+pC1LX4zeLTkPToZN0b0jp3jOX8=
+			k9aH0iaKvSDymC0AF9EVrXfzfXhhjg1jyibYSJGoQC8=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -446,21 +457,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fsE8sRhOXCZ54TBL76imtqF3ceb9qPmuVQ4lu7rNwD0=
+			POPgY7j7qxO16ZIfQc/n+0/TIjNdRzQHcGpc1dmFQTw=
 			</data>
 		</dict>
 		<key>Dashboard.storyboardc/rWN-iS-Pte-view-Ggs-l3-wPo.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uww0V7REQviDv3GNsZc/dWv0L+jpaV9bTrFK64YJVHE=
+			MtOu++fweUARma6bNgfYGD6phhk5AP/5SkC8Eb/+e5M=
 			</data>
 		</dict>
 		<key>Frameworks/Eureka.framework/Eureka</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fkEb3YjfDxkULCHJ8wL0zJ5lmTZbj9dinoSikAt4ER0=
+			nSfd0md9yoaeXECxW8x/kNzb8Ve3iLBq1+3vllitvmU=
 			</data>
 		</dict>
 		<key>Frameworks/Eureka.framework/Eureka.bundle/back-chevron@1x.png</key>
@@ -523,21 +534,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n2dpyJGmoJHoZjE00BHVvJAq4OusnxDdkZwkaPTSADs=
+			NHW6sfllZ8wUKCH7YoAmyUKk/9zYNV3PbPCAyko3/I4=
 			</data>
 		</dict>
 		<key>Frameworks/FSCalendar.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qFduwyrhAjQ7s8eD38EW1SwTJQA4fXHVy+JEgKJW5l4=
+			GcQrObAyAB3OUmSBzwykhrj9oR8NiHALxSlRnMqhkQw=
 			</data>
 		</dict>
 		<key>Frameworks/FSCalendar.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S9zouAunRobC8elX8Uc16mI0EmTnd0798OMgEBJUt7k=
+			I9NncNYyVP1yihEEQv8Kia1riwC6QYZtJP5OryRChio=
 			</data>
 		</dict>
 		<key>Frameworks/SQLite.framework/Info.plist</key>
@@ -551,7 +562,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vEcjKh3KNPewoGiwtACqMfiwJruXvzZyLx4mJBT/rL8=
+			lSBjuBJgIqthoLX4mFkTWRkv/RIvmH4TFG7M1f5HNJk=
 			</data>
 		</dict>
 		<key>Frameworks/SQLite.framework/_CodeSignature/CodeResources</key>
@@ -677,14 +688,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			amNI9ze1PMXsndKQchaNF23hBcYXUXmsTGZBHtMcGxY=
+			4UTgepWoL095ADo9aJNlGPO3Dm/NPLAGyLyH1fSYHhY=
 			</data>
 		</dict>
 		<key>Task.storyboardc/YCm-hB-xe2-view-dV3-iL-Vhj.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fw627YQOOH5K4ZBtKQqsDkiMvWNxGpGPydU14/YrVPo=
+			xVwX9uxb/TpfGtbiLzaIsqRkZCSjJNS86HqtPOTSWPY=
 			</data>
 		</dict>
 		<key>WeekDaysCell.nib</key>

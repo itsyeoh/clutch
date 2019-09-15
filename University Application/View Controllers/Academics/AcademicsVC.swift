@@ -13,6 +13,8 @@ class AcademicsVC: UIViewController {
     @IBOutlet weak var semesterTableView: UITableView!
     private var semesters = [Semester]()
     private var courses = [[Course]]()
+    var courseSectionToEdit: Int?
+    var courseRowToEdit: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,6 +103,24 @@ extension AcademicsVC: UITableViewDataSource, UITableViewDelegate {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let update = UIContextualAction(style: .normal, title: "Edit") { (action, view, handler) in
+            let course = self.courses[indexPath.section][indexPath.row]
+            let storyboard = UIStoryboard(name: "AddCourse", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController() as! AddCourseVC
+            vc.delegate = self
+            vc.newCourse = course
+            vc.courseSectionToEdit = indexPath.section
+            vc.courseRowToEdit = indexPath.row
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+            handler(true)
+        }
+        
+        update.backgroundColor = Theme.Secondary
+        return UISwipeActionsConfiguration(actions: [update])
+    }
+    
     // Supports deletion
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let delete = UIContextualAction(style: .destructive, title: "Delete")
@@ -145,5 +165,13 @@ extension AcademicsVC: AddSemesterDelegate, AddCourseDelegate {
         self.navigationController?.popViewController(animated: true)
         self.courses[Int(course.sid) - 1].append(course)
         self.semesterTableView.reloadData()
+    }
+    
+    func updateCourse(section: Int, row: Int, course: Course) {
+        self.navigationController?.popViewController(animated: true)
+        self.courses[section][row] = course
+        self.semesterTableView.reloadData()
+        self.courseRowToEdit = nil
+        self.courseSectionToEdit = nil
     }
 }

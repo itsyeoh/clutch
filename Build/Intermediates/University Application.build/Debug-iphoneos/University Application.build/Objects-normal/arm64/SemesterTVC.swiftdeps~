@@ -206,6 +206,7 @@ depends-member:
 - ["22University_Application11SemesterTVCC", "UILabel"]
 - ["22University_Application11SemesterTVCC", "awakeFromNib"]
 - ["22University_Application11SemesterTVCC", "datesTextLabel"]
+- ["22University_Application11SemesterTVCC", "deinit"]
 - ["22University_Application11SemesterTVCC", "init"]
 - ["22University_Application11SemesterTVCC", "previewSeasonTextLabel"]
 - ["22University_Application11SemesterTVCC", "previewYearTextLabel"]

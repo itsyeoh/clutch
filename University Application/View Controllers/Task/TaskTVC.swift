@@ -24,6 +24,12 @@ class TaskTVC: UITableViewCell {
     func setup(task: Task, isCompleted: Bool) {
         courseNameLabel.text = task.getCourse().showCourseName()
         taskNameLabel.text = task.taskName
+        
+        if isCompleted {
+            tickButton.setImage(UIImage(named: "Checkbox_Selected"), for: .normal)
+        } else {
+            tickButton.setImage(UIImage(named: "Checkbox_Empty"), for: .normal)
+        }
     }
     
     func setupByCourseName(task: Task, isCompleted: Bool) {
@@ -37,13 +43,13 @@ class TaskTVC: UITableViewCell {
         }
     }
     
-    func buttonPressed() {
-        if tickButton.isSelected {
-            tickButton.setImage(UIImage(named: "Checkbox_Empty"), for: .normal)
-            tickButton.isSelected = false
-        } else {
-            tickButton.setImage(UIImage(named: "Checkbox_Selected"), for: .normal)
-            tickButton.isSelected = true
-        }
-    }
+//    func buttonPressed(_ isSelected: Bool) {
+//        if !isSelected  {
+//            tickButton.setImage(UIImage(named: "Checkbox_Selected"), for: .normal)
+//            tickButton.isSelected = true
+//        } else {
+//            tickButton.setImage(UIImage(named: "Checkbox_Empty"), for: .normal)
+//            tickButton.isSelected = false
+//        }
+//    }
 }

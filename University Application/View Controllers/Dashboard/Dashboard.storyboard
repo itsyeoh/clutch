@@ -94,16 +94,16 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E1W-Xu-Gsn">
-                                                            <rect key="frame" x="321" y="13" width="49" height="41"/>
+                                                            <rect key="frame" x="321" y="10" width="49" height="48"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="11:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfX-gO-iYd">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="49" height="17"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfX-gO-iYd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="49" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="11:50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2r-Dq-U2N">
-                                                                    <rect key="frame" x="0.0" y="17" width="49" height="24"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2r-Dq-U2N">
+                                                                    <rect key="frame" x="0.0" y="24" width="49" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -150,12 +150,11 @@
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="agx-jO-ar9" secondAttribute="bottom" id="Agv-pV-bLW"/>
                                                         <constraint firstItem="6IP-xO-Zig" firstAttribute="top" secondItem="c2Z-PX-O7c" secondAttribute="top" id="Bwl-kb-hpF"/>
-                                                        <constraint firstItem="E1W-Xu-Gsn" firstAttribute="top" secondItem="c2Z-PX-O7c" secondAttribute="top" constant="13" id="FP8-Sj-FTG"/>
+                                                        <constraint firstItem="E1W-Xu-Gsn" firstAttribute="centerY" secondItem="c2Z-PX-O7c" secondAttribute="centerY" id="GAx-IZ-Cls"/>
                                                         <constraint firstItem="6IP-xO-Zig" firstAttribute="leading" secondItem="c2Z-PX-O7c" secondAttribute="leading" id="R2S-9H-AyQ"/>
                                                         <constraint firstAttribute="trailing" secondItem="E1W-Xu-Gsn" secondAttribute="trailing" constant="20" id="SaD-dg-ckH"/>
                                                         <constraint firstItem="YSu-Xb-yqM" firstAttribute="leading" secondItem="6IP-xO-Zig" secondAttribute="trailing" constant="6" id="ZxZ-Wg-VVK"/>
                                                         <constraint firstItem="agx-jO-ar9" firstAttribute="leading" secondItem="c2Z-PX-O7c" secondAttribute="leading" id="bnR-EH-bk2"/>
-                                                        <constraint firstAttribute="bottom" secondItem="E1W-Xu-Gsn" secondAttribute="bottom" constant="14" id="fMD-oN-87b"/>
                                                         <constraint firstAttribute="trailing" secondItem="agx-jO-ar9" secondAttribute="trailing" id="nVy-tk-C55"/>
                                                         <constraint firstItem="agx-jO-ar9" firstAttribute="top" secondItem="6IP-xO-Zig" secondAttribute="bottom" id="oSU-yo-DOS"/>
                                                         <constraint firstItem="YSu-Xb-yqM" firstAttribute="top" secondItem="c2Z-PX-O7c" secondAttribute="top" constant="5" id="rEX-22-A1R"/>
