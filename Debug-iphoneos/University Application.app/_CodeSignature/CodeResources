@@ -6,19 +6,15 @@
 	<dict>
 		<key>Academics.storyboardc/Bxv-t3-FIy-view-OT0-Vu-3rU.nib</key>
 		<data>
-		nsKTp4c26TVXlelmeFjVd2emhFE=
+		065Rn5U/2rpgh59m/OjM47fsq3w=
 		</data>
 		<key>Academics.storyboardc/Info.plist</key>
 		<data>
-		sOuTZjRRdV36yt1A8FFtTbrR1SQ=
+		Bn0Dqg5WFFhrqjsEyiV9IYAX19o=
 		</data>
 		<key>Academics.storyboardc/UIViewController-Bxv-t3-FIy.nib</key>
 		<data>
-		n0isWDUGNzLNl3B680o4takQO74=
-		</data>
-		<key>Academics.storyboardc/UIViewController-QOR-2S-LTc.nib</key>
-		<data>
-		U0ztE584tymkt9PQwTUyC8w+aMc=
+		xFmJZm6mFXp//TKLkv5zXplb1T4=
 		</data>
 		<key>AddClass.storyboardc/Info.plist</key>
 		<data>
@@ -70,7 +66,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		wVJcSIGA7RsR/vBWv+JipAOFsBk=
+		AI8iGJN6IRN2LtLPrJFviI+egKg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -110,15 +106,15 @@
 		</data>
 		<key>Dashboard.storyboardc/UIViewController-rWN-iS-Pte.nib</key>
 		<data>
-		27kaYCweGLocb7io6eulcki4dRg=
+		HguK6aGJHolQWapE+FccWNYncX0=
 		</data>
 		<key>Dashboard.storyboardc/rWN-iS-Pte-view-Ggs-l3-wPo.nib</key>
 		<data>
-		FWVxAjrwKa+M9MPzkhEWauzrXR0=
+		6qF4uZ85BPyNrSP3pDpBpaAgtgE=
 		</data>
 		<key>Frameworks/Eureka.framework/Eureka</key>
 		<data>
-		CQk+S6u8Upyr8ZBK8nCkgxuqXAE=
+		luJP1ARwwGfpnKQy+g4Xosxno3A=
 		</data>
 		<key>Frameworks/Eureka.framework/Eureka.bundle/back-chevron@1x.png</key>
 		<data>
@@ -170,7 +166,7 @@
 		</data>
 		<key>Frameworks/SQLite.framework/SQLite</key>
 		<data>
-		O8NU+/Y9BnZO21XVNSxXIcFPnbs=
+		MP3Hiu4xxLzRhYAs9K2JZ6d84ek=
 		</data>
 		<key>Frameworks/SQLite.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -262,7 +258,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		xeSX0iQlJzOaUqvae7TjR5rQsPg=
+		JmpQ/IMfxaw3gHBdPcvGTkO7yiw=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -275,28 +271,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nwdWbITK/iRiV54y24EJ/bczEMc4nMjbQaMQD4BXw74=
+			qpQCF9Pm7SEM+t9KULWg6bvEvZh70/A8ocaIyjgQNzA=
 			</data>
 		</dict>
 		<key>Academics.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jjxtv9ZjMCbd2Voo+r6okVA5WAUBh3QCHeF3F33pkG8=
+			XIR0goK0cb8rRjh38TrQ/FqMZssgkI/yOhpyKasAZiQ=
 			</data>
 		</dict>
 		<key>Academics.storyboardc/UIViewController-Bxv-t3-FIy.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hjHFntyC16k/Qgz/gel9Cuiyyd3ilw4Wq1VP/4Y6LWE=
-			</data>
-		</dict>
-		<key>Academics.storyboardc/UIViewController-QOR-2S-LTc.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			j0PCxdJ+X5rJ1z8AZzh2Evz/iU6mztMZthzeYc5VZMQ=
+			a4f/i+ysITM34hDolTAvduZ5vSLAtW82CHQBf0+hWFM=
 			</data>
 		</dict>
 		<key>AddClass.storyboardc/Info.plist</key>
@@ -387,7 +376,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k9aH0iaKvSDymC0AF9EVrXfzfXhhjg1jyibYSJGoQC8=
+			ucVKlyXAGUEe+4fjupZ1JVoI5IQZYULiKXi+whv4rs8=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -457,21 +446,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			POPgY7j7qxO16ZIfQc/n+0/TIjNdRzQHcGpc1dmFQTw=
+			tWYrphbEIqFjWbZ9eTQvMlHqOnitpw1+mqInwTCGxuc=
 			</data>
 		</dict>
 		<key>Dashboard.storyboardc/rWN-iS-Pte-view-Ggs-l3-wPo.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MtOu++fweUARma6bNgfYGD6phhk5AP/5SkC8Eb/+e5M=
+			qronkx9m6iYA5jkWV9I4AW2yqEaS+flwqngY/M36eDU=
 			</data>
 		</dict>
 		<key>Frameworks/Eureka.framework/Eureka</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nSfd0md9yoaeXECxW8x/kNzb8Ve3iLBq1+3vllitvmU=
+			La0CNKUtDtqjdo+NgznIvU0Fa4KvTlTGPo1w6fbVZoQ=
 			</data>
 		</dict>
 		<key>Frameworks/Eureka.framework/Eureka.bundle/back-chevron@1x.png</key>
@@ -562,7 +551,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lSBjuBJgIqthoLX4mFkTWRkv/RIvmH4TFG7M1f5HNJk=
+			8VPUURuUmfp9qwgw90dPPi6BMupPSdEHWnrIlwmWLFw=
 			</data>
 		</dict>
 		<key>Frameworks/SQLite.framework/_CodeSignature/CodeResources</key>
@@ -709,7 +698,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lG8idtjy14o7+GZJ6bXylL3Q2BiOyIAoQS8I0lPoe6M=
+			bMQfHsqP/ZRdzSk/L+MSgxprge2SMSfvbgdioykPr3U=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

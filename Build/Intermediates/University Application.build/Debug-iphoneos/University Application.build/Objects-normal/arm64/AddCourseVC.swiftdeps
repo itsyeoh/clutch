@@ -147,6 +147,7 @@ depends-member:
 - !private ["22University_Application6CourseC", "creditHours"]
 - !private ["22University_Application6CourseC", "dept"]
 - !private ["22University_Application6CourseC", "init"]
+- !private ["22University_Application6CourseC", "sid"]
 - !private ["s28CustomDebugStringConvertibleP", "Course"]
 - ["s28CustomDebugStringConvertibleP", "Int64"]
 - !private ["s28CustomDebugStringConvertibleP", "IntRow"]

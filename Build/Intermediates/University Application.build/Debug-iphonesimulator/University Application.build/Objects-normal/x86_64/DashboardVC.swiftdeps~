@@ -9,12 +9,13 @@ provides-dynamic-lookup:
 - "calendar"
 - "dashboardTableView"
 - "dayLabel"
-- "preferredStatusBarStyle"
 - "tableView"
 - "viewDidLoad"
+- "viewWillAppear"
 depends-top-level:
 - !private "=="
 - "AssignmentPrecedence"
+- "Bool"
 - "CGFloat"
 - !private "Calendar"
 - "CastingPrecedence"
@@ -34,7 +35,6 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "UILabel"
-- "UIStatusBarStyle"
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewDataSource"
@@ -272,6 +272,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["22University_Application12DashboardTVCC", "setup"]
+- ["22University_Application11DashboardVCC", "Bool"]
 - ["22University_Application11DashboardVCC", "CGFloat"]
 - !private ["22University_Application11DashboardVCC", "Calendar"]
 - ["22University_Application11DashboardVCC", "CourseClass"]
@@ -284,7 +285,6 @@ depends-member:
 - ["22University_Application11DashboardVCC", "Int"]
 - ["22University_Application11DashboardVCC", "String"]
 - ["22University_Application11DashboardVCC", "UILabel"]
-- ["22University_Application11DashboardVCC", "UIStatusBarStyle"]
 - ["22University_Application11DashboardVCC", "UITableView"]
 - ["22University_Application11DashboardVCC", "UITableViewCell"]
 - !private ["22University_Application11DashboardVCC", "UniversityDB"]
@@ -306,7 +306,6 @@ depends-member:
 - !private ["22University_Application11DashboardVCC", "navigationItem"]
 - ["22University_Application11DashboardVCC", "numberOfSections"]
 - ["22University_Application11DashboardVCC", "numberOfSectionsInTableView"]
-- ["22University_Application11DashboardVCC", "preferredStatusBarStyle"]
 - ["22University_Application11DashboardVCC", "scrollViewDidChangeAdjustedContentInset"]
 - ["22University_Application11DashboardVCC", "scrollViewDidEndDecelerating"]
 - ["22University_Application11DashboardVCC", "scrollViewDidEndDragging"]
@@ -327,6 +326,7 @@ depends-member:
 - ["22University_Application11DashboardVCC", "viewDidLoad"]
 - ["22University_Application11DashboardVCC", "viewForZooming"]
 - ["22University_Application11DashboardVCC", "viewForZoomingInScrollView"]
+- ["22University_Application11DashboardVCC", "viewWillAppear"]
 - !private ["10Foundation12DataProtocolP", "count"]
 - ["10Foundation12DataProtocolP", "init"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
@@ -389,7 +389,6 @@ depends-member:
 - !private ["SQ", "isDateInToday"]
 - !private ["SQ", "isDateInTomorrow"]
 - !private ["SQ", "isDateInYesterday"]
-- !private ["SQ", "lightContent"]
 - ["SQ", "maximumDate"]
 - ["SQ", "maximumDateForCalendar"]
 - ["SQ", "minimumDate"]
@@ -551,7 +550,6 @@ depends-member:
 - !private ["SH", "isDateInToday"]
 - !private ["SH", "isDateInTomorrow"]
 - !private ["SH", "isDateInYesterday"]
-- !private ["SH", "lightContent"]
 - ["SH", "maximumDate"]
 - ["SH", "maximumDateForCalendar"]
 - ["SH", "minimumDate"]
@@ -699,6 +697,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
+- ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "Calendar"]
 - ["So8NSObjectC", "CourseClass"]
@@ -711,7 +710,6 @@ depends-member:
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UILabel"]
-- ["So8NSObjectC", "UIStatusBarStyle"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
 - !private ["So8NSObjectC", "UniversityDB"]
@@ -737,7 +735,6 @@ depends-member:
 - !private ["So8NSObjectC", "navigationItem"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
-- ["So8NSObjectC", "preferredStatusBarStyle"]
 - !private ["So8NSObjectC", "reloadData"]
 - !private ["So8NSObjectC", "restore"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
@@ -765,6 +762,7 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
+- ["So8NSObjectC", "viewWillAppear"]
 - !private ["So8NSObjectP", "Calendar"]
 - ["So8NSObjectP", "CourseClass"]
 - ["So8NSObjectP", "Date"]
@@ -832,7 +830,6 @@ depends-member:
 - !private ["Sm", "count"]
 - ["Sm", "init"]
 - !private ["Sm", "subscript"]
-- !private ["SY", "lightContent"]
 - !private ["10Foundation20ReferenceConvertibleP", "component"]
 - !private ["10Foundation20ReferenceConvertibleP", "current"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
@@ -1108,6 +1105,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
+- ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "CGFloat"]
 - !private ["So11UIResponderC", "Calendar"]
 - ["So11UIResponderC", "CourseClass"]
@@ -1120,7 +1118,6 @@ depends-member:
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UILabel"]
-- ["So11UIResponderC", "UIStatusBarStyle"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
 - !private ["So11UIResponderC", "UniversityDB"]
@@ -1145,7 +1142,6 @@ depends-member:
 - !private ["So11UIResponderC", "navigationItem"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
-- ["So11UIResponderC", "preferredStatusBarStyle"]
 - !private ["So11UIResponderC", "reloadData"]
 - !private ["So11UIResponderC", "restore"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
@@ -1171,6 +1167,7 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
+- ["So11UIResponderC", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "Calendar"]
 - ["So30UIResponderStandardEditActionsP", "CourseClass"]
 - ["So30UIResponderStandardEditActionsP", "Date"]
@@ -1320,7 +1317,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
-- !private ["So16UIStatusBarStyleV", "lightContent"]
 - !private ["So11UITableViewC", "dataSource"]
 - !private ["So11UITableViewC", "delegate"]
 - !private ["So11UITableViewC", "dequeueReusableCell"]
@@ -1522,6 +1518,7 @@ depends-member:
 - !private ["So6UIViewC", "setEmptyMessage"]
 - !private ["So6UIViewC", "setup"]
 - !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "CGFloat"]
 - !private ["So16UIViewControllerC", "Calendar"]
 - ["So16UIViewControllerC", "CourseClass"]
@@ -1534,7 +1531,6 @@ depends-member:
 - ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UILabel"]
-- ["So16UIViewControllerC", "UIStatusBarStyle"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - !private ["So16UIViewControllerC", "UniversityDB"]
@@ -1557,7 +1553,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "navigationItem"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
-- ["So16UIViewControllerC", "preferredStatusBarStyle"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
 - ["So16UIViewControllerC", "scrollViewDidEndDragging"]
@@ -1578,6 +1573,7 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
+- ["So16UIViewControllerC", "viewWillAppear"]
 - !private ["22University_Application0A2DBC", "getCourseClassesByDate"]
 - !private ["22University_Application0A2DBC", "instance"]
 - ["6SQLite5ValueP", "init"]
@@ -1721,7 +1717,6 @@ depends-nominal:
 - !private "Sq"
 - "Sk"
 - "Sm"
-- !private "SY"
 - "10Foundation20ReferenceConvertibleP"
 - "ST"
 - !private "So29UIAccessibilityIdentificationP"
@@ -1746,7 +1741,6 @@ depends-nominal:
 - "So20UIScrollViewDelegateP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
-- !private "So16UIStatusBarStyleV"
 - !private "So11UITableViewC"
 - !private "So15UITableViewCellC"
 - "So21UITableViewDataSourceP"
@@ -1809,4 +1803,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ba31c53f123b5010aa014bfe74d99fcb"
+interface-hash: "14a6f7a1dabdc525f37751cbf8aaad21"

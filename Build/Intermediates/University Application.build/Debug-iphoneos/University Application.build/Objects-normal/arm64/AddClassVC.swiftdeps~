@@ -26,13 +26,16 @@ depends-top-level:
 - !private "ClassType"
 - "Course"
 - !private "Date"
+- "FloatLiteralType"
 - "FormViewController"
 - "Int"
+- "IntegerLiteralType"
 - !private "PushRow"
 - !private "RuleRequired"
 - !private "Section"
 - !private "Set"
 - !private "String"
+- !private "StringLiteralType"
 - !private "TextRow"
 - !private "TimeInlineRow"
 - !private "UIBarButtonItem"
@@ -152,6 +155,7 @@ depends-member:
 - !private ["SL", "Thursday"]
 - !private ["SL", "Tuesday"]
 - !private ["SL", "Wednesday"]
+- !private ["SL", "addTimeInterval"]
 - !private ["SL", "init"]
 - !private ["SL", "rawValue"]
 - !private ["10Foundation15ContiguousBytesP", "init"]
@@ -171,6 +175,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "WeekDayRow"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addClass"]
+- !private ["s28CustomDebugStringConvertibleP", "addTimeInterval"]
 - !private ["s28CustomDebugStringConvertibleP", "backBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "classIndexToEdit"]
 - !private ["s28CustomDebugStringConvertibleP", "course"]
@@ -186,6 +191,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "textColor"]
 - !private ["s28CustomDebugStringConvertibleP", "textLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "addTimeInterval"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "rawValue"]
 - !private ["s17CustomReflectableP", "red"]
@@ -204,6 +210,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "WeekDayRow"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addClass"]
+- !private ["s23CustomStringConvertibleP", "addTimeInterval"]
 - !private ["s23CustomStringConvertibleP", "backBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "classIndexToEdit"]
 - !private ["s23CustomStringConvertibleP", "course"]
@@ -219,6 +226,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "textLabel"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation4DateV", "addTimeInterval"]
 - !private ["10Foundation4DateV", "init"]
 - !private ["6Eureka14DateInlineCellC", "textLabel"]
 - !private ["6Eureka21DatePickerRowProtocolP", "add"]
@@ -235,6 +243,7 @@ depends-member:
 - !private ["22University_Application3DayO", "Wednesday"]
 - !private ["22University_Application3DayO", "deinit"]
 - !private ["22University_Application3DayO", "rawValue"]
+- !private ["Se", "addTimeInterval"]
 - !private ["Se", "init"]
 - !private ["Se", "rawValue"]
 - !private ["Se", "red"]
@@ -247,6 +256,7 @@ depends-member:
 - !private ["6Eureka11DisableableP", "title"]
 - !private ["6Eureka11DisableableP", "validationOptions"]
 - !private ["6Eureka11DisableableP", "value"]
+- !private ["SE", "addTimeInterval"]
 - !private ["SE", "init"]
 - !private ["SE", "rawValue"]
 - !private ["SE", "red"]
@@ -271,6 +281,7 @@ depends-member:
 - ["SQ", ""]
 - !private ["SQ", "add"]
 - !private ["SQ", "addClass"]
+- !private ["SQ", "addTimeInterval"]
 - !private ["SQ", "backBarButtonItem"]
 - !private ["SQ", "cellUpdate"]
 - !private ["SQ", "classIndexToEdit"]
@@ -295,6 +306,7 @@ depends-member:
 - !private ["SQ", "validationOptions"]
 - !private ["SQ", "value"]
 - !private ["SQ", "viewDidLoad"]
+- !private ["6SQLite11ExpressibleP", "addTimeInterval"]
 - !private ["6SQLite11ExpressibleP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "validatesOnChange"]
@@ -431,6 +443,7 @@ depends-member:
 - !private ["SH", "WeekDayRow"]
 - ["SH", ""]
 - !private ["SH", "addClass"]
+- !private ["SH", "addTimeInterval"]
 - !private ["SH", "backBarButtonItem"]
 - !private ["SH", "classIndexToEdit"]
 - !private ["SH", "course"]
@@ -652,6 +665,7 @@ depends-member:
 - !private ["SY", "plain"]
 - !private ["SY", "rawValue"]
 - !private ["SY", "validatesOnChange"]
+- !private ["10Foundation20ReferenceConvertibleP", "addTimeInterval"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["6Eureka3RowC", "add"]
 - !private ["6Eureka3RowC", "cellUpdate"]
@@ -1100,6 +1114,7 @@ depends-member:
 - !private ["22University_Application0A2DBC", "instance"]
 - !private ["22University_Application0A2DBC", "updateClass"]
 - !private ["6Eureka17ValidationOptionsV", "validatesOnChange"]
+- !private ["6SQLite5ValueP", "addTimeInterval"]
 - !private ["6SQLite5ValueP", "init"]
 - !private ["22University_Application11WeekDayCellC", "textLabel"]
 - !private ["22University_Application10WeekDayRowC", "add"]
@@ -1111,6 +1126,7 @@ depends-member:
 - !private ["22University_Application10WeekDayRowC", "validationOptions"]
 - !private ["22University_Application10WeekDayRowC", "value"]
 - !private ["s14_ArrayProtocolP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "addTimeInterval"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["6Eureka19_DateInlineFieldRowC", "add"]
 - !private ["6Eureka19_DateInlineFieldRowC", "cellUpdate"]
@@ -1153,6 +1169,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "addTimeInterval"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "rawValue"]
 - !private ["s21_ObjectiveCBridgeableP", "red"]

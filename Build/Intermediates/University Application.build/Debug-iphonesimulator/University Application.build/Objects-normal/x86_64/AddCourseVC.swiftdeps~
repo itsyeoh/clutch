@@ -65,7 +65,6 @@ depends-member:
 - !private ["22University_Application11AddCourseVCC", "semesterList"]
 - !private ["22University_Application11AddCourseVCC", "semesters"]
 - ["22University_Application11AddCourseVCC", "viewDidLoad"]
-- !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sa", "first"]
 - ["Sa", "init"]
 - !private ["Sa", "map"]
@@ -93,12 +92,9 @@ depends-member:
 - ["SK", "init"]
 - !private ["SK", "map"]
 - !private ["SK", "subscript"]
-- !private ["Sz", "init"]
-- !private ["6SQLite7BindingP", "init"]
 - !private ["So15CALayerDelegateP", "textColor"]
 - !private ["So15CALayerDelegateP", "textLabel"]
 - !private ["s7CVarArgP", "Course"]
-- !private ["s7CVarArgP", "Int"]
 - ["s7CVarArgP", "Int64"]
 - !private ["s7CVarArgP", "IntRow"]
 - !private ["s7CVarArgP", "PushRow"]
@@ -143,7 +139,6 @@ depends-member:
 - !private ["Sl", "subscript"]
 - !private ["Sl", "validate"]
 - !private ["Sl", "values"]
-- !private ["SL", "init"]
 - !private ["10Foundation15ContiguousBytesP", "first"]
 - ["10Foundation15ContiguousBytesP", "init"]
 - !private ["10Foundation15ContiguousBytesP", "map"]
@@ -154,7 +149,6 @@ depends-member:
 - !private ["22University_Application6CourseC", "init"]
 - !private ["22University_Application6CourseC", "sid"]
 - !private ["s28CustomDebugStringConvertibleP", "Course"]
-- !private ["s28CustomDebugStringConvertibleP", "Int"]
 - ["s28CustomDebugStringConvertibleP", "Int64"]
 - !private ["s28CustomDebugStringConvertibleP", "IntRow"]
 - !private ["s28CustomDebugStringConvertibleP", "PushRow"]
@@ -196,7 +190,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "values"]
 - !private ["s23CustomStringConvertibleP", "Course"]
-- !private ["s23CustomStringConvertibleP", "Int"]
 - ["s23CustomStringConvertibleP", "Int64"]
 - !private ["s23CustomStringConvertibleP", "IntRow"]
 - !private ["s23CustomStringConvertibleP", "PushRow"]
@@ -262,7 +255,6 @@ depends-member:
 - !private ["SE", "subscript"]
 - !private ["SE", "values"]
 - !private ["SQ", "Course"]
-- !private ["SQ", "Int"]
 - ["SQ", "Int64"]
 - !private ["SQ", "IntRow"]
 - !private ["SQ", "PushRow"]
@@ -305,7 +297,6 @@ depends-member:
 - !private ["SQ", "value"]
 - !private ["SQ", "values"]
 - !private ["SQ", "viewDidLoad"]
-- !private ["6SQLite11ExpressibleP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "map"]
@@ -316,7 +307,6 @@ depends-member:
 - !private ["s30ExpressibleByDictionaryLiteralP", "map"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "values"]
-- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "red"]
 - !private ["6Eureka8FieldRowC", "add"]
 - !private ["6Eureka8FieldRowC", "cellUpdate"]
@@ -332,12 +322,10 @@ depends-member:
 - !private ["6Eureka19FieldRowConformanceP", "title"]
 - !private ["6Eureka19FieldRowConformanceP", "validationOptions"]
 - !private ["6Eureka19FieldRowConformanceP", "value"]
-- !private ["s17FixedWidthIntegerP", "init"]
 - !private ["6Eureka4FormC", "rowBy"]
 - !private ["6Eureka4FormC", "setValues"]
 - !private ["6Eureka4FormC", "validate"]
 - !private ["6Eureka12FormDelegateP", "Course"]
-- !private ["6Eureka12FormDelegateP", "Int"]
 - ["6Eureka12FormDelegateP", "Int64"]
 - !private ["6Eureka12FormDelegateP", "IntRow"]
 - !private ["6Eureka12FormDelegateP", "PushRow"]
@@ -388,7 +376,6 @@ depends-member:
 - ["6Eureka18FormViewControllerC", "semesters"]
 - ["6Eureka18FormViewControllerC", "viewDidLoad"]
 - !private ["6Eureka26FormViewControllerProtocolP", "Course"]
-- !private ["6Eureka26FormViewControllerProtocolP", "Int"]
 - ["6Eureka26FormViewControllerProtocolP", "Int64"]
 - !private ["6Eureka26FormViewControllerProtocolP", "IntRow"]
 - !private ["6Eureka26FormViewControllerProtocolP", "PushRow"]
@@ -427,7 +414,6 @@ depends-member:
 - !private ["6Eureka20FormatterConformanceP", "validationOptions"]
 - !private ["6Eureka20FormatterConformanceP", "value"]
 - !private ["SH", "Course"]
-- !private ["SH", "Int"]
 - ["SH", "Int64"]
 - !private ["SH", "IntRow"]
 - !private ["SH", "PushRow"]
@@ -470,8 +456,6 @@ depends-member:
 - !private ["6Eureka7HidableP", "title"]
 - !private ["6Eureka7HidableP", "validationOptions"]
 - !private ["6Eureka7HidableP", "value"]
-- !private ["6Eureka18InputTypeInitiableP", "init"]
-- !private ["Si", "init"]
 - !private ["6Eureka7IntCellC", "textLabel"]
 - !private ["6Eureka6IntRowC", "add"]
 - !private ["6Eureka6IntRowC", "cellUpdate"]
@@ -487,8 +471,6 @@ depends-member:
 - !private ["6Eureka21KeyboardReturnHandlerP", "title"]
 - !private ["6Eureka21KeyboardReturnHandlerP", "validationOptions"]
 - !private ["6Eureka21KeyboardReturnHandlerP", "value"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
 - !private ["SM", "first"]
 - ["SM", "init"]
 - !private ["SM", "map"]
@@ -501,7 +483,6 @@ depends-member:
 - !private ["10Foundation19MutableDataProtocolP", "map"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSCodingP", "Course"]
-- !private ["So8NSCodingP", "Int"]
 - ["So8NSCodingP", "Int64"]
 - !private ["So8NSCodingP", "IntRow"]
 - !private ["So8NSCodingP", "PushRow"]
@@ -532,7 +513,6 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So9NSCopyingP", "red"]
 - !private ["So26NSExtensionRequestHandlingP", "Course"]
-- !private ["So26NSExtensionRequestHandlingP", "Int"]
 - ["So26NSExtensionRequestHandlingP", "Int64"]
 - !private ["So26NSExtensionRequestHandlingP", "IntRow"]
 - !private ["So26NSExtensionRequestHandlingP", "PushRow"]
@@ -589,7 +569,6 @@ depends-member:
 - !private ["So8NSObjectC", "textLabel"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectP", "Course"]
-- !private ["So8NSObjectP", "Int"]
 - ["So8NSObjectP", "Int64"]
 - !private ["So8NSObjectP", "IntRow"]
 - !private ["So8NSObjectP", "PushRow"]
@@ -627,8 +606,6 @@ depends-member:
 - !private ["6Eureka29NoValueDisplayTextConformanceP", "title"]
 - !private ["6Eureka29NoValueDisplayTextConformanceP", "validationOptions"]
 - !private ["6Eureka29NoValueDisplayTextConformanceP", "value"]
-- !private ["6SQLite6NumberP", "init"]
-- !private ["Sj", "init"]
 - !private ["s9OptionSetP", "validatesOnChange"]
 - !private ["Sq", "red"]
 - !private ["6Eureka18OptionsProviderRowP", "add"]
@@ -703,7 +680,6 @@ depends-member:
 - !private ["6Eureka7RowTypeP", "value"]
 - !private ["6Eureka12RuleRequiredV", "init"]
 - !private ["6Eureka8RuleTypeP", "init"]
-- !private ["s10SIMDScalarP", "init"]
 - !private ["6Eureka7SectionC", "init"]
 - !private ["6Eureka15SectionDelegateP", "init"]
 - !private ["6Eureka11SelectorRowC", "add"]
@@ -726,9 +702,6 @@ depends-member:
 - !private ["ST", "validate"]
 - !private ["ST", "values"]
 - !private ["s10SetAlgebraP", "validatesOnChange"]
-- !private ["SZ", "init"]
-- !private ["s13SignedNumericP", "init"]
-- !private ["Sx", "init"]
 - !private ["So20UIBarButtonItemStyleV", "plain"]
 - !private ["6Eureka8TaggableP", "add"]
 - !private ["6Eureka8TaggableP", "cellUpdate"]
@@ -764,7 +737,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "textColor"]
 - !private ["So12UIAppearanceP", "textLabel"]
 - !private ["So21UIAppearanceContainerP", "Course"]
-- !private ["So21UIAppearanceContainerP", "Int"]
 - ["So21UIAppearanceContainerP", "Int64"]
 - !private ["So21UIAppearanceContainerP", "IntRow"]
 - !private ["So21UIAppearanceContainerP", "PushRow"]
@@ -794,7 +766,6 @@ depends-member:
 - !private ["So9UIBarItemC", "init"]
 - !private ["So7UIColorC", "red"]
 - !private ["So18UIContentContainerP", "Course"]
-- !private ["So18UIContentContainerP", "Int"]
 - ["So18UIContentContainerP", "Int64"]
 - !private ["So18UIContentContainerP", "IntRow"]
 - !private ["So18UIContentContainerP", "PushRow"]
@@ -824,7 +795,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "textColor"]
 - !private ["So13UIDynamicItemP", "textLabel"]
 - !private ["So18UIFocusEnvironmentP", "Course"]
-- !private ["So18UIFocusEnvironmentP", "Int"]
 - ["So18UIFocusEnvironmentP", "Int64"]
 - !private ["So18UIFocusEnvironmentP", "IntRow"]
 - !private ["So18UIFocusEnvironmentP", "PushRow"]
@@ -859,7 +829,6 @@ depends-member:
 - !private ["So16UINavigationItemC", "backBarButtonItem"]
 - !private ["So16UINavigationItemC", "rightBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "Course"]
-- !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - ["So30UIPasteConfigurationSupportingP", "Int64"]
 - !private ["So30UIPasteConfigurationSupportingP", "IntRow"]
 - !private ["So30UIPasteConfigurationSupportingP", "PushRow"]
@@ -913,7 +882,6 @@ depends-member:
 - !private ["So11UIResponderC", "textLabel"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "Course"]
-- !private ["So30UIResponderStandardEditActionsP", "Int"]
 - ["So30UIResponderStandardEditActionsP", "Int64"]
 - !private ["So30UIResponderStandardEditActionsP", "IntRow"]
 - !private ["So30UIResponderStandardEditActionsP", "PushRow"]
@@ -940,7 +908,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "textLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So20UIScrollViewDelegateP", "Course"]
-- !private ["So20UIScrollViewDelegateP", "Int"]
 - ["So20UIScrollViewDelegateP", "Int64"]
 - !private ["So20UIScrollViewDelegateP", "IntRow"]
 - !private ["So20UIScrollViewDelegateP", "PushRow"]
@@ -966,7 +933,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So16UIStateRestoringP", "Course"]
-- !private ["So16UIStateRestoringP", "Int"]
 - ["So16UIStateRestoringP", "Int64"]
 - !private ["So16UIStateRestoringP", "IntRow"]
 - !private ["So16UIStateRestoringP", "PushRow"]
@@ -992,7 +958,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So15UITableViewCellC", "textLabel"]
 - !private ["So21UITableViewDataSourceP", "Course"]
-- !private ["So21UITableViewDataSourceP", "Int"]
 - ["So21UITableViewDataSourceP", "Int64"]
 - !private ["So21UITableViewDataSourceP", "IntRow"]
 - !private ["So21UITableViewDataSourceP", "PushRow"]
@@ -1017,7 +982,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "semesters"]
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
 - !private ["So19UITableViewDelegateP", "Course"]
-- !private ["So19UITableViewDelegateP", "Int"]
 - ["So19UITableViewDelegateP", "Int64"]
 - !private ["So19UITableViewDelegateP", "IntRow"]
 - !private ["So19UITableViewDelegateP", "PushRow"]
@@ -1043,7 +1007,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
 - !private ["So19UITextFieldDelegateP", "textLabel"]
 - !private ["So18UITraitEnvironmentP", "Course"]
-- !private ["So18UITraitEnvironmentP", "Int"]
 - ["So18UITraitEnvironmentP", "Int64"]
 - !private ["So18UITraitEnvironmentP", "IntRow"]
 - !private ["So18UITraitEnvironmentP", "PushRow"]
@@ -1070,7 +1033,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "textLabel"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "Course"]
-- !private ["So23UIUserActivityRestoringP", "Int"]
 - ["So23UIUserActivityRestoringP", "Int64"]
 - !private ["So23UIUserActivityRestoringP", "IntRow"]
 - !private ["So23UIUserActivityRestoringP", "PushRow"]
@@ -1127,17 +1089,14 @@ depends-member:
 - !private ["22University_Application0A2DBC", "getSemesters"]
 - !private ["22University_Application0A2DBC", "instance"]
 - !private ["6Eureka17ValidationOptionsV", "validatesOnChange"]
-- !private ["6SQLite5ValueP", "init"]
 - !private ["s14_ArrayProtocolP", "first"]
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "map"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "first"]
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "map"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "red"]
 - !private ["6Eureka10_FieldCellC", "textLabel"]
 - !private ["s19_HasContiguousBytesP", "first"]
@@ -1158,7 +1117,6 @@ depends-member:
 - !private ["6Eureka7_IntRowC", "validationOptions"]
 - !private ["6Eureka7_IntRowC", "value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Course"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Int64"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "IntRow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "PushRow"]
@@ -1215,7 +1173,6 @@ depends-member:
 depends-nominal:
 - "22University_Application17AddCourseDelegateP"
 - "22University_Application11AddCourseVCC"
-- !private "s18AdditiveArithmeticP"
 - "Sa"
 - !private "6Eureka8BaseCellC"
 - !private "6Eureka12BaseCellTypeP"
@@ -1223,14 +1180,11 @@ depends-nominal:
 - !private "6Eureka11BaseRowTypeP"
 - !private "6Eureka12BaseRuleTypeP"
 - "SK"
-- !private "Sz"
-- !private "6SQLite7BindingP"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "6Eureka4CellC"
 - !private "6Eureka8CellTypeP"
 - "Sl"
-- !private "SL"
 - "10Foundation15ContiguousBytesP"
 - !private "22University_Application6CourseC"
 - "s28CustomDebugStringConvertibleP"
@@ -1242,14 +1196,11 @@ depends-nominal:
 - !private "6Eureka11DisableableP"
 - "SE"
 - "SQ"
-- !private "6SQLite11ExpressibleP"
 - "s25ExpressibleByArrayLiteralP"
 - "s30ExpressibleByDictionaryLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "6Eureka8FieldRowC"
 - !private "6Eureka19FieldRowConformanceP"
-- !private "s17FixedWidthIntegerP"
 - !private "6Eureka4FormC"
 - "6Eureka12FormDelegateP"
 - "6Eureka18FormViewControllerC"
@@ -1258,13 +1209,9 @@ depends-nominal:
 - !private "6Eureka20FormatterConformanceP"
 - "SH"
 - !private "6Eureka7HidableP"
-- !private "6Eureka18InputTypeInitiableP"
-- !private "Si"
 - !private "6Eureka7IntCellC"
 - !private "6Eureka6IntRowC"
 - !private "6Eureka21KeyboardReturnHandlerP"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
 - "SM"
 - "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
@@ -1276,8 +1223,6 @@ depends-nominal:
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "6Eureka29NoValueDisplayTextConformanceP"
-- !private "6SQLite6NumberP"
-- !private "Sj"
 - !private "s9OptionSetP"
 - !private "Sq"
 - !private "6Eureka18OptionsProviderRowP"
@@ -1293,16 +1238,12 @@ depends-nominal:
 - !private "6Eureka7RowTypeP"
 - !private "6Eureka12RuleRequiredV"
 - !private "6Eureka8RuleTypeP"
-- !private "s10SIMDScalarP"
 - !private "6Eureka7SectionC"
 - !private "6Eureka15SectionDelegateP"
 - !private "6Eureka11SelectorRowC"
 - !private "22University_Application8SemesterC"
 - "ST"
 - !private "s10SetAlgebraP"
-- !private "SZ"
-- !private "s13SignedNumericP"
-- !private "Sx"
 - !private "So20UIBarButtonItemStyleV"
 - !private "6Eureka8TaggableP"
 - !private "6Eureka8TextCellC"
@@ -1343,11 +1284,8 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "22University_Application0A2DBC"
 - !private "6Eureka17ValidationOptionsV"
-- !private "6SQLite5ValueP"
 - "s14_ArrayProtocolP"
-- !private "s30_CustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "6Eureka10_FieldCellC"
 - "s19_HasContiguousBytesP"

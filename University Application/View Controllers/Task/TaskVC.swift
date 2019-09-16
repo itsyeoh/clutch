@@ -16,28 +16,24 @@ class TaskVC: UIViewController {
     private var tasksByCourseName = [[Task]]()
     private var courses = [Course]()
     private var isCompleted = false
+    var taskIndexToEdit: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "TASKS"
-//        self.navigationItem.leftBarButtonItem =
-//            UIBarButtonItem(image: UIImage(named: "NotDone"), style: .plain, target: self, action: #selector(openCompletedTasks))
         setUpMenuButton("NotDone")
         setupAddButton()
-//        self.navigationItem.rightBarButtonItem =
-//            UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(openAddTask))
         
         taskTableView.dataSource = self
         taskTableView.delegate = self
         
         refreshData(false)
-//        self.taskTableView.setEditing(true, animated: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: false)
-        tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: false)
+        tasksByDate = UniversityDB.instance.getTasksByDate(checkVar: isCompleted)
+        tasksByCourseName = UniversityDB.instance.getTasksByCourseName(checkVar: isCompleted)
         courses = UniversityDB.instance.getCourses()
     }
     
@@ -218,17 +214,50 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         refreshDataView()
     }//end didSelectRow
     
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        if isCompleted {
-//            tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
-//        }
-//    }
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        switch taskControls.selectedSegmentIndex {
+        case 0:
+            let update = UIContextualAction(style: .normal, title: "Edit") { (action, view, handler) in
+                let task = self.tasksByDate[indexPath.section][indexPath.row]
+                let storyboard = UIStoryboard(name: "AddTask", bundle: nil)
+                let vc = storyboard.instantiateInitialViewController() as! AddTaskVC
+                vc.delegate = self
+                vc.newTask = task
+                vc.course = task.getCourse()
+                vc.taskIndexToEdit = indexPath.row
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+                handler(true)
+            }
+            
+            update.backgroundColor = Theme.Primary
+            return UISwipeActionsConfiguration(actions: [update])
+        case 1:
+            let update = UIContextualAction(style: .normal, title: "Edit") { (action, view, handler) in
+                let task = self.tasksByCourseName[indexPath.section][indexPath.row]
+                let storyboard = UIStoryboard(name: "AddTask", bundle: nil)
+                let vc = storyboard.instantiateInitialViewController() as! AddTaskVC
+                vc.delegate = self
+                vc.newTask = task
+                vc.taskIndexToEdit = indexPath.row
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+                handler(true)
+            }
+            
+            update.backgroundColor = Theme.Primary
+            return UISwipeActionsConfiguration(actions: [update])
+        default:
+            return UISwipeActionsConfiguration(actions: [])
+        }
+    }//end leadingSwipe
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         switch taskControls.selectedSegmentIndex {
         case 0:
             let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, view, handler) in
                 let task = self.tasksByDate[indexPath.section][indexPath.row]
+                
                 
                 if UniversityDB.instance.deleteTask(id: task.tid) {
                     self.tasksByDate[indexPath.section].remove(at: indexPath.row)
@@ -277,5 +306,6 @@ extension TaskVC: AddTaskDelegate {
     func updateTask(index: Int, task: Task) {
         self.navigationController?.popViewController(animated: true)
         self.taskTableView.reloadData()
+        self.taskIndexToEdit = nil
     }
 }

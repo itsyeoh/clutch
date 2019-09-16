@@ -27,13 +27,10 @@ depends-top-level:
 - "Course"
 - !private "CourseTVC"
 - !private "CourseVC"
-- !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
-- !private "IntegerLiteralType"
 - "Semester"
 - !private "SemesterTVC"
-- !private "StringLiteralType"
 - !private "Theme"
 - !private "UIAlertAction"
 - !private "UIAlertController"
@@ -319,6 +316,7 @@ depends-member:
 - !private ["6Eureka16ContextualActionP", "backgroundColor"]
 - !private ["6Eureka16ContextualActionP", "init"]
 - !private ["6Eureka15ContextualStyleP", "destructive"]
+- !private ["6Eureka15ContextualStyleP", "normal"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
 - !private ["10Foundation15ContiguousBytesP", "getSeasonTextLabel"]
@@ -560,6 +558,7 @@ depends-member:
 - !private ["SQ", "navigationController"]
 - !private ["SQ", "navigationItem"]
 - !private ["SQ", "newCourse"]
+- !private ["SQ", "normal"]
 - ["SQ", "numberOfSections"]
 - ["SQ", "numberOfSectionsInTableView"]
 - !private ["SQ", "plain"]
@@ -667,6 +666,7 @@ depends-member:
 - !private ["SH", "navigationController"]
 - !private ["SH", "navigationItem"]
 - !private ["SH", "newCourse"]
+- !private ["SH", "normal"]
 - ["SH", "numberOfSections"]
 - ["SH", "numberOfSectionsInTableView"]
 - !private ["SH", "plain"]
@@ -1010,6 +1010,7 @@ depends-member:
 - !private ["SY", "default"]
 - !private ["SY", "destructive"]
 - !private ["SY", "fade"]
+- !private ["SY", "normal"]
 - !private ["SY", "plain"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["10Foundation20ReferenceConvertibleP", "section"]
@@ -1036,6 +1037,7 @@ depends-member:
 - !private ["So18UIAlertActionStyleV", "default"]
 - !private ["So18UIAlertActionStyleV", "destructive"]
 - !private ["So23UIContextualActionStyleV", "destructive"]
+- !private ["So23UIContextualActionStyleV", "normal"]
 - !private ["So20UIBarButtonItemStyleV", "plain"]
 - !private ["22University_Application5ThemeC", "Primary"]
 - !private ["22University_Application5ThemeC", "Secondary"]

@@ -22,6 +22,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in TaskVC.tableView(_:leadingSwipeActionsConfigurationForRowAt:):TaskVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tasksByDate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "AcademicsVC.viewDidLoad():AcademicsVC.swift">
          <PersistentStrings>
             <PersistentString
@@ -46,6 +54,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "DashboardVC.viewDidLoad():DashboardVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "courseClasses">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "TaskVC.tableView(_:viewForHeaderInSection:):TaskVC.swift">
          <PersistentStrings>
             <PersistentString
@@ -64,14 +80,6 @@
             </PersistentString>
             <PersistentString
                value = "indexPath.section">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "DashboardVC.viewDidLoad():DashboardVC.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "courseClasses">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

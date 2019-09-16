@@ -35,6 +35,9 @@
 		5159B0E5232C4C2900517164 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0D5232C4C2900517164 /* FSCalendarAppearance.m */; };
 		5159B0E7232C4C4D00517164 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5159B0E6232C4C4D00517164 /* FSCalendar.framework */; };
 		5159B0E8232C4C4D00517164 /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5159B0E6232C4C4D00517164 /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5170BD2E232EBA7300E761D8 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170BD2D232EBA7300E761D8 /* Organization.swift */; };
+		5170BD30232EBA7900E761D8 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170BD2F232EBA7900E761D8 /* Meeting.swift */; };
+		5170BD32232EBB6D00E761D8 /* OTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170BD31232EBB6D00E761D8 /* OTask.swift */; };
 		5181A480232C52620068CFF5 /* CourseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181A47F232C52620068CFF5 /* CourseClass.swift */; };
 		5181A489232C5A380068CFF5 /* DashboardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181A488232C5A380068CFF5 /* DashboardTVC.swift */; };
 		5181A48B232C5F850068CFF5 /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181A48A232C5F850068CFF5 /* TableViewHelper.swift */; };
@@ -210,6 +213,9 @@
 		5159B0D4232C4C2900517164 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5159B0D5232C4C2900517164 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
 		5159B0E6232C4C4D00517164 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSCalendar.framework; sourceTree = "<group>"; };
+		5170BD2D232EBA7300E761D8 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		5170BD2F232EBA7900E761D8 /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
+		5170BD31232EBB6D00E761D8 /* OTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTask.swift; sourceTree = "<group>"; };
 		5181A47F232C52620068CFF5 /* CourseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseClass.swift; sourceTree = "<group>"; };
 		5181A488232C5A380068CFF5 /* DashboardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTVC.swift; sourceTree = "<group>"; };
 		5181A48A232C5F850068CFF5 /* TableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
@@ -345,6 +351,34 @@
 			path = "../../Downloads/FSCalendar-master-4/FSCalendar";
 			sourceTree = "<group>";
 		};
+		5170BD22232EBA0100E761D8 /* AddOrganization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddOrganization;
+			sourceTree = "<group>";
+		};
+		5170BD2A232EBA2800E761D8 /* AddMeeting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddMeeting;
+			sourceTree = "<group>";
+		};
+		5170BD2B232EBA3300E761D8 /* AddOTask */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddOTask;
+			sourceTree = "<group>";
+		};
+		5170BD2C232EBA4C00E761D8 /* Organization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Organization;
+			sourceTree = "<group>";
+		};
 		519EB5F6231A12F2008A3142 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +434,9 @@
 				51AF6C5D2313243E00CD3068 /* Class.swift */,
 				51E7641B23199E7400E199B2 /* Task.swift */,
 				5181A47F232C52620068CFF5 /* CourseClass.swift */,
+				5170BD2D232EBA7300E761D8 /* Organization.swift */,
+				5170BD2F232EBA7900E761D8 /* Meeting.swift */,
+				5170BD31232EBB6D00E761D8 /* OTask.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -424,6 +461,10 @@
 				5153736A2321E16A003D1D3A /* AddCourse */,
 				5153736B2321E16F003D1D3A /* AddClass */,
 				5153736C2321E175003D1D3A /* AddTask */,
+				5170BD2C232EBA4C00E761D8 /* Organization */,
+				5170BD2B232EBA3300E761D8 /* AddOTask */,
+				5170BD2A232EBA2800E761D8 /* AddMeeting */,
+				5170BD22232EBA0100E761D8 /* AddOrganization */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -690,6 +731,7 @@
 				5159B0DA232C4C2900517164 /* FSCalendarStickyHeader.m in Sources */,
 				51AF6C5E2313243E00CD3068 /* Class.swift in Sources */,
 				51E7641C23199E7400E199B2 /* Task.swift in Sources */,
+				5170BD30232EBA7900E761D8 /* Meeting.swift in Sources */,
 				5181A489232C5A380068CFF5 /* DashboardTVC.swift in Sources */,
 				51F119182329D1B30047ADFE /* TaskVC.swift in Sources */,
 				5159B0D6232C4C2900517164 /* FSCalendarCollectionView.m in Sources */,
@@ -719,10 +761,12 @@
 				5187F6A223138E7C0091AAE9 /* CourseTVC.swift in Sources */,
 				5159B0DB232C4C2900517164 /* FSCalendar.m in Sources */,
 				51F119172329D1B30047ADFE /* TaskTVC.swift in Sources */,
+				5170BD2E232EBA7300E761D8 /* Organization.swift in Sources */,
 				51D1B5242329B858006AF7ED /* Theme.swift in Sources */,
 				51AF6C242313232200CD3068 /* AppDelegate.swift in Sources */,
 				5159B0D9232C4C2900517164 /* FSCalendarCell.m in Sources */,
 				5153737A2321E1CB003D1D3A /* AddCourseVC.swift in Sources */,
+				5170BD32232EBB6D00E761D8 /* OTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

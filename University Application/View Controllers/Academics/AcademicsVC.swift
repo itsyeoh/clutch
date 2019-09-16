@@ -13,6 +13,8 @@ class AcademicsVC: UIViewController {
     @IBOutlet weak var semesterTableView: UITableView!
     private var semesters = [Semester]()
     private var courses = [[Course]]()
+    
+    private var semesterIsExpanded = [Bool]()
     var courseSectionToEdit: Int?
     var courseRowToEdit: Int?
     
@@ -28,6 +30,7 @@ class AcademicsVC: UIViewController {
         semesters = UniversityDB.instance.getSemesters()
         
         for sem in semesters {
+            semesterIsExpanded.append(false)
             courses.append( UniversityDB.instance.getSemesterCourses(ssid: sem.sid) )
         }
     }
@@ -68,6 +71,7 @@ extension AcademicsVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return semesterIsExpanded[section] ? courses[section].count : 1
         return courses[section].count
     }
     
@@ -103,6 +107,8 @@ extension AcademicsVC: UITableViewDataSource, UITableViewDelegate {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    
+    // Update course
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let update = UIContextualAction(style: .normal, title: "Edit") { (action, view, handler) in
             let course = self.courses[indexPath.section][indexPath.row]
