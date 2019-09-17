@@ -20,18 +20,15 @@ depends-top-level:
 - "AddCourseVC"
 - "AssignmentPrecedence"
 - "Course"
-- "FloatLiteralType"
 - "FormViewController"
 - "Int"
 - "Int64"
 - !private "IntRow"
-- "IntegerLiteralType"
 - !private "PushRow"
 - !private "RuleRequired"
 - !private "Section"
 - "Semester"
 - "String"
-- !private "StringLiteralType"
 - !private "TextRow"
 - !private "UIBarButtonItem"
 - !private "UniversityDB"
@@ -143,10 +140,12 @@ depends-member:
 - ["10Foundation15ContiguousBytesP", "init"]
 - !private ["10Foundation15ContiguousBytesP", "map"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["22University_Application6CourseC", "cid"]
 - !private ["22University_Application6CourseC", "courseNum"]
 - !private ["22University_Application6CourseC", "creditHours"]
 - !private ["22University_Application6CourseC", "dept"]
 - !private ["22University_Application6CourseC", "init"]
+- !private ["22University_Application6CourseC", "sid"]
 - !private ["s28CustomDebugStringConvertibleP", "Course"]
 - ["s28CustomDebugStringConvertibleP", "Int64"]
 - !private ["s28CustomDebugStringConvertibleP", "IntRow"]
@@ -1087,6 +1086,7 @@ depends-member:
 - !private ["22University_Application0A2DBC", "addCourse"]
 - !private ["22University_Application0A2DBC", "getSemesters"]
 - !private ["22University_Application0A2DBC", "instance"]
+- !private ["22University_Application0A2DBC", "updateCourse"]
 - !private ["6Eureka17ValidationOptionsV", "validatesOnChange"]
 - !private ["s14_ArrayProtocolP", "first"]
 - ["s14_ArrayProtocolP", "init"]

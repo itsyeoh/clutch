@@ -29,19 +29,37 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
                                         <color key="value" name="Primary"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
-                                        <color key="value" name="Primary"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleTodayColor">
                                         <color key="value" name="Secondary_2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="titleSelectionColor">
-                                        <color key="value" name="Secondary"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titlePlaceholderColor">
                                         <color key="value" name="Primary_2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="useVeryShortWeekdaySymbols" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                        <color key="value" name="Primary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleSelectionColor">
+                                        <color key="value" name="Primary_2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleWeekendColor">
+                                        <color key="value" name="Secondary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
+                                        <color key="value" name="Tertiary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventSelectionColor">
+                                        <color key="value" name="Primary_2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                        <color key="value" name="Secondary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todaySelectionColor">
+                                        <color key="value" name="Primary_2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                        <color key="value" name="Primary"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="rWN-iS-Pte" id="siP-Vy-bao"/>
@@ -57,11 +75,11 @@
                                         <color key="textColor" name="Primary"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RCD-i9-xJI">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RCD-i9-xJI">
                                         <rect key="frame" x="0.0" y="48" width="390" height="460"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DashboardCell" rowHeight="68" id="t0y-dQ-qqH" customClass="DashboardTVC" customModule="University_Application" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DashboardCell" rowHeight="68" id="t0y-dQ-qqH" customClass="DashboardTVC" customModule="University_Application" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="390" height="68"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t0y-dQ-qqH" id="c2Z-PX-O7c">
@@ -184,8 +202,8 @@
                         <constraints>
                             <constraint firstItem="Oht-b3-hpP" firstAttribute="bottom" secondItem="Mcw-Be-YLZ" secondAttribute="bottom" id="FQw-KM-tKP"/>
                             <constraint firstItem="e7U-eJ-Ghh" firstAttribute="top" secondItem="Mcw-Be-YLZ" secondAttribute="top" constant="10" id="H2y-SR-JXh"/>
-                            <constraint firstItem="Oht-b3-hpP" firstAttribute="top" secondItem="e7U-eJ-Ghh" secondAttribute="bottom" constant="20" id="O6C-1k-2oR"/>
                             <constraint firstItem="Mcw-Be-YLZ" firstAttribute="trailing" secondItem="Oht-b3-hpP" secondAttribute="trailing" id="Rfb-Gv-LgX"/>
+                            <constraint firstItem="Oht-b3-hpP" firstAttribute="top" secondItem="e7U-eJ-Ghh" secondAttribute="bottom" constant="20" id="pp3-e5-rRR"/>
                             <constraint firstItem="Mcw-Be-YLZ" firstAttribute="trailing" secondItem="e7U-eJ-Ghh" secondAttribute="trailing" constant="12" id="r8N-hU-aCm"/>
                             <constraint firstItem="Oht-b3-hpP" firstAttribute="leading" secondItem="Mcw-Be-YLZ" secondAttribute="leading" id="ul7-Af-ArL"/>
                             <constraint firstItem="e7U-eJ-Ghh" firstAttribute="leading" secondItem="Mcw-Be-YLZ" secondAttribute="leading" constant="12" id="z9m-ey-xeU"/>

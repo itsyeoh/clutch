@@ -81,10 +81,56 @@ class UniversityDB {
         return semesters
     }
     
+    func getPastSemesters() -> [Semester] {
+        var semesters = [Semester]()
+        
+        do {
+            let query = self.semesters.filter(endDate <= Date())
+            for semester in try db!.prepare(query) {
+                semesters.append(Semester(
+                    sid: semester[sid],
+                    season: semester[season],
+                    startDate: semester[startDate],
+                    endDate: semester[endDate]))
+            }
+        } catch {
+            print("Select failed")
+        }
+        
+        return semesters
+    }
+    
+    func getCurrentSemesters() -> [Semester] {
+        var semesters = [Semester]()
+        
+        do {
+            let query = self.semesters.filter(endDate > Date())
+            for semester in try db!.prepare(query) {
+                semesters.append(Semester(
+                    sid: semester[sid],
+                    season: semester[season],
+                    startDate: semester[startDate],
+                    endDate: semester[endDate]))
+            }
+        } catch {
+            print("Select failed")
+        }
+        
+        return semesters
+    }
+    
     func deleteSemester(id: Int64) -> Bool {
         do {
             let semester = semesters.filter(id == sid)
+            let course = courses.filter(id == c_sid)
+            
+            for crs in try db!.prepare(course) {
+                UniversityDB.instance.deleteCourse(id: crs[cid])
+            }
+            
             try db!.run(semester.delete())
+            try db!.run(course.delete())
+            
             return true
         } catch {
             print("Delete failed")
@@ -189,13 +235,20 @@ class UniversityDB {
     func deleteCourse(id: Int64) -> Bool {
         do {
             let course = courses.filter(id == cid)
+            let aClass = classes.filter(id == c_cid)
+            let task = tasks.filter(id == t_cid)
+            
             try db!.run(course.delete())
+            try db!.run(aClass.delete())
+            try db!.run(task.delete())
+            
             return true
         } catch {
             print("Delete failed")
         }
         return false
     }
+    
     
     func updateCourse(id: Int64, newCourse: Course) -> Bool {
         let course = courses.filter(id == cid)
@@ -594,15 +647,16 @@ class UniversityDB {
                                           courses[creditHours], classes[classType],
                                           classes[classType], classes[startTime],
                                           classes[endTime], classes[days],
-                                          classes[location]])
+                                          classes[location], courses[cid]])
                                  .join(courses, on: sid == courses[c_sid])
                                  .join(classes, on: cid == classes[c_cid])
                                  .filter(startDate <= date && endDate >= date)
                                  .filter(days.like("%" + day + "%"))
-                                 .order(classes[startTime] .desc)
+                                 .order(classes[startTime] .asc)
             
             for cClass in try db!.prepare(query) {
                 courseClasses.append( CourseClass(
+                    cid: cClass[cid],
                     dept: cClass[dept],
                     courseNum: cClass[courseNum],
                     creditHours: cClass[creditHours],
@@ -619,4 +673,24 @@ class UniversityDB {
         return courseClasses
     }
     
+    
+    func getCourseByID(id: Int64) -> Course {
+        var selectedCourse: Course!
+        
+        do {
+            let query = courses.filter(cid == id)
+            
+            for course in try db!.prepare(query) {
+                selectedCourse = Course(sid: course[c_sid],
+                                        cid: course[cid],
+                                        dept: course[dept],
+                                        courseNum: course[courseNum],
+                                        creditHours: course[creditHours])
+            }
+        } catch {
+            print("Select failed")
+        }
+        
+        return selectedCourse
+    }
 }

@@ -23,8 +23,7 @@
                                 <color key="backgroundColor" name="Primary_2"/>
                                 <segments>
                                     <segment title="Due Date"/>
-                                    <segment title="Academics"/>
-                                    <segment title="Extracurriculars"/>
+                                    <segment title="Course"/>
                                 </segments>
                                 <color key="tintColor" name="Primary"/>
                                 <connections>

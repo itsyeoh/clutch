@@ -19,6 +19,7 @@ depends-top-level:
 - "CourseTVC"
 - "Int"
 - !private "String"
+- !private "StringLiteralType"
 - "UILabel"
 - "UITableViewCell"
 - !private "UniversityDB"

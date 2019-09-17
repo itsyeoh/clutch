@@ -6,7 +6,7 @@
 	<dict>
 		<key>Academics.storyboardc/Bxv-t3-FIy-view-OT0-Vu-3rU.nib</key>
 		<data>
-		pvpHWbJxLjJo31tIyzHji5va1Cc=
+		N7rnGRMQGPOZhNrqb992L0LahNE=
 		</data>
 		<key>Academics.storyboardc/Info.plist</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Academics.storyboardc/UIViewController-Bxv-t3-FIy.nib</key>
 		<data>
-		fvZYkxqmsEFsPQJx1a8jueGFpdk=
+		Wy3UXQ9F8IlRS7GLpM0049UaeRs=
 		</data>
 		<key>AddClass.storyboardc/Info.plist</key>
 		<data>
@@ -39,6 +39,18 @@
 		<key>AddCourse.storyboardc/UIViewController-MJw-ml-a4M.nib</key>
 		<data>
 		X9r5dV3oBToL0VkmLdfF/5Hwz6s=
+		</data>
+		<key>AddMeeting.storyboardc/Info.plist</key>
+		<data>
+		7cE8IDkYVZB8f5HemLHT85CFL6c=
+		</data>
+		<key>AddMeeting.storyboardc/UIViewController-svp-gy-hJh.nib</key>
+		<data>
+		kP5Hhsdcfyqxy6+Oqq17vj6VAjI=
+		</data>
+		<key>AddMeeting.storyboardc/svp-gy-hJh-view-boH-hF-CY6.nib</key>
+		<data>
+		waXR0vT98FcLx8bKZlVew1Hh9Ho=
 		</data>
 		<key>AddSemester.storyboardc/77R-RG-4IX-view-DX0-Vt-iEI.nib</key>
 		<data>
@@ -66,7 +78,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		PZrLS6ku5m/9Yp5CVSSXFYBgUJ0=
+		AnhwhtGsoCccpnibmHZi9s/FJx0=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -86,19 +98,19 @@
 		</data>
 		<key>Course.storyboardc/PxQ-Ai-Y3n-view-pkQ-nq-i4y.nib</key>
 		<data>
-		jDCsYtMG9UuoO0kv3uL2VlPA1Sc=
+		LfcZ0kMnqUuh5HRirVllulL4qxA=
 		</data>
 		<key>Course.storyboardc/UIViewController-NcU-7p-hpr.nib</key>
 		<data>
-		pK7NUYwXxfG3wUeyBYlYzejDu+4=
+		F5MBnMJbOKM4wZ9Ua8zHjuDYiZI=
 		</data>
 		<key>Course.storyboardc/UIViewController-PxQ-Ai-Y3n.nib</key>
 		<data>
-		4utvaYc2E7R5DLiAl5wzwOcLHoQ=
+		Afut54he8DcH3PdCjBbcFixBspM=
 		</data>
 		<key>Course.storyboardc/UIViewController-XwH-oZ-NFo.nib</key>
 		<data>
-		xMD7m8f44LwWhqOaB9eWKgXqKLs=
+		OBMCPptPvJUXwguVatjvZm1h2dM=
 		</data>
 		<key>Dashboard.storyboardc/Info.plist</key>
 		<data>
@@ -106,11 +118,11 @@
 		</data>
 		<key>Dashboard.storyboardc/UIViewController-rWN-iS-Pte.nib</key>
 		<data>
-		97tu21PmNwxYeT6CE1UaQswDY+c=
+		bx3v2tVITHRJCDRWVbqLP0JTE+w=
 		</data>
 		<key>Dashboard.storyboardc/rWN-iS-Pte-view-Ggs-l3-wPo.nib</key>
 		<data>
-		pV6Jv29tuN+sKIYNQNXmbenH+LU=
+		wUkkxU6a927KmA2Fcrmcup0XAOQ=
 		</data>
 		<key>Frameworks/Eureka.framework/Eureka</key>
 		<data>
@@ -226,7 +238,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mw9XW//mjhG82Wi5Z8/ZDp9Ux3Q=
+		SfrhdJPUWQGl2z4isqAqr5NGik8=
 		</data>
 		<key>Navigation.storyboardc/Info.plist</key>
 		<data>
@@ -234,7 +246,31 @@
 		</data>
 		<key>Navigation.storyboardc/UITabBarController-ejd-Cl-GAQ.nib</key>
 		<data>
-		tKIV+0yNm53XNI1dx/u0KWOQSXg=
+		IbvUq/YT4ayhpNVY2kd6X3WvYnA=
+		</data>
+		<key>Organization.storyboardc/Info.plist</key>
+		<data>
+		3nhLEWBFYZ/C9JjXxbgj60nJehM=
+		</data>
+		<key>Organization.storyboardc/UIViewController-ZgW-3S-6jq.nib</key>
+		<data>
+		uZ5BElYV2Wx1UnQ+mWRkERTvWlc=
+		</data>
+		<key>Organization.storyboardc/ZgW-3S-6jq-view-GwF-fh-vWf.nib</key>
+		<data>
+		gXdmk5Yr13yu3SIqLyVpEjUYMU8=
+		</data>
+		<key>Orgs.storyboardc/BwP-Ya-Azr-view-kVA-a2-pm3.nib</key>
+		<data>
+		GPuhqGlIll1eFunIQ22o9SoY1cY=
+		</data>
+		<key>Orgs.storyboardc/Info.plist</key>
+		<data>
+		gtQRriUukJRaUFBytgIbtWisIkM=
+		</data>
+		<key>Orgs.storyboardc/UIViewController-BwP-Ya-Azr.nib</key>
+		<data>
+		/tckI6yNMWm6KFoOY75wuPgDad4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -246,11 +282,11 @@
 		</data>
 		<key>Task.storyboardc/UIViewController-YCm-hB-xe2.nib</key>
 		<data>
-		Cqegg2V6RMJMjyWBsOb/4s0yIYE=
+		48nqKKFzzNR66huzT2JC3WO0ABc=
 		</data>
 		<key>Task.storyboardc/YCm-hB-xe2-view-dV3-iL-Vhj.nib</key>
 		<data>
-		FtDSYBursGSC2axHIYu0ggvE4ww=
+		St5wzb7NcTCxx8X7/HdZ3R0o5u0=
 		</data>
 		<key>WeekDaysCell.nib</key>
 		<data>
@@ -267,7 +303,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IKxIBjJBsWG1W2aklJneWoEjZ0F85ZXFXDZzNhzSfqA=
+			8G7pZ1HyQ631y6YSV6tFuuENkB8RLac5pK5cr0iWsXI=
 			</data>
 		</dict>
 		<key>Academics.storyboardc/Info.plist</key>
@@ -281,7 +317,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FPUpeUR+Csb+coXsPbZ9j59Qg9qvyRWfVh7CYmmQbUc=
+			rCKYTWREjEwKPvNUeR1LeliRygNGMYX4p4mlAEo/EUg=
 			</data>
 		</dict>
 		<key>AddClass.storyboardc/Info.plist</key>
@@ -324,6 +360,27 @@
 			<key>hash2</key>
 			<data>
 			YMMsV0ts950cByKbWWVDbqWT6NnPoRsIF+gZZZmMULo=
+			</data>
+		</dict>
+		<key>AddMeeting.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fMGTcuh+l4+BhfLPRTaed+6gfA2SHl1aHwQpA3nb3Y0=
+			</data>
+		</dict>
+		<key>AddMeeting.storyboardc/UIViewController-svp-gy-hJh.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bQC3CLLfNdT96ebOTMpWZTSaQ0WfBb6DnuxAA+Bxlmc=
+			</data>
+		</dict>
+		<key>AddMeeting.storyboardc/svp-gy-hJh-view-boH-hF-CY6.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RArKlGP3/ISxR3JUzhFwYYKB5m19TdZwA4ihry28oso=
 			</data>
 		</dict>
 		<key>AddSemester.storyboardc/77R-RG-4IX-view-DX0-Vt-iEI.nib</key>
@@ -372,7 +429,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jv8vBi0GAs7uE8tqC62KC9czYESpazs5bcQFKA12jtI=
+			vuuAjBhdwjjVYwx2nvhMzksbb8bkpT9glMirBL6Jz2Y=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -407,28 +464,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+vCu0D5l5Ylu2g2hweZn1lMzmlEfZSjtBvS3+21raVY=
+			0ftxGLdMvcI1jQOsjT5/pm8iN8uhGbBBhu2Q7BoXIts=
 			</data>
 		</dict>
 		<key>Course.storyboardc/UIViewController-NcU-7p-hpr.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z42D/5CIqNYCVQ0bmPIxiU5Lqj5Tw/gqrd4xrve/6AY=
+			8PIAiY8NbZ0ShDCScsNB+N9ZxvQUlj55aMMlrhfIRRg=
 			</data>
 		</dict>
 		<key>Course.storyboardc/UIViewController-PxQ-Ai-Y3n.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lAudARHVl2kiv4UKmmyV2xiNRrpYb3ID6bhkYerWElY=
+			ke4kYqUFN2hvtwt4fOUry6nAe/vWMYwkWI0g6uL5JLY=
 			</data>
 		</dict>
 		<key>Course.storyboardc/UIViewController-XwH-oZ-NFo.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ujqxv3YXAel15XZ+FomFpXbATk4veXPOJSb1tWqVQKo=
+			VSMqeEQMV7CyfTET+2phtyaXvsMbrvQzobxBB8r48Fo=
 			</data>
 		</dict>
 		<key>Dashboard.storyboardc/Info.plist</key>
@@ -442,14 +499,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JvbYVfwe4Poe8HRa10MAWbprArVJI4HHRzHaMIx/tVM=
+			IJ0pb6QN8n9Rzi4soPh1zemG8hdL631eegwEJzlccQw=
 			</data>
 		</dict>
 		<key>Dashboard.storyboardc/rWN-iS-Pte-view-Ggs-l3-wPo.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hsfqLO0wSfjU5RXy9T4VOXst+LLUPJneuQ6zda8CeUc=
+			HP+dd3XCdH1jLlR4dulZppzMSl1GjAfAbapzsFmzlzA=
 			</data>
 		</dict>
 		<key>Frameworks/Eureka.framework/Eureka</key>
@@ -659,7 +716,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PUls4skVZIf5fTF+ZawLUos7Y7eMh/Eix6cokp2axuA=
+			deMKO48PYGyOz5CxVz7TlzrgfGyg6bw7ZekAkLECjto=
+			</data>
+		</dict>
+		<key>Organization.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+vr1K7XW1gCIxrQi7G3io89aQQj4mFKvu0O7YMyy1xQ=
+			</data>
+		</dict>
+		<key>Organization.storyboardc/UIViewController-ZgW-3S-6jq.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			poqIyPLDlJBaMzPlFFg8rW5TEeN8jjKUFnt71onDto8=
+			</data>
+		</dict>
+		<key>Organization.storyboardc/ZgW-3S-6jq-view-GwF-fh-vWf.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LivjXd3woQ2DwmPEOgCI3J88JhNC8AJTamVpgSZZybs=
+			</data>
+		</dict>
+		<key>Orgs.storyboardc/BwP-Ya-Azr-view-kVA-a2-pm3.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vANdll1knwRUQxDJVRXPhLyKJqaDbyRpjYLB0TlK8gY=
+			</data>
+		</dict>
+		<key>Orgs.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R7HmrKLLws34Th1VjnDO4Ux5XPxXMYvUadJGiiYdBaM=
+			</data>
+		</dict>
+		<key>Orgs.storyboardc/UIViewController-BwP-Ya-Azr.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ackl2VkuvhgjW/JXBhrLpNU4dFeMBqVgTHKbDQUtsT8=
 			</data>
 		</dict>
 		<key>Task.storyboardc/Info.plist</key>
@@ -673,14 +772,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jUnCM3ho3V0aEE+sAnWEA298721MAtxYoR7FDeAlEUU=
+			wvhbqfG81mSmIwwZXaLSAzbfhBndH8c3bB/g0a6Pr+E=
 			</data>
 		</dict>
 		<key>Task.storyboardc/YCm-hB-xe2-view-dV3-iL-Vhj.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SE1z4lZbR0LTDecPL+lZAYJwbtGBy2vEaK0B1xIFd+M=
+			tmaAosw25puLTErqPt0l4GNTdM9RR6yqaNzO6STSQoE=
 			</data>
 		</dict>
 		<key>WeekDaysCell.nib</key>

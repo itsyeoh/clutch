@@ -38,7 +38,7 @@ class Semester {
     
     func getDateToString(date: Date) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd/yyyy"
+        dateFormatter.dateFormat = "MMMM d, yyyy"
         
         return dateFormatter.string(from: date)
     }

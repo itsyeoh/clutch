@@ -32,11 +32,39 @@ class CourseVC: UIViewController {
         classTableView.delegate = self
         
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        self.navigationItem.title = courseName! + " (" + semesterName.uppercased() + ")"
+        setupAddButton()
+        
+        if !semesterName.isEmpty {
+            self.navigationItem.title = courseName! + " (" + semesterName.uppercased() + ")"
+        } else {
+            self.navigationItem.title = courseName!
+        }
+        
         nameLabel.text = courseName
         
         classes = UniversityDB.instance.getCourseClasses(ccid: course.cid)
         tasks = UniversityDB.instance.getCourseTasks(tcid: course.cid)
+    }
+    
+    func setupAddButton() {
+        let menuBtn = UIButton(type: .custom)
+        menuBtn.frame = CGRect(x: 0.0, y: 0.0, width: 20, height: 20)
+        menuBtn.setImage(UIImage(named: "Add"), for: .normal)
+        
+        menuBtn.addTarget(self, action: #selector(addButtonClicked), for: .touchUpInside)
+        
+        let menuBarItem = UIBarButtonItem(customView: menuBtn)
+        let currWidth = menuBarItem.customView?.widthAnchor.constraint(equalToConstant: 25)
+        currWidth?.isActive = true
+        let currHeight = menuBarItem.customView?.heightAnchor.constraint(equalToConstant: 25)
+        currHeight?.isActive = true
+        self.navigationItem.rightBarButtonItem = menuBarItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        classes = UniversityDB.instance.getCourseClasses(ccid: course.cid)
+        tasks = UniversityDB.instance.getCourseTasks(tcid: course.cid)
+        classTableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -57,7 +85,7 @@ class CourseVC: UIViewController {
         }
     }
     
-    @IBAction func addButtonClicked() {
+    @objc func addButtonClicked() {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
         // [ADD CLASS OPTION]
@@ -77,6 +105,7 @@ class CourseVC: UIViewController {
             let vc = storyboard.instantiateInitialViewController() as! AddTaskVC
             vc.delegate = self
             vc.course = self.course
+//            vc.taskIndexToEdit = self.taskIndexToEdit
             self.navigationController?.pushViewController(vc, animated: true)
         }))
         
@@ -119,7 +148,7 @@ extension CourseVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 63.0
+        return 68.0
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

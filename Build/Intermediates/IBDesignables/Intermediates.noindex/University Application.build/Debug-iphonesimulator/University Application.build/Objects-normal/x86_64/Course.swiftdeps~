@@ -10,9 +10,13 @@ depends-top-level:
 - !private "+"
 - "AssignmentPrecedence"
 - "Course"
+- !private "FloatLiteralType"
 - "Int"
 - "Int64"
+- !private "IntegerLiteralType"
 - "String"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["SK", "init"]
 - !private ["6SQLite7BindingP", "init"]
@@ -25,7 +29,6 @@ depends-member:
 - ["22University_Application6CourseC", "cid"]
 - ["22University_Application6CourseC", "courseNum"]
 - ["22University_Application6CourseC", "creditHours"]
-- ["22University_Application6CourseC", "deinit"]
 - ["22University_Application6CourseC", "dept"]
 - ["22University_Application6CourseC", "init"]
 - ["22University_Application6CourseC", "showCourseName"]

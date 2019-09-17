@@ -25,7 +25,6 @@ depends-top-level:
 - "String"
 - "UILabel"
 - "UITableViewCell"
-- !private "UnicodeScalarType"
 - !private "~="
 depends-member:
 - !private ["SK", "init"]

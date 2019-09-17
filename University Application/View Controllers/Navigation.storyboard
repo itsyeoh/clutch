@@ -27,7 +27,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLj-XO-oCj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1289" y="135"/>
+            <point key="canvasLocation" x="-1591" y="135"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="Lp9-by-OEp">
@@ -143,7 +143,7 @@
     </scenes>
     <resources>
         <image name="Back" width="20" height="20"/>
-        <image name="NotDone" width="52" height="24"/>
+        <image name="NotDone" width="33" height="33"/>
         <namedColor name="Primary">
             <color red="0.086274509803921567" green="0.062745098039215685" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

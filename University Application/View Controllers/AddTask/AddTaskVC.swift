@@ -76,7 +76,7 @@ class AddTaskVC: FormViewController {
                 $0.placeholder = "Input your description here"
                 }
             
-            +++ Section("TYPE & DATE")
+            +++ Section("TYPE")
             <<< PushRow<String>("aTypeRow") {
                 $0.title = "Assignment Type"
                 $0.options = ["Quiz", "Reading", "Project", "Homework", "Lab Report", "Paper"]
@@ -89,11 +89,12 @@ class AddTaskVC: FormViewController {
                         cell.textLabel?.textColor = Theme.Secondary
                     } else {
                         cell.backgroundColor = .white
-                }})
-        
+                    }})
+            
+            +++ Section("DATE & TIME")
             <<< DateInlineRow("dueDateRow") {
-                $0.title = "Due Date"
-                $0.value = Date(timeIntervalSinceNow: 0)
+                $0.title = "Date"
+                $0.value = Date(timeIntervalSinceNow: 0)                
                 $0.add(rule: RuleRequired())
                 $0.validationOptions = .validatesOnChange
                 }.cellUpdate({ (cell, row) in
@@ -105,7 +106,7 @@ class AddTaskVC: FormViewController {
                 }})
         
             <<< TimeInlineRow("dueTimeRow") {
-                $0.title = "Due Time"
+                $0.title = "Time"
                 $0.value = Date(timeIntervalSinceNow: 0)
                 $0.add(rule: RuleRequired())
                 $0.validationOptions = .validatesOnChange
@@ -140,7 +141,7 @@ class AddTaskVC: FormViewController {
             let taskName = (nameRow?.value)!
             let taskType = (aTypeRow?.value)!
             let taskDate = (dueDateRow?.value)!
-            let taskTime = (dueTimeRow?.value)!
+            let taskTime = Calendar.current.date(bySetting: .second, value: 0, of: (dueTimeRow?.value)!)! 
             let description = descRow?.value ?? ""
             
             if let index = taskIndexToEdit {

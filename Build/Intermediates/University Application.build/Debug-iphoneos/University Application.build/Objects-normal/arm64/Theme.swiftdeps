@@ -28,7 +28,6 @@ depends-member:
 - ["22University_Application5ThemeC", "Secondary_2"]
 - ["22University_Application5ThemeC", "Tertiary"]
 - ["22University_Application5ThemeC", "UIColor"]
-- ["22University_Application5ThemeC", "deinit"]
 - ["22University_Application5ThemeC", "init"]
 - ["22University_Application5ThemeC", "mainFontName"]
 - ["So7UIColorC", "init"]

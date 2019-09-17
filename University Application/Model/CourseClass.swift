@@ -9,6 +9,7 @@
 import Foundation
 
 class CourseClass {
+    var cid: Int64!
     var dept: String!
     var courseNum: Int!
     var creditHours: Int?
@@ -18,8 +19,9 @@ class CourseClass {
     var days = [Day]()
     var location: String!
    
-    init(dept: String, courseNum: Int, creditHours: Int, classType: String,
+    init(cid: Int64, dept: String, courseNum: Int, creditHours: Int, classType: String,
          startTime: Date, endTime: Date, days: String, location: String) {
+        self.cid = cid
         self.dept = dept
         self.courseNum = courseNum
         self.creditHours = creditHours
@@ -35,8 +37,9 @@ class CourseClass {
         }
     }
     
-    init(dept: String, courseNum: Int, creditHours: Int, classType: String,
+    init(cid: Int64, dept: String, courseNum: Int, creditHours: Int, classType: String,
          startTime: Date, endTime: Date, days: [Day], location: String) {
+        self.cid = cid
         self.dept = dept
         self.courseNum = courseNum
         self.creditHours = creditHours

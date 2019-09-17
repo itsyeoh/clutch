@@ -6,7 +6,7 @@
 	<dict>
 		<key>Academics.storyboardc/Bxv-t3-FIy-view-OT0-Vu-3rU.nib</key>
 		<data>
-		065Rn5U/2rpgh59m/OjM47fsq3w=
+		fdIcl5D6D7JcbAn+apm4a/8okjQ=
 		</data>
 		<key>Academics.storyboardc/Info.plist</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Academics.storyboardc/UIViewController-Bxv-t3-FIy.nib</key>
 		<data>
-		xFmJZm6mFXp//TKLkv5zXplb1T4=
+		SbAlhCjFOrenuU+v+92bjRtu1YM=
 		</data>
 		<key>AddClass.storyboardc/Info.plist</key>
 		<data>
@@ -39,6 +39,18 @@
 		<key>AddCourse.storyboardc/UIViewController-MJw-ml-a4M.nib</key>
 		<data>
 		BMGbX3NCc9GDL2sQ3eLFHZqeZEU=
+		</data>
+		<key>AddMeeting.storyboardc/Info.plist</key>
+		<data>
+		7cE8IDkYVZB8f5HemLHT85CFL6c=
+		</data>
+		<key>AddMeeting.storyboardc/UIViewController-svp-gy-hJh.nib</key>
+		<data>
+		0aV5fzHKHM+qzOi4eCsDplRGYGo=
+		</data>
+		<key>AddMeeting.storyboardc/svp-gy-hJh-view-boH-hF-CY6.nib</key>
+		<data>
+		k1jmqOjaNmlJUseeJdFiy43/6tg=
 		</data>
 		<key>AddSemester.storyboardc/77R-RG-4IX-view-DX0-Vt-iEI.nib</key>
 		<data>
@@ -66,7 +78,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		AI8iGJN6IRN2LtLPrJFviI+egKg=
+		BupGNXgZgZO42eYNUQNmffQjb1Q=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -82,23 +94,23 @@
 		</data>
 		<key>Course.storyboardc/Info.plist</key>
 		<data>
-		bXobgqYKl4DW9JSrIja5Y73u9+Y=
+		3WTJlDW9R3pqZJtLq7K94Kdr1Xc=
 		</data>
 		<key>Course.storyboardc/PxQ-Ai-Y3n-view-pkQ-nq-i4y.nib</key>
 		<data>
-		YfhDcTN+z7YWbgczS2aLgjIKh4Y=
+		dfSKdM4kgoLV+bI9qA3MJalAhrM=
 		</data>
 		<key>Course.storyboardc/UIViewController-NcU-7p-hpr.nib</key>
 		<data>
-		uJi4frj6BCDG9W9lG/R5Kdznvyk=
+		DJOmXbgx4acOf+9T3N/DvCZgMxM=
 		</data>
 		<key>Course.storyboardc/UIViewController-PxQ-Ai-Y3n.nib</key>
 		<data>
-		UJw6v4iIJLjDQy9uiQSXkXlRrnk=
+		gMp1layrBJ4ylhG4Fj8HFmLNCJ0=
 		</data>
 		<key>Course.storyboardc/UIViewController-XwH-oZ-NFo.nib</key>
 		<data>
-		4lDE6UX44SkoWu2voG76C5TtRs4=
+		L3qlQRXStIDujGKEG7tQvLwbHzE=
 		</data>
 		<key>Dashboard.storyboardc/Info.plist</key>
 		<data>
@@ -106,15 +118,15 @@
 		</data>
 		<key>Dashboard.storyboardc/UIViewController-rWN-iS-Pte.nib</key>
 		<data>
-		HguK6aGJHolQWapE+FccWNYncX0=
+		cnHa2eJ8Jk9juozcZjZ2Ac6q8i0=
 		</data>
 		<key>Dashboard.storyboardc/rWN-iS-Pte-view-Ggs-l3-wPo.nib</key>
 		<data>
-		6qF4uZ85BPyNrSP3pDpBpaAgtgE=
+		AtSLppMc0x+V8HVhY+oBcqpG95k=
 		</data>
 		<key>Frameworks/Eureka.framework/Eureka</key>
 		<data>
-		luJP1ARwwGfpnKQy+g4Xosxno3A=
+		qZjKH9EgbScw0WXF4nxY5D1qF0M=
 		</data>
 		<key>Frameworks/Eureka.framework/Eureka.bundle/back-chevron@1x.png</key>
 		<data>
@@ -150,7 +162,7 @@
 		</data>
 		<key>Frameworks/FSCalendar.framework/FSCalendar</key>
 		<data>
-		/gnSBSNEi+RhHtW3XPs/f1iZLho=
+		n4ZYUwjtktEdIdPzXS3+zMVZob0=
 		</data>
 		<key>Frameworks/FSCalendar.framework/Info.plist</key>
 		<data>
@@ -166,7 +178,7 @@
 		</data>
 		<key>Frameworks/SQLite.framework/SQLite</key>
 		<data>
-		MP3Hiu4xxLzRhYAs9K2JZ6d84ek=
+		6WOsMnSUAbUd2AYaAcs+O92G+0Q=
 		</data>
 		<key>Frameworks/SQLite.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -174,59 +186,59 @@
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		luEAlrzsyk4Ebr9tsNdGyFJFlfQ=
+		1vQZGj08siis4tl0XIHNvtybcs4=
 		</data>
 		<key>Frameworks/libswiftCoreFoundation.dylib</key>
 		<data>
-		xMd18yBG+eOA3eJqwyYYeN1mZEg=
+		pzoB30Es6M35sgtFQRxPgmuyWVs=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		ajw5vpS58EJsPNovAxjWGYa4b4o=
+		/cpPmi/ebjJzCYycGF+NmFCpdXU=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		cyRroOctlJTIoF9bNd96MpvV0/s=
+		LiYgbIuC4dkz93M+3duDGLEnZwo=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		DUIwse/z30Vj9XJCTf//s40s18s=
+		B/N/dJnT/VLYgaAxgmL73CRXFD8=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		+h2n+OOOajRltjqLvgR1MoY5dZI=
+		N0qZwBxezwOKqBC8EwWqi4MAjyU=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		S4sMlbp4JZMyw+NrKTHh3KmK2YQ=
+		cYZ1FvQaI4bHQo5Z1Nu/NrLKZcc=
 		</data>
 		<key>Frameworks/libswiftMetal.dylib</key>
 		<data>
-		PHWQXPHatvfpyl5MGoCthcB85B0=
+		YwII80YbMtWZZrLF4n6VPkbTyUY=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		O6dBMDH8g7kNL3VtsPQp6KhB3Gc=
+		GM5GIjRsjFfTXTQhTQQ2D1kY+lE=
 		</data>
 		<key>Frameworks/libswiftQuartzCore.dylib</key>
 		<data>
-		1RCvzQDKHj0i1AAIJ5sSZpO6jAo=
+		/lL4BPhHVW85cyl5YOeoMFZNivk=
 		</data>
 		<key>Frameworks/libswiftSwiftOnoneSupport.dylib</key>
 		<data>
-		HVjx2u+xS3ZiHXhXVIiT6OCnsbo=
+		KHdyG0G7nphQSYGBVgYuu4vDKug=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		6rMgOTHJFg7/ktsm0IO+aYfh4jI=
+		AXpCE1tgz2TyAQK+GqwT9G5+phs=
 		</data>
 		<key>Frameworks/libswiftos.dylib</key>
 		<data>
-		xrEHkBqVZHOGU1ClFk4cMdebBvg=
+		VpVc/9y9kq0ieKjUarfcjnGhTzM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ytc/HBKQns1e5FiGfp+QFA6vKD8=
+		/Fr2RUohBoJWJDKShT+iK5AXHps=
 		</data>
 		<key>Navigation.storyboardc/Info.plist</key>
 		<data>
@@ -234,11 +246,78 @@
 		</data>
 		<key>Navigation.storyboardc/UITabBarController-ejd-Cl-GAQ.nib</key>
 		<data>
-		koC2CNNI1v1yi24f1XNx81sGjGA=
+		xE49tNFEZVNlC5MQdc+d4zMZjec=
+		</data>
+		<key>Organization.storyboardc/Info.plist</key>
+		<data>
+		3nhLEWBFYZ/C9JjXxbgj60nJehM=
+		</data>
+		<key>Organization.storyboardc/UIViewController-ZgW-3S-6jq.nib</key>
+		<data>
+		Q7ojsb7slk40FC6O1UNU/tLIJFU=
+		</data>
+		<key>Organization.storyboardc/ZgW-3S-6jq-view-GwF-fh-vWf.nib</key>
+		<data>
+		46TklKQi9ulEPPb3QtIfjQloC4A=
+		</data>
+		<key>Orgs.storyboardc/BwP-Ya-Azr-view-kVA-a2-pm3.nib</key>
+		<data>
+		/+1TSiceb/9upcsb72OfBMKFZeE=
+		</data>
+		<key>Orgs.storyboardc/Info.plist</key>
+		<data>
+		gtQRriUukJRaUFBytgIbtWisIkM=
+		</data>
+		<key>Orgs.storyboardc/UIViewController-BwP-Ya-Azr.nib</key>
+		<data>
+		D16TuuOSmelxp/ZrFP+8Bmfoma0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>PlugIns/UniBakla Widget.appex/Base.lproj/MainInterface.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0MIPa0qiDjReRwwobTsnJ01z+l0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/UniBakla Widget.appex/Base.lproj/MainInterface.storyboardc/M4Y-Lb-cyx-view-S3S-Oj-5AN.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T27uZM7MTytuWrSWqABGgGQXi60=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/UniBakla Widget.appex/Base.lproj/MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BlKXnjObgxqx0mHegaHkgRlhoAw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/UniBakla Widget.appex/Info.plist</key>
+		<data>
+		am0HM4+5+RAXOSIh0BB9t+PWqII=
+		</data>
+		<key>PlugIns/UniBakla Widget.appex/UniBakla Widget</key>
+		<data>
+		8hxetdxf7w2IcRf5kU9vThiJJw8=
+		</data>
+		<key>PlugIns/UniBakla Widget.appex/_CodeSignature/CodeResources</key>
+		<data>
+		U1UEGgFsJztqFoQYVcGOv/tySAA=
+		</data>
+		<key>PlugIns/UniBakla Widget.appex/embedded.mobileprovision</key>
+		<data>
+		kQX4Cwx2ecVdAhehTtPnVnj1Wzk=
 		</data>
 		<key>Task.storyboardc/Info.plist</key>
 		<data>
@@ -246,15 +325,15 @@
 		</data>
 		<key>Task.storyboardc/UIViewController-YCm-hB-xe2.nib</key>
 		<data>
-		VF4/TV+h24eJCRbT6WfRJVRgqxw=
+		pnVgs65PKY4xn2thtbUe8YA1buA=
 		</data>
 		<key>Task.storyboardc/YCm-hB-xe2-view-dV3-iL-Vhj.nib</key>
 		<data>
-		Rht1lQOx5zHn91T6/O7w+RXJLhQ=
+		F7Wtvii20CoZyn3HzEPvLFaYUkk=
 		</data>
 		<key>WeekDaysCell.nib</key>
 		<data>
-		/DmccYkVfsD8P2SXn8SNZV+FYDA=
+		y4fukss3tXE8cbkF9O2LVdhZgl0=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -271,7 +350,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qpQCF9Pm7SEM+t9KULWg6bvEvZh70/A8ocaIyjgQNzA=
+			8Y/b+Gd7IU7UC/kXczJ6a7rU+TZzFpgKZ8MvgpNNT4o=
 			</data>
 		</dict>
 		<key>Academics.storyboardc/Info.plist</key>
@@ -285,7 +364,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a4f/i+ysITM34hDolTAvduZ5vSLAtW82CHQBf0+hWFM=
+			vGNGB4VqLoPSW1aDxvvG7MUDMWtBNzfzpU9Lu4Vyq/s=
 			</data>
 		</dict>
 		<key>AddClass.storyboardc/Info.plist</key>
@@ -328,6 +407,27 @@
 			<key>hash2</key>
 			<data>
 			hKzdF0QAEoEKJUNJZFWjm5JcLnfwC+39UFRDNitBpEo=
+			</data>
+		</dict>
+		<key>AddMeeting.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fMGTcuh+l4+BhfLPRTaed+6gfA2SHl1aHwQpA3nb3Y0=
+			</data>
+		</dict>
+		<key>AddMeeting.storyboardc/UIViewController-svp-gy-hJh.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5yYm3Dw/yAV0BSrgtr6kdIi4PhCZDDCF1Ek4R9aYDZw=
+			</data>
+		</dict>
+		<key>AddMeeting.storyboardc/svp-gy-hJh-view-boH-hF-CY6.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KXzlOAbtILv9r9Vb+x/9MVBxjafXydunG19aFywm6a8=
 			</data>
 		</dict>
 		<key>AddSemester.storyboardc/77R-RG-4IX-view-DX0-Vt-iEI.nib</key>
@@ -376,7 +476,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ucVKlyXAGUEe+4fjupZ1JVoI5IQZYULiKXi+whv4rs8=
+			i/8CX563OvCATAC/F1Am8xRjf571Y+JH6ABWQIDQtSk=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -404,35 +504,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ybXh2TL+wiWVcQUGPhIoX58B4c2EdniOmgfPKA/J/UI=
+			qqgQ/8a+2LHaa/i+LWRAoMWdxJXHbds80scQhMsjaW0=
 			</data>
 		</dict>
 		<key>Course.storyboardc/PxQ-Ai-Y3n-view-pkQ-nq-i4y.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F8QlleTtq9xMKPzpSh9e3dUk/Akj8qq0mpYzr6Xy5Bg=
+			Db4g4PtL/Z9LbF5R8BJJ8NWF3Bvg1bBb4zfrAZwr83I=
 			</data>
 		</dict>
 		<key>Course.storyboardc/UIViewController-NcU-7p-hpr.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bz2kN5zjHiuNHAbuHo4CIOAAMePsMNB53B/0fcdBaqk=
+			2zLbHzgy2EKPYLoGSPTl2XbeKGaj/dxrFXC6SFXHqH8=
 			</data>
 		</dict>
 		<key>Course.storyboardc/UIViewController-PxQ-Ai-Y3n.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wGtU1Lm9E9xbG29il2IKJaBJz9MG5xCdWATZEWFfXBY=
+			mVmJIPFUgZE0IJLXyJesN/YjxePrp5d+jBIOXGIDgKM=
 			</data>
 		</dict>
 		<key>Course.storyboardc/UIViewController-XwH-oZ-NFo.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hRvMNMrqeRHns+btNefQU3zBHb6PERIxfdRS6KT6/qo=
+			+4P3tHoPVOlSftX8Ppm9JAqT1Z+Q9xjq8bkq+5wxWLA=
 			</data>
 		</dict>
 		<key>Dashboard.storyboardc/Info.plist</key>
@@ -446,21 +546,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tWYrphbEIqFjWbZ9eTQvMlHqOnitpw1+mqInwTCGxuc=
+			SjlrBGjYRe/Evo6Rb4Qy8w5Ml/NzlKkRS/Go3suip8U=
 			</data>
 		</dict>
 		<key>Dashboard.storyboardc/rWN-iS-Pte-view-Ggs-l3-wPo.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qronkx9m6iYA5jkWV9I4AW2yqEaS+flwqngY/M36eDU=
+			daqcdZGbaVryQ0oGE6waVMF3S4E5o32aHMYDS8p1OuM=
 			</data>
 		</dict>
 		<key>Frameworks/Eureka.framework/Eureka</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			La0CNKUtDtqjdo+NgznIvU0Fa4KvTlTGPo1w6fbVZoQ=
+			2F2fQlSXcfyZAsd3HbBORpvSDW47mQEn0U3Np0ZcF3E=
 			</data>
 		</dict>
 		<key>Frameworks/Eureka.framework/Eureka.bundle/back-chevron@1x.png</key>
@@ -523,7 +623,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NHW6sfllZ8wUKCH7YoAmyUKk/9zYNV3PbPCAyko3/I4=
+			ZCqQO9fOKyP3kWvwoU5/5Vg6BXadoRJXWMA+7rfLQso=
 			</data>
 		</dict>
 		<key>Frameworks/FSCalendar.framework/Info.plist</key>
@@ -551,7 +651,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8VPUURuUmfp9qwgw90dPPi6BMupPSdEHWnrIlwmWLFw=
+			OMmyHVLObeRLsUzlTUh9LEDhiXMXfqJqe5iHzhOVykQ=
 			</data>
 		</dict>
 		<key>Frameworks/SQLite.framework/_CodeSignature/CodeResources</key>
@@ -565,91 +665,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0jhYxdTeRAbzoH8BeJe4egnViYTEZ4X06vxXB8+sVSM=
+			QswS/WPkzntLJUEzG0xTGfIqWi+Pff4CDIVv0az8whM=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreFoundation.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lbg2Gxa6TyRBgaoHsNAQu4kvftUbKxcTOBh63jE3VVE=
+			qYiR5BylJ+oLSvQ7IMlt4xadK8Lv7hg52Px3nMfx1eA=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a9Tgn7kF5OREscLByxpnuYfMYcuU9Nw3D/3mBerWIzs=
+			Yd1tGvjEf/Jyu3N9qFX7eedJ0Jins8CepmYw3lOzBzw=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kQVGrfxDDpqFwqAYY4s3dHfBc8qDDxuT3d31rlniS9Q=
+			XI8Tk4B12XFu4ib6yzS5NCA25452Zxw101OfZHR2O6Q=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CKW6TfP0TSnD68E6kBHlJG5X93S0/Wq3fBpKfs4XZ9g=
+			yz+1avf0OxNR23LNtDKAR6pRX0x2ZfM5dT93KZo3mg0=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6tL+qEiWvdCGKYrHdW6Z8sY5et7s3/Xi4VUNE6myOmM=
+			niFjheALS6bZdNhMK7lOvKHZsaSa87o2mfh25bgtNxM=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i1cteX3n4N9CxWHr8N2UnRZH7DMLYyfPMsD+5syWNFo=
+			XJ9rcoKIAqxTtnrUej3y5W2+pJJzQZiW+rcLATr6ax4=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftMetal.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QnT2BNPlHPS1cT3TXsf1HSKiRMZwseggGmgZ+2/IbIE=
+			GDEAiLbb9qDrftLnj0tjT/9QELxFGDnc8NQVbfA/9uc=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5DN66CskpyKKBOuTsfw6bhQts0LOMI2S/RYbiF9+Q/c=
+			MvSTn2pKWE882zMKeoBzbBoVdSvSMhEtSTGuKM/cylM=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftQuartzCore.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WXs8AHKXzOP/a//Bdxn/pRnY/phB49e2dRkDxg1IvK0=
+			+krg3QFEtRo3miTQnnQ4Tuc2K7C5vJNqZ9Ihxdvkbkk=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftSwiftOnoneSupport.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9nVwz5IPCjGhW8tldE5DfM1TE8FLMZ3NhVogLYgcveE=
+			uIOjZS/NYnBmaA3PFt+8y2CEYACzZr3cTLCnROrIWso=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ZPK2NrR1zchCX6oqBhLy7t5jEGh+RB6E2MKyGvTvNI=
+			zbASrtpBqrLyQMSCQOp3lhdoR2Lzm8rLHS+889n+cwk=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftos.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ETgjlU0rde031rlSvAy0dZAerc3epaDY9CxwGWLWrbE=
+			oBl3cjVQFnwEAgBacRya1zBruUYvMdzb6S9etw0A5FI=
 			</data>
 		</dict>
 		<key>Navigation.storyboardc/Info.plist</key>
@@ -663,7 +763,104 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ubW1TAXoBokEM23JzuOSDgQB/fToJrJ4bgaVtz0Mk/s=
+			wmD7KZ8N8XLvXOkdXEzZcD+huqCBosHkBLoolW2BG3s=
+			</data>
+		</dict>
+		<key>Organization.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+vr1K7XW1gCIxrQi7G3io89aQQj4mFKvu0O7YMyy1xQ=
+			</data>
+		</dict>
+		<key>Organization.storyboardc/UIViewController-ZgW-3S-6jq.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HpYj8ANX0HhXA3rxZsEE04xacYlVAtAl86pvCdymzKQ=
+			</data>
+		</dict>
+		<key>Organization.storyboardc/ZgW-3S-6jq-view-GwF-fh-vWf.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kPWi6a5qE6k/zgNVCmVDY9QHU84bzBQXqQsf5ApwHwY=
+			</data>
+		</dict>
+		<key>Orgs.storyboardc/BwP-Ya-Azr-view-kVA-a2-pm3.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JTLTXeZ0QTZoD59YBCyR6CLdVBBgFztR1A6++TY2mOo=
+			</data>
+		</dict>
+		<key>Orgs.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R7HmrKLLws34Th1VjnDO4Ux5XPxXMYvUadJGiiYdBaM=
+			</data>
+		</dict>
+		<key>Orgs.storyboardc/UIViewController-BwP-Ya-Azr.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QiMHdFbLV7Ev34iYX1chH09EwJtI0E5ZYUlRfWnCwrw=
+			</data>
+		</dict>
+		<key>PlugIns/UniBakla Widget.appex/Base.lproj/MainInterface.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sOic6ugSKWwGvBSX5ZyYEUE+pFecCWW0YXAo5CNbmCQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/UniBakla Widget.appex/Base.lproj/MainInterface.storyboardc/M4Y-Lb-cyx-view-S3S-Oj-5AN.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RkjXdmeft0L1ND8V1ow/+D8idC3tH+pnx/2Ysw7b8pM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/UniBakla Widget.appex/Base.lproj/MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rkrVM9LJGAlJj9fOCTEQciDGcehQ0sOaOOb4j28QBKQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/UniBakla Widget.appex/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uqd2i25BXTPdf76aCg8aLjB8y9Rb4m9s0W72BMOmpwY=
+			</data>
+		</dict>
+		<key>PlugIns/UniBakla Widget.appex/UniBakla Widget</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xRJCJY/2ewR2prsQUuywX7LpLWK1MGUQIsCMfwqo4tM=
+			</data>
+		</dict>
+		<key>PlugIns/UniBakla Widget.appex/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p6vgF9vr23x2W8CSPAJkUshC1GqdjfgICthFfLBXQRk=
+			</data>
+		</dict>
+		<key>PlugIns/UniBakla Widget.appex/embedded.mobileprovision</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hrJJgnd4qOyFyaORna18OHTVgCSCt8GFb932v4O5bFY=
 			</data>
 		</dict>
 		<key>Task.storyboardc/Info.plist</key>
@@ -677,21 +874,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4UTgepWoL095ADo9aJNlGPO3Dm/NPLAGyLyH1fSYHhY=
+			+0pt6ctkrAMjPNd/fcnu4qz8HpCfK5QWPl0HfGC6hBA=
 			</data>
 		</dict>
 		<key>Task.storyboardc/YCm-hB-xe2-view-dV3-iL-Vhj.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xVwX9uxb/TpfGtbiLzaIsqRkZCSjJNS86HqtPOTSWPY=
+			KMTumydv/ODiLWfTknxce8DHoJhws/b99Id6tgqVV5A=
 			</data>
 		</dict>
 		<key>WeekDaysCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hwBsbEKCLqwAOBDZXlaBkBB45WyluGYKISYKPpoSUT8=
+			tkutf+qKrqex9BWADWIXZ6TKeQ9mlqBZiBX8fAEXEig=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

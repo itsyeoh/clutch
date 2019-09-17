@@ -11,10 +11,13 @@ import Eureka
 
 protocol AddSemesterDelegate {
     func addSemester(semester: Semester)
+    func updateSemester(index: Int, semester: Semester)
 }
 
 class AddSemesterVC: FormViewController {
     var delegate: AddSemesterDelegate?
+    var newSemester: Semester?
+    var semesterIndexToEdit: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +37,10 @@ class AddSemesterVC: FormViewController {
                 $0.validationOptions = .validatesOnChange
                 }
             
+            +++ Section("DATES")
             <<< DateInlineRow("startDate") {
                 $0.title = "Start Date"
+                $0.value = Date(timeIntervalSinceNow: 0)
                 $0.add(rule: RuleRequired())
                 let ruleRequiredViaClosure = RuleClosure<Date> { startDate in
                     let endDateRow: DateInlineRow? = self.form.rowBy(tag: "endDate")
@@ -56,6 +61,8 @@ class AddSemesterVC: FormViewController {
                     if !row.isValid {
                         cell.textLabel?.textColor = .red
                     }
+                    
+                    self.form.setValues(["endDate": Date(timeInterval: TimeInterval(60*60*24*7*16), since: row.value!)])
                 })
             
             <<< DateInlineRow("endDate") {
@@ -84,6 +91,12 @@ class AddSemesterVC: FormViewController {
                         cell.textLabel?.textColor = .red
                     }
                 })
+        
+        if let index = semesterIndexToEdit {
+            form.setValues(["season": newSemester?.season,
+                            "startDate": newSemester?.startDate,
+                            "endDate": newSemester?.endDate])
+        }
     }
     
     
@@ -95,36 +108,22 @@ class AddSemesterVC: FormViewController {
             let endDateRow: DateInlineRow? = form.rowBy(tag: "endDate")!
             
             let season = (seasonRow?.value)!
-            let startDate = (startDateRow?.value)!
-            let endDate = (endDateRow?.value)!
+            let startDate = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: (startDateRow?.value)!)!
+            let endDate = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: (endDateRow?.value)!)!
             
-            if let id = UniversityDB.instance.addSemester(cseason: season, cstartDate: startDate, cendDate: endDate) {
-                let semester = Semester(sid: id, season: season, startDate: startDate, endDate: endDate)
-                delegate?.addSemester(semester: semester)
-            }
-        }
-    }
-    
-//    func calculateTimeDifference(startDate: Date, endDate: Date) -> String {
-//        let timeDifference = userCalendar.dateComponents(requestedComponents, from: startDate, to: endDate)
-//        let yr = timeDifference.year!
-//        let mo = timeDifference.month!
-//        let we = timeDifference.day! / 7
-//        let da = timeDifference.day! - (we*7)
-//
-//        if da < 0 {
-//            durationLabel.textColor = Theme.Secondary
-//            return "Duration: INVALID"
-//        } else {
-//            durationLabel.textColor = Theme.Primary
-//
-//            let yrString = (yr != 0) ? "\(yr) years" : ""
-//            let moString = (mo != 0) ? "\(mo) months" : ""
-//            let weString = (we != 0) ? "\(we) weeks" : ""
-//            let daString = (da != 0) ? "\(da) days" : ""
-//
-//
-//            return "Duration: " + yrString + " " + moString + " " + weString + " " + daString
-//        }
-//    }
+            if let index = semesterIndexToEdit {
+                let semester = Semester(sid: newSemester!.sid, season: season, startDate: startDate, endDate: endDate)
+                
+                if UniversityDB.instance.updateSemester(id: semester.sid, newSemester: semester) {
+                    delegate?.updateSemester(index: index, semester: semester)
+                }
+                
+            } else {
+                if let id = UniversityDB.instance.addSemester(cseason: season, cstartDate: startDate, cendDate: endDate) {
+                    let semester = Semester(sid: id, season: season, startDate: startDate, endDate: endDate)
+                    delegate?.addSemester(semester: semester)
+                }
+            }//end else
+        }//end validation
+    }//end addSemester
 }

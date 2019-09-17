@@ -1,18 +1,18 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "Class"
 - "ClassType"
 - "Day"
-- "Class"
 - "=="
 - "<"
 provides-nominal:
+- "22University_Application5ClassC"
 - "22University_Application9ClassTypeO"
 - "22University_Application3DayO"
-- "22University_Application5ClassC"
 provides-member:
+- ["22University_Application5ClassC", ""]
 - ["22University_Application9ClassTypeO", ""]
 - ["22University_Application3DayO", ""]
-- ["22University_Application5ClassC", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "+="
@@ -32,7 +32,6 @@ depends-top-level:
 - "Int"
 - "Int64"
 - "String"
-- "StringLiteralType"
 - "UnicodeScalarType"
 - !private "_findStringSwitchCase"
 - !private "~="
@@ -65,7 +64,6 @@ depends-member:
 - ["22University_Application5ClassC", "classType"]
 - ["22University_Application5ClassC", "clid"]
 - ["22University_Application5ClassC", "days"]
-- ["22University_Application5ClassC", "deinit"]
 - ["22University_Application5ClassC", "endTime"]
 - ["22University_Application5ClassC", "getClassTimeAndDay"]
 - ["22University_Application5ClassC", "getClassTypePrefix"]
@@ -503,11 +501,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka.h"
 - "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SQLite.framework/Headers/SQLiteObjc.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FSCalendar.framework/Headers/FSCalendarAppearance.h"
 - "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SQLite.framework/Headers/SQLite.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FSCalendar.framework/Headers/FSCalendarCell.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FSCalendar.framework/Headers/FSCalendar.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FSCalendar.framework/Headers/FSCalendarConstants.h"
 - "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka-Swift.h"
 - "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FSCalendar.framework/Headers/FSCalendarHeaderView.h"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FSCalendar.framework/Headers/FSCalendarWeekdayView.h"
 - "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Eureka.framework/Modules/module.modulemap"
 - "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/SQLite.framework/Modules/module.modulemap"
+- "/Users/jasonyeoh/Desktop/University Application/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FSCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -520,4 +525,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9b4c3599d781e055c22fe49dd75932cc"
+interface-hash: "c4042dce60f84fdf080c2f084704190f"

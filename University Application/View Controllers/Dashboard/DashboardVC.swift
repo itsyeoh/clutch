@@ -13,7 +13,7 @@ class DashboardVC: UIViewController {
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var dashboardTableView: UITableView!
     @IBOutlet weak var calendar: FSCalendar!
-    private var courseClasses = [CourseClass]()
+    var courseClasses = [CourseClass]()
     private var selectedDate = Date()
     
     override func viewDidLoad() {
@@ -21,6 +21,7 @@ class DashboardVC: UIViewController {
         
         self.navigationItem.title = "DASHBOARD"
         
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         dashboardTableView.dataSource = self
         dashboardTableView.delegate = self
         calendar.dataSource = self
@@ -28,15 +29,10 @@ class DashboardVC: UIViewController {
         
         let weekday = Calendar.current.component(.weekday, from: Date())
         let day = getWeekdayToString(weekday: weekday)
-
         courseClasses = UniversityDB.instance.getCourseClassesByDate(date: Date(), day: day)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let weekday = Calendar.current.component(.weekday, from: Date())
-        let day = getWeekdayToString(weekday: weekday)
-        
-        courseClasses = UniversityDB.instance.getCourseClassesByDate(date: Date(), day: day)
     }
     
     func getWeekdayToString(weekday: Int) -> String {
@@ -79,10 +75,30 @@ extension DashboardVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if courseClasses.count == 0 {
+            let weekday = Calendar.current.component(.weekday, from: Date())
+            let day = getWeekdayToString(weekday: weekday)
+            courseClasses = UniversityDB.instance.getCourseClassesByDate(date: Date(), day: day)
+        }
+        
         let courseClass = courseClasses[indexPath.row]
         let cell = dashboardTableView.dequeueReusableCell(withIdentifier: "DashboardCell") as! DashboardTVC
         cell.setup(courseClass: courseClass, date: selectedDate)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if courseClasses.count == 0 {
+            let weekday = Calendar.current.component(.weekday, from: Date())
+            let day = getWeekdayToString(weekday: weekday)
+            courseClasses = UniversityDB.instance.getCourseClassesByDate(date: Date(), day: day)
+        }
+        
+        let storyboard = UIStoryboard(name: "Course", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! CourseVC
+        vc.course = UniversityDB.instance.getCourseByID(id: courseClasses[indexPath.row].cid)
+        vc.semesterName = ""
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -98,6 +114,8 @@ extension DashboardVC: FSCalendarDataSource, FSCalendarDelegate {
         courseClasses = UniversityDB.instance.getCourseClassesByDate(date: date, day: day)
         dashboardTableView.reloadData()
         selectedDate = date
+        
+        print(courseClasses)
 
         if cal.isDateInYesterday(date) {
             dayLabel.text = "Yesterday"
@@ -108,5 +126,19 @@ extension DashboardVC: FSCalendarDataSource, FSCalendarDelegate {
         } else {
             dayLabel.text = getDateToString(date: date)
         }
+        
+//        calendar.scope = .week
+    }
+    
+    func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {
+//        calendar.scope = .month
+    }
+    
+    func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
+        let cal = Calendar.current
+        let day = getWeekdayToString(weekday: Calendar.current.component(.weekday, from: date))
+        courseClasses = UniversityDB.instance.getCourseClassesByDate(date: date, day: day)
+        
+        return courseClasses.count
     }
 }

@@ -13,6 +13,7 @@ depends-top-level:
 - "Date"
 - "Day"
 - "Int"
+- "Int64"
 - "String"
 depends-member:
 - !private ["Sa", "append"]
@@ -33,7 +34,9 @@ depends-member:
 - ["22University_Application11CourseClassC", "Date"]
 - ["22University_Application11CourseClassC", "Day"]
 - ["22University_Application11CourseClassC", "Int"]
+- ["22University_Application11CourseClassC", "Int64"]
 - ["22University_Application11CourseClassC", "String"]
+- ["22University_Application11CourseClassC", "cid"]
 - ["22University_Application11CourseClassC", "classType"]
 - ["22University_Application11CourseClassC", "courseNum"]
 - ["22University_Application11CourseClassC", "creditHours"]
@@ -192,4 +195,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b8e206fd38230101038fdbe3fa7d701d"
+interface-hash: "66b4cd2fd0961fa6c4c87050eff649e5"

@@ -12,14 +12,18 @@ class CourseAssignmentTVC: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        statusLabel.layer.masksToBounds = true
+        statusLabel.layer.cornerRadius = statusLabel.frame.height/2
     }
 
     func setup(task: Task) {
         nameLabel.text = task.taskName
         dateLabel.text = task.getDateToString()
+        statusLabel.text = task.isChecked ? "COMPLETED" : "IN PROGRESS"
     }
 }

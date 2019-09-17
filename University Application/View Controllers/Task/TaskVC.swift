@@ -20,7 +20,7 @@ class TaskVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.navigationItem.title = "TASKS"
         setUpMenuButton("NotDone")
         setupAddButton()
@@ -133,14 +133,14 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
             let task = tasksByDate[indexPath.section][indexPath.row]
             let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTVC
             cell.setup(task: task, isCompleted: isCompleted)
-
+            
             return cell
             
         case 1:
             let task = tasksByCourseName[indexPath.section][indexPath.row]
             let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTVC
             cell.setupByCourseName(task: task, isCompleted: isCompleted)
-
+            
             return cell
             
         default:
@@ -200,15 +200,15 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
         case 0:
             let task = tasksByDate[indexPath.section][indexPath.row]
             let cell = tableView.cellForRow(at: indexPath) as! TaskTVC
-//            cell.buttonPressed(false)
+            //            cell.buttonPressed(false)
             task.isSelected()
         case 1:
             let task = tasksByCourseName[indexPath.section][indexPath.row]
             let cell = tableView.cellForRow(at: indexPath) as! TaskTVC
-//            cell.buttonPressed(false)
+            //            cell.buttonPressed(false)
             task.isSelected()
         default:
-             break
+            break
         }
         
         refreshDataView()
@@ -239,6 +239,7 @@ extension TaskVC: UITableViewDataSource, UITableViewDelegate {
                 let vc = storyboard.instantiateInitialViewController() as! AddTaskVC
                 vc.delegate = self
                 vc.newTask = task
+                vc.course = task.getCourse()
                 vc.taskIndexToEdit = indexPath.row
                 
                 self.navigationController?.pushViewController(vc, animated: true)
@@ -291,14 +292,14 @@ extension TaskVC: AddTaskDelegate {
     func addTask(task: Task) {
         self.navigationController?.popViewController(animated: true)
         
-//        switch taskControls.selectedSegmentIndex {
-//        case 0:
-//            self.tasksByDate.append(task)
-//        case 1:
-//            self.tasksByCourseName.append(task)
-//        default:
-//            break
-//        }
+        //        switch taskControls.selectedSegmentIndex {
+        //        case 0:
+        //            self.tasksByDate.append(task)
+        //        case 1:
+        //            self.tasksByCourseName.append(task)
+        //        default:
+        //            break
+        //        }
         
         self.taskTableView.reloadData()
     }

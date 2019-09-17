@@ -27,7 +27,7 @@ class AddClassVC: FormViewController {
         self.navigationItem.rightBarButtonItem =
             UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(addClass))
         
-        form +++ Section("")
+        form +++ Section("ADD CLASS")
             <<< PushRow<String>("typeRow") {
                 $0.title = "Type"
                 $0.options = ["Lecture", "Laboratory", "Discussion"]
@@ -39,20 +39,31 @@ class AddClassVC: FormViewController {
                         cell.textLabel?.textColor = .red
                 }})
             
-            +++ Section("TIME & DAY")
+            +++ Section("TIME")
             <<< TimeInlineRow("startTimeRow") {
                 $0.title = "Start Time"
                 $0.value = Date(timeIntervalSinceNow: 0)
+                
+                let ruleRequiredViaClosure = RuleClosure<Date> { startDate in
+                    let endDateRow: TimeInlineRow? = self.form.rowBy(tag: "endTimeRow")
+                    let endDate = endDateRow?.value
+                    
+                    if endDate == nil {
+                        return nil
+                    }
+                    if startDate == nil {
+                        return ValidationError(msg: "Invalid date!")
+                    }
+                    
+                    return (startDate! >= endDate!) ? ValidationError(msg: "Invalid date!") : nil
+                }
+                $0.add(rule: ruleRequiredViaClosure)
                 $0.add(rule: RuleRequired())
                 $0.validationOptions = .validatesOnChange                
                 }.cellUpdate({ (cell, row) in
                     if !row.isValid {
                         cell.textLabel?.textColor = .red
                     }
-                    
-                    let endTimeRow: TimeInlineRow? = self.form.rowBy(tag: "endTimeRow")
-                    self.form.setValues(["endTimeRow": row.value?.addingTimeInterval(60.0 * 60.0)])
-                    endTimeRow?.updateCell()
                 })
             
             <<< TimeInlineRow("endTimeRow") {
@@ -64,15 +75,8 @@ class AddClassVC: FormViewController {
                     if !row.isValid {
                         cell.textLabel?.textColor = .red
                 }})
-//            <<< PushRow<RepeatInterval>("Repeat") {
-//                $0.title = $0.tag
-//                $0.options = RepeatInterval.allCases
-//                $0.value = .Never
-//                }.onPresent({ (_, vc) in
-//                    vc.enableDeselection = false
-//                    vc.dismissOnSelection = false
-//                })
             
+            +++ Section("DAY")
             <<< WeekDayRow("daysRow"){
                 $0.title = "Days"
                 $0.value = [.Monday, .Tuesday, .Wednesday, .Thursday, .Friday]
@@ -114,8 +118,8 @@ class AddClassVC: FormViewController {
             
             let cid = (course?.cid)!
             let classType = ClassType(rawValue: typeRow!.value!)!
-            let startTime = (startTimeRow?.value)!
-            let endTime = (endTimeRow?.value)!
+            let startTime = Calendar.current.date(bySetting: .second, value: 0, of: (startTimeRow?.value)!)!
+            let endTime = Calendar.current.date(bySetting: .second, value: 0, of: (endTimeRow?.value)!)!
             let days = Array(daysRow!.value!)
             let location = (locationRow?.value)!
             

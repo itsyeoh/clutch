@@ -48,6 +48,7 @@ class AddCourseVC: FormViewController {
                         cell.textLabel?.textColor = .red
                 }})
             
+            +++ Section("COURSE NAME")
             <<< TextRow("deptRow") {
                 $0.title = "Department"
                 $0.add(rule: RuleRequired())
@@ -66,6 +67,7 @@ class AddCourseVC: FormViewController {
                         cell.textLabel?.textColor = .red
                 }})
             
+            +++ Section("CREDIT HOURS")
             <<< IntRow("hourRow") {
                 $0.title = "Credit Hours"
                 $0.add(rule: RuleRequired())
@@ -79,9 +81,7 @@ class AddCourseVC: FormViewController {
         if let sec = courseSectionToEdit {
             if let row = courseRowToEdit {
                 let course = newCourse!
-//                let semesterNames = [String](semesterList.values)
-                
-                
+                                
                 form.setValues(["semesterRow": semesterList[course.sid],
                                 "deptRow": course.dept,
                                 "courseNumRow": course.courseNum,
@@ -102,11 +102,22 @@ class AddCourseVC: FormViewController {
             let courseNumber = (courseNumRow?.value)!
             let creditHours = (hourRow?.value)!
             
-            if let id = UniversityDB.instance.addCourse(csid: csid, cdept: dept, ccourseNum: courseNumber,
-                                                        ccreditHours: creditHours) {
-                let course = Course(sid: csid, cid: id, dept: dept, courseNum: courseNumber, creditHours: creditHours)
-                delegate?.addCourse(course: course)
+            if let sec = courseSectionToEdit {
+                if let row = courseRowToEdit {
+                    let course = Course(sid: csid, cid: newCourse!.cid, dept: dept, courseNum: courseNumber, creditHours: creditHours)
+                    
+                    if UniversityDB.instance.updateCourse(id: course.cid, newCourse: course) {
+                        delegate?.updateCourse(section: sec, row: row, course: course)
+                    }
+                }//end if row..
+            } else {
+                if let id = UniversityDB.instance.addCourse(csid: csid, cdept: dept, ccourseNum: courseNumber,
+                                                            ccreditHours: creditHours) {
+                    let course = Course(sid: csid, cid: id, dept: dept, courseNum: courseNumber, creditHours: creditHours)
+                    delegate?.addCourse(course: course)
+                }
             }
+            
         }
     }
 }

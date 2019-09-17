@@ -35,6 +35,19 @@
 		5159B0E5232C4C2900517164 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0D5232C4C2900517164 /* FSCalendarAppearance.m */; };
 		5159B0E7232C4C4D00517164 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5159B0E6232C4C4D00517164 /* FSCalendar.framework */; };
 		5159B0E8232C4C4D00517164 /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5159B0E6232C4C4D00517164 /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51636823232F409900DBB0E7 /* Organization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51636822232F409900DBB0E7 /* Organization.storyboard */; };
+		5163682C232F462200DBB0E7 /* AddMeeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5163682B232F462200DBB0E7 /* AddMeeting.storyboard */; };
+		51636830232FFF4400DBB0E7 /* OrganizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5163682F232FFF4400DBB0E7 /* OrganizationVC.swift */; };
+		51636832232FFFAA00DBB0E7 /* MeetingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51636831232FFFAA00DBB0E7 /* MeetingTVC.swift */; };
+		51636834232FFFB300DBB0E7 /* OTaskTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51636833232FFFB300DBB0E7 /* OTaskTVC.swift */; };
+		51636836233000A400DBB0E7 /* AddMeetingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51636835233000A400DBB0E7 /* AddMeetingVC.swift */; };
+		516368392330382600DBB0E7 /* Orgs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516368382330382600DBB0E7 /* Orgs.storyboard */; };
+		5163683B2330383000DBB0E7 /* OrgsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5163683A2330383000DBB0E7 /* OrgsVC.swift */; };
+		51636844233070F200DBB0E7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51636843233070F200DBB0E7 /* NotificationCenter.framework */; };
+		51636847233070F200DBB0E7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51636846233070F200DBB0E7 /* TodayViewController.swift */; };
+		5163684A233070F200DBB0E7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51636848233070F200DBB0E7 /* MainInterface.storyboard */; };
+		5163684E233070F200DBB0E7 /* UniBakla Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51636842233070F200DBB0E7 /* UniBakla Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		51636854233074F000DBB0E7 /* WidgetTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51636853233074F000DBB0E7 /* WidgetTVC.swift */; };
 		5170BD2E232EBA7300E761D8 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170BD2D232EBA7300E761D8 /* Organization.swift */; };
 		5170BD30232EBA7900E761D8 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170BD2F232EBA7900E761D8 /* Meeting.swift */; };
 		5170BD32232EBB6D00E761D8 /* OTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170BD31232EBB6D00E761D8 /* OTask.swift */; };
@@ -74,6 +87,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5163684C233070F200DBB0E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51AF6C182313232200CD3068 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51636841233070F200DBB0E7;
+			remoteInfo = "UniBakla Widget";
+		};
 		51D1B4EB2329B49F006AF7ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 51D1B4E62329B49F006AF7ED /* Eureka.xcodeproj */;
@@ -154,6 +174,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		51636852233070F200DBB0E7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5163684E233070F200DBB0E7 /* UniBakla Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51D1B50E2329B504006AF7ED /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +244,20 @@
 		5159B0D4232C4C2900517164 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5159B0D5232C4C2900517164 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
 		5159B0E6232C4C4D00517164 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSCalendar.framework; sourceTree = "<group>"; };
+		51636822232F409900DBB0E7 /* Organization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Organization.storyboard; sourceTree = "<group>"; };
+		5163682B232F462200DBB0E7 /* AddMeeting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddMeeting.storyboard; sourceTree = "<group>"; };
+		5163682F232FFF4400DBB0E7 /* OrganizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationVC.swift; sourceTree = "<group>"; };
+		51636831232FFFAA00DBB0E7 /* MeetingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTVC.swift; sourceTree = "<group>"; };
+		51636833232FFFB300DBB0E7 /* OTaskTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTaskTVC.swift; sourceTree = "<group>"; };
+		51636835233000A400DBB0E7 /* AddMeetingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeetingVC.swift; sourceTree = "<group>"; };
+		516368382330382600DBB0E7 /* Orgs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Orgs.storyboard; sourceTree = "<group>"; };
+		5163683A2330383000DBB0E7 /* OrgsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgsVC.swift; sourceTree = "<group>"; };
+		51636842233070F200DBB0E7 /* UniBakla Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "UniBakla Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51636843233070F200DBB0E7 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		51636846233070F200DBB0E7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		51636849233070F200DBB0E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5163684B233070F200DBB0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51636853233074F000DBB0E7 /* WidgetTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTVC.swift; sourceTree = "<group>"; };
 		5170BD2D232EBA7300E761D8 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		5170BD2F232EBA7900E761D8 /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
 		5170BD31232EBB6D00E761D8 /* OTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTask.swift; sourceTree = "<group>"; };
@@ -251,6 +296,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5163683F233070F200DBB0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51636844233070F200DBB0E7 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51AF6C1D2313232200CD3068 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,6 +404,49 @@
 			path = "../../Downloads/FSCalendar-master-4/FSCalendar";
 			sourceTree = "<group>";
 		};
+		516368372330381A00DBB0E7 /* Orgs */ = {
+			isa = PBXGroup;
+			children = (
+				516368382330382600DBB0E7 /* Orgs.storyboard */,
+				5163683A2330383000DBB0E7 /* OrgsVC.swift */,
+			);
+			path = Orgs;
+			sourceTree = "<group>";
+		};
+		5163683C23303D9400DBB0E7 /* TBD */ = {
+			isa = PBXGroup;
+			children = (
+				5163683D23303DB600DBB0E7 /* TBDModels */,
+				516368372330381A00DBB0E7 /* Orgs */,
+				5170BD2C232EBA4C00E761D8 /* Organization */,
+				5170BD2B232EBA3300E761D8 /* AddOTask */,
+				5170BD2A232EBA2800E761D8 /* AddMeeting */,
+				5170BD22232EBA0100E761D8 /* AddOrganization */,
+			);
+			path = TBD;
+			sourceTree = "<group>";
+		};
+		5163683D23303DB600DBB0E7 /* TBDModels */ = {
+			isa = PBXGroup;
+			children = (
+				5170BD2D232EBA7300E761D8 /* Organization.swift */,
+				5170BD2F232EBA7900E761D8 /* Meeting.swift */,
+				5170BD31232EBB6D00E761D8 /* OTask.swift */,
+			);
+			path = TBDModels;
+			sourceTree = "<group>";
+		};
+		51636845233070F200DBB0E7 /* UniBakla Widget */ = {
+			isa = PBXGroup;
+			children = (
+				51636846233070F200DBB0E7 /* TodayViewController.swift */,
+				51636848233070F200DBB0E7 /* MainInterface.storyboard */,
+				5163684B233070F200DBB0E7 /* Info.plist */,
+				51636853233074F000DBB0E7 /* WidgetTVC.swift */,
+			);
+			path = "UniBakla Widget";
+			sourceTree = "<group>";
+		};
 		5170BD22232EBA0100E761D8 /* AddOrganization */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +457,8 @@
 		5170BD2A232EBA2800E761D8 /* AddMeeting */ = {
 			isa = PBXGroup;
 			children = (
+				5163682B232F462200DBB0E7 /* AddMeeting.storyboard */,
+				51636835233000A400DBB0E7 /* AddMeetingVC.swift */,
 			);
 			path = AddMeeting;
 			sourceTree = "<group>";
@@ -375,6 +473,10 @@
 		5170BD2C232EBA4C00E761D8 /* Organization */ = {
 			isa = PBXGroup;
 			children = (
+				51636822232F409900DBB0E7 /* Organization.storyboard */,
+				5163682F232FFF4400DBB0E7 /* OrganizationVC.swift */,
+				51636831232FFFAA00DBB0E7 /* MeetingTVC.swift */,
+				51636833232FFFB300DBB0E7 /* OTaskTVC.swift */,
 			);
 			path = Organization;
 			sourceTree = "<group>";
@@ -394,6 +496,7 @@
 			children = (
 				5159B0E6232C4C4D00517164 /* FSCalendar.framework */,
 				51AF6C222313232200CD3068 /* University Application */,
+				51636845233070F200DBB0E7 /* UniBakla Widget */,
 				51AF6C212313232200CD3068 /* Products */,
 				5159B0B5232C4C2900517164 /* FSCalendar */,
 				51D1B4E62329B49F006AF7ED /* Eureka.xcodeproj */,
@@ -406,6 +509,7 @@
 			isa = PBXGroup;
 			children = (
 				51AF6C202313232200CD3068 /* University Application.app */,
+				51636842233070F200DBB0E7 /* UniBakla Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -434,9 +538,6 @@
 				51AF6C5D2313243E00CD3068 /* Class.swift */,
 				51E7641B23199E7400E199B2 /* Task.swift */,
 				5181A47F232C52620068CFF5 /* CourseClass.swift */,
-				5170BD2D232EBA7300E761D8 /* Organization.swift */,
-				5170BD2F232EBA7900E761D8 /* Meeting.swift */,
-				5170BD31232EBB6D00E761D8 /* OTask.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -452,6 +553,7 @@
 		51AF6C5F23132FBD00CD3068 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5163683C23303D9400DBB0E7 /* TBD */,
 				519EB5F4231A12E8008A3142 /* Navigation.storyboard */,
 				519EB5F6231A12F2008A3142 /* Dashboard */,
 				51F1190A2329D1B30047ADFE /* Task */,
@@ -461,10 +563,6 @@
 				5153736A2321E16A003D1D3A /* AddCourse */,
 				5153736B2321E16F003D1D3A /* AddClass */,
 				5153736C2321E175003D1D3A /* AddTask */,
-				5170BD2C232EBA4C00E761D8 /* Organization */,
-				5170BD2B232EBA3300E761D8 /* AddOTask */,
-				5170BD2A232EBA2800E761D8 /* AddMeeting */,
-				5170BD22232EBA0100E761D8 /* AddOrganization */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -527,6 +625,7 @@
 		51F1195F232A07090047ADFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51636843233070F200DBB0E7 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -545,6 +644,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		51636841233070F200DBB0E7 /* UniBakla Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5163684F233070F200DBB0E7 /* Build configuration list for PBXNativeTarget "UniBakla Widget" */;
+			buildPhases = (
+				5163683E233070F200DBB0E7 /* Sources */,
+				5163683F233070F200DBB0E7 /* Frameworks */,
+				51636840233070F200DBB0E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UniBakla Widget";
+			productName = "UniBakla Widget";
+			productReference = 51636842233070F200DBB0E7 /* UniBakla Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		51AF6C1F2313232200CD3068 /* University Application */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51AF6C322313232500CD3068 /* Build configuration list for PBXNativeTarget "University Application" */;
@@ -554,12 +670,14 @@
 				51AF6C1E2313232200CD3068 /* Resources */,
 				51D1B50E2329B504006AF7ED /* Embed Frameworks */,
 				5103D43C232A0AA8004CB033 /* ShellScript */,
+				51636852233070F200DBB0E7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				51D1B50D2329B504006AF7ED /* PBXTargetDependency */,
 				51D1B5122329B508006AF7ED /* PBXTargetDependency */,
+				5163684D233070F200DBB0E7 /* PBXTargetDependency */,
 			);
 			name = "University Application";
 			productName = "University Application";
@@ -572,10 +690,14 @@
 		51AF6C182313232200CD3068 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Jason Yeoh";
 				TargetAttributes = {
+					51636841233070F200DBB0E7 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					51AF6C1F2313232200CD3068 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -605,6 +727,7 @@
 			projectRoot = "";
 			targets = (
 				51AF6C1F2313232200CD3068 /* University Application */,
+				51636841233070F200DBB0E7 /* UniBakla Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -676,6 +799,14 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		51636840233070F200DBB0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5163684A233070F200DBB0E7 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51AF6C1E2313232200CD3068 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -692,8 +823,11 @@
 				51AF6C2E2313232500CD3068 /* LaunchScreen.storyboard in Resources */,
 				51AF6C2B2313232500CD3068 /* Assets.xcassets in Resources */,
 				51D1B5232329B858006AF7ED /* Colors.xcassets in Resources */,
+				51636823232F409900DBB0E7 /* Organization.storyboard in Resources */,
 				5153736E2321E185003D1D3A /* AddSemester.storyboard in Resources */,
+				5163682C232F462200DBB0E7 /* AddMeeting.storyboard in Resources */,
 				515373742321E19C003D1D3A /* AddTask.storyboard in Resources */,
+				516368392330382600DBB0E7 /* Orgs.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,6 +854,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5163683E233070F200DBB0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51636847233070F200DBB0E7 /* TodayViewController.swift in Sources */,
+				51636854233074F000DBB0E7 /* WidgetTVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51AF6C1C2313232200CD3068 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -735,8 +878,10 @@
 				5181A489232C5A380068CFF5 /* DashboardTVC.swift in Sources */,
 				51F119182329D1B30047ADFE /* TaskVC.swift in Sources */,
 				5159B0D6232C4C2900517164 /* FSCalendarCollectionView.m in Sources */,
+				5163683B2330383000DBB0E7 /* OrgsVC.swift in Sources */,
 				5153737C2321E1D3003D1D3A /* AddClassVC.swift in Sources */,
 				51AF6C552313235A00CD3068 /* UniversityDB.swift in Sources */,
+				51636830232FFF4400DBB0E7 /* OrganizationVC.swift in Sources */,
 				51CDA3242318344900141E85 /* CourseAssignmentTVC.swift in Sources */,
 				5159B0DE232C4C2900517164 /* FSCalendarSeparatorDecorationView.m in Sources */,
 				51F119162329D1B30047ADFE /* TaskHeaderTVC.swift in Sources */,
@@ -747,6 +892,7 @@
 				5159B0D8232C4C2900517164 /* FSCalendarDelegationFactory.m in Sources */,
 				515373782321E1BD003D1D3A /* AddSemesterVC.swift in Sources */,
 				51F5CDDA23180B8800C2C60C /* CourseVC.swift in Sources */,
+				51636836233000A400DBB0E7 /* AddMeetingVC.swift in Sources */,
 				5159B0D7232C4C2900517164 /* FSCalendarDelegationProxy.m in Sources */,
 				5159B0E1232C4C2900517164 /* FSCalendarCalculator.m in Sources */,
 				5159B0E2232C4C2900517164 /* FSCalendarHeaderView.m in Sources */,
@@ -754,8 +900,10 @@
 				5159B0DF232C4C2900517164 /* FSCalendarExtensions.m in Sources */,
 				5181A480232C52620068CFF5 /* CourseClass.swift in Sources */,
 				51AF6C5A231323A500CD3068 /* Course.swift in Sources */,
+				51636834232FFFB300DBB0E7 /* OTaskTVC.swift in Sources */,
 				51F11965232A07390047ADFE /* DashboardVC.swift in Sources */,
 				5153737E2321E1DF003D1D3A /* AddTaskVC.swift in Sources */,
+				51636832232FFFAA00DBB0E7 /* MeetingTVC.swift in Sources */,
 				5159B0DD232C4C2900517164 /* FSCalendarWeekdayView.m in Sources */,
 				5159B0E0232C4C2900517164 /* FSCalendarConstants.m in Sources */,
 				5187F6A223138E7C0091AAE9 /* CourseTVC.swift in Sources */,
@@ -773,6 +921,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5163684D233070F200DBB0E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51636841233070F200DBB0E7 /* UniBakla Widget */;
+			targetProxy = 5163684C233070F200DBB0E7 /* PBXContainerItemProxy */;
+		};
 		51D1B50D2329B504006AF7ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Eureka;
@@ -786,6 +939,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		51636848233070F200DBB0E7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51636849233070F200DBB0E7 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		51AF6C2C2313232500CD3068 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -797,6 +958,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		51636850233070F200DBB0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CP69FRGX9X;
+				INFOPLIST_FILE = "UniBakla Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonyeoh.University-Application.UniBakla-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51636851233070F200DBB0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CP69FRGX9X;
+				INFOPLIST_FILE = "UniBakla Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonyeoh.University-Application.UniBakla-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		51AF6C302313232500CD3068 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -968,6 +1169,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5163684F233070F200DBB0E7 /* Build configuration list for PBXNativeTarget "UniBakla Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51636850233070F200DBB0E7 /* Debug */,
+				51636851233070F200DBB0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		51AF6C1B2313232200CD3068 /* Build configuration list for PBXProject "University Application" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
