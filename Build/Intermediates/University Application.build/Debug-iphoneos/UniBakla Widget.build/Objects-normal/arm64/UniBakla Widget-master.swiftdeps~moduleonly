@@ -1,6 +1,0 @@
-version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
-options: "b4d6f59c6f8e5896827d9b7d49a72825"
-build_time: [1569470571, 647286000]
-inputs:
-  "/Users/jasonyeoh/Desktop/University Application/UniBakla Widget/TodayViewController.swift": [1568685699, 398225235]
-  "/Users/jasonyeoh/Desktop/University Application/UniBakla Widget/WidgetTVC.swift": [1568685706, 634045437]

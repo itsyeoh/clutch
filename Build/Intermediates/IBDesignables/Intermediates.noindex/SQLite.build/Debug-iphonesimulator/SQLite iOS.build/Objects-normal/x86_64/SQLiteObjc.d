@@ -1,5 +1,0 @@
-dependencies: \
-  /Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLiteObjc/SQLiteObjc.m \
-  /Users/jasonyeoh/Desktop/University\ Application/Build/Intermediates/IBDesignables/Intermediates.noindex/SQLite.build/Debug-iphonesimulator/SQLite\ iOS.build/module.modulemap \
-  /Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLiteObjc/include/SQLiteObjc.h \
-  /Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLiteObjc/fts3_tokenizer.h
