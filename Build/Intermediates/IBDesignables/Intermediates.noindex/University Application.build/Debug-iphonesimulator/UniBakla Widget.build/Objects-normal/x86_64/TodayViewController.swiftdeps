@@ -1,0 +1,281 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TodayViewController"
+provides-nominal:
+- "15UniBakla_Widget19TodayViewControllerC"
+provides-member:
+- ["15UniBakla_Widget19TodayViewControllerC", ""]
+provides-dynamic-lookup:
+- "tableView"
+- "viewDidLoad"
+- "widgetPerformUpdate"
+depends-top-level:
+- "NCUpdateResult"
+- "NCWidgetProviding"
+- "TodayViewController"
+- "UITableView"
+- "UIViewController"
+- "Void"
+depends-member:
+- !private ["s7CVarArgP", "NCUpdateResult"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", "widgetActiveDisplayModeDidChange"]
+- ["s7CVarArgP", "widgetMarginInsets"]
+- ["s7CVarArgP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["s7CVarArgP", "widgetPerformUpdate"]
+- ["s7CVarArgP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["s28CustomDebugStringConvertibleP", "NCUpdateResult"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", "widgetActiveDisplayModeDidChange"]
+- ["s28CustomDebugStringConvertibleP", "widgetMarginInsets"]
+- ["s28CustomDebugStringConvertibleP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["s28CustomDebugStringConvertibleP", "widgetPerformUpdate"]
+- ["s28CustomDebugStringConvertibleP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["s23CustomStringConvertibleP", "NCUpdateResult"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", "widgetActiveDisplayModeDidChange"]
+- ["s23CustomStringConvertibleP", "widgetMarginInsets"]
+- ["s23CustomStringConvertibleP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["s23CustomStringConvertibleP", "widgetPerformUpdate"]
+- ["s23CustomStringConvertibleP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["SQ", "NCUpdateResult"]
+- ["SQ", ""]
+- !private ["SQ", "init"]
+- !private ["SQ", "newData"]
+- !private ["SQ", "viewDidLoad"]
+- ["SQ", "widgetActiveDisplayModeDidChange"]
+- ["SQ", "widgetMarginInsets"]
+- ["SQ", "widgetMarginInsetsForProposedMarginInsets"]
+- ["SQ", "widgetPerformUpdate"]
+- ["SQ", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["SH", "NCUpdateResult"]
+- ["SH", ""]
+- !private ["SH", "init"]
+- !private ["SH", "newData"]
+- !private ["SH", "viewDidLoad"]
+- ["SH", "widgetActiveDisplayModeDidChange"]
+- ["SH", "widgetMarginInsets"]
+- ["SH", "widgetMarginInsetsForProposedMarginInsets"]
+- ["SH", "widgetPerformUpdate"]
+- ["SH", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So14NCUpdateResultV", "newData"]
+- !private ["So17NCWidgetProvidingP", "NCUpdateResult"]
+- ["So17NCWidgetProvidingP", ""]
+- ["So17NCWidgetProvidingP", "widgetActiveDisplayModeDidChange"]
+- ["So17NCWidgetProvidingP", "widgetMarginInsets"]
+- ["So17NCWidgetProvidingP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So17NCWidgetProvidingP", "widgetPerformUpdate"]
+- ["So17NCWidgetProvidingP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So8NSCodingP", "NCUpdateResult"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", "widgetActiveDisplayModeDidChange"]
+- ["So8NSCodingP", "widgetMarginInsets"]
+- ["So8NSCodingP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So8NSCodingP", "widgetPerformUpdate"]
+- ["So8NSCodingP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So26NSExtensionRequestHandlingP", "NCUpdateResult"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", "widgetActiveDisplayModeDidChange"]
+- ["So26NSExtensionRequestHandlingP", "widgetMarginInsets"]
+- ["So26NSExtensionRequestHandlingP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So26NSExtensionRequestHandlingP", "widgetPerformUpdate"]
+- ["So26NSExtensionRequestHandlingP", "widgetPerformUpdateWithCompletionHandler"]
+- ["So8NSObjectC", "NCUpdateResult"]
+- ["So8NSObjectC", "UITableView"]
+- ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "tableView"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "widgetActiveDisplayModeDidChange"]
+- ["So8NSObjectC", "widgetMarginInsets"]
+- ["So8NSObjectC", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So8NSObjectC", "widgetPerformUpdate"]
+- ["So8NSObjectC", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So8NSObjectP", "NCUpdateResult"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- ["So8NSObjectP", "widgetActiveDisplayModeDidChange"]
+- ["So8NSObjectP", "widgetMarginInsets"]
+- ["So8NSObjectP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So8NSObjectP", "widgetPerformUpdate"]
+- ["So8NSObjectP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["SY", "newData"]
+- ["15UniBakla_Widget19TodayViewControllerC", "NCUpdateResult"]
+- ["15UniBakla_Widget19TodayViewControllerC", "UITableView"]
+- ["15UniBakla_Widget19TodayViewControllerC", "Void"]
+- ["15UniBakla_Widget19TodayViewControllerC", "deinit"]
+- ["15UniBakla_Widget19TodayViewControllerC", "init"]
+- ["15UniBakla_Widget19TodayViewControllerC", "tableView"]
+- ["15UniBakla_Widget19TodayViewControllerC", "viewDidLoad"]
+- ["15UniBakla_Widget19TodayViewControllerC", "widgetActiveDisplayModeDidChange"]
+- ["15UniBakla_Widget19TodayViewControllerC", "widgetMarginInsets"]
+- ["15UniBakla_Widget19TodayViewControllerC", "widgetMarginInsetsForProposedMarginInsets"]
+- ["15UniBakla_Widget19TodayViewControllerC", "widgetPerformUpdate"]
+- ["15UniBakla_Widget19TodayViewControllerC", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So21UIAppearanceContainerP", "NCUpdateResult"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", "widgetActiveDisplayModeDidChange"]
+- ["So21UIAppearanceContainerP", "widgetMarginInsets"]
+- ["So21UIAppearanceContainerP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So21UIAppearanceContainerP", "widgetPerformUpdate"]
+- ["So21UIAppearanceContainerP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So18UIContentContainerP", "NCUpdateResult"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", "widgetActiveDisplayModeDidChange"]
+- ["So18UIContentContainerP", "widgetMarginInsets"]
+- ["So18UIContentContainerP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So18UIContentContainerP", "widgetPerformUpdate"]
+- ["So18UIContentContainerP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So18UIFocusEnvironmentP", "NCUpdateResult"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", "widgetActiveDisplayModeDidChange"]
+- ["So18UIFocusEnvironmentP", "widgetMarginInsets"]
+- ["So18UIFocusEnvironmentP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So18UIFocusEnvironmentP", "widgetPerformUpdate"]
+- ["So18UIFocusEnvironmentP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So30UIPasteConfigurationSupportingP", "NCUpdateResult"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", "widgetActiveDisplayModeDidChange"]
+- ["So30UIPasteConfigurationSupportingP", "widgetMarginInsets"]
+- ["So30UIPasteConfigurationSupportingP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So30UIPasteConfigurationSupportingP", "widgetPerformUpdate"]
+- ["So30UIPasteConfigurationSupportingP", "widgetPerformUpdateWithCompletionHandler"]
+- ["So11UIResponderC", "NCUpdateResult"]
+- ["So11UIResponderC", "UITableView"]
+- ["So11UIResponderC", "Void"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "tableView"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "widgetActiveDisplayModeDidChange"]
+- ["So11UIResponderC", "widgetMarginInsets"]
+- ["So11UIResponderC", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So11UIResponderC", "widgetPerformUpdate"]
+- ["So11UIResponderC", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So30UIResponderStandardEditActionsP", "NCUpdateResult"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", "widgetActiveDisplayModeDidChange"]
+- ["So30UIResponderStandardEditActionsP", "widgetMarginInsets"]
+- ["So30UIResponderStandardEditActionsP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So30UIResponderStandardEditActionsP", "widgetPerformUpdate"]
+- ["So30UIResponderStandardEditActionsP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So16UIStateRestoringP", "NCUpdateResult"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", "widgetActiveDisplayModeDidChange"]
+- ["So16UIStateRestoringP", "widgetMarginInsets"]
+- ["So16UIStateRestoringP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So16UIStateRestoringP", "widgetPerformUpdate"]
+- ["So16UIStateRestoringP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So18UITraitEnvironmentP", "NCUpdateResult"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", "widgetActiveDisplayModeDidChange"]
+- ["So18UITraitEnvironmentP", "widgetMarginInsets"]
+- ["So18UITraitEnvironmentP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So18UITraitEnvironmentP", "widgetPerformUpdate"]
+- ["So18UITraitEnvironmentP", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["So23UIUserActivityRestoringP", "NCUpdateResult"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- ["So23UIUserActivityRestoringP", "widgetActiveDisplayModeDidChange"]
+- ["So23UIUserActivityRestoringP", "widgetMarginInsets"]
+- ["So23UIUserActivityRestoringP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So23UIUserActivityRestoringP", "widgetPerformUpdate"]
+- ["So23UIUserActivityRestoringP", "widgetPerformUpdateWithCompletionHandler"]
+- ["So16UIViewControllerC", "NCUpdateResult"]
+- ["So16UIViewControllerC", "UITableView"]
+- ["So16UIViewControllerC", "Void"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "tableView"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "widgetActiveDisplayModeDidChange"]
+- ["So16UIViewControllerC", "widgetMarginInsets"]
+- ["So16UIViewControllerC", "widgetMarginInsetsForProposedMarginInsets"]
+- ["So16UIViewControllerC", "widgetPerformUpdate"]
+- ["So16UIViewControllerC", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NCUpdateResult"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "widgetActiveDisplayModeDidChange"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "widgetMarginInsets"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "widgetMarginInsetsForProposedMarginInsets"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "widgetPerformUpdate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "widgetPerformUpdateWithCompletionHandler"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- !private "So14NCUpdateResultV"
+- "So17NCWidgetProvidingP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "SY"
+- "15UniBakla_Widget19TodayViewControllerC"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "37c55b319e08aa3dfcb5b6c64626707d"
