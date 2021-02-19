@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,24 +17,6 @@
 		5153737E2321E1DF003D1D3A /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5153737D2321E1DF003D1D3A /* AddTaskVC.swift */; };
 		515373812321E28F003D1D3A /* WeekDaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 515373802321E28F003D1D3A /* WeekDaysCell.xib */; };
 		515373832321E299003D1D3A /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515373822321E299003D1D3A /* CustomCells.swift */; };
-		5159B0D6232C4C2900517164 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0B6232C4C2900517164 /* FSCalendarCollectionView.m */; };
-		5159B0D7232C4C2900517164 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0B9232C4C2900517164 /* FSCalendarDelegationProxy.m */; };
-		5159B0D8232C4C2900517164 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0BB232C4C2900517164 /* FSCalendarDelegationFactory.m */; };
-		5159B0D9232C4C2900517164 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0C2232C4C2900517164 /* FSCalendarCell.m */; };
-		5159B0DA232C4C2900517164 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0C3232C4C2900517164 /* FSCalendarStickyHeader.m */; };
-		5159B0DB232C4C2900517164 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0C4232C4C2900517164 /* FSCalendar.m */; };
-		5159B0DC232C4C2900517164 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0C5232C4C2900517164 /* FSCalendarCollectionViewLayout.m */; };
-		5159B0DD232C4C2900517164 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0C6232C4C2900517164 /* FSCalendarWeekdayView.m */; };
-		5159B0DE232C4C2900517164 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0C9232C4C2900517164 /* FSCalendarSeparatorDecorationView.m */; };
-		5159B0DF232C4C2900517164 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0CB232C4C2900517164 /* FSCalendarExtensions.m */; };
-		5159B0E0232C4C2900517164 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0CD232C4C2900517164 /* FSCalendarConstants.m */; };
-		5159B0E1232C4C2900517164 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0CE232C4C2900517164 /* FSCalendarCalculator.m */; };
-		5159B0E2232C4C2900517164 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0CF232C4C2900517164 /* FSCalendarHeaderView.m */; };
-		5159B0E3232C4C2900517164 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0D3232C4C2900517164 /* FSCalendarTransitionCoordinator.m */; };
-		5159B0E4232C4C2900517164 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5159B0D4232C4C2900517164 /* Info.plist */; };
-		5159B0E5232C4C2900517164 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5159B0D5232C4C2900517164 /* FSCalendarAppearance.m */; };
-		5159B0E7232C4C4D00517164 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5159B0E6232C4C4D00517164 /* FSCalendar.framework */; };
-		5159B0E8232C4C4D00517164 /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5159B0E6232C4C4D00517164 /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51636823232F409900DBB0E7 /* Organization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51636822232F409900DBB0E7 /* Organization.storyboard */; };
 		5163682C232F462200DBB0E7 /* AddMeeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5163682B232F462200DBB0E7 /* AddMeeting.storyboard */; };
 		51636830232FFF4400DBB0E7 /* OrganizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5163682F232FFF4400DBB0E7 /* OrganizationVC.swift */; };
@@ -43,14 +25,10 @@
 		51636836233000A400DBB0E7 /* AddMeetingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51636835233000A400DBB0E7 /* AddMeetingVC.swift */; };
 		516368392330382600DBB0E7 /* Orgs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516368382330382600DBB0E7 /* Orgs.storyboard */; };
 		5163683B2330383000DBB0E7 /* OrgsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5163683A2330383000DBB0E7 /* OrgsVC.swift */; };
-		51636844233070F200DBB0E7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51636843233070F200DBB0E7 /* NotificationCenter.framework */; };
-		51636847233070F200DBB0E7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51636846233070F200DBB0E7 /* TodayViewController.swift */; };
-		5163684A233070F200DBB0E7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51636848233070F200DBB0E7 /* MainInterface.storyboard */; };
-		5163684E233070F200DBB0E7 /* UniBakla Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51636842233070F200DBB0E7 /* UniBakla Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		51636854233074F000DBB0E7 /* WidgetTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51636853233074F000DBB0E7 /* WidgetTVC.swift */; };
 		5170BD2E232EBA7300E761D8 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170BD2D232EBA7300E761D8 /* Organization.swift */; };
 		5170BD30232EBA7900E761D8 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170BD2F232EBA7900E761D8 /* Meeting.swift */; };
 		5170BD32232EBB6D00E761D8 /* OTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170BD31232EBB6D00E761D8 /* OTask.swift */; };
+		5179EAD92330887500809052 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5179EAD82330887500809052 /* Notification.swift */; };
 		5181A480232C52620068CFF5 /* CourseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181A47F232C52620068CFF5 /* CourseClass.swift */; };
 		5181A489232C5A380068CFF5 /* DashboardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181A488232C5A380068CFF5 /* DashboardTVC.swift */; };
 		5181A48B232C5F850068CFF5 /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181A48A232C5F850068CFF5 /* TableViewHelper.swift */; };
@@ -68,13 +46,6 @@
 		51AF6C6323132FF000CD3068 /* AcademicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF6C6223132FF000CD3068 /* AcademicsVC.swift */; };
 		51CDA320231833DF00141E85 /* CourseClassTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CDA31F231833DF00141E85 /* CourseClassTVC.swift */; };
 		51CDA3242318344900141E85 /* CourseAssignmentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CDA3232318344900141E85 /* CourseAssignmentTVC.swift */; };
-		51D1B5082329B4FB006AF7ED /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D1B4FA2329B4AC006AF7ED /* SQLite.framework */; };
-		51D1B5092329B500006AF7ED /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D1B4EC2329B49F006AF7ED /* Eureka.framework */; };
-		51D1B50B2329B504006AF7ED /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51D1B4EC2329B49F006AF7ED /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		51D1B50F2329B508006AF7ED /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D1B4FA2329B4AC006AF7ED /* SQLite.framework */; };
-		51D1B5102329B508006AF7ED /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51D1B4FA2329B4AC006AF7ED /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		51D1B5232329B858006AF7ED /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51D1B5192329B858006AF7ED /* Colors.xcassets */; };
-		51D1B5242329B858006AF7ED /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1B51A2329B858006AF7ED /* Theme.swift */; };
 		51E7641C23199E7400E199B2 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E7641B23199E7400E199B2 /* Task.swift */; };
 		51F119162329D1B30047ADFE /* TaskHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1190B2329D1B30047ADFE /* TaskHeaderTVC.swift */; };
 		51F119172329D1B30047ADFE /* TaskTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1190C2329D1B30047ADFE /* TaskTVC.swift */; };
@@ -84,116 +55,145 @@
 		51F11965232A07390047ADFE /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F11964232A07390047ADFE /* DashboardVC.swift */; };
 		51F5CDD823180B7D00C2C60C /* Course.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F5CDD723180B7D00C2C60C /* Course.storyboard */; };
 		51F5CDDA23180B8800C2C60C /* CourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F5CDD923180B8800C2C60C /* CourseVC.swift */; };
+		D016462E2574167900BE71DB /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0164619257415B900BE71DB /* Eureka.framework */; };
+		D016462F2574167900BE71DB /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0164619257415B900BE71DB /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D019A2F023579ABA007D1155 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D019A2EF23579ABA007D1155 /* Grade.swift */; };
+		D019A2F223579AC0007D1155 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D019A2F123579AC0007D1155 /* Weight.swift */; };
+		D019A2F423579BFE007D1155 /* SemesterDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D019A2F323579BFE007D1155 /* SemesterDB.swift */; };
+		D019A2F623579EC2007D1155 /* CourseDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D019A2F523579EC2007D1155 /* CourseDB.swift */; };
+		D019A2F823579EC7007D1155 /* ClassDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D019A2F723579EC7007D1155 /* ClassDB.swift */; };
+		D019A2FA23579ECE007D1155 /* TaskDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D019A2F923579ECE007D1155 /* TaskDB.swift */; };
+		D0291CAE25DFE6CA00D0990B /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = D0291CAD25DFE6CA00D0990B /* Eureka */; };
+		D03F55FE24E899FE00170CB5 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F55F124E899EB00170CB5 /* SQLite.framework */; };
+		D03F55FF24E899FE00170CB5 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03F55F124E899EB00170CB5 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D046EAE92576B8A70048A104 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D046EAE42576B89F0048A104 /* FSCalendar.framework */; };
+		D076E2362485B99E00D77E83 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076E2352485B99E00D77E83 /* Theme.swift */; };
+		D076E2382485B9A400D77E83 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076E2372485B9A400D77E83 /* DropDown.swift */; };
+		D076E23A2485B9AD00D77E83 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D076E2392485B9AC00D77E83 /* Colors.xcassets */; };
+		D0BE28E22576BB30003EB397 /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5159B0E6232C4C4D00517164 /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0BE28E32576BD39003EB397 /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D046EAE42576B89F0048A104 /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0DE6A222356C3FF00CB563B /* CourseWeightTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE6A212356C3FF00CB563B /* CourseWeightTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5163684C233070F200DBB0E7 /* PBXContainerItemProxy */ = {
+		D0164618257415B900BE71DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51AF6C182313232200CD3068 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 51636841233070F200DBB0E7;
-			remoteInfo = "UniBakla Widget";
-		};
-		51D1B4EB2329B49F006AF7ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 51D1B4E62329B49F006AF7ED /* Eureka.xcodeproj */;
+			containerPortal = D0164613257415B900BE71DB /* Eureka.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 51729DEB1B9A4F5E004A00EB;
 			remoteInfo = Eureka;
 		};
-		51D1B4ED2329B49F006AF7ED /* PBXContainerItemProxy */ = {
+		D016461A257415B900BE71DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51D1B4E62329B49F006AF7ED /* Eureka.xcodeproj */;
+			containerPortal = D0164613257415B900BE71DB /* Eureka.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 51729DF51B9A4F5E004A00EB;
 			remoteInfo = EurekaTests;
 		};
-		51D1B4F92329B4AC006AF7ED /* PBXContainerItemProxy */ = {
+		D016462A2574167200BE71DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */;
+			containerPortal = D01646252574167200BE71DB /* Eureka.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51729DEB1B9A4F5E004A00EB;
+			remoteInfo = Eureka;
+		};
+		D016462C2574167200BE71DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D01646252574167200BE71DB /* Eureka.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51729DF51B9A4F5E004A00EB;
+			remoteInfo = EurekaTests;
+		};
+		D03F55F024E899EB00170CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D03F55E624E899EB00170CB5 /* SQLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
 			remoteInfo = "SQLite iOS";
 		};
-		51D1B4FB2329B4AC006AF7ED /* PBXContainerItemProxy */ = {
+		D03F55F224E899EB00170CB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */;
+			containerPortal = D03F55E624E899EB00170CB5 /* SQLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
 			remoteInfo = "SQLiteTests iOS";
 		};
-		51D1B4FD2329B4AC006AF7ED /* PBXContainerItemProxy */ = {
+		D03F55F424E899EB00170CB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */;
+			containerPortal = D03F55E624E899EB00170CB5 /* SQLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
 			remoteInfo = "SQLite Mac";
 		};
-		51D1B4FF2329B4AC006AF7ED /* PBXContainerItemProxy */ = {
+		D03F55F624E899EB00170CB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */;
+			containerPortal = D03F55E624E899EB00170CB5 /* SQLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
 			remoteInfo = "SQLiteTests Mac";
 		};
-		51D1B5012329B4AC006AF7ED /* PBXContainerItemProxy */ = {
+		D03F55F824E899EB00170CB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */;
+			containerPortal = D03F55E624E899EB00170CB5 /* SQLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
 			remoteInfo = "SQLite tvOS";
 		};
-		51D1B5032329B4AC006AF7ED /* PBXContainerItemProxy */ = {
+		D03F55FA24E899EB00170CB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */;
+			containerPortal = D03F55E624E899EB00170CB5 /* SQLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
 			remoteInfo = "SQLiteTests tvOS";
 		};
-		51D1B5052329B4AC006AF7ED /* PBXContainerItemProxy */ = {
+		D03F55FC24E899EB00170CB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */;
+			containerPortal = D03F55E624E899EB00170CB5 /* SQLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A121AC451CA35C79005A31D1;
 			remoteInfo = "SQLite watchOS";
 		};
-		51D1B50C2329B504006AF7ED /* PBXContainerItemProxy */ = {
+		D046EAE12576B89F0048A104 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51D1B4E62329B49F006AF7ED /* Eureka.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 51729DEA1B9A4F5E004A00EB;
-			remoteInfo = Eureka;
+			containerPortal = D046EADA2576B89F0048A104 /* FSCalendar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE0D7FC71B89C5D3003C287B;
+			remoteInfo = FSCalendarExample;
 		};
-		51D1B5112329B508006AF7ED /* PBXContainerItemProxy */ = {
+		D046EAE32576B89F0048A104 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
-			remoteInfo = "SQLite iOS";
+			containerPortal = D046EADA2576B89F0048A104 /* FSCalendar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE638CE21B8A1F550006DD1A;
+			remoteInfo = FSCalendar;
+		};
+		D046EAE52576B89F0048A104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D046EADA2576B89F0048A104 /* FSCalendar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30671DC71D6D574C00BCFC4E;
+			remoteInfo = FSCalendarTests;
+		};
+		D046EAE72576B89F0048A104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D046EADA2576B89F0048A104 /* FSCalendar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9384A621E3ACEFB001601E0;
+			remoteInfo = FSCalendarExampleUITests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		51636852233070F200DBB0E7 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				5163684E233070F200DBB0E7 /* UniBakla Widget.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		51D1B50E2329B504006AF7ED /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				51D1B5102329B508006AF7ED /* SQLite.framework in Embed Frameworks */,
-				5159B0E8232C4C4D00517164 /* FSCalendar.framework in Embed Frameworks */,
-				51D1B50B2329B504006AF7ED /* Eureka.framework in Embed Frameworks */,
+				D0BE28E32576BD39003EB397 /* FSCalendar.framework in Embed Frameworks */,
+				D0BE28E22576BB30003EB397 /* FSCalendar.framework in Embed Frameworks */,
+				D016462F2574167900BE71DB /* Eureka.framework in Embed Frameworks */,
+				D03F55FF24E899FE00170CB5 /* SQLite.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,38 +211,6 @@
 		5153737D2321E1DF003D1D3A /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
 		515373802321E28F003D1D3A /* WeekDaysCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekDaysCell.xib; sourceTree = "<group>"; };
 		515373822321E299003D1D3A /* CustomCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCells.swift; sourceTree = "<group>"; };
-		5159B0B6232C4C2900517164 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
-		5159B0B7232C4C2900517164 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
-		5159B0B8232C4C2900517164 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
-		5159B0B9232C4C2900517164 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
-		5159B0BA232C4C2900517164 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
-		5159B0BB232C4C2900517164 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
-		5159B0BC232C4C2900517164 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
-		5159B0BD232C4C2900517164 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
-		5159B0BE232C4C2900517164 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
-		5159B0BF232C4C2900517164 /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
-		5159B0C0232C4C2900517164 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
-		5159B0C1232C4C2900517164 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
-		5159B0C2232C4C2900517164 /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
-		5159B0C3232C4C2900517164 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
-		5159B0C4232C4C2900517164 /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
-		5159B0C5232C4C2900517164 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
-		5159B0C6232C4C2900517164 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
-		5159B0C7232C4C2900517164 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
-		5159B0C8232C4C2900517164 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
-		5159B0C9232C4C2900517164 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
-		5159B0CA232C4C2900517164 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
-		5159B0CB232C4C2900517164 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
-		5159B0CC232C4C2900517164 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
-		5159B0CD232C4C2900517164 /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
-		5159B0CE232C4C2900517164 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
-		5159B0CF232C4C2900517164 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
-		5159B0D0232C4C2900517164 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
-		5159B0D1232C4C2900517164 /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
-		5159B0D2232C4C2900517164 /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
-		5159B0D3232C4C2900517164 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
-		5159B0D4232C4C2900517164 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5159B0D5232C4C2900517164 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
 		5159B0E6232C4C4D00517164 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FSCalendar.framework; sourceTree = "<group>"; };
 		51636822232F409900DBB0E7 /* Organization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Organization.storyboard; sourceTree = "<group>"; };
 		5163682B232F462200DBB0E7 /* AddMeeting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddMeeting.storyboard; sourceTree = "<group>"; };
@@ -252,26 +220,22 @@
 		51636835233000A400DBB0E7 /* AddMeetingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeetingVC.swift; sourceTree = "<group>"; };
 		516368382330382600DBB0E7 /* Orgs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Orgs.storyboard; sourceTree = "<group>"; };
 		5163683A2330383000DBB0E7 /* OrgsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgsVC.swift; sourceTree = "<group>"; };
-		51636842233070F200DBB0E7 /* UniBakla Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "UniBakla Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51636843233070F200DBB0E7 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		51636846233070F200DBB0E7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		51636849233070F200DBB0E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		5163684B233070F200DBB0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51636853233074F000DBB0E7 /* WidgetTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTVC.swift; sourceTree = "<group>"; };
 		5170BD2D232EBA7300E761D8 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		5170BD2F232EBA7900E761D8 /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
 		5170BD31232EBB6D00E761D8 /* OTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTask.swift; sourceTree = "<group>"; };
+		5179EAD82330887500809052 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		5181A47F232C52620068CFF5 /* CourseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseClass.swift; sourceTree = "<group>"; };
 		5181A488232C5A380068CFF5 /* DashboardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTVC.swift; sourceTree = "<group>"; };
 		5181A48A232C5F850068CFF5 /* TableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
 		5187F69923138E6B0091AAE9 /* SemesterTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterTVC.swift; sourceTree = "<group>"; };
 		5187F6A123138E7C0091AAE9 /* CourseTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTVC.swift; sourceTree = "<group>"; };
 		519EB5F4231A12E8008A3142 /* Navigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
-		51AF6C202313232200CD3068 /* University Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "University Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51AF6C202313232200CD3068 /* Clutch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clutch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AF6C232313232200CD3068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51AF6C2A2313232500CD3068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51AF6C2D2313232500CD3068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		51AF6C2F2313232500CD3068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51AF6C2F2313232500CD3068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "University Application/Info.plist"; sourceTree = SOURCE_ROOT; };
 		51AF6C542313235A00CD3068 /* UniversityDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDB.swift; sourceTree = "<group>"; };
 		51AF6C572313239D00CD3068 /* Semester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semester.swift; sourceTree = "<group>"; };
 		51AF6C59231323A500CD3068 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -280,10 +244,6 @@
 		51AF6C6223132FF000CD3068 /* AcademicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicsVC.swift; sourceTree = "<group>"; };
 		51CDA31F231833DF00141E85 /* CourseClassTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseClassTVC.swift; sourceTree = "<group>"; };
 		51CDA3232318344900141E85 /* CourseAssignmentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseAssignmentTVC.swift; sourceTree = "<group>"; };
-		51D1B4E62329B49F006AF7ED /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = "../../Downloads/Eureka-master-2/Eureka.xcodeproj"; sourceTree = "<group>"; };
-		51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
-		51D1B5192329B858006AF7ED /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		51D1B51A2329B858006AF7ED /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		51E7641B23199E7400E199B2 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		51F1190B2329D1B30047ADFE /* TaskHeaderTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskHeaderTVC.swift; sourceTree = "<group>"; };
 		51F1190C2329D1B30047ADFE /* TaskTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTVC.swift; sourceTree = "<group>"; };
@@ -293,25 +253,31 @@
 		51F11964232A07390047ADFE /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		51F5CDD723180B7D00C2C60C /* Course.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Course.storyboard; sourceTree = "<group>"; };
 		51F5CDD923180B8800C2C60C /* CourseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseVC.swift; sourceTree = "<group>"; };
+		D0164613257415B900BE71DB /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = ../../../../.Trash/Eureka.xcodeproj; sourceTree = "<group>"; };
+		D01646252574167200BE71DB /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = "../../../../Downloads/Eureka-master-2/Eureka.xcodeproj"; sourceTree = "<group>"; };
+		D019A2EF23579ABA007D1155 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		D019A2F123579AC0007D1155 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		D019A2F323579BFE007D1155 /* SemesterDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterDB.swift; sourceTree = "<group>"; };
+		D019A2F523579EC2007D1155 /* CourseDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDB.swift; sourceTree = "<group>"; };
+		D019A2F723579EC7007D1155 /* ClassDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDB.swift; sourceTree = "<group>"; };
+		D019A2F923579ECE007D1155 /* TaskDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDB.swift; sourceTree = "<group>"; };
+		D03F55E624E899EB00170CB5 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		D046EADA2576B89F0048A104 /* FSCalendar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSCalendar.xcodeproj; path = "../../../../Downloads/FSCalendar-master/Example-Objc/FSCalendar.xcodeproj"; sourceTree = "<group>"; };
+		D076E2352485B99E00D77E83 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = Resources/Theme.swift; sourceTree = SOURCE_ROOT; };
+		D076E2372485B9A400D77E83 /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = Resources/DropDown.swift; sourceTree = SOURCE_ROOT; };
+		D076E2392485B9AC00D77E83 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = Resources/Colors.xcassets; sourceTree = SOURCE_ROOT; };
+		D0DE6A212356C3FF00CB563B /* CourseWeightTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseWeightTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5163683F233070F200DBB0E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51636844233070F200DBB0E7 /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		51AF6C1D2313232200CD3068 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51D1B5092329B500006AF7ED /* Eureka.framework in Frameworks */,
-				51D1B50F2329B508006AF7ED /* SQLite.framework in Frameworks */,
-				51D1B5082329B4FB006AF7ED /* SQLite.framework in Frameworks */,
-				5159B0E7232C4C4D00517164 /* FSCalendar.framework in Frameworks */,
+				D016462E2574167900BE71DB /* Eureka.framework in Frameworks */,
+				D046EAE92576B8A70048A104 /* FSCalendar.framework in Frameworks */,
+				D03F55FE24E899FE00170CB5 /* SQLite.framework in Frameworks */,
+				D0291CAE25DFE6CA00D0990B /* Eureka in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +287,6 @@
 		515373692321E142003D1D3A /* AddSemester */ = {
 			isa = PBXGroup;
 			children = (
-				5153736D2321E185003D1D3A /* AddSemester.storyboard */,
 				515373772321E1BD003D1D3A /* AddSemesterVC.swift */,
 			);
 			path = AddSemester;
@@ -330,7 +295,6 @@
 		5153736A2321E16A003D1D3A /* AddCourse */ = {
 			isa = PBXGroup;
 			children = (
-				5153736F2321E18E003D1D3A /* AddCourse.storyboard */,
 				515373792321E1CB003D1D3A /* AddCourseVC.swift */,
 			);
 			path = AddCourse;
@@ -339,7 +303,6 @@
 		5153736B2321E16F003D1D3A /* AddClass */ = {
 			isa = PBXGroup;
 			children = (
-				515373712321E196003D1D3A /* AddClass.storyboard */,
 				5153737B2321E1D3003D1D3A /* AddClassVC.swift */,
 			);
 			path = AddClass;
@@ -348,7 +311,6 @@
 		5153736C2321E175003D1D3A /* AddTask */ = {
 			isa = PBXGroup;
 			children = (
-				515373732321E19C003D1D3A /* AddTask.storyboard */,
 				5153737D2321E1DF003D1D3A /* AddTaskVC.swift */,
 			);
 			path = AddTask;
@@ -360,48 +322,9 @@
 				515373822321E299003D1D3A /* CustomCells.swift */,
 				515373802321E28F003D1D3A /* WeekDaysCell.xib */,
 				5181A48A232C5F850068CFF5 /* TableViewHelper.swift */,
+				5179EAD82330887500809052 /* Notification.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		5159B0B5232C4C2900517164 /* FSCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				5159B0B6232C4C2900517164 /* FSCalendarCollectionView.m */,
-				5159B0B7232C4C2900517164 /* FSCalendarWeekdayView.h */,
-				5159B0B8232C4C2900517164 /* FSCalendarCollectionViewLayout.h */,
-				5159B0B9232C4C2900517164 /* FSCalendarDelegationProxy.m */,
-				5159B0BA232C4C2900517164 /* FSCalendarExtensions.h */,
-				5159B0BB232C4C2900517164 /* FSCalendarDelegationFactory.m */,
-				5159B0BC232C4C2900517164 /* FSCalendarSeparatorDecorationView.h */,
-				5159B0BD232C4C2900517164 /* FSCalendarCalculator.h */,
-				5159B0BE232C4C2900517164 /* FSCalendarHeaderView.h */,
-				5159B0BF232C4C2900517164 /* FSCalendarConstants.h */,
-				5159B0C0232C4C2900517164 /* FSCalendarAppearance.h */,
-				5159B0C1232C4C2900517164 /* FSCalendarTransitionCoordinator.h */,
-				5159B0C2232C4C2900517164 /* FSCalendarCell.m */,
-				5159B0C3232C4C2900517164 /* FSCalendarStickyHeader.m */,
-				5159B0C4232C4C2900517164 /* FSCalendar.m */,
-				5159B0C5232C4C2900517164 /* FSCalendarCollectionViewLayout.m */,
-				5159B0C6232C4C2900517164 /* FSCalendarWeekdayView.m */,
-				5159B0C7232C4C2900517164 /* FSCalendarCollectionView.h */,
-				5159B0C8232C4C2900517164 /* FSCalendarDynamicHeader.h */,
-				5159B0C9232C4C2900517164 /* FSCalendarSeparatorDecorationView.m */,
-				5159B0CA232C4C2900517164 /* FSCalendarDelegationFactory.h */,
-				5159B0CB232C4C2900517164 /* FSCalendarExtensions.m */,
-				5159B0CC232C4C2900517164 /* FSCalendarDelegationProxy.h */,
-				5159B0CD232C4C2900517164 /* FSCalendarConstants.m */,
-				5159B0CE232C4C2900517164 /* FSCalendarCalculator.m */,
-				5159B0CF232C4C2900517164 /* FSCalendarHeaderView.m */,
-				5159B0D0232C4C2900517164 /* FSCalendarStickyHeader.h */,
-				5159B0D1232C4C2900517164 /* FSCalendar.h */,
-				5159B0D2232C4C2900517164 /* FSCalendarCell.h */,
-				5159B0D3232C4C2900517164 /* FSCalendarTransitionCoordinator.m */,
-				5159B0D4232C4C2900517164 /* Info.plist */,
-				5159B0D5232C4C2900517164 /* FSCalendarAppearance.m */,
-			);
-			name = FSCalendar;
-			path = "../../Downloads/FSCalendar-master-4/FSCalendar";
 			sourceTree = "<group>";
 		};
 		516368372330381A00DBB0E7 /* Orgs */ = {
@@ -434,17 +357,6 @@
 				5170BD31232EBB6D00E761D8 /* OTask.swift */,
 			);
 			path = TBDModels;
-			sourceTree = "<group>";
-		};
-		51636845233070F200DBB0E7 /* UniBakla Widget */ = {
-			isa = PBXGroup;
-			children = (
-				51636846233070F200DBB0E7 /* TodayViewController.swift */,
-				51636848233070F200DBB0E7 /* MainInterface.storyboard */,
-				5163684B233070F200DBB0E7 /* Info.plist */,
-				51636853233074F000DBB0E7 /* WidgetTVC.swift */,
-			);
-			path = "UniBakla Widget";
 			sourceTree = "<group>";
 		};
 		5170BD22232EBA0100E761D8 /* AddOrganization */ = {
@@ -484,7 +396,6 @@
 		519EB5F6231A12F2008A3142 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				51F1192C232A01000047ADFE /* Dashboard.storyboard */,
 				51F11964232A07390047ADFE /* DashboardVC.swift */,
 				5181A488232C5A380068CFF5 /* DashboardTVC.swift */,
 			);
@@ -494,13 +405,12 @@
 		51AF6C172313232200CD3068 = {
 			isa = PBXGroup;
 			children = (
-				5159B0E6232C4C4D00517164 /* FSCalendar.framework */,
 				51AF6C222313232200CD3068 /* University Application */,
-				51636845233070F200DBB0E7 /* UniBakla Widget */,
+				D0BE28E42576BE2F003EB397 /* Resources */,
 				51AF6C212313232200CD3068 /* Products */,
-				5159B0B5232C4C2900517164 /* FSCalendar */,
-				51D1B4E62329B49F006AF7ED /* Eureka.xcodeproj */,
-				51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */,
+				D01646252574167200BE71DB /* Eureka.xcodeproj */,
+				D03F55E624E899EB00170CB5 /* SQLite.xcodeproj */,
+				D046EADA2576B89F0048A104 /* FSCalendar.xcodeproj */,
 				51F1195F232A07090047ADFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -508,8 +418,7 @@
 		51AF6C212313232200CD3068 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51AF6C202313232200CD3068 /* University Application.app */,
-				51636842233070F200DBB0E7 /* UniBakla Widget.appex */,
+				51AF6C202313232200CD3068 /* Clutch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -521,6 +430,7 @@
 				5153737F2321E27E003D1D3A /* Extensions */,
 				51AF6C5C2313241C00CD3068 /* Database */,
 				51AF6C5B231323DB00CD3068 /* Model */,
+				D0329A6C2350C3F100C5AE43 /* Storyboards */,
 				51AF6C5F23132FBD00CD3068 /* View Controllers */,
 				51AF6C2A2313232500CD3068 /* Assets.xcassets */,
 				51AF6C232313232200CD3068 /* AppDelegate.swift */,
@@ -538,6 +448,8 @@
 				51AF6C5D2313243E00CD3068 /* Class.swift */,
 				51E7641B23199E7400E199B2 /* Task.swift */,
 				5181A47F232C52620068CFF5 /* CourseClass.swift */,
+				D019A2EF23579ABA007D1155 /* Grade.swift */,
+				D019A2F123579AC0007D1155 /* Weight.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -546,6 +458,10 @@
 			isa = PBXGroup;
 			children = (
 				51AF6C542313235A00CD3068 /* UniversityDB.swift */,
+				D019A2F323579BFE007D1155 /* SemesterDB.swift */,
+				D019A2F523579EC2007D1155 /* CourseDB.swift */,
+				D019A2F723579EC7007D1155 /* ClassDB.swift */,
+				D019A2F923579ECE007D1155 /* TaskDB.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -554,7 +470,6 @@
 			isa = PBXGroup;
 			children = (
 				5163683C23303D9400DBB0E7 /* TBD */,
-				519EB5F4231A12E8008A3142 /* Navigation.storyboard */,
 				519EB5F6231A12F2008A3142 /* Dashboard */,
 				51F1190A2329D1B30047ADFE /* Task */,
 				51E9F7C723158848007ECDA8 /* Academics */,
@@ -567,34 +482,9 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		51D1B4E72329B49F006AF7ED /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				51D1B4EC2329B49F006AF7ED /* Eureka.framework */,
-				51D1B4EE2329B49F006AF7ED /* EurekaTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		51D1B4F02329B4AC006AF7ED /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				51D1B4FA2329B4AC006AF7ED /* SQLite.framework */,
-				51D1B4FC2329B4AC006AF7ED /* SQLiteTests iOS.xctest */,
-				51D1B4FE2329B4AC006AF7ED /* SQLite.framework */,
-				51D1B5002329B4AC006AF7ED /* SQLiteTests Mac.xctest */,
-				51D1B5022329B4AC006AF7ED /* SQLite.framework */,
-				51D1B5042329B4AC006AF7ED /* SQLiteTests tvOS.xctest */,
-				51D1B5062329B4AC006AF7ED /* SQLite.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		51D1B5172329B858006AF7ED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				51D1B5192329B858006AF7ED /* Colors.xcassets */,
-				51D1B51A2329B858006AF7ED /* Theme.swift */,
 			);
 			name = Resources;
 			path = "../../Side Projects/iPhone Dev/Univ/Univ/Resources";
@@ -603,7 +493,6 @@
 		51E9F7C723158848007ECDA8 /* Academics */ = {
 			isa = PBXGroup;
 			children = (
-				51AF6C6023132FDC00CD3068 /* Academics.storyboard */,
 				51AF6C6223132FF000CD3068 /* AcademicsVC.swift */,
 				5187F6A123138E7C0091AAE9 /* CourseTVC.swift */,
 				5187F69923138E6B0091AAE9 /* SemesterTVC.swift */,
@@ -614,10 +503,9 @@
 		51F1190A2329D1B30047ADFE /* Task */ = {
 			isa = PBXGroup;
 			children = (
-				51F1190E2329D1B30047ADFE /* Task.storyboard */,
 				51F1190D2329D1B30047ADFE /* TaskVC.swift */,
-				51F1190C2329D1B30047ADFE /* TaskTVC.swift */,
 				51F1190B2329D1B30047ADFE /* TaskHeaderTVC.swift */,
+				51F1190C2329D1B30047ADFE /* TaskTVC.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -625,6 +513,8 @@
 		51F1195F232A07090047ADFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0164613257415B900BE71DB /* Eureka.xcodeproj */,
+				5159B0E6232C4C4D00517164 /* FSCalendar.framework */,
 				51636843233070F200DBB0E7 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -633,34 +523,86 @@
 		51F5CDD623180B7500C2C60C /* Course */ = {
 			isa = PBXGroup;
 			children = (
-				51F5CDD723180B7D00C2C60C /* Course.storyboard */,
 				51F5CDD923180B8800C2C60C /* CourseVC.swift */,
 				51CDA31F231833DF00141E85 /* CourseClassTVC.swift */,
 				51CDA3232318344900141E85 /* CourseAssignmentTVC.swift */,
+				D0DE6A212356C3FF00CB563B /* CourseWeightTVC.swift */,
 			);
 			path = Course;
+			sourceTree = "<group>";
+		};
+		D0164614257415B900BE71DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0164619257415B900BE71DB /* Eureka.framework */,
+				D016461B257415B900BE71DB /* EurekaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D01646262574167200BE71DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D016462B2574167200BE71DB /* Eureka.framework */,
+				D016462D2574167200BE71DB /* EurekaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0329A6C2350C3F100C5AE43 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				519EB5F4231A12E8008A3142 /* Navigation.storyboard */,
+				51F1192C232A01000047ADFE /* Dashboard.storyboard */,
+				51F1190E2329D1B30047ADFE /* Task.storyboard */,
+				51AF6C6023132FDC00CD3068 /* Academics.storyboard */,
+				51F5CDD723180B7D00C2C60C /* Course.storyboard */,
+				5153736D2321E185003D1D3A /* AddSemester.storyboard */,
+				5153736F2321E18E003D1D3A /* AddCourse.storyboard */,
+				515373712321E196003D1D3A /* AddClass.storyboard */,
+				515373732321E19C003D1D3A /* AddTask.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D03F55E724E899EB00170CB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D03F55F124E899EB00170CB5 /* SQLite.framework */,
+				D03F55F324E899EB00170CB5 /* SQLiteTests iOS.xctest */,
+				D03F55F524E899EB00170CB5 /* SQLite.framework */,
+				D03F55F724E899EB00170CB5 /* SQLiteTests Mac.xctest */,
+				D03F55F924E899EB00170CB5 /* SQLite.framework */,
+				D03F55FB24E899EB00170CB5 /* SQLiteTests tvOS.xctest */,
+				D03F55FD24E899EB00170CB5 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D046EADB2576B89F0048A104 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D046EAE22576B89F0048A104 /* FSCalendarExample.app */,
+				D046EAE42576B89F0048A104 /* FSCalendar.framework */,
+				D046EAE62576B89F0048A104 /* FSCalendarTests.xctest */,
+				D046EAE82576B89F0048A104 /* FSCalendarExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0BE28E42576BE2F003EB397 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D076E2392485B9AC00D77E83 /* Colors.xcassets */,
+				D076E2372485B9A400D77E83 /* DropDown.swift */,
+				D076E2352485B99E00D77E83 /* Theme.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		51636841233070F200DBB0E7 /* UniBakla Widget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5163684F233070F200DBB0E7 /* Build configuration list for PBXNativeTarget "UniBakla Widget" */;
-			buildPhases = (
-				5163683E233070F200DBB0E7 /* Sources */,
-				5163683F233070F200DBB0E7 /* Frameworks */,
-				51636840233070F200DBB0E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "UniBakla Widget";
-			productName = "UniBakla Widget";
-			productReference = 51636842233070F200DBB0E7 /* UniBakla Widget.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		51AF6C1F2313232200CD3068 /* University Application */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51AF6C322313232500CD3068 /* Build configuration list for PBXNativeTarget "University Application" */;
@@ -670,18 +612,17 @@
 				51AF6C1E2313232200CD3068 /* Resources */,
 				51D1B50E2329B504006AF7ED /* Embed Frameworks */,
 				5103D43C232A0AA8004CB033 /* ShellScript */,
-				51636852233070F200DBB0E7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				51D1B50D2329B504006AF7ED /* PBXTargetDependency */,
-				51D1B5122329B508006AF7ED /* PBXTargetDependency */,
-				5163684D233070F200DBB0E7 /* PBXTargetDependency */,
 			);
 			name = "University Application";
+			packageProductDependencies = (
+				D0291CAD25DFE6CA00D0990B /* Eureka */,
+			);
 			productName = "University Application";
-			productReference = 51AF6C202313232200CD3068 /* University Application.app */;
+			productReference = 51AF6C202313232200CD3068 /* Clutch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -695,11 +636,16 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Jason Yeoh";
 				TargetAttributes = {
-					51636841233070F200DBB0E7 = {
-						CreatedOnToolsVersion = 10.3;
-					};
 					51AF6C1F2313232200CD3068 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -712,101 +658,145 @@
 				Base,
 			);
 			mainGroup = 51AF6C172313232200CD3068;
+			packageReferences = (
+				D0291CAC25DFE6CA00D0990B /* XCRemoteSwiftPackageReference "Eureka" */,
+			);
 			productRefGroup = 51AF6C212313232200CD3068 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 51D1B4E72329B49F006AF7ED /* Products */;
-					ProjectRef = 51D1B4E62329B49F006AF7ED /* Eureka.xcodeproj */;
+					ProductGroup = D0164614257415B900BE71DB /* Products */;
+					ProjectRef = D0164613257415B900BE71DB /* Eureka.xcodeproj */;
 				},
 				{
-					ProductGroup = 51D1B4F02329B4AC006AF7ED /* Products */;
-					ProjectRef = 51D1B4EF2329B4AC006AF7ED /* SQLite.xcodeproj */;
+					ProductGroup = D01646262574167200BE71DB /* Products */;
+					ProjectRef = D01646252574167200BE71DB /* Eureka.xcodeproj */;
+				},
+				{
+					ProductGroup = D046EADB2576B89F0048A104 /* Products */;
+					ProjectRef = D046EADA2576B89F0048A104 /* FSCalendar.xcodeproj */;
+				},
+				{
+					ProductGroup = D03F55E724E899EB00170CB5 /* Products */;
+					ProjectRef = D03F55E624E899EB00170CB5 /* SQLite.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
 				51AF6C1F2313232200CD3068 /* University Application */,
-				51636841233070F200DBB0E7 /* UniBakla Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		51D1B4EC2329B49F006AF7ED /* Eureka.framework */ = {
+		D0164619257415B900BE71DB /* Eureka.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Eureka.framework;
-			remoteRef = 51D1B4EB2329B49F006AF7ED /* PBXContainerItemProxy */;
+			remoteRef = D0164618257415B900BE71DB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		51D1B4EE2329B49F006AF7ED /* EurekaTests.xctest */ = {
+		D016461B257415B900BE71DB /* EurekaTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = EurekaTests.xctest;
-			remoteRef = 51D1B4ED2329B49F006AF7ED /* PBXContainerItemProxy */;
+			remoteRef = D016461A257415B900BE71DB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		51D1B4FA2329B4AC006AF7ED /* SQLite.framework */ = {
+		D016462B2574167200BE71DB /* Eureka.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Eureka.framework;
+			remoteRef = D016462A2574167200BE71DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D016462D2574167200BE71DB /* EurekaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EurekaTests.xctest;
+			remoteRef = D016462C2574167200BE71DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D03F55F124E899EB00170CB5 /* SQLite.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SQLite.framework;
-			remoteRef = 51D1B4F92329B4AC006AF7ED /* PBXContainerItemProxy */;
+			remoteRef = D03F55F024E899EB00170CB5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		51D1B4FC2329B4AC006AF7ED /* SQLiteTests iOS.xctest */ = {
+		D03F55F324E899EB00170CB5 /* SQLiteTests iOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "SQLiteTests iOS.xctest";
-			remoteRef = 51D1B4FB2329B4AC006AF7ED /* PBXContainerItemProxy */;
+			remoteRef = D03F55F224E899EB00170CB5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		51D1B4FE2329B4AC006AF7ED /* SQLite.framework */ = {
+		D03F55F524E899EB00170CB5 /* SQLite.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SQLite.framework;
-			remoteRef = 51D1B4FD2329B4AC006AF7ED /* PBXContainerItemProxy */;
+			remoteRef = D03F55F424E899EB00170CB5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		51D1B5002329B4AC006AF7ED /* SQLiteTests Mac.xctest */ = {
+		D03F55F724E899EB00170CB5 /* SQLiteTests Mac.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "SQLiteTests Mac.xctest";
-			remoteRef = 51D1B4FF2329B4AC006AF7ED /* PBXContainerItemProxy */;
+			remoteRef = D03F55F624E899EB00170CB5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		51D1B5022329B4AC006AF7ED /* SQLite.framework */ = {
+		D03F55F924E899EB00170CB5 /* SQLite.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SQLite.framework;
-			remoteRef = 51D1B5012329B4AC006AF7ED /* PBXContainerItemProxy */;
+			remoteRef = D03F55F824E899EB00170CB5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		51D1B5042329B4AC006AF7ED /* SQLiteTests tvOS.xctest */ = {
+		D03F55FB24E899EB00170CB5 /* SQLiteTests tvOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "SQLiteTests tvOS.xctest";
-			remoteRef = 51D1B5032329B4AC006AF7ED /* PBXContainerItemProxy */;
+			remoteRef = D03F55FA24E899EB00170CB5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		51D1B5062329B4AC006AF7ED /* SQLite.framework */ = {
+		D03F55FD24E899EB00170CB5 /* SQLite.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SQLite.framework;
-			remoteRef = 51D1B5052329B4AC006AF7ED /* PBXContainerItemProxy */;
+			remoteRef = D03F55FC24E899EB00170CB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D046EAE22576B89F0048A104 /* FSCalendarExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = FSCalendarExample.app;
+			remoteRef = D046EAE12576B89F0048A104 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D046EAE42576B89F0048A104 /* FSCalendar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FSCalendar.framework;
+			remoteRef = D046EAE32576B89F0048A104 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D046EAE62576B89F0048A104 /* FSCalendarTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FSCalendarTests.xctest;
+			remoteRef = D046EAE52576B89F0048A104 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D046EAE82576B89F0048A104 /* FSCalendarExampleUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FSCalendarExampleUITests.xctest;
+			remoteRef = D046EAE72576B89F0048A104 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		51636840233070F200DBB0E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5163684A233070F200DBB0E7 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		51AF6C1E2313232200CD3068 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -817,16 +807,15 @@
 				515373812321E28F003D1D3A /* WeekDaysCell.xib in Resources */,
 				51F1192D232A01000047ADFE /* Dashboard.storyboard in Resources */,
 				51F5CDD823180B7D00C2C60C /* Course.storyboard in Resources */,
-				5159B0E4232C4C2900517164 /* Info.plist in Resources */,
 				515373722321E196003D1D3A /* AddClass.storyboard in Resources */,
 				515373702321E18E003D1D3A /* AddCourse.storyboard in Resources */,
 				51AF6C2E2313232500CD3068 /* LaunchScreen.storyboard in Resources */,
 				51AF6C2B2313232500CD3068 /* Assets.xcassets in Resources */,
-				51D1B5232329B858006AF7ED /* Colors.xcassets in Resources */,
 				51636823232F409900DBB0E7 /* Organization.storyboard in Resources */,
 				5153736E2321E185003D1D3A /* AddSemester.storyboard in Resources */,
 				5163682C232F462200DBB0E7 /* AddMeeting.storyboard in Resources */,
 				515373742321E19C003D1D3A /* AddTask.storyboard in Resources */,
+				D076E23A2485B9AD00D77E83 /* Colors.xcassets in Resources */,
 				516368392330382600DBB0E7 /* Orgs.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -854,99 +843,58 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5163683E233070F200DBB0E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51636847233070F200DBB0E7 /* TodayViewController.swift in Sources */,
-				51636854233074F000DBB0E7 /* WidgetTVC.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		51AF6C1C2313232200CD3068 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5159B0E5232C4C2900517164 /* FSCalendarAppearance.m in Sources */,
-				5159B0DC232C4C2900517164 /* FSCalendarCollectionViewLayout.m in Sources */,
 				51CDA320231833DF00141E85 /* CourseClassTVC.swift in Sources */,
 				5181A48B232C5F850068CFF5 /* TableViewHelper.swift in Sources */,
-				5159B0DA232C4C2900517164 /* FSCalendarStickyHeader.m in Sources */,
 				51AF6C5E2313243E00CD3068 /* Class.swift in Sources */,
 				51E7641C23199E7400E199B2 /* Task.swift in Sources */,
 				5170BD30232EBA7900E761D8 /* Meeting.swift in Sources */,
 				5181A489232C5A380068CFF5 /* DashboardTVC.swift in Sources */,
+				D019A2F223579AC0007D1155 /* Weight.swift in Sources */,
 				51F119182329D1B30047ADFE /* TaskVC.swift in Sources */,
-				5159B0D6232C4C2900517164 /* FSCalendarCollectionView.m in Sources */,
 				5163683B2330383000DBB0E7 /* OrgsVC.swift in Sources */,
 				5153737C2321E1D3003D1D3A /* AddClassVC.swift in Sources */,
 				51AF6C552313235A00CD3068 /* UniversityDB.swift in Sources */,
 				51636830232FFF4400DBB0E7 /* OrganizationVC.swift in Sources */,
 				51CDA3242318344900141E85 /* CourseAssignmentTVC.swift in Sources */,
-				5159B0DE232C4C2900517164 /* FSCalendarSeparatorDecorationView.m in Sources */,
+				D076E2382485B9A400D77E83 /* DropDown.swift in Sources */,
 				51F119162329D1B30047ADFE /* TaskHeaderTVC.swift in Sources */,
 				51AF6C582313239D00CD3068 /* Semester.swift in Sources */,
 				515373832321E299003D1D3A /* CustomCells.swift in Sources */,
 				51AF6C6323132FF000CD3068 /* AcademicsVC.swift in Sources */,
 				5187F69A23138E6B0091AAE9 /* SemesterTVC.swift in Sources */,
-				5159B0D8232C4C2900517164 /* FSCalendarDelegationFactory.m in Sources */,
 				515373782321E1BD003D1D3A /* AddSemesterVC.swift in Sources */,
+				5179EAD92330887500809052 /* Notification.swift in Sources */,
+				D019A2F823579EC7007D1155 /* ClassDB.swift in Sources */,
 				51F5CDDA23180B8800C2C60C /* CourseVC.swift in Sources */,
+				D019A2FA23579ECE007D1155 /* TaskDB.swift in Sources */,
 				51636836233000A400DBB0E7 /* AddMeetingVC.swift in Sources */,
-				5159B0D7232C4C2900517164 /* FSCalendarDelegationProxy.m in Sources */,
-				5159B0E1232C4C2900517164 /* FSCalendarCalculator.m in Sources */,
-				5159B0E2232C4C2900517164 /* FSCalendarHeaderView.m in Sources */,
-				5159B0E3232C4C2900517164 /* FSCalendarTransitionCoordinator.m in Sources */,
-				5159B0DF232C4C2900517164 /* FSCalendarExtensions.m in Sources */,
+				D0DE6A222356C3FF00CB563B /* CourseWeightTVC.swift in Sources */,
+				D019A2F623579EC2007D1155 /* CourseDB.swift in Sources */,
 				5181A480232C52620068CFF5 /* CourseClass.swift in Sources */,
+				D076E2362485B99E00D77E83 /* Theme.swift in Sources */,
 				51AF6C5A231323A500CD3068 /* Course.swift in Sources */,
 				51636834232FFFB300DBB0E7 /* OTaskTVC.swift in Sources */,
 				51F11965232A07390047ADFE /* DashboardVC.swift in Sources */,
 				5153737E2321E1DF003D1D3A /* AddTaskVC.swift in Sources */,
 				51636832232FFFAA00DBB0E7 /* MeetingTVC.swift in Sources */,
-				5159B0DD232C4C2900517164 /* FSCalendarWeekdayView.m in Sources */,
-				5159B0E0232C4C2900517164 /* FSCalendarConstants.m in Sources */,
 				5187F6A223138E7C0091AAE9 /* CourseTVC.swift in Sources */,
-				5159B0DB232C4C2900517164 /* FSCalendar.m in Sources */,
+				D019A2F023579ABA007D1155 /* Grade.swift in Sources */,
 				51F119172329D1B30047ADFE /* TaskTVC.swift in Sources */,
 				5170BD2E232EBA7300E761D8 /* Organization.swift in Sources */,
-				51D1B5242329B858006AF7ED /* Theme.swift in Sources */,
 				51AF6C242313232200CD3068 /* AppDelegate.swift in Sources */,
-				5159B0D9232C4C2900517164 /* FSCalendarCell.m in Sources */,
 				5153737A2321E1CB003D1D3A /* AddCourseVC.swift in Sources */,
 				5170BD32232EBB6D00E761D8 /* OTask.swift in Sources */,
+				D019A2F423579BFE007D1155 /* SemesterDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		5163684D233070F200DBB0E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 51636841233070F200DBB0E7 /* UniBakla Widget */;
-			targetProxy = 5163684C233070F200DBB0E7 /* PBXContainerItemProxy */;
-		};
-		51D1B50D2329B504006AF7ED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Eureka;
-			targetProxy = 51D1B50C2329B504006AF7ED /* PBXContainerItemProxy */;
-		};
-		51D1B5122329B508006AF7ED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SQLite iOS";
-			targetProxy = 51D1B5112329B508006AF7ED /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		51636848233070F200DBB0E7 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				51636849233070F200DBB0E7 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
 		51AF6C2C2313232500CD3068 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -958,46 +906,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		51636850233070F200DBB0E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CP69FRGX9X;
-				INFOPLIST_FILE = "UniBakla Widget/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonyeoh.University-Application.UniBakla-Widget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		51636851233070F200DBB0E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CP69FRGX9X;
-				INFOPLIST_FILE = "UniBakla Widget/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonyeoh.University-Application.UniBakla-Widget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		51AF6C302313232500CD3068 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1121,6 +1029,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "University Application/University Application.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CP69FRGX9X;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1135,7 +1044,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonyeoh.University-Application";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Clutch;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1146,6 +1055,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "University Application/University Application.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CP69FRGX9X;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1160,7 +1070,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonyeoh.University-Application";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Clutch;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1169,15 +1079,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5163684F233070F200DBB0E7 /* Build configuration list for PBXNativeTarget "UniBakla Widget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				51636850233070F200DBB0E7 /* Debug */,
-				51636851233070F200DBB0E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		51AF6C1B2313232200CD3068 /* Build configuration list for PBXProject "University Application" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1197,6 +1098,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0291CAC25DFE6CA00D0990B /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0291CAD25DFE6CA00D0990B /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0291CAC25DFE6CA00D0990B /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 51AF6C182313232200CD3068 /* Project object */;
 }

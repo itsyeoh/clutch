@@ -1,22 +1,14 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "OrgType"
-- "Organization"
 provides-nominal:
 - "22University_Application7OrgTypeO"
-- "22University_Application12OrganizationC"
 provides-member:
 - ["22University_Application7OrgTypeO", ""]
-- ["22University_Application12OrganizationC", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
-- !private "FloatLiteralType"
-- "Int64"
-- !private "IntegerLiteralType"
 - "OrgType"
-- "Organization"
-- "String"
 depends-member:
 - ["SQ", "=="]
 - ["SQ", ""]
@@ -43,20 +35,11 @@ depends-member:
 - ["22University_Application7OrgTypeO", "deinit"]
 - ["22University_Application7OrgTypeO", "hash"]
 - ["22University_Application7OrgTypeO", "hashValue"]
-- ["22University_Application12OrganizationC", "Int64"]
-- ["22University_Application12OrganizationC", "OrgType"]
-- ["22University_Application12OrganizationC", "String"]
-- ["22University_Application12OrganizationC", "init"]
-- ["22University_Application12OrganizationC", "name"]
-- ["22University_Application12OrganizationC", "oid"]
-- ["22University_Application12OrganizationC", "role"]
-- ["22University_Application12OrganizationC", "type"]
 depends-nominal:
 - "SQ"
 - "SH"
 - !private "s6HasherV"
 - "22University_Application7OrgTypeO"
-- "22University_Application12OrganizationC"
 depends-dynamic-lookup:
 depends-external:
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Modules/Eureka.swiftmodule/x86_64.swiftmodule"
@@ -99,4 +82,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "680697711821b6f1b594efb093e9d8ab"
+interface-hash: "4fbc81fdb6a93724c858dce092d6ee16"

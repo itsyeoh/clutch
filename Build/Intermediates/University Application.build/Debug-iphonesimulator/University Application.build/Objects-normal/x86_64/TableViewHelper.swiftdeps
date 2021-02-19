@@ -9,8 +9,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - !private "CGRect"
-- !private "FloatLiteralType"
-- !private "IntegerLiteralType"
 - "String"
 - !private "StringLiteralType"
 - !private "Theme"

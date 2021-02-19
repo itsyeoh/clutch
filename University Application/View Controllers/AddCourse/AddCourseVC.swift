@@ -67,6 +67,7 @@ class AddCourseVC: FormViewController {
                         cell.textLabel?.textColor = .red
                 }})
             
+            
             +++ Section("CREDIT HOURS")
             <<< IntRow("hourRow") {
                 $0.title = "Credit Hours"

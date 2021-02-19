@@ -25,14 +25,11 @@ depends-top-level:
 - "CourseClass"
 - "Date"
 - "Expression"
-- !private "FloatLiteralType"
 - "Int"
 - "Int64"
-- !private "IntegerLiteralType"
 - !private "NSSearchPathForDirectoriesInDomains"
 - "Semester"
 - "String"
-- "StringLiteralType"
 - "Table"
 - "Task"
 - !private "UnicodeScalarType"
@@ -61,6 +58,7 @@ depends-member:
 - !private ["Sl", "first"]
 - !private ["Sl", "init"]
 - !private ["SL", "date"]
+- !private ["SL", "init"]
 - !private ["6SQLite10ConnectionC", "init"]
 - !private ["6SQLite10ConnectionC", "prepare"]
 - !private ["6SQLite10ConnectionC", "run"]
@@ -97,6 +95,7 @@ depends-member:
 - !private ["10Foundation12DataProtocolP", "first"]
 - !private ["10Foundation12DataProtocolP", "init"]
 - !private ["10Foundation4DateV", "date"]
+- !private ["10Foundation4DateV", "init"]
 - !private ["Se", "append"]
 - !private ["Se", "date"]
 - !private ["Se", "first"]
@@ -180,6 +179,7 @@ depends-member:
 - !private ["SY", "rawValue"]
 - !private ["SY", "userDomainMask"]
 - !private ["10Foundation20ReferenceConvertibleP", "date"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["6SQLite3RowV", "subscript"]
 - !private ["6SQLite11ScalarQueryV", "filter"]
 - !private ["6SQLite11ScalarQueryV", "group"]
@@ -267,6 +267,7 @@ depends-member:
 - !private ["22University_Application0A2DBC", "creditHours"]
 - !private ["22University_Application0A2DBC", "days"]
 - !private ["22University_Application0A2DBC", "db"]
+- ["22University_Application0A2DBC", "deinit"]
 - ["22University_Application0A2DBC", "deleteClass"]
 - ["22University_Application0A2DBC", "deleteCourse"]
 - ["22University_Application0A2DBC", "deleteSemester"]
@@ -283,6 +284,8 @@ depends-member:
 - ["22University_Application0A2DBC", "getCourseTasks"]
 - ["22University_Application0A2DBC", "getCourseTasksCount"]
 - ["22University_Application0A2DBC", "getCourses"]
+- ["22University_Application0A2DBC", "getCurrentSemesters"]
+- ["22University_Application0A2DBC", "getPastSemesters"]
 - ["22University_Application0A2DBC", "getSemesterCourses"]
 - ["22University_Application0A2DBC", "getSemesters"]
 - ["22University_Application0A2DBC", "getTasks"]
@@ -312,10 +315,12 @@ depends-member:
 - ["22University_Application0A2DBC", "updateTask"]
 - ["22University_Application0A2DBC", "updateTaskByChecking"]
 - !private ["6SQLite5ValueP", "date"]
+- !private ["6SQLite5ValueP", "init"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "first"]
 - !private ["s14_ArrayProtocolP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "date"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "first"]
 - !private ["s24_DestructorSafeContainerP", "init"]
@@ -428,7 +433,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ef1dce1c27ca656406879c4f003c19c2"
+interface-hash: "9338c60d728b24883fa44256450988f2"

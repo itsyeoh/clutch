@@ -15,7 +15,6 @@ enum Season: String {
     case Winter = "Winter"
 }
 
-
 class Semester {
     let sid: Int64!
     var season: String!

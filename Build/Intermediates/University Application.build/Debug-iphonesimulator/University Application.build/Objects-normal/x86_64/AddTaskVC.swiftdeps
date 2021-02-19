@@ -25,23 +25,20 @@ depends-top-level:
 - "AddTaskDelegate"
 - "AddTaskVC"
 - "AssignmentPrecedence"
-- "BooleanLiteralType"
+- !private "Calendar"
 - "CaseIterable"
 - "Course"
 - "CustomStringConvertible"
 - !private "Date"
 - !private "DateInlineRow"
-- "FloatLiteralType"
 - "FormViewController"
 - "Int"
 - "Int64"
-- "IntegerLiteralType"
 - !private "PushRow"
 - "RepeatInterval"
 - !private "RuleRequired"
 - !private "Section"
 - "String"
-- "StringLiteralType"
 - "Task"
 - !private "TernaryPrecedence"
 - !private "TextAreaRow"
@@ -58,6 +55,7 @@ depends-member:
 - ["22University_Application15AddTaskDelegateP", "addTask"]
 - ["22University_Application15AddTaskDelegateP", "updateTask"]
 - ["22University_Application9AddTaskVCC", "AddTaskDelegate"]
+- !private ["22University_Application9AddTaskVCC", "Calendar"]
 - ["22University_Application9AddTaskVCC", "Course"]
 - !private ["22University_Application9AddTaskVCC", "Date"]
 - !private ["22University_Application9AddTaskVCC", "DateInlineRow"]
@@ -135,6 +133,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "backgroundColor"]
 - !private ["So15CALayerDelegateP", "textColor"]
 - !private ["So15CALayerDelegateP", "textLabel"]
+- !private ["s7CVarArgP", "Calendar"]
 - ["s7CVarArgP", "Course"]
 - !private ["s7CVarArgP", "Date"]
 - !private ["s7CVarArgP", "DateInlineRow"]
@@ -176,6 +175,8 @@ depends-member:
 - !private ["s7CVarArgP", "values"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "white"]
+- !private ["10Foundation8CalendarV", "current"]
+- !private ["10Foundation8CalendarV", "date"]
 - ["s12CaseIterableP", "=="]
 - ["s12CaseIterableP", "AllCases"]
 - ["s12CaseIterableP", "RawValue"]
@@ -205,6 +206,7 @@ depends-member:
 - !private ["Sl", "validate"]
 - !private ["Sl", "values"]
 - !private ["SL", "init"]
+- !private ["10Foundation8CalendarV9ComponentO", "second"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
 - !private ["10Foundation15ContiguousBytesP", "first"]
 - ["10Foundation15ContiguousBytesP", "init"]
@@ -212,6 +214,7 @@ depends-member:
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["22University_Application6CourseC", "cid"]
 - !private ["22University_Application6CourseC", "showCourseName"]
+- !private ["s28CustomDebugStringConvertibleP", "Calendar"]
 - ["s28CustomDebugStringConvertibleP", "Course"]
 - !private ["s28CustomDebugStringConvertibleP", "Date"]
 - !private ["s28CustomDebugStringConvertibleP", "DateInlineRow"]
@@ -235,6 +238,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "course"]
 - !private ["s28CustomDebugStringConvertibleP", "courseList"]
 - !private ["s28CustomDebugStringConvertibleP", "courses"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "date"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "filter"]
 - !private ["s28CustomDebugStringConvertibleP", "first"]
@@ -254,6 +259,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "current"]
+- !private ["s17CustomReflectableP", "date"]
 - !private ["s17CustomReflectableP", "filter"]
 - !private ["s17CustomReflectableP", "first"]
 - ["s17CustomReflectableP", "init"]
@@ -263,6 +270,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "white"]
 - ["s23CustomStringConvertibleP", "=="]
 - ["s23CustomStringConvertibleP", "AllCases"]
+- !private ["s23CustomStringConvertibleP", "Calendar"]
 - ["s23CustomStringConvertibleP", "Course"]
 - !private ["s23CustomStringConvertibleP", "Date"]
 - !private ["s23CustomStringConvertibleP", "DateInlineRow"]
@@ -292,6 +300,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "course"]
 - !private ["s23CustomStringConvertibleP", "courseList"]
 - !private ["s23CustomStringConvertibleP", "courses"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "date"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - ["s23CustomStringConvertibleP", "description"]
 - !private ["s23CustomStringConvertibleP", "filter"]
@@ -337,6 +347,8 @@ depends-member:
 - !private ["6Eureka21DatePickerRowProtocolP", "validationOptions"]
 - !private ["6Eureka21DatePickerRowProtocolP", "value"]
 - !private ["Se", "count"]
+- !private ["Se", "current"]
+- !private ["Se", "date"]
 - !private ["Se", "filter"]
 - !private ["Se", "first"]
 - ["Se", "init"]
@@ -359,6 +371,8 @@ depends-member:
 - !private ["6Eureka11DisableableP", "validationOptions"]
 - !private ["6Eureka11DisableableP", "value"]
 - !private ["SE", "count"]
+- !private ["SE", "current"]
+- !private ["SE", "date"]
 - !private ["SE", "filter"]
 - !private ["SE", "first"]
 - ["SE", "init"]
@@ -368,6 +382,7 @@ depends-member:
 - !private ["SE", "white"]
 - ["SQ", "=="]
 - ["SQ", "AllCases"]
+- !private ["SQ", "Calendar"]
 - ["SQ", "Course"]
 - !private ["SQ", "Date"]
 - !private ["SQ", "DateInlineRow"]
@@ -399,6 +414,8 @@ depends-member:
 - !private ["SQ", "course"]
 - !private ["SQ", "courseList"]
 - !private ["SQ", "courses"]
+- !private ["SQ", "current"]
+- !private ["SQ", "date"]
 - !private ["SQ", "delegate"]
 - ["SQ", "description"]
 - !private ["SQ", "filter"]
@@ -418,6 +435,7 @@ depends-member:
 - !private ["SQ", "plain"]
 - ["SQ", "rawValue"]
 - !private ["SQ", "rightBarButtonItem"]
+- !private ["SQ", "second"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "taskIndexToEdit"]
 - !private ["SQ", "textColor"]
@@ -459,6 +477,7 @@ depends-member:
 - !private ["6Eureka4FormC", "rowBy"]
 - !private ["6Eureka4FormC", "setValues"]
 - !private ["6Eureka4FormC", "validate"]
+- !private ["6Eureka12FormDelegateP", "Calendar"]
 - ["6Eureka12FormDelegateP", "Course"]
 - !private ["6Eureka12FormDelegateP", "Date"]
 - !private ["6Eureka12FormDelegateP", "DateInlineRow"]
@@ -489,6 +508,7 @@ depends-member:
 - !private ["6Eureka12FormDelegateP", "taskIndexToEdit"]
 - !private ["6Eureka12FormDelegateP", "viewDidLoad"]
 - ["6Eureka18FormViewControllerC", "AddTaskDelegate"]
+- !private ["6Eureka18FormViewControllerC", "Calendar"]
 - ["6Eureka18FormViewControllerC", "Course"]
 - !private ["6Eureka18FormViewControllerC", "Date"]
 - !private ["6Eureka18FormViewControllerC", "DateInlineRow"]
@@ -520,6 +540,7 @@ depends-member:
 - ["6Eureka18FormViewControllerC", "selectedCourse"]
 - ["6Eureka18FormViewControllerC", "taskIndexToEdit"]
 - ["6Eureka18FormViewControllerC", "viewDidLoad"]
+- !private ["6Eureka26FormViewControllerProtocolP", "Calendar"]
 - ["6Eureka26FormViewControllerProtocolP", "Course"]
 - !private ["6Eureka26FormViewControllerProtocolP", "Date"]
 - !private ["6Eureka26FormViewControllerProtocolP", "DateInlineRow"]
@@ -567,6 +588,7 @@ depends-member:
 - !private ["6Eureka20FormatterConformanceP", "value"]
 - ["SH", "=="]
 - ["SH", "AllCases"]
+- !private ["SH", "Calendar"]
 - ["SH", "Course"]
 - !private ["SH", "Date"]
 - !private ["SH", "DateInlineRow"]
@@ -596,6 +618,8 @@ depends-member:
 - !private ["SH", "course"]
 - !private ["SH", "courseList"]
 - !private ["SH", "courses"]
+- !private ["SH", "current"]
+- !private ["SH", "date"]
 - !private ["SH", "delegate"]
 - ["SH", "description"]
 - !private ["SH", "filter"]
@@ -612,6 +636,7 @@ depends-member:
 - !private ["SH", "plain"]
 - ["SH", "rawValue"]
 - !private ["SH", "rightBarButtonItem"]
+- !private ["SH", "second"]
 - !private ["SH", "subscript"]
 - !private ["SH", "taskIndexToEdit"]
 - !private ["SH", "textColor"]
@@ -655,6 +680,7 @@ depends-member:
 - ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "map"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSCodingP", "Calendar"]
 - ["So8NSCodingP", "Course"]
 - !private ["So8NSCodingP", "Date"]
 - !private ["So8NSCodingP", "DateInlineRow"]
@@ -691,6 +717,7 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So8NSCodingP", "white"]
 - !private ["So9NSCopyingP", "white"]
+- !private ["So26NSExtensionRequestHandlingP", "Calendar"]
 - ["So26NSExtensionRequestHandlingP", "Course"]
 - !private ["So26NSExtensionRequestHandlingP", "Date"]
 - !private ["So26NSExtensionRequestHandlingP", "DateInlineRow"]
@@ -723,6 +750,7 @@ depends-member:
 - !private ["So21NSItemProviderReadingP", "white"]
 - !private ["So21NSItemProviderWritingP", "white"]
 - ["So8NSObjectC", "AddTaskDelegate"]
+- !private ["So8NSObjectC", "Calendar"]
 - ["So8NSObjectC", "Course"]
 - !private ["So8NSObjectC", "Date"]
 - !private ["So8NSObjectC", "DateInlineRow"]
@@ -759,6 +787,7 @@ depends-member:
 - !private ["So8NSObjectC", "textLabel"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectC", "white"]
+- !private ["So8NSObjectP", "Calendar"]
 - ["So8NSObjectP", "Course"]
 - !private ["So8NSObjectP", "Date"]
 - !private ["So8NSObjectP", "DateInlineRow"]
@@ -868,6 +897,8 @@ depends-member:
 - !private ["SY", "plain"]
 - ["SY", "rawValue"]
 - !private ["SY", "validatesOnChange"]
+- !private ["10Foundation20ReferenceConvertibleP", "current"]
+- !private ["10Foundation20ReferenceConvertibleP", "date"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - ["22University_Application14RepeatIntervalO", "=="]
 - ["22University_Application14RepeatIntervalO", "AllCases"]
@@ -1004,6 +1035,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "textColor"]
 - !private ["So12UIAppearanceP", "textLabel"]
+- !private ["So21UIAppearanceContainerP", "Calendar"]
 - ["So21UIAppearanceContainerP", "Course"]
 - !private ["So21UIAppearanceContainerP", "Date"]
 - !private ["So21UIAppearanceContainerP", "DateInlineRow"]
@@ -1039,6 +1071,7 @@ depends-member:
 - !private ["So15UIBarButtonItemC", "init"]
 - !private ["So9UIBarItemC", "init"]
 - !private ["So7UIColorC", "white"]
+- !private ["So18UIContentContainerP", "Calendar"]
 - ["So18UIContentContainerP", "Course"]
 - !private ["So18UIContentContainerP", "Date"]
 - !private ["So18UIContentContainerP", "DateInlineRow"]
@@ -1075,6 +1108,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "backgroundColor"]
 - !private ["So13UIDynamicItemP", "textColor"]
 - !private ["So13UIDynamicItemP", "textLabel"]
+- !private ["So18UIFocusEnvironmentP", "Calendar"]
 - ["So18UIFocusEnvironmentP", "Course"]
 - !private ["So18UIFocusEnvironmentP", "Date"]
 - !private ["So18UIFocusEnvironmentP", "DateInlineRow"]
@@ -1118,6 +1152,7 @@ depends-member:
 - !private ["So7UILabelC", "textColor"]
 - !private ["So16UINavigationItemC", "backBarButtonItem"]
 - !private ["So16UINavigationItemC", "rightBarButtonItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "Calendar"]
 - ["So30UIPasteConfigurationSupportingP", "Course"]
 - !private ["So30UIPasteConfigurationSupportingP", "Date"]
 - !private ["So30UIPasteConfigurationSupportingP", "DateInlineRow"]
@@ -1151,6 +1186,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "textLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "AddTaskDelegate"]
+- !private ["So11UIResponderC", "Calendar"]
 - ["So11UIResponderC", "Course"]
 - !private ["So11UIResponderC", "Date"]
 - !private ["So11UIResponderC", "DateInlineRow"]
@@ -1184,6 +1220,7 @@ depends-member:
 - !private ["So11UIResponderC", "textColor"]
 - !private ["So11UIResponderC", "textLabel"]
 - ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Calendar"]
 - ["So30UIResponderStandardEditActionsP", "Course"]
 - !private ["So30UIResponderStandardEditActionsP", "Date"]
 - !private ["So30UIResponderStandardEditActionsP", "DateInlineRow"]
@@ -1216,6 +1253,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "textColor"]
 - !private ["So30UIResponderStandardEditActionsP", "textLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So20UIScrollViewDelegateP", "Calendar"]
 - ["So20UIScrollViewDelegateP", "Course"]
 - !private ["So20UIScrollViewDelegateP", "Date"]
 - !private ["So20UIScrollViewDelegateP", "DateInlineRow"]
@@ -1246,6 +1284,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "taskIndexToEdit"]
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So16UIStateRestoringP", "Calendar"]
 - ["So16UIStateRestoringP", "Course"]
 - !private ["So16UIStateRestoringP", "Date"]
 - !private ["So16UIStateRestoringP", "DateInlineRow"]
@@ -1277,6 +1316,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So15UITableViewCellC", "backgroundColor"]
 - !private ["So15UITableViewCellC", "textLabel"]
+- !private ["So21UITableViewDataSourceP", "Calendar"]
 - ["So21UITableViewDataSourceP", "Course"]
 - !private ["So21UITableViewDataSourceP", "Date"]
 - !private ["So21UITableViewDataSourceP", "DateInlineRow"]
@@ -1306,6 +1346,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "newTask"]
 - !private ["So21UITableViewDataSourceP", "taskIndexToEdit"]
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
+- !private ["So19UITableViewDelegateP", "Calendar"]
 - ["So19UITableViewDelegateP", "Course"]
 - !private ["So19UITableViewDelegateP", "Date"]
 - !private ["So19UITableViewDelegateP", "DateInlineRow"]
@@ -1336,6 +1377,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "taskIndexToEdit"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
 - !private ["So19UITextFieldDelegateP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "Calendar"]
 - ["So18UITraitEnvironmentP", "Course"]
 - !private ["So18UITraitEnvironmentP", "Date"]
 - !private ["So18UITraitEnvironmentP", "DateInlineRow"]
@@ -1368,6 +1410,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "textColor"]
 - !private ["So18UITraitEnvironmentP", "textLabel"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "Calendar"]
 - ["So23UIUserActivityRestoringP", "Course"]
 - !private ["So23UIUserActivityRestoringP", "Date"]
 - !private ["So23UIUserActivityRestoringP", "DateInlineRow"]
@@ -1404,6 +1447,7 @@ depends-member:
 - !private ["So6UIViewC", "textColor"]
 - !private ["So6UIViewC", "textLabel"]
 - ["So16UIViewControllerC", "AddTaskDelegate"]
+- !private ["So16UIViewControllerC", "Calendar"]
 - ["So16UIViewControllerC", "Course"]
 - !private ["So16UIViewControllerC", "Date"]
 - !private ["So16UIViewControllerC", "DateInlineRow"]
@@ -1479,6 +1523,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "values"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Course"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateInlineRow"]
@@ -1514,7 +1559,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
+- !private ["10Foundation14_MutableBoxingP", "current"]
+- !private ["10Foundation14_MutableBoxingP", "date"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "current"]
+- !private ["s21_ObjectiveCBridgeableP", "date"]
 - !private ["s21_ObjectiveCBridgeableP", "filter"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
 - ["s21_ObjectiveCBridgeableP", "init"]
@@ -1566,11 +1615,13 @@ depends-nominal:
 - "SK"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
+- !private "10Foundation8CalendarV"
 - "s12CaseIterableP"
 - !private "6Eureka4CellC"
 - !private "6Eureka8CellTypeP"
 - "Sl"
 - !private "SL"
+- !private "10Foundation8CalendarV9ComponentO"
 - "10Foundation15ContiguousBytesP"
 - !private "22University_Application6CourseC"
 - "s28CustomDebugStringConvertibleP"
@@ -1691,6 +1742,7 @@ depends-nominal:
 - "s19_HasContiguousBytesP"
 - "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation14_MutableBoxingP"
 - "s21_ObjectiveCBridgeableP"
 - !private "6SQLite13_OptionalTypeP"
 - !private "6Eureka8_PushRowC"

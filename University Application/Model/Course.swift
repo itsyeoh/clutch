@@ -14,6 +14,7 @@ class Course {
     var dept: String!
     var courseNum: Int!
     var creditHours: Int?
+    var weights: [Weight]?
     
     init(sid: Int64, cid: Int64) {
         self.sid = sid
@@ -21,6 +22,7 @@ class Course {
         self.dept = ""
         self.courseNum = 0
         self.creditHours = 0
+        self.weights = []
     }
     
     init(sid: Int64, cid: Int64, dept: String, courseNum: Int, creditHours: Int) {
@@ -29,6 +31,15 @@ class Course {
         self.dept = dept
         self.courseNum = courseNum
         self.creditHours = creditHours
+    }
+    
+    init(sid: Int64, cid: Int64, dept: String, courseNum: Int, creditHours: Int, weights: [Weight]) {
+        self.sid = sid
+        self.cid = cid
+        self.dept = dept
+        self.courseNum = courseNum
+        self.creditHours = creditHours
+        self.weights = weights
     }
     
     func showCourseName() -> String {

@@ -17,7 +17,8 @@ class SemesterTVC: UITableViewCell {
     
     override func awakeFromNib() {
         
-        super.awakeFromNib()
+//        self.roundCorners(corners: [.topLeft, .topRight], radius: 10)
+//        super.awakeFromNib()
     }
     
     func setup(semester: Semester) {

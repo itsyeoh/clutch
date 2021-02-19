@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ejd-Cl-GAQ">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ejd-Cl-GAQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +32,7 @@
         <scene sceneID="Lp9-by-OEp">
             <objects>
                 <navigationController id="WeV-fp-WQ2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dashboard" id="cgc-HO-LUB"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" badgeValue="1" id="cgc-HO-LUB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="Back" id="icY-05-wip">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -70,7 +69,7 @@
         <scene sceneID="RKA-Wf-Q2P">
             <objects>
                 <navigationController id="BQB-Jp-sT5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tasks" id="xtM-NI-8z4"/>
+                    <tabBarItem key="tabBarItem" title="Tasks" badgeValue="4" id="xtM-NI-8z4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="Back" id="pVl-oh-36b">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -97,7 +96,7 @@
         <scene sceneID="aNN-ey-Bti">
             <objects>
                 <navigationController id="U0J-aw-GOy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Academics" badgeValue="69" selectedImage="NotDone" id="xdB-I8-YCZ"/>
+                    <tabBarItem key="tabBarItem" title="Academics" badgeValue="3" selectedImage="NotDone" id="xdB-I8-YCZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="Back" id="Xad-im-7rS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -1,11 +1,28 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "OTask"
 provides-nominal:
+- "22University_Application5OTaskC"
 provides-member:
+- ["22University_Application5OTaskC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Date"
+- "Int64"
+- "OTask"
+- "String"
 depends-member:
+- ["22University_Application5OTaskC", "Date"]
+- ["22University_Application5OTaskC", "Int64"]
+- ["22University_Application5OTaskC", "String"]
+- ["22University_Application5OTaskC", "description"]
+- ["22University_Application5OTaskC", "dueDate"]
+- ["22University_Application5OTaskC", "init"]
+- ["22University_Application5OTaskC", "name"]
+- ["22University_Application5OTaskC", "otid"]
+- ["22University_Application5OTaskC", "otoid"]
 depends-nominal:
+- "22University_Application5OTaskC"
 depends-dynamic-lookup:
 depends-external:
 - "/Users/jasonyeoh/Desktop/University Application/Debug-iphonesimulator/Eureka.framework/Modules/Eureka.swiftmodule/x86_64.swiftmodule"
@@ -48,4 +65,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "2e4dbcf1531432ba023e577374834cec"

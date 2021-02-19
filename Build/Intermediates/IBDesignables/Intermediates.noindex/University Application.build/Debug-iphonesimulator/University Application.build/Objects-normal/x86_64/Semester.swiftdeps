@@ -15,12 +15,16 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Date"
 - !private "DateFormatter"
+- !private "FloatLiteralType"
 - "Int64"
+- !private "IntegerLiteralType"
 - !private "Locale"
 - "Season"
 - "Semester"
 - "String"
+- "StringLiteralType"
 - !private "TimeZone"
+- !private "UnicodeScalarType"
 - !private "_findStringSwitchCase"
 - !private "~="
 depends-member:
@@ -227,7 +231,6 @@ depends-member:
 - !private ["22University_Application8SemesterC", "Locale"]
 - ["22University_Application8SemesterC", "String"]
 - !private ["22University_Application8SemesterC", "TimeZone"]
-- ["22University_Application8SemesterC", "deinit"]
 - ["22University_Application8SemesterC", "endDate"]
 - ["22University_Application8SemesterC", "getDateToString"]
 - ["22University_Application8SemesterC", "getDateToYearString"]
@@ -383,6 +386,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"

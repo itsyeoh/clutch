@@ -1,6 +1,6 @@
-version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
-options: "4557b2d2a5735fc0d251568803c927e9"
-build_time: [1568480144, 319156000]
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "2b3a96aa5601dd45a8d4f6d91ff00a5d"
+build_time: [1569632705, 378968000]
 inputs:
   "/Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLite/Typed/CoreFunctions.swift": [1561109826, 0]
   "/Users/jasonyeoh/Downloads/SQLite.swift-master/Sources/SQLite/Typed/Coding.swift": [1561109826, 0]

@@ -133,7 +133,6 @@ extension AcademicsVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("At \(section) -> \(courses[section].count)")
-
         return semesterIsExpanded[section] ? (courses[section].count + 1) : 1
 //        return courses[section].count
     }
@@ -153,7 +152,6 @@ extension AcademicsVC: UITableViewDataSource, UITableViewDelegate {
             cell.setup(course: course)
             return cell
         }
-        
     }
     
 //    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -164,12 +162,9 @@ extension AcademicsVC: UITableViewDataSource, UITableViewDelegate {
 //    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 63.0
+        if indexPath.row == 0 { return 63.0 }
+        return 32.0
     }
-    
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 63.0
-//    }
     
     // Course dashboard
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

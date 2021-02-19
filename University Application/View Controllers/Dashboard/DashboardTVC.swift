@@ -9,9 +9,6 @@
 import UIKit
 
 class DashboardTVC: UITableViewCell {
-
-    @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var deptLabel: UILabel!
     @IBOutlet weak var courseNumLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
@@ -61,8 +58,6 @@ class DashboardTVC: UITableViewCell {
     func setup(courseClass: CourseClass, date: Date) {
         let day = getWeekdayToString(weekday: Calendar.current.component(.weekday, from: date))
 
-        dayLabel.text = day
-        dateLabel.text = getDateToString(date: date).uppercased()
         deptLabel.text = courseClass.dept
         courseNumLabel.text = String(courseClass.courseNum)
         locationLabel.text = courseClass.location

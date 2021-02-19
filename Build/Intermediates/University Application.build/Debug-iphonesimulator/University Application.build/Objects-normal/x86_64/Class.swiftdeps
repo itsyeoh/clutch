@@ -29,12 +29,9 @@ depends-top-level:
 - "Date"
 - !private "DateFormatter"
 - "Day"
-- !private "FloatLiteralType"
 - "Int"
 - "Int64"
-- !private "IntegerLiteralType"
 - "String"
-- "StringLiteralType"
 - "UnicodeScalarType"
 - !private "_findStringSwitchCase"
 - !private "~="
@@ -67,6 +64,7 @@ depends-member:
 - ["22University_Application5ClassC", "classType"]
 - ["22University_Application5ClassC", "clid"]
 - ["22University_Application5ClassC", "days"]
+- ["22University_Application5ClassC", "deinit"]
 - ["22University_Application5ClassC", "endTime"]
 - ["22University_Application5ClassC", "getClassTimeAndDay"]
 - ["22University_Application5ClassC", "getClassTypePrefix"]

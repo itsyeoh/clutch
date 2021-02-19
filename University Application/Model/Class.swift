@@ -76,13 +76,37 @@ class Class {
         return dateFormatter.string(from: time)
     }
     
-    func getClassTimeAndDay() -> String {
+    func getClassDays() -> [Bool] {
+        var days: [Day] = [.Sunday, .Monday, .Tuesday, .Wednesday, .Thursday, .Friday, .Saturday]
+        var selectedDays = self.days.sorted()
+        var index = 0
+        var lastIndex = selectedDays.count - 1
+        var boolArray: [Bool] = []
+        
+        for day in days {
+            if lastIndex >= index {
+                if selectedDays[index] == day {
+                    boolArray.append(true)
+                    index += 1
+                } else {
+                    boolArray.append(false)
+                }
+            } else {
+                boolArray.append(false)
+            }
+        }
+        
+        return boolArray
+    }
+    
+    func getClassTime() -> String {
         let startTime = getTimeToString(time: self.startTime)
         let endTime = getTimeToString(time: self.endTime)
         let dayString = getDaysToStrings()
         
-        return "\(startTime) - \(endTime) (\(dayString))"
+        return "\(startTime) - \(endTime)"
     }
+    
 }
 
 enum ClassType: String {

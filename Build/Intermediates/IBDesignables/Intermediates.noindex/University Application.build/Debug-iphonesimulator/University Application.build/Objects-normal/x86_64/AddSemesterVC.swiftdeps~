@@ -21,6 +21,7 @@ depends-top-level:
 - "AddSemesterDelegate"
 - "AddSemesterVC"
 - "AssignmentPrecedence"
+- !private "Calendar"
 - !private "Date"
 - !private "DateInlineRow"
 - "FormViewController"
@@ -42,6 +43,7 @@ depends-member:
 - ["22University_Application19AddSemesterDelegateP", "addSemester"]
 - ["22University_Application19AddSemesterDelegateP", "updateSemester"]
 - ["22University_Application13AddSemesterVCC", "AddSemesterDelegate"]
+- !private ["22University_Application13AddSemesterVCC", "Calendar"]
 - !private ["22University_Application13AddSemesterVCC", "Date"]
 - !private ["22University_Application13AddSemesterVCC", "DateInlineRow"]
 - ["22University_Application13AddSemesterVCC", "Int"]
@@ -97,6 +99,7 @@ depends-member:
 - !private ["6SQLite7BindingP", "init"]
 - !private ["So15CALayerDelegateP", "textColor"]
 - !private ["So15CALayerDelegateP", "textLabel"]
+- !private ["s7CVarArgP", "Calendar"]
 - !private ["s7CVarArgP", "Date"]
 - !private ["s7CVarArgP", "DateInlineRow"]
 - !private ["s7CVarArgP", "PushRow"]
@@ -123,6 +126,8 @@ depends-member:
 - !private ["s7CVarArgP", "textColor"]
 - !private ["s7CVarArgP", "textLabel"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["10Foundation8CalendarV", "current"]
+- !private ["10Foundation8CalendarV", "date"]
 - !private ["6Eureka4CellC", "textLabel"]
 - !private ["6Eureka8CellTypeP", "textLabel"]
 - !private ["Sl", "init"]
@@ -131,6 +136,7 @@ depends-member:
 - !private ["Sl", "tag"]
 - !private ["Sl", "validate"]
 - !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Calendar"]
 - !private ["s28CustomDebugStringConvertibleP", "Date"]
 - !private ["s28CustomDebugStringConvertibleP", "DateInlineRow"]
 - !private ["s28CustomDebugStringConvertibleP", "PushRow"]
@@ -145,6 +151,8 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addSemester"]
 - !private ["s28CustomDebugStringConvertibleP", "backBarButtonItem"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "date"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "form"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -157,8 +165,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "textColor"]
 - !private ["s28CustomDebugStringConvertibleP", "textLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "current"]
+- !private ["s17CustomReflectableP", "date"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "red"]
+- !private ["s23CustomStringConvertibleP", "Calendar"]
 - !private ["s23CustomStringConvertibleP", "Date"]
 - !private ["s23CustomStringConvertibleP", "DateInlineRow"]
 - !private ["s23CustomStringConvertibleP", "PushRow"]
@@ -173,6 +184,8 @@ depends-member:
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addSemester"]
 - !private ["s23CustomStringConvertibleP", "backBarButtonItem"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "date"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "form"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -201,6 +214,8 @@ depends-member:
 - !private ["6Eureka21DatePickerRowProtocolP", "title"]
 - !private ["6Eureka21DatePickerRowProtocolP", "validationOptions"]
 - !private ["6Eureka21DatePickerRowProtocolP", "value"]
+- !private ["Se", "current"]
+- !private ["Se", "date"]
 - !private ["Se", "init"]
 - !private ["Se", "red"]
 - !private ["6Eureka11DisableableP", "add"]
@@ -212,8 +227,11 @@ depends-member:
 - !private ["6Eureka11DisableableP", "validationOptions"]
 - !private ["6Eureka11DisableableP", "value"]
 - !private ["Sd", "init"]
+- !private ["SE", "current"]
+- !private ["SE", "date"]
 - !private ["SE", "init"]
 - !private ["SE", "red"]
+- !private ["SQ", "Calendar"]
 - !private ["SQ", "Date"]
 - !private ["SQ", "DateInlineRow"]
 - !private ["SQ", "PushRow"]
@@ -230,6 +248,8 @@ depends-member:
 - !private ["SQ", "addSemester"]
 - !private ["SQ", "backBarButtonItem"]
 - !private ["SQ", "cellUpdate"]
+- !private ["SQ", "current"]
+- !private ["SQ", "date"]
 - !private ["SQ", "delegate"]
 - !private ["SQ", "form"]
 - !private ["SQ", "init"]
@@ -259,6 +279,7 @@ depends-member:
 - !private ["6Eureka4FormC", "rowBy"]
 - !private ["6Eureka4FormC", "setValues"]
 - !private ["6Eureka4FormC", "validate"]
+- !private ["6Eureka12FormDelegateP", "Calendar"]
 - !private ["6Eureka12FormDelegateP", "Date"]
 - !private ["6Eureka12FormDelegateP", "DateInlineRow"]
 - !private ["6Eureka12FormDelegateP", "PushRow"]
@@ -281,6 +302,7 @@ depends-member:
 - !private ["6Eureka12FormDelegateP", "semesterIndexToEdit"]
 - !private ["6Eureka12FormDelegateP", "viewDidLoad"]
 - ["6Eureka18FormViewControllerC", "AddSemesterDelegate"]
+- !private ["6Eureka18FormViewControllerC", "Calendar"]
 - !private ["6Eureka18FormViewControllerC", "Date"]
 - !private ["6Eureka18FormViewControllerC", "DateInlineRow"]
 - ["6Eureka18FormViewControllerC", "Int"]
@@ -304,6 +326,7 @@ depends-member:
 - ["6Eureka18FormViewControllerC", "newSemester"]
 - ["6Eureka18FormViewControllerC", "semesterIndexToEdit"]
 - ["6Eureka18FormViewControllerC", "viewDidLoad"]
+- !private ["6Eureka26FormViewControllerProtocolP", "Calendar"]
 - !private ["6Eureka26FormViewControllerProtocolP", "Date"]
 - !private ["6Eureka26FormViewControllerProtocolP", "DateInlineRow"]
 - !private ["6Eureka26FormViewControllerProtocolP", "PushRow"]
@@ -325,6 +348,7 @@ depends-member:
 - !private ["6Eureka26FormViewControllerProtocolP", "newSemester"]
 - !private ["6Eureka26FormViewControllerProtocolP", "semesterIndexToEdit"]
 - !private ["6Eureka26FormViewControllerProtocolP", "viewDidLoad"]
+- !private ["SH", "Calendar"]
 - !private ["SH", "Date"]
 - !private ["SH", "DateInlineRow"]
 - !private ["SH", "PushRow"]
@@ -339,6 +363,8 @@ depends-member:
 - ["SH", ""]
 - !private ["SH", "addSemester"]
 - !private ["SH", "backBarButtonItem"]
+- !private ["SH", "current"]
+- !private ["SH", "date"]
 - !private ["SH", "delegate"]
 - !private ["SH", "form"]
 - !private ["SH", "init"]
@@ -375,6 +401,7 @@ depends-member:
 - !private ["SM", "setValues"]
 - !private ["SM", "tag"]
 - !private ["SM", "validate"]
+- !private ["So8NSCodingP", "Calendar"]
 - !private ["So8NSCodingP", "Date"]
 - !private ["So8NSCodingP", "DateInlineRow"]
 - !private ["So8NSCodingP", "PushRow"]
@@ -402,6 +429,7 @@ depends-member:
 - !private ["So8NSCodingP", "textLabel"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So9NSCopyingP", "red"]
+- !private ["So26NSExtensionRequestHandlingP", "Calendar"]
 - !private ["So26NSExtensionRequestHandlingP", "Date"]
 - !private ["So26NSExtensionRequestHandlingP", "DateInlineRow"]
 - !private ["So26NSExtensionRequestHandlingP", "PushRow"]
@@ -426,6 +454,7 @@ depends-member:
 - !private ["So21NSItemProviderReadingP", "red"]
 - !private ["So21NSItemProviderWritingP", "red"]
 - ["So8NSObjectC", "AddSemesterDelegate"]
+- !private ["So8NSObjectC", "Calendar"]
 - !private ["So8NSObjectC", "Date"]
 - !private ["So8NSObjectC", "DateInlineRow"]
 - ["So8NSObjectC", "Int"]
@@ -453,6 +482,7 @@ depends-member:
 - !private ["So8NSObjectC", "textColor"]
 - !private ["So8NSObjectC", "textLabel"]
 - ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "Calendar"]
 - !private ["So8NSObjectP", "Date"]
 - !private ["So8NSObjectP", "DateInlineRow"]
 - !private ["So8NSObjectP", "PushRow"]
@@ -523,6 +553,8 @@ depends-member:
 - !private ["Sm", "validate"]
 - !private ["SY", "plain"]
 - !private ["SY", "validatesOnChange"]
+- !private ["10Foundation20ReferenceConvertibleP", "current"]
+- !private ["10Foundation20ReferenceConvertibleP", "date"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["6Eureka3RowC", "add"]
 - !private ["6Eureka3RowC", "cellUpdate"]
@@ -601,6 +633,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "textColor"]
 - !private ["So12UIAppearanceP", "textLabel"]
+- !private ["So21UIAppearanceContainerP", "Calendar"]
 - !private ["So21UIAppearanceContainerP", "Date"]
 - !private ["So21UIAppearanceContainerP", "DateInlineRow"]
 - !private ["So21UIAppearanceContainerP", "PushRow"]
@@ -627,6 +660,7 @@ depends-member:
 - !private ["So15UIBarButtonItemC", "init"]
 - !private ["So9UIBarItemC", "init"]
 - !private ["So7UIColorC", "red"]
+- !private ["So18UIContentContainerP", "Calendar"]
 - !private ["So18UIContentContainerP", "Date"]
 - !private ["So18UIContentContainerP", "DateInlineRow"]
 - !private ["So18UIContentContainerP", "PushRow"]
@@ -653,6 +687,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "textLabel"]
 - !private ["So13UIDynamicItemP", "textColor"]
 - !private ["So13UIDynamicItemP", "textLabel"]
+- !private ["So18UIFocusEnvironmentP", "Calendar"]
 - !private ["So18UIFocusEnvironmentP", "Date"]
 - !private ["So18UIFocusEnvironmentP", "DateInlineRow"]
 - !private ["So18UIFocusEnvironmentP", "PushRow"]
@@ -684,6 +719,7 @@ depends-member:
 - !private ["So7UILabelC", "textColor"]
 - !private ["So16UINavigationItemC", "backBarButtonItem"]
 - !private ["So16UINavigationItemC", "rightBarButtonItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "Calendar"]
 - !private ["So30UIPasteConfigurationSupportingP", "Date"]
 - !private ["So30UIPasteConfigurationSupportingP", "DateInlineRow"]
 - !private ["So30UIPasteConfigurationSupportingP", "PushRow"]
@@ -708,6 +744,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "textLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "AddSemesterDelegate"]
+- !private ["So11UIResponderC", "Calendar"]
 - !private ["So11UIResponderC", "Date"]
 - !private ["So11UIResponderC", "DateInlineRow"]
 - ["So11UIResponderC", "Int"]
@@ -732,6 +769,7 @@ depends-member:
 - !private ["So11UIResponderC", "textColor"]
 - !private ["So11UIResponderC", "textLabel"]
 - ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Calendar"]
 - !private ["So30UIResponderStandardEditActionsP", "Date"]
 - !private ["So30UIResponderStandardEditActionsP", "DateInlineRow"]
 - !private ["So30UIResponderStandardEditActionsP", "PushRow"]
@@ -755,6 +793,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "textColor"]
 - !private ["So30UIResponderStandardEditActionsP", "textLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So20UIScrollViewDelegateP", "Calendar"]
 - !private ["So20UIScrollViewDelegateP", "Date"]
 - !private ["So20UIScrollViewDelegateP", "DateInlineRow"]
 - !private ["So20UIScrollViewDelegateP", "PushRow"]
@@ -777,6 +816,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "semesterIndexToEdit"]
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So16UIStateRestoringP", "Calendar"]
 - !private ["So16UIStateRestoringP", "Date"]
 - !private ["So16UIStateRestoringP", "DateInlineRow"]
 - !private ["So16UIStateRestoringP", "PushRow"]
@@ -799,6 +839,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "semesterIndexToEdit"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So15UITableViewCellC", "textLabel"]
+- !private ["So21UITableViewDataSourceP", "Calendar"]
 - !private ["So21UITableViewDataSourceP", "Date"]
 - !private ["So21UITableViewDataSourceP", "DateInlineRow"]
 - !private ["So21UITableViewDataSourceP", "PushRow"]
@@ -820,6 +861,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "newSemester"]
 - !private ["So21UITableViewDataSourceP", "semesterIndexToEdit"]
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
+- !private ["So19UITableViewDelegateP", "Calendar"]
 - !private ["So19UITableViewDelegateP", "Date"]
 - !private ["So19UITableViewDelegateP", "DateInlineRow"]
 - !private ["So19UITableViewDelegateP", "PushRow"]
@@ -841,6 +883,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "newSemester"]
 - !private ["So19UITableViewDelegateP", "semesterIndexToEdit"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "Calendar"]
 - !private ["So18UITraitEnvironmentP", "Date"]
 - !private ["So18UITraitEnvironmentP", "DateInlineRow"]
 - !private ["So18UITraitEnvironmentP", "PushRow"]
@@ -864,6 +907,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "textColor"]
 - !private ["So18UITraitEnvironmentP", "textLabel"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "Calendar"]
 - !private ["So23UIUserActivityRestoringP", "Date"]
 - !private ["So23UIUserActivityRestoringP", "DateInlineRow"]
 - !private ["So23UIUserActivityRestoringP", "PushRow"]
@@ -890,6 +934,7 @@ depends-member:
 - !private ["So6UIViewC", "textColor"]
 - !private ["So6UIViewC", "textLabel"]
 - ["So16UIViewControllerC", "AddSemesterDelegate"]
+- !private ["So16UIViewControllerC", "Calendar"]
 - !private ["So16UIViewControllerC", "Date"]
 - !private ["So16UIViewControllerC", "DateInlineRow"]
 - ["So16UIViewControllerC", "Int"]
@@ -939,6 +984,7 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "red"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateInlineRow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "PushRow"]
@@ -965,6 +1011,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation14_MutableBoxingP", "current"]
+- !private ["10Foundation14_MutableBoxingP", "date"]
+- !private ["s21_ObjectiveCBridgeableP", "current"]
+- !private ["s21_ObjectiveCBridgeableP", "date"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "red"]
 - !private ["6SQLite13_OptionalTypeP", "red"]
@@ -991,6 +1041,7 @@ depends-nominal:
 - !private "6SQLite7BindingP"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
+- !private "10Foundation8CalendarV"
 - !private "6Eureka4CellC"
 - !private "6Eureka8CellTypeP"
 - !private "Sl"
@@ -1106,6 +1157,7 @@ depends-nominal:
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation14_MutableBoxingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "6SQLite13_OptionalTypeP"
 - !private "6Eureka8_PushRowC"
@@ -1149,6 +1201,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"

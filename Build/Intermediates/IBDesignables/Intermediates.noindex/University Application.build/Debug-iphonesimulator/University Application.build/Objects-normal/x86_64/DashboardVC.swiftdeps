@@ -16,7 +16,6 @@ depends-top-level:
 - !private "=="
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
 - "CGFloat"
 - !private "Calendar"
 - "CastingPrecedence"
@@ -30,12 +29,10 @@ depends-top-level:
 - "FSCalendarDataSource"
 - "FSCalendarDelegate"
 - "FSCalendarMonthPosition"
-- !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
-- !private "IntegerLiteralType"
 - "String"
-- !private "StringLiteralType"
+- !private "UIBarButtonItem"
 - "UILabel"
 - !private "UIStoryboard"
 - "UITableView"
@@ -43,7 +40,6 @@ depends-top-level:
 - "UITableViewDataSource"
 - "UITableViewDelegate"
 - "UIViewController"
-- !private "UnicodeScalarType"
 - !private "UniversityDB"
 - !private "print"
 - !private "~="
@@ -73,9 +69,11 @@ depends-member:
 - ["s7CVarArgP", "CourseClass"]
 - ["s7CVarArgP", "Date"]
 - !private ["s7CVarArgP", "DateFormatter"]
+- !private ["s7CVarArgP", "UIBarButtonItem"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "UniversityDB"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "backBarButtonItem"]
 - ["s7CVarArgP", "calendar"]
 - ["s7CVarArgP", "calendarCurrentPageDidChange"]
 - !private ["s7CVarArgP", "count"]
@@ -157,9 +155,11 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "CourseClass"]
 - ["s28CustomDebugStringConvertibleP", "Date"]
 - !private ["s28CustomDebugStringConvertibleP", "DateFormatter"]
+- !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "UniversityDB"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "backBarButtonItem"]
 - ["s28CustomDebugStringConvertibleP", "calendar"]
 - ["s28CustomDebugStringConvertibleP", "calendarCurrentPageDidChange"]
 - !private ["s28CustomDebugStringConvertibleP", "cid"]
@@ -243,9 +243,11 @@ depends-member:
 - ["s23CustomStringConvertibleP", "CourseClass"]
 - ["s23CustomStringConvertibleP", "Date"]
 - !private ["s23CustomStringConvertibleP", "DateFormatter"]
+- !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "UniversityDB"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "backBarButtonItem"]
 - ["s23CustomStringConvertibleP", "calendar"]
 - ["s23CustomStringConvertibleP", "calendarCurrentPageDidChange"]
 - !private ["s23CustomStringConvertibleP", "cid"]
@@ -324,6 +326,7 @@ depends-member:
 - ["22University_Application11DashboardVCC", "IndexPath"]
 - ["22University_Application11DashboardVCC", "Int"]
 - ["22University_Application11DashboardVCC", "String"]
+- !private ["22University_Application11DashboardVCC", "UIBarButtonItem"]
 - ["22University_Application11DashboardVCC", "UILabel"]
 - !private ["22University_Application11DashboardVCC", "UIStoryboard"]
 - ["22University_Application11DashboardVCC", "UITableView"]
@@ -331,7 +334,7 @@ depends-member:
 - !private ["22University_Application11DashboardVCC", "UniversityDB"]
 - ["22University_Application11DashboardVCC", "calendar"]
 - ["22University_Application11DashboardVCC", "calendarCurrentPageDidChange"]
-- !private ["22University_Application11DashboardVCC", "courseClasses"]
+- ["22University_Application11DashboardVCC", "courseClasses"]
 - ["22University_Application11DashboardVCC", "dashboardTableView"]
 - ["22University_Application11DashboardVCC", "dayLabel"]
 - ["22University_Application11DashboardVCC", "deinit"]
@@ -410,9 +413,11 @@ depends-member:
 - ["SQ", "CourseClass"]
 - ["SQ", "Date"]
 - !private ["SQ", "DateFormatter"]
+- !private ["SQ", "UIBarButtonItem"]
 - !private ["SQ", "UIStoryboard"]
 - !private ["SQ", "UniversityDB"]
 - ["SQ", ""]
+- !private ["SQ", "backBarButtonItem"]
 - ["SQ", "calendar"]
 - ["SQ", "calendarCurrentPageDidChange"]
 - !private ["SQ", "cid"]
@@ -445,6 +450,7 @@ depends-member:
 - !private ["SQ", "navigationItem"]
 - ["SQ", "numberOfSections"]
 - ["SQ", "numberOfSectionsInTableView"]
+- !private ["SQ", "plain"]
 - !private ["SQ", "print"]
 - !private ["SQ", "pushViewController"]
 - !private ["SQ", "reloadData"]
@@ -495,6 +501,7 @@ depends-member:
 - ["So20FSCalendarDataSourceP", "CourseClass"]
 - ["So20FSCalendarDataSourceP", "Date"]
 - !private ["So20FSCalendarDataSourceP", "DateFormatter"]
+- !private ["So20FSCalendarDataSourceP", "UIBarButtonItem"]
 - !private ["So20FSCalendarDataSourceP", "UIStoryboard"]
 - !private ["So20FSCalendarDataSourceP", "UniversityDB"]
 - ["So20FSCalendarDataSourceP", ""]
@@ -539,6 +546,7 @@ depends-member:
 - ["So18FSCalendarDelegateP", "CourseClass"]
 - ["So18FSCalendarDelegateP", "Date"]
 - !private ["So18FSCalendarDelegateP", "DateFormatter"]
+- !private ["So18FSCalendarDelegateP", "UIBarButtonItem"]
 - !private ["So18FSCalendarDelegateP", "UIStoryboard"]
 - !private ["So18FSCalendarDelegateP", "UniversityDB"]
 - ["So18FSCalendarDelegateP", ""]
@@ -586,9 +594,11 @@ depends-member:
 - ["SH", "CourseClass"]
 - ["SH", "Date"]
 - !private ["SH", "DateFormatter"]
+- !private ["SH", "UIBarButtonItem"]
 - !private ["SH", "UIStoryboard"]
 - !private ["SH", "UniversityDB"]
 - ["SH", ""]
+- !private ["SH", "backBarButtonItem"]
 - ["SH", "calendar"]
 - ["SH", "calendarCurrentPageDidChange"]
 - !private ["SH", "cid"]
@@ -621,6 +631,7 @@ depends-member:
 - !private ["SH", "navigationItem"]
 - ["SH", "numberOfSections"]
 - ["SH", "numberOfSectionsInTableView"]
+- !private ["SH", "plain"]
 - !private ["SH", "print"]
 - !private ["SH", "pushViewController"]
 - !private ["SH", "reloadData"]
@@ -667,9 +678,11 @@ depends-member:
 - ["So8NSCodingP", "CourseClass"]
 - ["So8NSCodingP", "Date"]
 - !private ["So8NSCodingP", "DateFormatter"]
+- !private ["So8NSCodingP", "UIBarButtonItem"]
 - !private ["So8NSCodingP", "UIStoryboard"]
 - !private ["So8NSCodingP", "UniversityDB"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "backBarButtonItem"]
 - ["So8NSCodingP", "calendar"]
 - ["So8NSCodingP", "calendarCurrentPageDidChange"]
 - !private ["So8NSCodingP", "course"]
@@ -731,6 +744,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "CourseClass"]
 - ["So26NSExtensionRequestHandlingP", "Date"]
 - !private ["So26NSExtensionRequestHandlingP", "DateFormatter"]
+- !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
 - !private ["So26NSExtensionRequestHandlingP", "UniversityDB"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -790,11 +804,13 @@ depends-member:
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UIBarButtonItem"]
 - ["So8NSObjectC", "UILabel"]
 - !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
 - !private ["So8NSObjectC", "UniversityDB"]
+- !private ["So8NSObjectC", "backBarButtonItem"]
 - ["So8NSObjectC", "calendar"]
 - ["So8NSObjectC", "calendarCurrentPageDidChange"]
 - !private ["So8NSObjectC", "course"]
@@ -855,9 +871,11 @@ depends-member:
 - ["So8NSObjectP", "CourseClass"]
 - ["So8NSObjectP", "Date"]
 - !private ["So8NSObjectP", "DateFormatter"]
+- !private ["So8NSObjectP", "UIBarButtonItem"]
 - !private ["So8NSObjectP", "UIStoryboard"]
 - !private ["So8NSObjectP", "UniversityDB"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "backBarButtonItem"]
 - ["So8NSObjectP", "calendar"]
 - ["So8NSObjectP", "calendarCurrentPageDidChange"]
 - !private ["So8NSObjectP", "course"]
@@ -927,6 +945,7 @@ depends-member:
 - !private ["Sm", "count"]
 - ["Sm", "init"]
 - !private ["Sm", "subscript"]
+- !private ["SY", "plain"]
 - !private ["10Foundation20ReferenceConvertibleP", "component"]
 - !private ["10Foundation20ReferenceConvertibleP", "current"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
@@ -939,9 +958,11 @@ depends-member:
 - ["ST", "init"]
 - !private ["ST", "row"]
 - !private ["ST", "subscript"]
+- !private ["So20UIBarButtonItemStyleV", "plain"]
 - !private ["So29UIAccessibilityIdentificationP", "dataSource"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
 - !private ["So29UIAccessibilityIdentificationP", "restore"]
 - !private ["So29UIAccessibilityIdentificationP", "setEmptyMessage"]
@@ -950,6 +971,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "dataSource"]
 - !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
+- !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "reloadData"]
 - !private ["So12UIAppearanceP", "restore"]
 - !private ["So12UIAppearanceP", "setEmptyMessage"]
@@ -959,6 +981,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "CourseClass"]
 - ["So21UIAppearanceContainerP", "Date"]
 - !private ["So21UIAppearanceContainerP", "DateFormatter"]
+- !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
 - !private ["So21UIAppearanceContainerP", "UIStoryboard"]
 - !private ["So21UIAppearanceContainerP", "UniversityDB"]
 - ["So21UIAppearanceContainerP", ""]
@@ -1013,10 +1036,13 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
+- !private ["So15UIBarButtonItemC", "init"]
+- !private ["So9UIBarItemC", "init"]
 - !private ["So18UIContentContainerP", "Calendar"]
 - ["So18UIContentContainerP", "CourseClass"]
 - ["So18UIContentContainerP", "Date"]
 - !private ["So18UIContentContainerP", "DateFormatter"]
+- !private ["So18UIContentContainerP", "UIBarButtonItem"]
 - !private ["So18UIContentContainerP", "UIStoryboard"]
 - !private ["So18UIContentContainerP", "UniversityDB"]
 - ["So18UIContentContainerP", ""]
@@ -1090,6 +1116,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "CourseClass"]
 - ["So18UIFocusEnvironmentP", "Date"]
 - !private ["So18UIFocusEnvironmentP", "DateFormatter"]
+- !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
 - !private ["So18UIFocusEnvironmentP", "UniversityDB"]
 - ["So18UIFocusEnvironmentP", ""]
@@ -1169,11 +1196,13 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "setup"]
 - !private ["So7UILabelC", "text"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So16UINavigationItemC", "backBarButtonItem"]
 - !private ["So16UINavigationItemC", "title"]
 - !private ["So30UIPasteConfigurationSupportingP", "Calendar"]
 - ["So30UIPasteConfigurationSupportingP", "CourseClass"]
 - ["So30UIPasteConfigurationSupportingP", "Date"]
 - !private ["So30UIPasteConfigurationSupportingP", "DateFormatter"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "UniversityDB"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -1241,6 +1270,7 @@ depends-member:
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UIBarButtonItem"]
 - ["So11UIResponderC", "UILabel"]
 - !private ["So11UIResponderC", "UIStoryboard"]
 - ["So11UIResponderC", "UITableView"]
@@ -1302,6 +1332,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "CourseClass"]
 - ["So30UIResponderStandardEditActionsP", "Date"]
 - !private ["So30UIResponderStandardEditActionsP", "DateFormatter"]
+- !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "UniversityDB"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -1366,6 +1397,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "CourseClass"]
 - ["So20UIScrollViewDelegateP", "Date"]
 - !private ["So20UIScrollViewDelegateP", "DateFormatter"]
+- !private ["So20UIScrollViewDelegateP", "UIBarButtonItem"]
 - !private ["So20UIScrollViewDelegateP", "UIStoryboard"]
 - !private ["So20UIScrollViewDelegateP", "UniversityDB"]
 - ["So20UIScrollViewDelegateP", ""]
@@ -1411,6 +1443,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "dataSource"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "restore"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "setEmptyMessage"]
@@ -1418,6 +1451,7 @@ depends-member:
 - ["So16UIStateRestoringP", "CourseClass"]
 - ["So16UIStateRestoringP", "Date"]
 - !private ["So16UIStateRestoringP", "DateFormatter"]
+- !private ["So16UIStateRestoringP", "UIBarButtonItem"]
 - !private ["So16UIStateRestoringP", "UIStoryboard"]
 - !private ["So16UIStateRestoringP", "UniversityDB"]
 - ["So16UIStateRestoringP", ""]
@@ -1477,6 +1511,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "CourseClass"]
 - ["So21UITableViewDataSourceP", "Date"]
 - !private ["So21UITableViewDataSourceP", "DateFormatter"]
+- !private ["So21UITableViewDataSourceP", "UIBarButtonItem"]
 - !private ["So21UITableViewDataSourceP", "UIStoryboard"]
 - !private ["So21UITableViewDataSourceP", "UniversityDB"]
 - ["So21UITableViewDataSourceP", ""]
@@ -1523,6 +1558,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "CourseClass"]
 - ["So19UITableViewDelegateP", "Date"]
 - !private ["So19UITableViewDelegateP", "DateFormatter"]
+- !private ["So19UITableViewDelegateP", "UIBarButtonItem"]
 - !private ["So19UITableViewDelegateP", "UIStoryboard"]
 - !private ["So19UITableViewDelegateP", "UniversityDB"]
 - ["So19UITableViewDelegateP", ""]
@@ -1569,6 +1605,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "CourseClass"]
 - ["So18UITraitEnvironmentP", "Date"]
 - !private ["So18UITraitEnvironmentP", "DateFormatter"]
+- !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UITraitEnvironmentP", "UIStoryboard"]
 - !private ["So18UITraitEnvironmentP", "UniversityDB"]
 - ["So18UITraitEnvironmentP", ""]
@@ -1627,6 +1664,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "CourseClass"]
 - ["So23UIUserActivityRestoringP", "Date"]
 - !private ["So23UIUserActivityRestoringP", "DateFormatter"]
+- !private ["So23UIUserActivityRestoringP", "UIBarButtonItem"]
 - !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
 - !private ["So23UIUserActivityRestoringP", "UniversityDB"]
 - ["So23UIUserActivityRestoringP", ""]
@@ -1702,6 +1740,7 @@ depends-member:
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "UIBarButtonItem"]
 - ["So16UIViewControllerC", "UILabel"]
 - !private ["So16UIViewControllerC", "UIStoryboard"]
 - ["So16UIViewControllerC", "UITableView"]
@@ -1775,9 +1814,11 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "CourseClass"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UniversityDB"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backBarButtonItem"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "calendar"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "calendarCurrentPageDidChange"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "course"]
@@ -1910,11 +1951,15 @@ depends-nominal:
 - !private "Sq"
 - "Sk"
 - "Sm"
+- !private "SY"
 - "10Foundation20ReferenceConvertibleP"
 - "ST"
+- !private "So20UIBarButtonItemStyleV"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So15UIBarButtonItemC"
+- !private "So9UIBarItemC"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - !private "So17UICoordinateSpaceP"
@@ -1995,7 +2040,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "367491603db4ea2834f17a3042e24060"
+interface-hash: "d063ccc066237db2c4bed07523f29802"

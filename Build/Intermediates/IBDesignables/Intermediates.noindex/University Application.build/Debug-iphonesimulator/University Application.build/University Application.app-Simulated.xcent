@@ -4,9 +4,7 @@
 <dict>
 	<key>application-identifier</key>
 	<string>CP69FRGX9X.com.jasonyeoh.University-Application</string>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>CP69FRGX9X.com.jasonyeoh.University-Application</string>
-	</array>
+	<key>aps-environment</key>
+	<string>development</string>
 </dict>
 </plist>

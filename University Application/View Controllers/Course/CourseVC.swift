@@ -10,7 +10,18 @@ import UIKit
 
 class CourseVC: UIViewController {
 
+    // Course Name Labels
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var courseNameLabel: UILabel!
+    
+    // Additional Info Labels
+    @IBOutlet weak var firstInfoLabel: UILabel!
+    @IBOutlet weak var firstSubinfoLabel: UILabel!
+    @IBOutlet weak var secondInfoLabel: UILabel!
+    @IBOutlet weak var secondSubinfoLabel: UILabel!
+    @IBOutlet weak var thirdInfoLabel: UILabel!
+    @IBOutlet weak var thirdSubinfoLabel: UILabel!
+
     @IBOutlet weak var classTableView: UITableView!
     @IBOutlet weak var courseControls: UISegmentedControl!
     
@@ -31,9 +42,6 @@ class CourseVC: UIViewController {
         classTableView.dataSource = self
         classTableView.delegate = self
         
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        setupAddButton()
-        
         if !semesterName.isEmpty {
             self.navigationItem.title = courseName! + " (" + semesterName.uppercased() + ")"
         } else {
@@ -44,21 +52,27 @@ class CourseVC: UIViewController {
         
         classes = UniversityDB.instance.getCourseClasses(ccid: course.cid)
         tasks = UniversityDB.instance.getCourseTasks(tcid: course.cid)
+        
+        
+//        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        setupAddButton()        
     }
     
     func setupAddButton() {
         let menuBtn = UIButton(type: .custom)
         menuBtn.frame = CGRect(x: 0.0, y: 0.0, width: 20, height: 20)
         menuBtn.setImage(UIImage(named: "Add"), for: .normal)
-        
+
         menuBtn.addTarget(self, action: #selector(addButtonClicked), for: .touchUpInside)
-        
+
         let menuBarItem = UIBarButtonItem(customView: menuBtn)
         let currWidth = menuBarItem.customView?.widthAnchor.constraint(equalToConstant: 25)
         currWidth?.isActive = true
         let currHeight = menuBarItem.customView?.heightAnchor.constraint(equalToConstant: 25)
         currHeight?.isActive = true
         self.navigationItem.rightBarButtonItem = menuBarItem
+        
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: .plain, target: #selector(addButtonClicked), action: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -201,6 +215,7 @@ extension CourseVC: UITableViewDataSource, UITableViewDelegate {
 
 extension CourseVC: AddClassDelegate, AddTaskDelegate {
     func addClass(aClass: Class) {
+        self.classIndexToEdit = nil
         self.navigationController?.popViewController(animated: true)
         self.classes.append(aClass)
         self.classTableView.reloadData()
@@ -214,6 +229,7 @@ extension CourseVC: AddClassDelegate, AddTaskDelegate {
     }
     
     func addTask(task: Task) {
+        self.taskIndexToEdit = nil
         self.navigationController?.popViewController(animated: true)
         self.tasks.append(task)
         self.classTableView.reloadData()

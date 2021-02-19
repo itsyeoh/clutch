@@ -12,6 +12,7 @@ import FSCalendar
 class DashboardVC: UIViewController {
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var dashboardTableView: UITableView!
+//    @IBOutlet weak var calendar: FSCalendar!
     @IBOutlet weak var calendar: FSCalendar!
     var courseClasses = [CourseClass]()
     private var selectedDate = Date()
@@ -31,6 +32,7 @@ class DashboardVC: UIViewController {
         let day = getWeekdayToString(weekday: weekday)
         courseClasses = UniversityDB.instance.getCourseClassesByDate(date: Date(), day: day)
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
     }
@@ -62,12 +64,15 @@ class DashboardVC: UIViewController {
         
         return dateFormatter.string(from: date)
     }
+    
+    
 }
 
 extension DashboardVC: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if courseClasses.count == 0 {
-            tableView.setEmptyMessage("NO CLASSES TODAY BAKS!")
+            tableView.setEmptyMessage("NO CLASSES TODAY!")
         } else {
             tableView.restore()
         }
@@ -142,3 +147,4 @@ extension DashboardVC: FSCalendarDataSource, FSCalendarDelegate {
         return courseClasses.count
     }
 }
+

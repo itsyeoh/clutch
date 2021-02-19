@@ -117,6 +117,7 @@ class AddTaskVC: FormViewController {
                     } else {
                         cell.backgroundColor = .white
                 }})
+        
         // Plug in all values for an existing task
         if let index = taskIndexToEdit {
             form.setValues(["tCourseRow": course?.showCourseName(), "nameRow": newTask?.taskName,

@@ -6,12 +6,14 @@ provides-nominal:
 provides-member:
 - ["15UniBakla_Widget19TodayViewControllerC", ""]
 provides-dynamic-lookup:
+- "tableView"
 - "viewDidLoad"
 - "widgetPerformUpdate"
 depends-top-level:
 - "NCUpdateResult"
 - "NCWidgetProviding"
 - "TodayViewController"
+- "UITableView"
 - "UIViewController"
 - "Void"
 depends-member:
@@ -89,8 +91,10 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "widgetPerformUpdate"]
 - ["So26NSExtensionRequestHandlingP", "widgetPerformUpdateWithCompletionHandler"]
 - ["So8NSObjectC", "NCUpdateResult"]
+- ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "Void"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "tableView"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "widgetActiveDisplayModeDidChange"]
 - ["So8NSObjectC", "widgetMarginInsets"]
@@ -108,9 +112,11 @@ depends-member:
 - ["So8NSObjectP", "widgetPerformUpdateWithCompletionHandler"]
 - !private ["SY", "newData"]
 - ["15UniBakla_Widget19TodayViewControllerC", "NCUpdateResult"]
+- ["15UniBakla_Widget19TodayViewControllerC", "UITableView"]
 - ["15UniBakla_Widget19TodayViewControllerC", "Void"]
 - ["15UniBakla_Widget19TodayViewControllerC", "deinit"]
 - ["15UniBakla_Widget19TodayViewControllerC", "init"]
+- ["15UniBakla_Widget19TodayViewControllerC", "tableView"]
 - ["15UniBakla_Widget19TodayViewControllerC", "viewDidLoad"]
 - ["15UniBakla_Widget19TodayViewControllerC", "widgetActiveDisplayModeDidChange"]
 - ["15UniBakla_Widget19TodayViewControllerC", "widgetMarginInsets"]
@@ -154,8 +160,10 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "widgetPerformUpdate"]
 - ["So30UIPasteConfigurationSupportingP", "widgetPerformUpdateWithCompletionHandler"]
 - ["So11UIResponderC", "NCUpdateResult"]
+- ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "Void"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "tableView"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "widgetActiveDisplayModeDidChange"]
 - ["So11UIResponderC", "widgetMarginInsets"]
@@ -199,9 +207,11 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "widgetPerformUpdate"]
 - ["So23UIUserActivityRestoringP", "widgetPerformUpdateWithCompletionHandler"]
 - ["So16UIViewControllerC", "NCUpdateResult"]
+- ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "Void"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "tableView"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "widgetActiveDisplayModeDidChange"]
 - ["So16UIViewControllerC", "widgetMarginInsets"]
@@ -268,4 +278,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "94ba9755a163057405985d9e2c57b916"
+interface-hash: "37c55b319e08aa3dfcb5b6c64626707d"

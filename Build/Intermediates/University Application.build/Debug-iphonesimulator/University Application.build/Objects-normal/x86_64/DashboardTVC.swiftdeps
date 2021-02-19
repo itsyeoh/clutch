@@ -21,14 +21,10 @@ depends-top-level:
 - "DashboardTVC"
 - "Date"
 - !private "DateFormatter"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "String"
-- !private "StringLiteralType"
 - "UILabel"
 - "UITableViewCell"
-- !private "UnicodeScalarType"
 - !private "~="
 depends-member:
 - !private ["SK", "init"]

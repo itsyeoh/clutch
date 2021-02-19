@@ -27,7 +27,6 @@ depends-top-level:
 - "=="
 - !private "??"
 - "AssignmentPrecedence"
-- !private "BooleanLiteralType"
 - !private "CGFloat"
 - "CastingPrecedence"
 - "Cell"

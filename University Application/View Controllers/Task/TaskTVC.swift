@@ -19,6 +19,7 @@ class TaskTVC: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+//        self.roundCorners(corners: [.bottomLeft, .bottomRight], radius: 10)
     }
 
     func setup(task: Task, isCompleted: Bool) {
@@ -42,14 +43,4 @@ class TaskTVC: UITableViewCell {
             taskNameLabel.text = task.taskName
         }
     }
-    
-//    func buttonPressed(_ isSelected: Bool) {
-//        if !isSelected  {
-//            tickButton.setImage(UIImage(named: "Checkbox_Selected"), for: .normal)
-//            tickButton.isSelected = true
-//        } else {
-//            tickButton.setImage(UIImage(named: "Checkbox_Empty"), for: .normal)
-//            tickButton.isSelected = false
-//        }
-//    }
 }
